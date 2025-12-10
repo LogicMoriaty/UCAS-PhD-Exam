@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { AppView, ExamData, VocabularyItem, ExamBatch, AppSettings, Translation, ReferenceBatch, ReferenceData } from './types';
 import Button from './components/Button';
@@ -96,20 +95,30 @@ const App: React.FC = () => {
 
   const t = (key: string) => translations[key][settings.language];
 
-  // Helper to append exams without overwriting and duplicates, AND SORT THEM
-  const appendExams = (newExams: ExamData[]) => {
-    setAvailableExams(prev => {
-      const existingIds = new Set(prev.map(e => e.id));
-      const uniqueNew = newExams.filter(e => !existingIds.has(e.id));
+  // Helper to merge exams. 
+  // If an exam with the same ID exists, the NEW one (from upload) takes precedence.
+  // This allows users to re-upload a JSON with saved analysis and overwrite the default empty one.
+  const mergeExams = (newExams: ExamData[]) => {
+    setAvailableExams((prev: ExamData[]) => {
+      const examMap = new Map<string, ExamData>();
+      // Explicitly populate map to avoid type inference issues with new Map([ ... ])
+      prev.forEach(e => examMap.set(e.id, e));
       
-      const combined = [...prev, ...uniqueNew];
+      // Update or add new exams
+      newExams.forEach(e => {
+          examMap.set(e.id, e);
+      });
+      
+      const combined = Array.from(examMap.values());
       // Sort exams by extracted number from ID or Title (e.g. "test-1", "Model Test 10")
       return combined.sort((a, b) => {
         const getNum = (str: string) => {
           const match = str.match(/(\d+)/);
           return match ? parseInt(match[1], 10) : 999;
         };
-        return getNum(a.id || a.title) - getNum(b.id || b.title);
+        const numA = getNum(a.id) === 999 ? getNum(a.title) : getNum(a.id);
+        const numB = getNum(b.id) === 999 ? getNum(b.title) : getNum(b.id);
+        return numA - numB;
       });
     });
   };
@@ -167,7 +176,7 @@ const App: React.FC = () => {
       }
       
       if (loadedExams.length > 0) {
-        appendExams(loadedExams);
+        mergeExams(loadedExams);
         setLoadError(false);
       } else if (hasError) {
         setLoadError(true);
@@ -285,7 +294,7 @@ const App: React.FC = () => {
           } catch (e) { console.warn("Skipping invalid JSONL line"); }
         });
         if (exams.length > 0) {
-          appendExams(exams);
+          mergeExams(exams);
           setView(AppView.DASHBOARD);
           return;
         }
@@ -301,14 +310,14 @@ const App: React.FC = () => {
       else if (data.title && data.sections) newExams = [data as ExamData];
       
       if (newExams.length > 0) {
-        appendExams(newExams);
+        mergeExams(newExams);
         setView(AppView.DASHBOARD);
       }
       return;
     } 
     
     const result: ExamBatch = await parseExamFiles(files);
-    appendExams(result.exams);
+    mergeExams(result.exams);
     
     try {
       const jsonFileName = files[0].name.replace(/\.[^/.]+$/, "") + ".json";

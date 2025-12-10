@@ -1,0 +1,1051 @@
+
+{
+  "exams": [
+    {
+      "id": "test-6",
+      "title": "Model Test 6",
+      "sections": [
+        {
+          "id": "test-6-listening-a",
+          "title": "Part I Listening Comprehension - Section A",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%206.mp3",
+          "instructions": "Conversations.",
+          "questions": [
+            { "id": "test-6-q1", "number": 1, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "The woman managed to give the police a wrong dog." }, { "label": "B", "text": "The woman was caught by the police because she didn't have a driving license." }, { "label": "C", "text": "The woman was very sad because she could not find her lovely dog." }, { "label": "D", "text": "The woman tried very hard to find a new dog to make her parents happy." } ] },
+            { "id": "test-6-q2", "number": 2, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "9:45." }, { "label": "B", "text": "9:15." }, { "label": "C", "text": "8:45." }, { "label": "D", "text": "8:15." } ] },
+            { "id": "test-6-q3", "number": 3, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "The woman is sad because her eyes get hurt." }, { "label": "B", "text": "The woman is sad because her boyfriend abandoned her." }, { "label": "C", "text": "The woman is happy because she dumped a guy she didn't like." }, { "label": "D", "text": "The woman feels much better after this conversation." } ] },
+            { "id": "test-6-q4", "number": 4, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "$ 60." }, { "label": "B", "text": "$ 75." }, { "label": "C", "text": "$ 90." }, { "label": "D", "text": "$ 50." } ] },
+            { "id": "test-6-q5", "number": 5, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "Very accidental." }, { "label": "B", "text": "Very easy." }, { "label": "C", "text": "Without any reason." }, { "label": "D", "text": "Very lucky." } ] },
+            { "id": "test-6-q6", "number": 6, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "In a bank." }, { "label": "B", "text": "In a stock exchange company." }, { "label": "C", "text": "In a business negotiation." }, { "label": "D", "text": "In an import-export company." } ] },
+            { "id": "test-6-q7", "number": 7, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "998." }, { "label": "B", "text": "899." }, { "label": "C", "text": "989." }, { "label": "D", "text": "988." } ] },
+            { "id": "test-6-q8", "number": 8, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "The woman is a college student in a medical school." }, { "label": "B", "text": "The woman works very hard to find a job." }, { "label": "C", "text": "The woman looks nice because she has just passed the examination." }, { "label": "D", "text": "The woman works very hard to enter the medical school." } ] },
+            { "id": "test-6-q9", "number": 9, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "John has already found a well-paid job on newspaper." }, { "label": "B", "text": "John didn't want to help her find a job on the web." }, { "label": "C", "text": "John didn't get the job by himself." }, { "label": "D", "text": "John has not found any job because he does not have to." } ] },
+            { "id": "test-6-q10", "number": 10, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "He is a soldier in Afghanistan." }, { "label": "B", "text": "He always likes to tell others of his own life plan." }, { "label": "C", "text": "He has made a big and shocking decision recently." }, { "label": "D", "text": "He has a stable personality." } ] }
+          ]
+        },
+        {
+          "id": "test-6-listening-b",
+          "title": "Part I Listening Comprehension - Section B",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%206.mp3",
+          "instructions": "Sentence completion.",
+          "questions": [
+            { "id": "test-6-q11", "number": 11, "text": "A cell contains all the __________ and molecules that help support an organism's life.", "type": "fill-blank", "correctAnswer": "chemicals" },
+            { "id": "test-6-q12", "number": 12, "text": "Cells are thought of as __________ of organisms.", "type": "fill-blank", "correctAnswer": "building blocks" },
+            { "id": "test-6-q13", "number": 13, "text": "It is commonly believed in the scientific world that humans are __________ of a single cell.", "type": "fill-blank", "correctAnswer": "descendants" },
+            { "id": "test-6-q14", "number": 14, "text": "Single cells are able to carry out certain biological functions on their own to __________.", "type": "fill-blank", "correctAnswer": "sustain life" },
+            { "id": "test-6-q15", "number": 15, "text": "Cell membranes function as a partition between the __________ of the cell and the outside environment.", "type": "fill-blank", "correctAnswer": "components" },
+            { "id": "test-6-q16", "number": 16, "text": "Pollution __________ into the air by power stations, factories, houses and cars contains sulphur dioxide and nitrogen oxides.", "type": "fill-blank", "correctAnswer": "emitted" },
+            { "id": "test-6-q17", "number": 17, "text": "Before they fall to the earth in rain, snow or hail, acids can be __________ by the wind.", "type": "fill-blank", "correctAnswer": "transported long distances" },
+            { "id": "test-6-q18", "number": 18, "text": "Acid rain can have __________ on freshwater lakes and the wildlife that depend upon them.", "type": "fill-blank", "correctAnswer": "harmful impacts" },
+            { "id": "test-6-q19", "number": 19, "text": "Governments have brought in international laws to __________ pollution from power stations and plants.", "type": "fill-blank", "correctAnswer": "clean up" },
+            { "id": "test-6-q20", "number": 20, "text": "To help reduce air pollution, we can __________ instead of using our car for short journeys.", "type": "fill-blank", "correctAnswer": "walk or cycle" }
+          ]
+        },
+        {
+          "id": "test-6-listening-c",
+          "title": "Part I Listening Comprehension - Section C",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%206.mp3",
+          "instructions": "Short answers.",
+          "questions": [
+            { "id": "test-6-q21", "number": 21, "text": "In what way can one benefit if he/she can forgive?", "type": "fill-blank", "correctAnswer": "It will be helpful to his/her physical and mental health. They will have more energy, better appetite and better sleep patterns." },
+            { "id": "test-6-q22", "number": 22, "text": "Why one can expect to wait a long time for apologizing?", "type": "fill-blank", "correctAnswer": "They may have wanted to hurt you or they just don't see things the same way." },
+            { "id": "test-6-q23", "number": 23, "text": "What is the last suggestion offered by the speaker?", "type": "fill-blank", "correctAnswer": "Try to see things from the other person's perspective." },
+            { "id": "test-6-q24", "number": 24, "text": "What are the advantages for the social science major?", "type": "fill-blank", "correctAnswer": "This high-tech \"Information Age\" demands people who are flexible and who have good communication skills." },
+            { "id": "test-6-q25", "number": 25, "text": "What are social science graduates good at?", "type": "fill-blank", "correctAnswer": "They are ready to change when situations change." },
+            { "id": "test-6-q26", "number": 26, "text": "According to the text, what has made it easy for social science graduates to find jobs?", "type": "fill-blank", "correctAnswer": "Skills in expressing themselves." },
+            { "id": "test-6-q27", "number": 27, "text": "How long will a student spend in attending lectures?", "type": "fill-blank", "correctAnswer": "Four to six hours a week for each class." },
+            { "id": "test-6-q28", "number": 28, "text": "What is important in attending lectures?", "type": "fill-blank", "correctAnswer": "Taking notes." },
+            { "id": "test-6-q29", "number": 29, "text": "What do students do in the discussion section?", "type": "fill-blank", "correctAnswer": "Ask questions about the lectures, the reading, and the homework." },
+            { "id": "test-6-q30", "number": 30, "text": "Who read and write more, students of chemistry or students of literature?", "type": "fill-blank", "correctAnswer": "Students of literature." }
+          ]
+        },
+        {
+          "id": "test-6-use-of-english-a",
+          "title": "Part II Use of English - Section A",
+          "instructions": "Cloze test.",
+          "questions": [
+            { "id": "test-6-q31", "number": 31, "text": "Fill in blank 31", "type": "fill-blank", "correctAnswer": "roads" },
+            { "id": "test-6-q32", "number": 32, "text": "Fill in blank 32", "type": "fill-blank", "correctAnswer": "events" },
+            { "id": "test-6-q33", "number": 33, "text": "Fill in blank 33", "type": "fill-blank", "correctAnswer": "Native" },
+            { "id": "test-6-q34", "number": 34, "text": "Fill in blank 34", "type": "fill-blank", "correctAnswer": "looked for" },
+            { "id": "test-6-q35", "number": 35, "text": "Fill in blank 35", "type": "fill-blank", "correctAnswer": "gold" },
+            { "id": "test-6-q36", "number": 36, "text": "Fill in blank 36", "type": "fill-blank", "correctAnswer": "popular" },
+            { "id": "test-6-q37", "number": 37, "text": "Fill in blank 37", "type": "fill-blank", "correctAnswer": "frightening" },
+            { "id": "test-6-q38", "number": 38, "text": "Fill in blank 38", "type": "fill-blank", "correctAnswer": "changed" },
+            { "id": "test-6-q39", "number": 39, "text": "Fill in blank 39", "type": "fill-blank", "correctAnswer": "adventures" },
+            { "id": "test-6-q40", "number": 40, "text": "Fill in blank 40", "type": "fill-blank", "correctAnswer": "society" },
+            { "id": "test-6-q41", "number": 41, "text": "Fill in blank 41", "type": "fill-blank", "correctAnswer": "escape" },
+            { "id": "test-6-q42", "number": 42, "text": "Fill in blank 42", "type": "fill-blank", "correctAnswer": "disappointed" },
+            { "id": "test-6-q43", "number": 43, "text": "Fill in blank 43", "type": "fill-blank", "correctAnswer": "supported" },
+            { "id": "test-6-q44", "number": 44, "text": "Fill in blank 44", "type": "fill-blank", "correctAnswer": "But" },
+            { "id": "test-6-q45", "number": 45, "text": "Fill in blank 45", "type": "fill-blank", "correctAnswer": "with" }
+          ],
+          "content": "The North American West has meant adventure since the journalist Horace Greeley said his famous words, \"Go West, young man!\" The West means long straight {{31}} or trails, open spaces and amazing views.\n\nThe story of the West is the story of American lives and the important {{32}} in history that changed them. {{33}} Americans who lost their lands in the East went west after the \"white man\" arrived. Cowboys went west for jobs on huge ranches in Texas. African-Americans left their homes in the South and {{34}} new lives in the West after the Civil War.\n\nIn the nineteenth century, people went west for {{35}} work, and good homes for their families. Tourism in the West was not {{36}} in those days. In fact, many people thought the West was ugly and {{37}}. One disgusted visitor from the East saw the Grand Canyon and said, \"It's no place for a gentleman, sir!\"\n\nThese feelings {{38}} completely in the twentieth century. Route 66, the road from Chicago to California, became the trail people followed to new and exciting {{39}} In the 1950s, the West offered an escape for young people who were not satisfied with American {{40}} In 1957, Jack Kerouac wrote On the Road, a book that described this {{41}} for the beat generation of the 1950s. In the 1960s, San Francisco became a center for the hippy generation. Many of these \"flower children\" were {{42}} in the United States government because it {{43}} the Vietnam War.\n\nThese days, many people who go west are buying expensive homes in states like Arizona and Montana. The West which we know today is not very wild anymore. {{44}} it is very beautiful, {{45}} a colorful history that holds magic for many people.",
+          "sharedOptions": [
+            { "label": "A", "text": "exhilarant" }, { "label": "B", "text": "changed" }, { "label": "C", "text": "looked for" }, { "label": "D", "text": "discouraged" }, { "label": "E", "text": "coast" },
+            { "label": "F", "text": "but" }, { "label": "G", "text": "roads" }, { "label": "H", "text": "supported" }, { "label": "I", "text": "welfare" }, { "label": "J", "text": "occurrences" },
+            { "label": "K", "text": "populous" }, { "label": "L", "text": "with" }, { "label": "M", "text": "as" }, { "label": "N", "text": "escape" }, { "label": "O", "text": "history" },
+            { "label": "P", "text": "adventures" }, { "label": "Q", "text": "and" }, { "label": "R", "text": "disappointed" }, { "label": "S", "text": "diamond" }, { "label": "T", "text": "turned to" },
+            { "label": "U", "text": "local" }, { "label": "V", "text": "frightening" }, { "label": "W", "text": "society" }, { "label": "X", "text": "curious" }, { "label": "Y", "text": "native" },
+            { "label": "Z", "text": "gold" }, { "label": "AA", "text": "avenue" }, { "label": "BB", "text": "popular" }, { "label": "CC", "text": "events" }, { "label": "DD", "text": "accidents" }
+          ]
+        },
+        {
+          "id": "test-6-reading-b-passage-1",
+          "title": "Part II Reading Comprehension - Section B - Passage 1",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-6-q46",
+              "number": 46,
+              "text": "What can be inferred about the modern media of communication?",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "Radio programs evoke deep thinking in audience." }, { "label": "B", "text": "Television talk shows expose more serious social problems with deep insight." }, { "label": "C", "text": "Newspapers tend to be more objective review of problems." }, { "label": "D", "text": "Audience are more in favor of real competition on the political scene not represented via media." } ]
+            },
+            {
+              "id": "test-6-q47",
+              "number": 47,
+              "text": "Talk shows are mentioned to illustrate that",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "the interviewees can express their own ideas as freely as possible." }, { "label": "B", "text": "they can provide information and stimulate healthy discussion." }, { "label": "C", "text": "the interviewer manipulates public idea to a great extent." }, { "label": "D", "text": "television plays a greater role in promoting knowledge spread." } ]
+            },
+            {
+              "id": "test-6-q48",
+              "number": 48,
+              "text": "How does the new elite influence the elected government?",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "They stick to an ideal and fight for it." }, { "label": "B", "text": "They can be constructive to those political officials in their campaigns for election." }, { "label": "C", "text": "They stealthily modify the constitution." }, { "label": "D", "text": "They unambiguously provide information without bias." } ]
+            },
+            {
+              "id": "test-6-q49",
+              "number": 49,
+              "text": "The new elite may temper the democracy in a bad way by",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "devoting to a public cause." }, { "label": "B", "text": "forgetting public interest." }, { "label": "C", "text": "striving for a public position." }, { "label": "D", "text": "appealing to a public institution." } ]
+            },
+            {
+              "id": "test-6-q50",
+              "number": 50,
+              "text": "What is the relationship between mediacracy and democracy according to the author?",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "Mediacracy may displace representative democracy." }, { "label": "B", "text": "They facilitate each other." }, { "label": "C", "text": "Representative democracy may be upgraded by mediacracy." }, { "label": "D", "text": "Mediacracy may be manipulated by representative democracy." } ]
+            }
+          ],
+          "content": "To be sure, the times and the setting differ. While we may still have Cleons and Cleophons vying for power on the political scene, and competing for elected office, there are also other ways through which influence and power can be gained in our age, ways offered by the modern media of communication. These include newspapers, radio, and television. The first have some tradition of a detached analysis and evaluation of political issues, a tradition which is still continued in some publications. The other two, due to their very nature, are more likely to generate intellectual bubbles than serious reflection. This may be particularly true of television. Moreover, the interviewers on these media wield considerable power in setting up the discussion, in selecting the interviewees, in directing the talk with them, and between them and the public. This transpires on the proliferating \"talk-shows,\" which captivate the attention of the American public. According to one report, one half of American adults listen to such talks at least once a week, and some talk-show hosts, like Rush Limbaugh, reach an audience of 20 million people.\n\nAll this involves the political ascendancy of the assorted journalists, television personalities, talk-radio hosts and the like. The gate is open to entertainers, ex-politicians, adventurers, to enter the arena of politics-ostensibly to provide information and to stimulate healthy discussion, but all too often to manipulate and control public opinion. Some of these new elites may be genuinely committed to an ideal, while others are self-seeking individuals trying to gain fame and power for themselves with little concern for the public weal. Moreover, the more popular personalities of the media can be of great help to political officials and candidates, and thus exert an indirect influence on the composition of the elected government.\n\nThus there is a possibility that in American democracy the leadership will at least partly slip into the hands of unelected and technically extra-constitutional individuals, eager for popularity and personal success and oblivious of public responsibility. This opens the door for demagoguery and may undermine the authority and stature of elected officials. Even if it would be an exaggeration to expect that this media elite will replace the official people's representatives, and make the latter completely dependent on the former, the ascendancy of the mediacracy threatens the present institutions and may facilitate the degeneration of representative democracy. We may well follow the pattern of decline of ancient Athens in our own peculiar modern way."
+        },
+        {
+          "id": "test-6-reading-b-passage-2",
+          "title": "Part II Reading Comprehension - Section B - Passage 2",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            { "id": "test-6-q51", "number": 51, "text": "Why does the cover story explore Tony Blair's alternative job prospects?", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "People suspect that he can not serve a third term." }, { "label": "B", "text": "His grand election victories find him a way into other fields." }, { "label": "C", "text": "People suspect that he cheated in the former elections." }, { "label": "D", "text": "He did underhanded things so as not to be worthy of trust." } ] },
+            { "id": "test-6-q52", "number": 52, "text": "According to the author, what did Tony Blair NOT do?", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "He committed a serious mistake concerning the problem of Iraq." }, { "label": "B", "text": "He misinterpreted the situation in Iraq." }, { "label": "C", "text": "He undermined the image of his party." }, { "label": "D", "text": "He showed sympathy to Saddam Hussein." } ] },
+            { "id": "test-6-q53", "number": 53, "text": "What is Bremer's idea of Blair's claim of “massive evidence of a huge system of clandestine laboratories”?", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "It is a new way to reinforce the American security." }, { "label": "B", "text": "It condemns America to danger." }, { "label": "C", "text": "It is intended to work against American policy." }, { "label": "D", "text": "It is indeed invaluable because it is secret." } ] },
+            { "id": "test-6-q54", "number": 54, "text": "What is implied about political claims?", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "They are usually confirmed by solid evidence." }, { "label": "B", "text": "They are often proved by adequate information." }, { "label": "C", "text": "Statistics are often made deceptively reasonable." }, { "label": "D", "text": "Close examination often crystalize the truth." } ] },
+            { "id": "test-6-q55", "number": 55, "text": "What can be inferred about Tony Blair in the last paragraph?", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "He lost trust from the public." }, { "label": "B", "text": "He is trying to compensate in other fields." }, { "label": "C", "text": "He is preoccupied with election campaigns." }, { "label": "D", "text": "He merits being listened to." } ] }
+          ],
+          "content": "It may seem extraordinary that, with two spectacular election victories under his belt and a third likely, there should be so much speculation about whether Tony Blair can survive 2004 to the extent that our cover story this week explores his alternative job prospects. Yet every day, it becomes clearer that the Prime Minister's error over Iraq was so catastrophic, so patent an example of bad judgement, so contrary to the spirit of his party as to pollute the entire new Labour project. Nobody should shed tears for Saddam Hussein or doubt that most Iraqis rejoice at his downfall and subsequent capture. But what supposedly made Saddam different from dozens of other brutal dictators around the world (of whom some are treated as friends of the west) was the threat he posed to British and American security. Not a scrap of support for the existence of such a threat has been found. If, as Mr. Blair says, there is now \"massive evidence of a huge system of clandestine laboratories\", why can the laboratories themselves not be found? The claim seemed so absurd to Paul Bremer, America's equivalent of a colonial governor in Iraq, that until told that it had been made by the PM, he suggested it was part of some devious attempt to undermine US and British policy.\n\nMost political claims can be justified one way or another with sufficient massage of facts and figures; alternatively, it can be denied the claims were ever made in the form that people thought they were made. But Mr. Blair was unequivocal. Saddam had weapons of mass destruction; no ifs and buts; the PM knew more than he could tell us. Now the news from Iraq is just as unequivocal. Nobody is bothering to look for WMDs any more. Mr. Blair's insistence that he really meant “programmes\" or just \"intentions to acquire\" makes him look both comic and pathetic.\n\nThe result is that everything else his government says and does becomes suspect. Are the figures that show progress towards eradicating child poverty also sexed up? Can we believe anything we are told about improvements in health or education? Are the imminent terrorist attacks of which ministers warn as illusory as Saddam's WMDs? Mr Blair's authority is now so eroded that he does not get a hearing even when he deserves it. For top-up university fees, for example, there is a strong social democratic case to be made. But nobody would listen to Mr. Blair making it, even if he were capable of doing so. The whole issue has become so bound up with the political fallout from Iraq that there is almost no chance of a serious public debate."
+        },
+        {
+          "id": "test-6-reading-b-passage-3",
+          "title": "Part II Reading Comprehension - Section B - Passage 3",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            { "id": "test-6-q56", "number": 56, "text": "It can be inferred from the first paragraph that", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "strict laws are brought into effect concerning treatment of the elderly." }, { "label": "B", "text": "mistreatment of the elderly is dealt with effectively in the States." }, { "label": "C", "text": "substantial abuses of the elderly are detected all over the country." }, { "label": "D", "text": "maltreatment of the elderly is not complained about as it should be." } ] },
+            { "id": "test-6-q57", "number": 57, "text": "What is one of the findings of the cited study?", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "Senior people are more vulnerable to mistreatment if they have many requirements." }, { "label": "B", "text": "It is difficult to keep better records of domestic abuse." }, { "label": "C", "text": "Compulsory reporting contributes to higher incidence of investigation." }, { "label": "D", "text": "Abuse of adults over 60 is reported more than that of those under 55." } ] },
+            { "id": "test-6-q58", "number": 58, "text": "What can be said about domestic eider abuse?", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "People are often abused because of bad mental condition." }, { "label": "B", "text": "Adults are better treated at home than at care facilities." }, { "label": "C", "text": "Those senior people who are weak physically or mentally sometimes become a victim to family abuse." }, { "label": "D", "text": "It renders old people more dependent on others for their daily living." } ] },
+            { "id": "test-6-q59", "number": 59, "text": "What is the drawback of the elder abuse reporting system?", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "The information collecting and laws concerning elder abuse are not consistent." }, { "label": "B", "text": "Reports of elder abuse received by the states are often alleged to be true." }, { "label": "C", "text": "The investigation and substantiation tend to be time-consuming." }, { "label": "D", "text": "It only aims to deal with some mistreatment of the elder that takes place at home." } ] },
+            { "id": "test-6-q60", "number": 60, "text": "It can be inferred from the last two paragraphs that the model elder abuse reporting system", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "is not shared by both adults and children." }, { "label": "B", "text": "does not apply effectively everywhere." }, { "label": "C", "text": "deals with children abuse more accurately." }, { "label": "D", "text": "works better with elder abuse." } ] }
+          ],
+          "content": "Although all states have laws and services in place to detect domestic elder abuse, only about one in five actual cases is reported and substantiated. How cases are detected and dispatched differs significantly across the nation because laws and regulations vary greatly.\n\nIn particular, a University of Iowa, Ames, study found that states that demand mandatory reporting and tracking of domestic elder abuse have much higher investigation rates than those without these requirements.\n\nDomestic elder abuse is the victimization of adults or dependent/ vulnerable adults age 60 and older — age 65 and older in California, Maryland, and Nebraska; age 55 and older in Alabama — who live in private residences, not care facilities. Dependent adults are unable to care for themselves as a result of a physical or mental condition and depend on others to help them with tasks of daily living.\n\n\"Our findings suggest that improvements and standardization are needed nationwide in how information on elder abuse is collected and how state laws are created,\" says Gerald Jogerst, associate professor and interim head of family medicine in the Roy J. and Lucille A. Carver College of Medicine and lead investigator in the study.\n\nA \"report\" is an allegation or suspicion of maltreatment received by a state's adult protective service; an \"investigation\" involves actually going to a potential victim's home to see whether abuse is taking place; and \"substantiation\" is the finding of offenses as defined by that state's law.\n\nThe researchers found that domestic elder abuse reports varied from 4.5 per 1,000 elders in New Hampshire to 14.6 in California. \"The range of reporting rates is very high, and is one of the indicators that there is high variability in how states document elder abuse.\" Investigation rates ranged from 0.5 per 1,000 in Wyoming to 12.1 in Texas. Substantiations ranged from 0.1 per 1,000 in Wyoming to 8.6 in Minnesota. Forty-five percent of cases investigated were classified as actual abuse according to state laws.\n\n\"The National Association of Adult Protective Services has a model reporting system for states to mimic. However, some states are hindered in implementing the model because their adult and child protection services share a computerized system,\" points out Jeanette Daly, geriatric nurse researcher in family medicine and the study's co-principal investigator.\n\nThe researchers also found that states where investigators handle only elder abuse cases had a nearly 50% substantiation ratio compared to 34% where investigators handle both child and elder abuse cases. \"This substantiation difference may exist because investigators devoted to one type of abuse probably acquire more expertise by doing more elder abuse investigations,\" Jogerst concludes."
+        },
+        {
+          "id": "test-6-reading-c",
+          "title": "Part II Reading Comprehension - Section C",
+          "instructions": "In the following passage, five sentences have been removed from the original text.",
+          "questions": [
+            { "id": "test-6-q61", "number": 61, "text": "Choose the best sentence for blank 61", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "Greater equality in the performance..." }, { "label": "B", "text": "Family therapists..." }, { "label": "C", "text": "The challenge now is..." }, { "label": "D", "text": "In terms of time..." }, { "label": "E", "text": "Edgar and Glazer found..." }, { "label": "F", "text": "Mothers are less likely..." } ] },
+            { "id": "test-6-q62", "number": 62, "text": "Choose the best sentence for blank 62", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "Greater equality in the performance..." }, { "label": "B", "text": "Family therapists..." }, { "label": "C", "text": "The challenge now is..." }, { "label": "D", "text": "In terms of time..." }, { "label": "E", "text": "Edgar and Glazer found..." }, { "label": "F", "text": "Mothers are less likely..." } ] },
+            { "id": "test-6-q63", "number": 63, "text": "Choose the best sentence for blank 63", "type": "multiple-choice", "correctAnswer": "F", "options": [ { "label": "A", "text": "Greater equality in the performance..." }, { "label": "B", "text": "Family therapists..." }, { "label": "C", "text": "The challenge now is..." }, { "label": "D", "text": "In terms of time..." }, { "label": "E", "text": "Edgar and Glazer found..." }, { "label": "F", "text": "Mothers are less likely..." } ] },
+            { "id": "test-6-q64", "number": 64, "text": "Choose the best sentence for blank 64", "type": "multiple-choice", "correctAnswer": "E", "options": [ { "label": "A", "text": "Greater equality in the performance..." }, { "label": "B", "text": "Family therapists..." }, { "label": "C", "text": "The challenge now is..." }, { "label": "D", "text": "In terms of time..." }, { "label": "E", "text": "Edgar and Glazer found..." }, { "label": "F", "text": "Mothers are less likely..." } ] },
+            { "id": "test-6-q65", "number": 65, "text": "Choose the best sentence for blank 65", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "Greater equality in the performance..." }, { "label": "B", "text": "Family therapists..." }, { "label": "C", "text": "The challenge now is..." }, { "label": "D", "text": "In terms of time..." }, { "label": "E", "text": "Edgar and Glazer found..." }, { "label": "F", "text": "Mothers are less likely..." } ] }
+          ],
+          "content": "There are still significant gaps between women and men in terms of their involvement in family life, the tasks they perform and the responsibilities they take. Yet, at least in developed Western countries, both women and men express a desire for greater equality in family life. It is evident that in terms of attitudes and beliefs, the problem cannot simply be thought of in terms of women wanting men to share more equally and men being reluctant to do so. {{61}} These are becoming key concerns of researchers, policy makers, community workers and, more importantly, family members themselves.\n\nDespite the significant increase in the number of women with dependent children who are in the paid workforce, Australian research studies over the last 15 years are consistent in showing that divisions of labor for family work are very rigid indeed. {{62}}\n\nDivisions of labor for family work are particularly problematic in families in which both parents are employed outside the home. Employed mothers adjust their jobs and personal lives to accommodate family commitments more than employed fathers do. {{63}} Mothers spend less time on personal leisure activities than their partners, a factor that often leads to resentment.\n\nThe parental role is central to the stress-related anxiety reported by employed mothers, and a major contributor to such stress is their taking a greater role in child care. {{64}} A mother's wanting her partner to do more housework and child care is a better predictor of poor family adjustment than is actual time spent by fathers in these tasks. It is this desire, together with its lack of fulfillment in most families, which bring about stress in the female parent.\n\n{{65}} Yet, a father accepting responsibility for behavior problems is linked with positive outcomes.",
+          "sharedOptions": [
+            { "label": "A", "text": "Greater equality in the performance of family work is associated with lower levels of family stress and higher self-esteem." },
+            { "label": "B", "text": "Family therapists and social work researchers are increasingly defining family problems in terms of a lack of involvement and support from fathers and are concerned with difficulties involved in having fathers take responsibility for the solution of family and child behavior problems." },
+            { "label": "C", "text": "The challenge now is to develop policies and practices based on a presumption of shared responsibility between men and women." },
+            { "label": "D", "text": "In terms of time, women perform approximately 90 per cent of child care tasks and 70 per cent of all family work, and only 14 per cent of fathers are highly participant in terms of time spent on family work." },
+            { "label": "E", "text": "Edgar and Glazer found that close to 90 per cent of both husbands and wives agreed that the man should share equally in child care, yet 55 per cent of husbands and wives claimed that the men actually did this." },
+            { "label": "F", "text": "Mothers are less likely to work overtime and are more likely to take time off work to attend to children's needs." }
+          ]
+        },
+        {
+          "id": "test-6-writing-a",
+          "title": "Part III Writing - Section A",
+          "instructions": "Summarize the article in no more than 150 words.",
+          "questions": [
+            { "id": "test-6-q66", "number": 66, "text": "Summarize the article in no more than 150 words.", "type": "writing", "correctAnswer": "Living away from your country can be a really interesting and unforgettable experience, but at the same time it has very important effects on one's life. Here are three of them. The major effect, and also a very common one, is that once you start a regular life away from home, you miss everything. This fact doesn't mean that you are unhappy but that you are aware of being on your own. Little details like sitting on a Sunday morning watching TV alone instead of helping your dad organize his things or having a nice chat with your mom makes you realize how valuable your family really is. Living alone makes you homesick. The second main effect would be learning how to accept another type of society and culture into your daily life. Since you are living in a place with different customs and traditions, you have to be able to develop yourself in unknown conditions. This means making new friends, learning other points of view, accepting different opinions and values. Nevertheless, the best thing to do would be to stick to your most important values and, according to them. change those that you believe could be improved. The most significant effect of living away from home is the independent behavior that grows inside of you. Living independently gives you a lot of experiences toward organizing your life. Since it is up to you and no one else to clean your room, wash your clothes, and organize your expenses, it is predictable that you will have a good and strong sense of responsibility. Living far frorn home, even for a short period of time, can be really hard at the beginning. Yet it helps us appreciate everything we have. Not realizing how lucky we are can be a really bad mistake because things don't last forever and we have to make the best out of them." }
+          ],
+          "content": "ALL over the world, more boys are born than girls. Evolutionary biologists believe that this is because boys (and, indeed, males in general) are more likely to die at a given age than are their female contemporaries. The imbalance at birth thus means that the sex ratio balances at the age when people are reproducing. But for decades there has been a puzzling trend in the boy/girl ratio. In Britain, as well as in the United States and Canada, the proportion of boys being born is dropping. No one knows why, although it has been suggested, somewhat controversially, that the trend is due to chemical pollutants that are mimicking the effects of sex hormones.\n\nAnd yet there is another recent trend that may have something to do with it. During the same period. the proportion of single mothers has been increasing. The reasons for this are less puzzling, but as the Italian nominee to the European commission, Rocco Buttiglione, found out this week when he apparently suggested that single mothers were not very good as parents, it is no less controversial. The question is, could the two trends be linked? Can household arrangements affect the human sex ratio?\n\nAccording to Karen Norberg, of the National Bureau of Economic Research in Cambridge, Massachusetts, they can. In a review of data from almost 60,000 American families, Dr. Norberg found that the chance of a woman giving birth to a boy rather than a girl is higher if she has been living with a man before the child was conceived. To be specific, for parents who were living together, boys were born 51.5% of the time, while when the parents were not cohabiting only 49.9% of births were male. This difference may seem small, but statistically it is highly significant, which suggests it is the result of evolution. Dr. Norberg's paper was published this week in the Proceedings of the Royal Society.\n\nActually, as with so much else in biology, Charles Darwin got there first. In \"The Descent of Man\", he referred to studies showing that among children born out of wedlock there were more girls than boys. Dr. Norberg's work reinforces the point, and also shows that it is not formal marriage, but actual cohabitation, that is the decisive factor. What neither Darwin's nor Dr. Norberg's work shows, though, is why.\n\nThere are some clues. In work on other mammals, researchers have found an association between hormones, the frequency of copulation, and the sex of the offspring. In other words, there is a way the body might \"know\" if it is cohabiting with someone by the amount of sex it is getting, since copulation changes the levels of various hormones.\n\nIt is easy to speculate. Perhaps same-sex children are easier for a lone parent to rear. Perhaps parents pass on different kinds of benefits to same-sex offspring and opposite-sex offspring. Perhaps a father helps his son to learn sex-specific skills, as in bird songs. Perhaps boys are simply more costly to raise than girls, and would thus overtax the resources of a lone parent. However, a more controversial possibility is that — in a Darwinian sense only — Mr Buttiglione is right that two parents are sometimes better than one.\n\nIt is well established, in both humans and other species, that successful males have lots of offspring, while unsuccessful ones have few or none. Females, by contrast, show a smaller range of reproductive output, with most having some offspring, but none having as many as the most successful males. The upshot is that it makes evolutionary sense to have sons when circumstances favor them becoming big, strong, clever and handsome (and therefore attractive to women), but when they do not, it is better for a woman to have daughters, most of whom will find a mate even in tough times. That way, a woman will maximize the number of grandchildren she has. In the case of humans, circumstances favoring the raising of strong, healthy children could include having two parents around, since humans are unusual among mammals in that fathers are often involved in parental care.\n\nOf course, even if this evolutionary explanation of Dr. Norberg's result does turn out to be correct, it probably does not carry any lessons for the modern world. Such biological patterns would have been established hundreds of thousands — or possibly millions — of years ago. Bringing up children alone in a rich, industrialized society is a rather different proposition from bringing them up in a hunter-gatherer band, and there is no reason to suppose they would be at a disadvantage now. Except, perhaps, that with a surplus of women around, it will be even harder than it is today for a girl to find a suitable husband when she grows up."
+        },
+        {
+          "id": "test-6-writing-b",
+          "title": "Part III Writing - Section B",
+          "instructions": "Write an essay.",
+          "questions": [
+            { "id": "test-6-q67", "number": 67, "text": "Topic: Effects of Living in a Foreign Country", "type": "writing", "correctAnswer": "Living away from your country can be a really interesting and unforgettable experience, but at the same time it has very important effects on one's life. Here are three of them. The major effect, and also a very common one, is that once you start a regular life away from home, you miss everything. This fact doesn't mean that you are unhappy but that you are aware of being on your own. Little details like sitting on a Sunday morning watching TV alone instead of helping your dad organize his things or having a nice chat with your mom makes you realize how valuable your family really is. Living alone makes you homesick. The second main effect would be learning how to accept another type of society and culture into your daily life. Since you are living in a place with different customs and traditions, you have to be able to develop yourself in unknown conditions. This means making new friends, learning other points of view, accepting different opinions and values. Nevertheless, the best thing to do would be to stick to your most important values and, according to them. change those that you believe could be improved. The most significant effect of living away from home is the independent behavior that grows inside of you. Living independently gives you a lot of experiences toward organizing your life. Since it is up to you and no one else to clean your room, wash your clothes, and organize your expenses, it is predictable that you will have a good and strong sense of responsibility. Living far frorn home, even for a short period of time, can be really hard at the beginning. Yet it helps us appreciate everything we have. Not realizing how lucky we are can be a really bad mistake because things don't last forever and we have to make the best out of them." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "test-7",
+      "title": "Model Test 7",
+      "sections": [
+        {
+          "id": "test-7-listening-a",
+          "title": "Part I Listening Comprehension - Section A",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%207.mp3",
+          "instructions": "In this part, you will hear 10 short conversations. At the end of each conversation, a question will be asked about what is said. Each conversation and the question will be spoken only once. When you hear the question, read the four choices of the answer given and choose the best one by marking the corresponding letter A, B, C, or D on your Answer Sheet I.",
+          "questions": [
+            { "id": "test-7-q1", "number": 1, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "A formal suit for her graduation ceremony." }, { "label": "B", "text": "A casual dress for a small gathering." }, { "label": "C", "text": "A fantastic dress for her performance." }, { "label": "D", "text": "A warm coat for cold days." } ] },
+            { "id": "test-7-q2", "number": 2, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "To help their friend do something voluntarily." }, { "label": "B", "text": "To travel in a group for sightseeing." }, { "label": "C", "text": "To list some places and get information for them." }, { "label": "D", "text": "To write some travel articles." } ] },
+            { "id": "test-7-q3", "number": 3, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "In the hall of a hotel." }, { "label": "B", "text": "In their room of a hotel." }, { "label": "C", "text": "In their relative's house." }, { "label": "D", "text": "In a restaurant." } ] },
+            { "id": "test-7-q4", "number": 4, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "The woman has lost a cat recently when he carried it in a bag." }, { "label": "B", "text": "The woman doesn't want the other people to celebrate his birthday." }, { "label": "C", "text": "The woman almost told Josh the secret in advance." }, { "label": "D", "text": "The woman was sorry for the lost cat." } ] },
+            { "id": "test-7-q5", "number": 5, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "An insurance agent." }, { "label": "B", "text": "A saleswoman of furniture." }, { "label": "C", "text": "A bank teller." }, { "label": "D", "text": "An architect." } ] },
+            { "id": "test-7-q6", "number": 6, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "He's bought a stereo with a lower price." }, { "label": "B", "text": "His new stereo has a good sounding system." }, { "label": "C", "text": "He's happy because he's just got an expensive stereo." }, { "label": "D", "text": "The woman doesn't know why he's so glad." } ] },
+            { "id": "test-7-q7", "number": 7, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "The man is lucky and he's passed his exam." }, { "label": "B", "text": "The man has cleaned his sweater." }, { "label": "C", "text": "The man finally finished his test on time." }, { "label": "D", "text": "The man put on his sweater in a hurry." } ] },
+            { "id": "test-7-q8", "number": 8, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "To give a present to the dean." }, { "label": "B", "text": "To give a party for the dean's retirement." }, { "label": "C", "text": "To give a birthday party for John." }, { "label": "D", "text": "To give a party for John's retirement." } ] },
+            { "id": "test-7-q9", "number": 9, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "The expenses of their tour." }, { "label": "B", "text": "The professor's plan of the concert." }, { "label": "C", "text": "The way of their traveling." }, { "label": "D", "text": "The places they're going to travel to." } ] },
+            { "id": "test-7-q10", "number": 10, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "He is asking for an absence for his math class." }, { "label": "B", "text": "He has a sore throat and cannot call the professor himself." }, { "label": "C", "text": "He lives two doors down from the professor." }, { "label": "D", "text": "He feels ashamed for talking to the professor about his problem." } ] }
+          ]
+        },
+        {
+          "id": "test-7-listening-b",
+          "title": "Part I Listening Comprehension - Section B",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%207.mp3",
+          "instructions": "In this part, you will hear two mini-talks. While you listen, complete the sentences in your Answer Sheet II for Questions 11 to 20 by writing NO MORE THAN THREE WORDS in each sentence. You will hear each talk or conversation TWICE.",
+          "questions": [
+            { "id": "test-7-q11", "number": 11, "text": "Even if your manners are __________ in your own culture, you may sometimes upset people in Britain.", "type": "fill-blank", "correctAnswer": "perfectly normal" },
+            { "id": "test-7-q12", "number": 12, "text": "British people probably don't know much about your country or culture, and fear they might __________ you by speaking inappropriately.", "type": "fill-blank", "correctAnswer": "offend" },
+            { "id": "test-7-q13", "number": 13, "text": "The easiest way for British people to avoid embarrassment is not to __________ and start speaking to you.", "type": "fill-blank", "correctAnswer": "go up" },
+            { "id": "test-7-q14", "number": 14, "text": "British people may worry about __________ your own personal space.", "type": "fill-blank", "correctAnswer": "interfering with" },
+            { "id": "test-7-q15", "number": 15, "text": "If you are a woman, a British man may worry that if he starts speaking to you, you will feel __________", "type": "fill-blank", "correctAnswer": "threatened" },
+            { "id": "test-7-q16", "number": 16, "text": "The Nobel Prizes are awarded to those who shall have conferred __________ on mankind during the preceding year.", "type": "fill-blank", "correctAnswer": "the greatest benefit" },
+            { "id": "test-7-q17", "number": 17, "text": "Nobel was a conscientious __________", "type": "fill-blank", "correctAnswer": "industrialist" },
+            { "id": "test-7-q18", "number": 18, "text": "Nobel contributed to the inventions of synthetic rubber, __________ and synthetic leather.", "type": "fill-blank", "correctAnswer": "artificial silk" },
+            { "id": "test-7-q19", "number": 19, "text": "Winning a Nobel Prize is a __________", "type": "fill-blank", "correctAnswer": "life-changing honor" },
+            { "id": "test-7-q20", "number": 20, "text": "The award leads to worldwide recognition highlighting one's life work and __________ to continue and further the mission.", "type": "fill-blank", "correctAnswer": "providing the funds" }
+          ]
+        },
+        {
+          "id": "test-7-listening-c",
+          "title": "Part I Listening Comprehension - Section C",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%207.mp3",
+          "instructions": "Short answers.",
+          "questions": [
+            { "id": "test-7-q21", "number": 21, "text": "According to parapsychologists, what natural ability do humans have?", "type": "fill-blank", "correctAnswer": "They can sense when someone is looking at them." },
+            { "id": "test-7-q22", "number": 22, "text": "In the first experiment, how long did Baker stare at the unknowing people in public?", "type": "fill-blank", "correctAnswer": "For 5 to 15 minutes." },
+            { "id": "test-7-q23", "number": 23, "text": "What did Baker ask the subjects to do in the second experiment?", "type": "fill-blank", "correctAnswer": "To write down when they felt they were being stared at and when they weren't." },
+            { "id": "test-7-q24", "number": 24, "text": "What makes up the 70 percent of communication?", "type": "fill-blank", "correctAnswer": "Gestures and nonverbal actions." },
+            { "id": "test-7-q25", "number": 25, "text": "What should men do before they are introduced to someone important?", "type": "fill-blank", "correctAnswer": "Stand up to show politeness and respect." },
+            { "id": "test-7-q26", "number": 26, "text": "What is common in introduction in the East?", "type": "fill-blank", "correctAnswer": "Bowing." },
+            { "id": "test-7-q27", "number": 27, "text": "What is harmful to both nature and human life?", "type": "fill-blank", "correctAnswer": "The waste produced by major industries and people." },
+            { "id": "test-7-q28", "number": 28, "text": "What is one of the main causes of the large amount of dangerous waste?", "type": "fill-blank", "correctAnswer": "People don't realize how serious the dangerous waste problem is." },
+            { "id": "test-7-q29", "number": 29, "text": "Why are industries unwilling to deal with the dangerous waste problem?", "type": "fill-blank", "correctAnswer": "Because of the related expenses." },
+            { "id": "test-7-q30", "number": 30, "text": "How much of the waste can be reduced by using existing technologies and methods?", "type": "fill-blank", "correctAnswer": "One third." }
+          ]
+        },
+        {
+          "id": "test-7-use-of-english-a",
+          "title": "Part II Use of English - Section A",
+          "instructions": "Cloze test.",
+          "questions": [
+            { "id": "test-7-q31", "number": 31, "text": "Fill in blank 31.", "type": "fill-blank", "correctAnswer": "achieve" },
+            { "id": "test-7-q32", "number": 32, "text": "Fill in blank 32.", "type": "fill-blank", "correctAnswer": "ethic" },
+            { "id": "test-7-q33", "number": 33, "text": "Fill in blank 33.", "type": "fill-blank", "correctAnswer": "verbal" },
+            { "id": "test-7-q34", "number": 34, "text": "Fill in blank 34.", "type": "fill-blank", "correctAnswer": "above all" },
+            { "id": "test-7-q35", "number": 35, "text": "Fill in blank 35.", "type": "fill-blank", "correctAnswer": "meant" },
+            { "id": "test-7-q36", "number": 36, "text": "Fill in blank 36.", "type": "fill-blank", "correctAnswer": "status" },
+            { "id": "test-7-q37", "number": 37, "text": "Fill in blank 37.", "type": "fill-blank", "correctAnswer": "while" },
+            { "id": "test-7-q38", "number": 38, "text": "Fill in blank 38.", "type": "fill-blank", "correctAnswer": "effort" },
+            { "id": "test-7-q39", "number": 39, "text": "Fill in blank 39.", "type": "fill-blank", "correctAnswer": "propelled" },
+            { "id": "test-7-q40", "number": 40, "text": "Fill in blank 40.", "type": "fill-blank", "correctAnswer": "set up" },
+            { "id": "test-7-q41", "number": 41, "text": "Fill in blank 41.", "type": "fill-blank", "correctAnswer": "although" },
+            { "id": "test-7-q42", "number": 42, "text": "Fill in blank 42.", "type": "fill-blank", "correctAnswer": "accounts for" },
+            { "id": "test-7-q43", "number": 43, "text": "Fill in blank 43.", "type": "fill-blank", "correctAnswer": "strive to" },
+            { "id": "test-7-q44", "number": 44, "text": "Fill in blank 44.", "type": "fill-blank", "correctAnswer": "distinguished" },
+            { "id": "test-7-q45", "number": 45, "text": "Fill in blank 45.", "type": "fill-blank", "correctAnswer": "sight" }
+          ],
+          "content": "I don't view my important characteristics as different from those my family has imparted on me throughout the years. The pride, care, dedication, effort, and hard-working attitude that I view as critical to any success I may {{31}} have all descended upon me courtesy of my close-knit, Italian family.\n\nWhen I was born as the child of two immigrants who came here with nothing, only one possessing a college degree, the importance of a good work {{32}} was stressed by my parents from day one. Through their actions in their jobs and through the {{33}} lessons on life I began to get from the moment I could communicate, they set an example for me to follow, one of being proud of what I do, no matter what it was, and {{34}} to care about everything I do as if everything had a big impact. This {{35}} that everything had to be done right and be done well. Undoubtedly, following their own advice carried my parents from their {{36}} as blue-collar immigrants who labored as factory workers to white-collar citizens, one of whom owns his own business {{37}} the other works as a bank officer. Those ascensions from nothing only served as other examples for me to follow, examples that delineated the ability for a person to improve through {{38}}\n\nAnother quotation from my father {{39}} me from the time I started school to today, \"No matter what you do, you have to be the best.\" This {{40}} the inner drive that motivates all my actions. It was what forced me to try hard in school {{41}} I didn't know English well enough to always understand the teacher. It's the reason why I have developed my skills. It {{42}} my dedication to all activities, and to the hard work. I put into all of them as I {{43}} lead both in class and out. Essentially, my parentage was the first quality that {{44}} me as a leader. Despite all the talk of being a leader, I have never lost {{45}} of the importance of my family. I know I owe my family everything, and, as a result I'll always be close with it.",
+          "sharedOptions": [
+            { "label": "A", "text": "approach" }, { "label": "B", "text": "ethic" }, { "label": "C", "text": "verbal" }, { "label": "D", "text": "above all" }, { "label": "E", "text": "convinced" },
+            { "label": "F", "text": "while" }, { "label": "G", "text": "effort" }, { "label": "H", "text": "strength" }, { "label": "I", "text": "meant" }, { "label": "J", "text": "better" },
+            { "label": "K", "text": "achieve" }, { "label": "L", "text": "propelled" }, { "label": "M", "text": "struck" }, { "label": "N", "text": "set up" }, { "label": "O", "text": "although" },
+            { "label": "P", "text": "accounts for" }, { "label": "Q", "text": "figures out" }, { "label": "R", "text": "strive to" }, { "label": "S", "text": "go in for" }, { "label": "T", "text": "distinguished" },
+            { "label": "U", "text": "set apart" }, { "label": "V", "text": "estranged" }, { "label": "W", "text": "sight" }, { "label": "X", "text": "perspective" }, { "label": "Y", "text": "ethnic" },
+            { "label": "Z", "text": "since" }, { "label": "AA", "text": "spoken" }, { "label": "BB", "text": "by contrast" }, { "label": "CC", "text": "status" }, { "label": "DD", "text": "expectations" }
+          ]
+        },
+        {
+          "id": "test-7-reading-b-passage-1",
+          "title": "Part II Reading Comprehension - Section B - Passage 1",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-7-q46",
+              "number": 46,
+              "text": "According to the passage, memory is a prerequisite for us to",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "identify suspicious behavior." }, { "label": "B", "text": "test adaptive ability in an evolutionary process." }, { "label": "C", "text": "learn and understand new knowledge." }, { "label": "D", "text": "forget the previous experiences." } ]
+            },
+            {
+              "id": "test-7-q47",
+              "number": 47,
+              "text": "From the evolutionary point of view,",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "forgetting for lack of practice tends to be obviously inadaptive." }, { "label": "B", "text": "if a person gets very forgetful of a sudden he must be very adaptive." }, { "label": "C", "text": "the gradual process of forgetting is an indication of an individual's adaptability." }, { "label": "D", "text": "sudden forgetting may bring about adaptive consequences." } ]
+            },
+            {
+              "id": "test-7-q48",
+              "number": 48,
+              "text": "Which is the proper explanation of the word \"fade\" (L.2, para.3)?",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "Disappear." }, { "label": "B", "text": "Decrease." }, { "label": "C", "text": "Demonstrate." }, { "label": "D", "text": "Declare." } ]
+            },
+            {
+              "id": "test-7-q49",
+              "number": 49,
+              "text": "According to the passage, if a person never forgot,",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "he would survive best." }, { "label": "B", "text": "he would have a lot of trouble." }, { "label": "C", "text": "his ability to learn would be enhanced." }, { "label": "D", "text": "the evolution of memory would stop." } ]
+            },
+            {
+              "id": "test-7-q50",
+              "number": 50,
+              "text": "From the last paragraph we know that",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "forgetfulness is a response to learning." }, { "label": "B", "text": "the memory storage system is an exactly balanced input-output system." }, { "label": "C", "text": "memory is a compensation for forgetting." }, { "label": "D", "text": "the capacity of a memory storage system is limited because forgetting occurs." } ]
+            }
+          ],
+          "content": "That experiences influence subsequent behavior is evidence of an obvious but remarkable activity called remembering. Learning could not occur without the function popularly named memory. Constant practice has such an effect on memory as to lead to skillful performance on the piano, to recitation of a poem, and even to reading and understanding these words. So-called intelligent behavior demands memory, remembering being a primary requirement for reasoning. The ability to solve any problem or even to recognize that a problem exists depends on memory. Typically, the decision to cross a street is based on remembering many earlier experiences.\n\nPractice (or review) tends to build and maintain memory for a task or for any learned material. Over a period of no practice what has been learned tends to be forgotten; and the adaptive consequences may not seem obvious. Yet, dramatic instances of sudden forgetting can be seen to be adaptive. In this sense, the ability to forget can be interpreted to have survived through a process of natural selection in animals. Indeed, when one's memory of an emotionally painful experience leads to serious anxiety, fo.getting may produce relief. Nevertheless, an evolutionary interpretation might make it difficult to understand how the commonly gradual process of forgetting survived natural selection.\n\nIn thinking about the evolution of memory together with all its possible aspects, it is helpful to consider what would happen if memories failed to fade. Forgetting clearly aids orientation in time, since old memories weaken and the new tend to stand out, providing clues for inferring duration. Without forgetting, adaptive ability would suffer; for example, learned behavior that might have been correct a decade ago may no longer be. Cases are recorded of people who (by ordinary standards) forgot so little that their everyday activities were full of confusion. Thus forgetting seems to serve the survival of the individual and the species.\n\nAnother line of thought assumes a memory storage system of limited capacity that provides adaptive flexibility specifically through forgetting. In this view, continual adjustments are made between learning or memory storage (input) and forgetting (output). Indeed, there is evidence that the rate at which individuals forget is directly related to how much they have learned. Such data offer gross support of contemporary models of memory that assume an input-output balance."
+        },
+        {
+          "id": "test-7-reading-b-passage-2",
+          "title": "Part II Reading Comprehension - Section B - Passage 2",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-7-q51",
+              "number": 51,
+              "text": "According to the traditional view of the origin of the ocean basins, which of the following is sufficient to move the continental plates?",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [ { "label": "A", "text": "Spreading of ocean trenches." }, { "label": "B", "text": "Movements of mid-ocean ridges." }, { "label": "C", "text": "Sinking of ocean basins." }, { "label": "D", "text": "Differences in temperature under oceans and continents." } ]
+            },
+            {
+              "id": "test-7-q52",
+              "number": 52,
+              "text": "The author refers to a \"conveyor belt\" in the first paragraph in order to",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "illustrate the effects of movements in the upper layer of the earth." }, { "label": "B", "text": "show how temperature differences depend on the positions of the continents." }, { "label": "C", "text": "describe the complicated motions made possible by the ocean currents." }, { "label": "D", "text": "account for the rising currents under mid-ocean ridges." } ]
+            },
+            {
+              "id": "test-7-q53",
+              "number": 53,
+              "text": "Which of the following, if it could be demonstrated, would most support the traditional view of ocean basin formation?",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "The upper mantle of the earth behaves as a dense solid." }, { "label": "B", "text": "Movements usually occur along lines." }, { "label": "C", "text": "Sinking plates cool the surface of the earth." }, { "label": "D", "text": "The rising motion currents keep exact pace with them." } ]
+            },
+            {
+              "id": "test-7-q54",
+              "number": 54,
+              "text": "Which of the following does the author seem to prefer?",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "The traditional view of the origin of the ocean basin is totally wrong." }, { "label": "B", "text": "The temperature of the sinking plate is lower than its surrounding." }, { "label": "C", "text": "That the earth behaves as a liquid results in the division of the waters." }, { "label": "D", "text": "Neither the African nor the American plate moves according to the alternative theory." } ]
+            },
+            {
+              "id": "test-7-q55",
+              "number": 55,
+              "text": "Which of the following would be the best title?",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "Several Theories of Ocean Basin Formation." }, { "label": "B", "text": "The Traditional View of the Oceans." }, { "label": "C", "text": "Motions and Ocean Currents." }, { "label": "D", "text": "Temperature Differences Among the Oceans." } ]
+            }
+          ],
+          "content": "No very satisfactory account of the mechanism that caused the formation of the ocean basins has yet been given. The traditional view supposes that the upper layer of the earth behaves as a liquid when it is subjected to small focus for long periods and that differences in temperature under oceans and continents are sufficient to produce movements in the upper layer of the earth with rising currents under the mid-ocean ridges and sinking currents under the continents. Theoretically, these movements would carry the continental plates along as though they were on a conveyor belt and would provide the forces needed to produce the split that occur along the ridge. This view may be correct; it has the advantage that the currents arc driven by temperature differences that themselves depend on the position of the continents.\n\nOn the other hand, the theory is unconvincing because the movements do not normally occur along lines, and it certainly does not occur along lines broken by frequent changes in direction, as the ridge is. Also, it is difficult to see how the theory applies to the plate between the Mid-Atlantic Ridge and the ridge in the Indian Ocean. This plate is growing on both sides, and since there is no intermediate trench, the two ridges must be moving apart. An alternative theory is that the sinking part of the plate, which is denser than the hotter surroundings, pulls the rest of plate after it. Again it is difficult to see how this applies to the ridge in the South Atlantic, where neither the African nor the American plate has a sinking part.\n\nAnother possibility is that the sinking plate cools the neighboring mantle and produces motion currents that move the plates. This last theory is attractive because it gives some hope of explaining the neighboring mantle and produces motion currents that move the plates. This last theory is attractive because it gives some hope of explaining the enclosed seas. These seas have a typical oceanic floor, except that the floor is overlaid by several kilometers of sediment. Their floors have probably been sinking for long periods. It seems possible that a sinking current of cooled material on the upper side might be the cause of such deep basins. The enclosed seas are an important feature of the earth's surface and seriously require explanation."
+        },
+        {
+          "id": "test-7-reading-b-passage-3",
+          "title": "Part II Reading Comprehension - Section B - Passage 3",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-7-q56",
+              "number": 56,
+              "text": "Which of the following describes the importance of diversity concepts in clinical education?",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "Teaching about diversity is a separate part of quality teaching." }, { "label": "B", "text": "Diversity concepts help improve clinical reasoning skills." }, { "label": "C", "text": "Diversity concepts provide relief for vulnerable populations." }, { "label": "D", "text": "Diversity concepts are very difficult to master than clinical skills." } ]
+            },
+            {
+              "id": "test-7-q57",
+              "number": 57,
+              "text": "What can we infer from Guhde's article?",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "The minority population is larger than the white population." }, { "label": "B", "text": "Many Asian students need better chances to learn English." }, { "label": "C", "text": "Less than 30 percent of heath professionals are bilingual." }, { "label": "D", "text": "Minorities need improvement in health care." } ]
+            },
+            {
+              "id": "test-7-q58",
+              "number": 58,
+              "text": "How do Hispanics compare with the white population in terms of health indicators?",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "Minorities are much financially poorer than the whites." }, { "label": "B", "text": "They have to pay much more than the whites for every treatment." }, { "label": "C", "text": "More Hispanics die of cancer than the whites." }, { "label": "D", "text": "Hispanics are becoming less proficient in English." } ]
+            },
+            {
+              "id": "test-7-q59",
+              "number": 59,
+              "text": "What does the phrase “make a difference”in the second paragraph probably mean?",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [ { "label": "A", "text": "Discriminate against." }, { "label": "B", "text": "Widen the gap." }, { "label": "C", "text": "Distinguish oneself." }, { "label": "D", "text": "Exert influence." } ]
+            },
+            {
+              "id": "test-7-q60",
+              "number": 60,
+              "text": "Vulnerable populations would probably get better treatment if",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "a number of culturally diverse care providers would be available." }, { "label": "B", "text": "medical workforce would not discriminate for minorities." }, { "label": "C", "text": "disparities between minorities and whites would be ignored." }, { "label": "D", "text": "more minorities would go to the whites' hospitals for treatment." } ]
+            }
+          ],
+          "content": "Teaching about diversity is synonymous with a quality education in health care. The focus on diversity is not a separate aspect of quality teaching in and of itself. Rather, it is a key attribute for the development of clinical reasoning skills. However, incorporating diversity concepts into the curricula of the health professions may be more difficult for many faculty members than delivering pathophysiology content. Moreover, ethnically diverse minority and underserved vulnerable populations require health care professionals that are knowledgeable of components inherent in the delivery of their health care. To achieve the goal of integrating diversity concepts into existing courses requires institutional support and faculty commitment.\n\nOver the past decades, there have been three emerging population trends in the United States. First, the minority population is increasing at higher rates than the white population. Guhde's article highlights the growth of the Hispanic and Asian populations and the need to facilitate the progression and graduation of the English as a Second Language student. This article is significant because of the tremendous need for health professionals who are bilingual. In many urban hospitals and other health care delivery agencies, thirty to fifty percent of the patients may not speak English. Moreover, when demographic data are linked to health indicators, minorities are worse off than whites. For example, Hispanics have a disproportionate burden for cancer deaths compared to the white population. According to the Institute of Medicine, a key component that affects health disparities is cultural competency. Being culturally competent potentially improves care and may aid in reducing the burden of health disparities. Implementing fundamental change requires that health care professionals understand these disparities and make a personal commitment to make a difference.\n\nA second trend in the United States is an increasing rate of poverty among its children. Access to care is a significant problem for low-income populations and contributes to disparities in health for this population. Providing health care to the nation's vulnerable populations is hampered by both a limited number of culturally competent providers as well as a significant shortage of health care providers\n\nThe third trend is the under representation of minorities in schools of nursing and medicine. The lack of representation of minorities in these professional schools leads to a lack of diversity in the nursing and medical workforce. Studies indicate that minority nurses are more likely to work with minority populations and participate in community-based health promotion programs with vulnerable populations."
+        },
+        {
+          "id": "test-7-reading-c",
+          "title": "Part II Reading Comprehension - Section C",
+          "instructions": "In the following passage, five sentences have been removed from the original text.",
+          "questions": [
+            { "id": "test-7-q61", "number": 61, "text": "", "type": "fill-blank", "correctAnswer": "C" },
+            { "id": "test-7-q62", "number": 62, "text": "", "type": "fill-blank", "correctAnswer": "E" },
+            { "id": "test-7-q63", "number": 63, "text": "", "type": "fill-blank", "correctAnswer": "F" },
+            { "id": "test-7-q64", "number": 64, "text": "", "type": "fill-blank", "correctAnswer": "A" },
+            { "id": "test-7-q65", "number": 65, "text": "", "type": "fill-blank", "correctAnswer": "B" }
+          ],
+          "content": "Since the early work of Halberg (1960), the existence of human “circadian rhythms” has been well-known to biologists and psychologists. Circadian rhythms dictate that there are certain times of the day when we are at our best both physically and psychologically. At its simplest, the majority of us feel more alive and creative in the mornings, while come the evenings we are fit only for collapsing with a good book or in front of the television. {{61}}\n\nIrrespective of our personal rhythms, most of us have a productive period between 10 a. m. and noon, when the stomach, pancreas, spleen and heart all appear to be in their most active phases. {{62}} The simple rules here are: don't waste too much prime time having a coffee break around 11a. m. when you should be doing some of your best work, and don't make the after-lunch period even less productive by overloading your digestion. A short coffee or tea break is, in fact, best taken on arrival at the office, when it helps us start the day in a positive mood, rather than mid-morning when it interrupts the flow of our activities. Lunch is best taken early, when we are just beginning to feel hungry, and we are likely to eat less than if we leave it until later. {{63}}\n\nChanges in one's attitude can also enhance personal time management. For example, the notion of pro-action is eminently preferable to reaction. {{64}} To react, on the other hand, means to have little anticipation and do something only when events force you to do so. Pro-actors tend to be the people who are always one step ahead of other people, who always seem to be in the right place at the right time, and who are always better informed than anyone else. Many of us like an easy life, and so we tend to be reactors. {{65}} We can train ourselves in pro-action by regularly taking the time to sit down and appraise the likely immediate future, just as we sit down and review the immediate past.",
+          "sharedOptions": [
+            { "label": "A", "text": "To pro-act means to anticipate events and be in a position to take appropriate action as soon as the right moment arrives." },
+            { "label": "B", "text": "This means that we aren't alert to the challenges and opportunities coming our way, with the consequence that challenges bother us or opportunities pass us by before we're even properly aware they're upon us." },
+            { "label": "C", "text": "Others of us note that in the morning we take a great deal of time to get going physically and mentally, but by the evening are full of energy and bright ideas, while a very few of us feel most alert and vigorous in the late afternoon." },
+            { "label": "D", "text": "Certainly, there are occasions when other people are more responsible for our time loss than we are, but for most of us, and for most of the time, the blame must fall fairly and squarely upon ourselves." },
+            { "label": "E", "text": "Conversely, the majority of us experience a low period in the hour or two after lunch (a time when people in some societies sensibly take a rest), as most of our energy is devoted to the process of digestion." },
+            { "label": "F", "text": "An early lunch also means that we can get back into our productive stride earlier in the afternoon." }
+          ]
+        },
+        {
+          "id": "test-7-writing-a",
+          "title": "Part III Writing - Section A",
+          "instructions": "Read the following article and write a summary.",
+          "questions": [
+            { "id": "test-7-q66", "number": 66, "text": "Write a summary of no more than 150 words on the article.", "type": "writing", "correctAnswer": "The term corporal punishment means the intentional infliction of pain on the body for purposes of punishment. The general acceptance, and sometimes support, of corporal punishment as a method of discipline is an aspect of many cultures. The corporal punishment was justifiable in the old days because parents or teachers thought children as their own property. Children are abused, in part, because they are unable to follow parents' directions or to defend themselves against stronger and more powerful adults. Nowadays kids no longer are expected to act to be very quiet for their complete childhood. If corporal punishment were used today, it would fail. Children are better to be educated than to be disciplined. They would listen to those who respect them and share similar experiences with them. On the other hand, they would keep distance from those who presume as authorities. Moreover, children have more and more legal consciousness. Some of them would use lawsuits to protect themselves when facing corporal punishment. It seems that using corporal punishment can be effective shortly afterwards, but children may suffer both physically and mentally in the long run. Unfortunately, some other kids may become self-centered, and even turn to violent actions against society. Since corporal punishment has more drawbacks than benefits, it should no longer be regarded as reasonable. There are many other way; to guide children and cultivate their potentials, for example, reading books, going hiking or playing tennis. Educators will step down and listen to the kids, but they never use whip." }
+          ],
+          "content": "Among the white-collar crowd, though, one particular gizmo has earned a street nickname all its own: CrackBerry. That's a reference to the RIM BlackBerry, an addictive wireless palmtop that displays your e-mail in real time, as it arrives.\n\nThe airports and commuter trains on both coasts are filled with BlackBerry fanatics, hunched over, eyes glazed, flailing at its microscopic alphabet keyboard with their thumbs callused in funny places.\n\nBut for all its popularity among executives and financial-industry types, the BlackBerry is virtually unknown to everyone else. RIM hopes to change all that with the BlackBerry 7,100t, which it unveiled on Sept. 8. The device, with phone service from T-Mobile, will go on sale next month.\n\nRIM believed that everyday consumers avoided the original BlackBerry for two reasons. First, the price was way too high: $500 for the BlackBerry, plus about $30 a month for Internet service on top of a voice plan. That one was easy to fix; the 7,100t costs $200, plus $60 a month for both unlimited Internet and 1,000 anytime phone minutes.\n\nThe second reason is that the BlackBerry's Thumbelina keyboard is nearly 3 inches, or 76 centimeters wide. Recent BlackBerry models are also cellphones, and 3 inches is awfully wide for a phone. As you walk down the street, you feel as if you're talking into a frozen waffle.\n\nThe new 7,100t is a narrower 2.3 inches. In fact, it's nearly the same size and shape as a standard non-folding cell phone.\n\nBut what about the keyboard? A full set of alphabet keys wouldn't fit; for proof, RIM's designers had to look no farther than the popular Treo 600, the BlackBerry's main rival. The Treo has a full alphabet keyboard but even though the phone itself is wider, its keys are the size of hydrogen atoms.\n\nA standard 10-key phone keypad was out of the question, too; trying to compose e-mail on number-dialing keys is like trying to mow the grass in a sports stadium with fingernail scissors.\n\nSo once again, RIM devised something nobody had ever tried before: a keyboard with 20 keys. The payoff is obvious; compared with standard cell phone keys, these are positively gargantuan. There are only five keys on each row, so even the beefy of thumb will have no trouble hitting the right keys. Of course, now the screaming question is: How do you produce 26 letters and all the numbers when you have only 20 keys?\n\nRIM's solution was to double up. Most of the keys have two letters painted on them; for example, the top four keys are labeled QW, ER, TY and OP. You just hammer away at the keys you want, ignoring the gibberish that may appear at first.\n\nBy the time you complete each word, the phone's software has consulted its database of 35,000 words and deduced your intentions. It's a crazy, way-out plan, but it actually works.\n\nThree factors conspire to make the typing process tolerable and once you're rolling along even enjoyable. First, the BlackBerry learns new words once you've corrected them, and preferred interpretations after you've corrected the phone twice.\n\nSecond, the BlackBerry's software saves you time in myriad little ways. You can omit periods, apostrophes and capitalizing the first words of sentences. Just hit the space bar twice after a sentence to supply both the period and the initial capital.\n\nFinally, all of this typing takes place on one of the brightest, highest-contrast color screens you've ever seen on a cell phone. You even have a choice of font and size for all the text displays, which, together with the unusually broad, brightly lit keys, makes this gadget especially friendly to the over-40 set.\n\nAs on existing BlackBerry models, the screen isn't touch-sensitive; instead, you roll the thumb dial to select a menu or icon, and push inward to select it. Navigation is foolproof, thanks to the dedicated Back button on the side.\n\nCorporate e-mail users really have it made; their BlackBerries, backed at the office by something called enterprise server software, are real-time mirrors of their PC in-boxes. Reply on the BlackBerry, find the reply in your Sent Mail box back at the office.\n\nEveryone else will have to settle for a system in which your e-mail is wirelessly auto-forwarded, every 15 minutes, to your phone.\n\nWhen you return to your Mac or PC, you'll have no indication that you replied, composed, filed or deleted messages on your BlackBerry.\n\nOn the other hand, you can open up Word, Excel and PDF files right on the phone."
+        },
+        {
+          "id": "test-7-writing-b",
+          "title": "Part III Writing - Section B",
+          "instructions": "Write an essay.",
+          "questions": [
+            { "id": "test-7-q67", "number": 67, "text": "Do you think corporal punishment is justifiable in disciplining children? Give your reasons.", "type": "writing", "correctAnswer": "The term corporal punishment means the intentional infliction of pain on the body for purposes of punishment. The general acceptance, and sometimes support, of corporal punishment as a method of discipline is an aspect of many cultures. The corporal punishment was justifiable in the old days because parents or teachers thought children as their own property. Children are abused, in part, because they are unable to follow parents' directions or to defend themselves against stronger and more powerful adults. Nowadays kids no longer are expected to act to be very quiet for their complete childhood. If corporal punishment were used today, it would fail. Children are better to be educated than to be disciplined. They would listen to those who respect them and share similar experiences with them. On the other hand, they would keep distance from those who presume as authorities. Moreover, children have more and more legal consciousness. Some of them would use lawsuits to protect themselves when facing corporal punishment. It seems that using corporal punishment can be effective shortly afterwards, but children may suffer both physically and mentally in the long run. Unfortunately, some other kids may become self-centered, and even turn to violent actions against society. Since corporal punishment has more drawbacks than benefits, it should no longer be regarded as reasonable. There are many other way; to guide children and cultivate their potentials, for example, reading books, going hiking or playing tennis. Educators will step down and listen to the kids, but they never use whip." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "test-8",
+      "title": "Model Test 8",
+      "sections": [
+        {
+          "id": "test-8-listening-a",
+          "title": "Part I Listening Comprehension - Section A",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%208.mp3",
+          "instructions": "In this part, you will hear 10 short conversations.",
+          "questions": [
+            { "id": "test-8-q1", "number": 1, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "To ask people who sells newspapers and magazines for directions." }, { "label": "B", "text": "To ask people in the tourist guidance center for directions." }, { "label": "C", "text": "To ask a police officer where the news stand is." }, { "label": "D", "text": "To ask a police officer where the new store is." } ] },
+            { "id": "test-8-q2", "number": 2, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "To advertise on school radio stations." }, { "label": "B", "text": "To collect money for the concert through the school radio station." }, { "label": "C", "text": "To ask the school radio station to broadcast their concert." }, { "label": "D", "text": "To provide some free public services to students." } ] },
+            { "id": "test-8-q3", "number": 3, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "To check the typing mistakes by herself." }, { "label": "B", "text": "To ask someone else to check her papers." }, { "label": "C", "text": "To type her papers by herself." }, { "label": "D", "text": "To have her papers sent out and typed." } ] },
+            { "id": "test-8-q4", "number": 4, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "Because she had worked at the school post office before." }, { "label": "B", "text": "Because she is a student in economics department as well." }, { "label": "C", "text": "Because she used to be a teaching assistant before." }, { "label": "D", "text": "Because she had been interviewed by Professor Jameson." } ] },
+            { "id": "test-8-q5", "number": 5, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "He has to finish one million tasks in 20 days." }, { "label": "B", "text": "He thinks he will finish his job definitely." }, { "label": "C", "text": "He thinks that it would be a wonder if he could finish all the things." }, { "label": "D", "text": "He is very upset because it's really hard to finish all the things." } ] },
+            { "id": "test-8-q6", "number": 6, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "She taught the psychology course herself." }, { "label": "B", "text": "She persuaded the man not to take the psychology course." }, { "label": "C", "text": "She persuaded the man to take the sociology course." }, { "label": "D", "text": "She thought the sociology course wasn't helpful." } ] },
+            { "id": "test-8-q7", "number": 7, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "Don't expect too much to postpone the project." }, { "label": "B", "text": "Don't push the professor to give them more chances." }, { "label": "C", "text": "Don't rely on the project to be canceled." }, { "label": "D", "text": "Don't always believe in others' words." } ] },
+            { "id": "test-8-q8", "number": 8, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "He has been very abnormal recently." }, { "label": "B", "text": "He is afraid of his parents a lot." }, { "label": "C", "text": "He has lots of things to do before his parents come." }, { "label": "D", "text": "He regrets that he's moved to a new apartment." } ] },
+            { "id": "test-8-q9", "number": 9, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "They asked Margaret to take care of their kids." }, { "label": "B", "text": "They found a job of baby-sitting for Margaret." }, { "label": "C", "text": "They invited Margaret to live in their house." }, { "label": "D", "text": "They asked Margaret to do some of the housework for them." } ] },
+            { "id": "test-8-q10", "number": 10, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "To inform the woman that his bill is very high." }, { "label": "B", "text": "To inquire about details of his electricity bill." }, { "label": "C", "text": "To complain about the mistakes made by the woman." }, { "label": "D", "text": "To tell the woman about his account number." } ] }
+          ]
+        },
+        {
+          "id": "test-8-listening-b",
+          "title": "Part I Listening Comprehension - Section B",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%208.mp3",
+          "instructions": "Sentence completion.",
+          "questions": [
+            { "id": "test-8-q11", "number": 11, "text": "Snoopy regards his master as \"that __________\",", "type": "fill-blank", "correctAnswer": "round-headed kid" },
+            { "id": "test-8-q12", "number": 12, "text": "Snoopy manages to express everything necessary in __________ and thought balloons.", "type": "fill-blank", "correctAnswer": "facial expressions" },
+            { "id": "test-8-q13", "number": 13, "text": "Snoopy has created various __________ like Joe Cool and World War I Flying Ace.", "type": "fill-blank", "correctAnswer": "personalities" },
+            { "id": "test-8-q14", "number": 14, "text": "Woodstock can type and __________ and usually is game for anything Snoopy wants to do.", "type": "fill-blank", "correctAnswer": "take shorthand" },
+            { "id": "test-8-q15", "number": 15, "text": "Being a bird, Woodstock feels a little __________ around Thanksgiving.", "type": "fill-blank", "correctAnswer": "insecure" },
+            { "id": "test-8-q16", "number": 16, "text": "The ancient Saxons commemorated __________ Eastre with an uproarious festival.", "type": "fill-blank", "correctAnswer": "goddess" },
+            { "id": "test-8-q17", "number": 17, "text": "The Christian missionaries attempted to __________ the tribes of the north to Christianity when encountering with their pagan celebrations.", "type": "fill-blank", "correctAnswer": "convert" },
+            { "id": "test-8-q18", "number": 18, "text": "It would have been fatal for the early Christians to celebrate their __________ with observances, different from the existing pagan celebrations.", "type": "fill-blank", "correctAnswer": "holy days" },
+            { "id": "test-8-q19", "number": 19, "text": "As it happened, the pagan festival of Eastre and the Christian observance of the Resurrection of Christ took place at __________ of the year.", "type": "fill-blank", "correctAnswer": "the same time" },
+            { "id": "test-8-q20", "number": 20, "text": "Before A.D. 325, Easter was celebrated on __________ of the week, including Friday, Saturday, and Sunday.", "type": "fill-blank", "correctAnswer": "different days" }
+          ]
+        },
+        {
+          "id": "test-8-listening-c",
+          "title": "Part I Listening Comprehension - Section C",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%208.mp3",
+          "instructions": "Short answers.",
+          "questions": [
+            { "id": "test-8-q21", "number": 21, "text": "What do the yard-sale shoppers search for?", "type": "fill-blank", "correctAnswer": "Secondhand treasures." },
+            { "id": "test-8-q22", "number": 22, "text": "According to the speaker, what are the three reasons for people to buy used goods?", "type": "fill-blank", "correctAnswer": "To save money, to find a valuable antique, and to add to one's collections." },
+            { "id": "test-8-q23", "number": 23, "text": "What do antique dealers do to learn what items are worth buying?", "type": "fill-blank", "correctAnswer": "They take classes and read books." },
+            { "id": "test-8-q24", "number": 24, "text": "Why is saying “no” very difficult for most of us?", "type": "fill-blank", "correctAnswer": "Because we don't want to offend or disappoint others." },
+            { "id": "test-8-q25", "number": 25, "text": "Why should we say “no” sometimes?", "type": "fill-blank", "correctAnswer": "Because it allows us to do more important things." },
+            { "id": "test-8-q26", "number": 26, "text": "According to the talk, what are the two proper ways to say “no”?", "type": "fill-blank", "correctAnswer": "To pay a compliment and to say \"no\" in a positive way." },
+            { "id": "test-8-q27", "number": 27, "text": "According to the speaker, what is the number-one problem for the American government?", "type": "fill-blank", "correctAnswer": "Inflation." },
+            { "id": "test-8-q28", "number": 28, "text": "What was the wage of the average worker in 1978?", "type": "fill-blank", "correctAnswer": "$206." },
+            { "id": "test-8-q29", "number": 29, "text": "What are the two taxes that increase with inflation?", "type": "fill-blank", "correctAnswer": "The income tax and the sales tax (or, the point-of-purchase tax)." },
+            { "id": "test-8-q30", "number": 30, "text": "Which type of workers is more likely to join the tax revolt movements?", "type": "fill-blank", "correctAnswer": "The upper-middle-income workers." }
+          ]
+        },
+        {
+          "id": "test-8-use-of-english-a",
+          "title": "Part II Use of English - Section A",
+          "instructions": "Cloze test.",
+          "questions": [
+            { "id": "test-8-q31", "number": 31, "text": "Blank 31", "type": "fill-blank", "correctAnswer": "hardly" },
+            { "id": "test-8-q32", "number": 32, "text": "Blank 32", "type": "fill-blank", "correctAnswer": "On the contrary" },
+            { "id": "test-8-q33", "number": 33, "text": "Blank 33", "type": "fill-blank", "correctAnswer": "dependent" },
+            { "id": "test-8-q34", "number": 34, "text": "Blank 34", "type": "fill-blank", "correctAnswer": "failure" },
+            { "id": "test-8-q35", "number": 35, "text": "Blank 35", "type": "fill-blank", "correctAnswer": "elimination" },
+            { "id": "test-8-q36", "number": 36, "text": "Blank 36", "type": "fill-blank", "correctAnswer": "complied" },
+            { "id": "test-8-q37", "number": 37, "text": "Blank 37", "type": "fill-blank", "correctAnswer": "move" },
+            { "id": "test-8-q38", "number": 38, "text": "Blank 38", "type": "fill-blank", "correctAnswer": "none" },
+            { "id": "test-8-q39", "number": 39, "text": "Blank 39", "type": "fill-blank", "correctAnswer": "blink" },
+            { "id": "test-8-q40", "number": 40, "text": "Blank 40", "type": "fill-blank", "correctAnswer": "expelled" },
+            { "id": "test-8-q41", "number": 41, "text": "Blank 41", "type": "fill-blank", "correctAnswer": "trapped" },
+            { "id": "test-8-q42", "number": 42, "text": "Blank 42", "type": "fill-blank", "correctAnswer": "utter" },
+            { "id": "test-8-q43", "number": 43, "text": "Blank 43", "type": "fill-blank", "correctAnswer": "escape" },
+            { "id": "test-8-q44", "number": 44, "text": "Blank 44", "type": "fill-blank", "correctAnswer": "then" },
+            { "id": "test-8-q45", "number": 45, "text": "Blank 45", "type": "fill-blank", "correctAnswer": "limit" }
+          ],
+          "content": "Bearing in mind, again, that the distinction between military and civilian targets is not relevant in discussing victims of US/UK aggression in Afghanistan, we can still ask whether there is any evidence to support the claim that the US/UK do their utmost to avoid civilian casualties. Of course the US/UK spokespersons say they do, but that is {{31}} evidence. Are there any facts that support the claim? Not a single one. {{32}}, there is a wealth of evidence that shows the opposite. One single terrible example will suffice.\n\nWell before the bombing started, all foreign aid agencies in Afghanistan said that seven million Afghanis were completely {{33}} on external food aid, due to crop {{34}} and war. Most of the aid coming into the country was coming from Pakistan. On 16th Sept. 2001 the New York Times reported that \"Washington has also demanded [from Pakistan] a cutoff of fuel supplies...and the {{35}} of truck numbers that provide much of the food and other supplies to Afghanistan's civilian population.\" The Pakistan government {{36}} On 27th Sept., the same NYT correspondent reported that officials in Pakistan said today that \"they would not relent in their decision to seal off the country's 1,400-mile border with Afghanistan, a(n) {{37}} requested by the Bush Administration because they wanted to be sure that {{38}} of Mr. Bin Laden's men was hiding among the huge tide of refugees\". So Washington demanded that Pakistan consign massive numbers of Afghans, millions of men, women and children, already on the {{39}} of starvation, to a cruel death by famine. Foreign aid missions withdrew or were {{40}} under the threat of bombing. Huge numbers of people fled in terror after Washington's threat to bomb, and even more when bombing started. If they even managed to reach the sealed borders, the refugees were {{41}} to die in silence. The few reports from aid workers of the suffering in camps across the borders have been harrowing in their descriptions of bereaved parents mourning their dead children and the {{42}} deprivation. But we know that these are the lucky people who were able to {{43}} before the borders were closed.\n\nSo, there is no evidence that the US government tries to avoid civilian casualties and on the other hand we know for sure that they have ordered the death by starvation of huge numbers of people. We can ask ourselves, {{44}} why do people believe Tony Blair when he claims that \" We do all we can to {{45}} civilian casualties.\"",
+          "sharedOptions": [
+            { "label": "word-1", "text": "specify" }, { "label": "word-2", "text": "on the contrary" }, { "label": "word-3", "text": "dependent" }, { "label": "word-4", "text": "failure" }, { "label": "word-5", "text": "smuggling" },
+            { "label": "word-6", "text": "harvest" }, { "label": "word-7", "text": "move" }, { "label": "word-8", "text": "elimination" }, { "label": "word-9", "text": "center" }, { "label": "word-10", "text": "none" },
+            { "label": "word-11", "text": "some" }, { "label": "word-12", "text": "blink" }, { "label": "word-13", "text": "moreover" }, { "label": "word-14", "text": "trapped" }, { "label": "word-15", "text": "expelled" },
+            { "label": "word-16", "text": "complied" }, { "label": "word-17", "text": "insisted" }, { "label": "word-18", "text": "utter" }, { "label": "word-19", "text": "illumination" }, { "label": "word-20", "text": "strong" },
+            { "label": "word-21", "text": "hardly" }, { "label": "word-22", "text": "escape" }, { "label": "word-23", "text": "excelled" }, { "label": "word-24", "text": "evade" }, { "label": "word-25", "text": "on the other hand" },
+            { "label": "word-26", "text": "savaged" }, { "label": "word-27", "text": "then" }, { "label": "word-28", "text": "merely" }, { "label": "word-29", "text": "limit" }, { "label": "word-30", "text": "enough" }
+          ]
+        },
+        {
+          "id": "test-8-reading-b-passage-1",
+          "title": "Part II Reading Comprehension - Section B - Passage 1",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-8-q46",
+              "number": 46,
+              "text": "According to the author, what is probably true on gun control?",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "Justice Minister is wrong in scaring people." }, { "label": "B", "text": "Assaults with guns are not so serious because they have become fewer." }, { "label": "C", "text": "Gun control laws mess up the situation." }, { "label": "D", "text": "Private guns should be exterminated." } ]
+            },
+            {
+              "id": "test-8-q47",
+              "number": 47,
+              "text": "Many people who insist on gun control probably have",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "acquisition certificates to buy a gun." }, { "label": "B", "text": "partial knowledge of the gun control laws." }, { "label": "C", "text": "more restrictions on their personal freedom." }, { "label": "D", "text": "conflict with the police over gun acquisition." } ]
+            },
+            {
+              "id": "test-8-q48",
+              "number": 48,
+              "text": "The purpose of mentioning \"doctor/patient confidentiality\" is to",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [ { "label": "A", "text": "contend that guns should be replaced by knives for sake of safety." }, { "label": "B", "text": "suggest that doctors be more dexterous in dealing with wounds by knives." }, { "label": "C", "text": "explain why offensive acts should be severely punished." }, { "label": "D", "text": "illustrate that the new laws are detrimental to personal freedom." } ]
+            },
+            {
+              "id": "test-8-q49",
+              "number": 49,
+              "text": "The author thinks Justice Minister Alan Rock's proposed law is",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "soundly based." }, { "label": "B", "text": "not justified." }, { "label": "C", "text": "intrinsically frightening." }, { "label": "D", "text": "statistically proved." } ]
+            },
+            {
+              "id": "test-8-q50",
+              "number": 50,
+              "text": "According to the author, in \"gun control is a two-sided issue\", two sides may refer to the following EXCEPT",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [ { "label": "A", "text": "those gun lobbyists and anti-gun lobbyists." }, { "label": "B", "text": "those who are in favor of gun ownership and those who are not." }, { "label": "C", "text": "those who use guns to hurt and those who are hurt by guns." }, { "label": "D", "text": "those who hide guns and those who execute laws." } ]
+            }
+          ],
+          "content": "Abortion, euthanasia, and capital punishment are all controversial issues in today's society. Just as important of an issue to many people is gun control. Gun control lobbyists believe that there should be more control over firearms while anti-lobbyists believe there is already enough. Although many people are killed or seriously injured by firearms which are improperly stored, statistics show that assaults with firearms have been progressively lowered since 1975. Therefore, Justice Minister Alan Rock, the person imposing more restriction, is running on scare tactics. I thoroughly believe that if more gun control laws are imposed upon Canadians, there will be more havoc than necessary.\n\nOne of the problems that many people have concerning their opinion on gun control is that they are not fully informed. Therefore, the people who are not fully informed are making decisions on only the information they know. Many people do not understand what exactly is being changed in Charter 85. The existing law states that in order to purchase a firearm, the buyer must possess a FAC (Firearm Acquisition Certificate). The buyer also must go through a home schooling course and pass a test. If anybody owns a firearm, it has to be stored properly, by means of a cabinet or trigger lock. Under the proposed law, police officials can enter premises without consent if they suspect an illegal gun is being hidden there. These new laws conflict with the existing laws and most people make a decision on only what they are told.\n\nThe proposed law that Alan Rock has created has many people upset. Anti-gun lobbyists believe that more restrictions breach personal freedom. In 1993, statistics were taken in Edmonton concerning assaults. The statistics showed that firearms were used in six percent of all assaults while knives were used in eight. Therefore, knives were the weapon of choice? Most people are upset over the laws because doctor/patient confidentiality privilege will be revoked. These new laws are improper and offend many people.\n\nOn the other hand, gun lobbyists believe that the social welfare of an area is more important than the freedom of the individual. Therefore, they believe that more laws should be made. These gun lobbyists are usually people who have lost loved ones due to firearms. Justice Minister Alan Rock has no proof that more restrictions are needed and is running from his personal opinion.\n\nGun lobbyists and anti-gun lobbyists have opposite opinions on gun control. Even though gun control is a touchy situation, many people believe there should be more restrictions while others oppose the idea. Many people do not understand why they have to suffer for the actions of others. Gun control is a two sided issue and the outcome will show one winner and one loser."
+        },
+        {
+          "id": "test-8-reading-b-passage-2",
+          "title": "Part II Reading Comprehension - Section B - Passage 2",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-8-q51",
+              "number": 51,
+              "text": "According to the author, affirmative action is wrong because",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "it brings about more harm than it provides benefit." }, { "label": "B", "text": "people don't resent the existence of affirmative action." }, { "label": "C", "text": "it may not do harm to people's health." }, { "label": "D", "text": "it can eradicate the problem of discrimination." } ]
+            },
+            {
+              "id": "test-8-q52",
+              "number": 52,
+              "text": "What does \"reverse discrimination\" probably refer to in the context?",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "Revenge on minorities." }, { "label": "B", "text": "Privilege enjoyed by minorities." }, { "label": "C", "text": "Racism against blacks." }, { "label": "D", "text": "Protection of white people." } ]
+            },
+            {
+              "id": "test-8-q53",
+              "number": 53,
+              "text": "It can be inferred that Jim Crow laws",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [ { "label": "A", "text": "put those who make and execute laws in an advantageous position." }, { "label": "B", "text": "come back to life periodically." }, { "label": "C", "text": "will never stage a comeback for good." }, { "label": "D", "text": "are extremely discriminative." } ]
+            },
+            {
+              "id": "test-8-q54",
+              "number": 54,
+              "text": "\"Get the short end of the stick\" in the second paragraph is closest in meaning to",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "repeat the mistake." }, { "label": "B", "text": "be treated unfairly." }, { "label": "C", "text": "last for only a short time." }, { "label": "D", "text": "take the risk." } ]
+            },
+            {
+              "id": "test-8-q55",
+              "number": 55,
+              "text": "What role does affirmative action play in colleges nowadays?",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [ { "label": "A", "text": "It puts more stress on GPA than SAT of the applicants." }, { "label": "B", "text": "It insists that two negative things put together means positive." }, { "label": "C", "text": "It discriminates against blacks and minorities." }, { "label": "D", "text": "It would probably lower the quality of the education." } ]
+            }
+          ],
+          "content": "Affirmative action is wrong and will not help solve the problems minorities face. The reason it is wrong is it's discrimination. It has no place in today's society because it does more bad than good. In addition to that most people don't enjoy the presence of affirmative action. Also, it appears that affirmative action can actually be detrimental to employees' health.\n\nFirst of all, affirmative action is discrimination, and there is no hiding for it. When an employer hires anyone because he or she is a minority, even if someone else is more qualified to do the job, it is discrimination. Just because it is reverse discrimination, when whites are discriminated against and minorities are being discriminated for, doesn't make it right. Affirmative action legalizes discrimination. \"I thought discrimination was illegal in this country.\" Also, if this discrimination continues racism in the United States may become worse. Imagine what you would feel like if you couldn't get a job just because you are a white man and not a Hispanic man. The racism will become worse because of it, and that is the very thing it is trying to prevent. It is possible that because of affirmative action, racism will grow and continue to grow until our history repeats itself and we end up living under Jim Crow laws again. That is an extreme possibility to end up under Jim Crow laws again, but it is a definite possibility to end up somewhere close to Jim Crow laws again.\n\nIn addition to that, people say affirmative action is OK because it cures past discrimination. Discrimination wasn't OK when blacks were the ones getting the short end of the stick. Therefore it's not OK when whites are discriminated against. Two wrongs don't make a right. Therefore, affirmative action doesn't make discrimination OK just because it's against blacks instead of whites.\n\nAffirmative action in college is the most discriminating thing this country has ever seen since the Jim Crow laws many years ago. At Ivy League colleges the median GPA of applicants is close to 4.0 and SAT's are close to 1,300, minorities are let in with GPA's less than 3.0 and SAT's less than 1,000.\n\nThe only way for colleges to achieve ethnic proportionalism is to downplay or abandon merit criteria and to accept students from typically under represented groups, such as blacks. Hispanics, and American Indians, over better qualified students from among whites and Asian Americans."
+        },
+        {
+          "id": "test-8-reading-b-passage-3",
+          "title": "Part II Reading Comprehension - Section B - Passage 3",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-8-q56",
+              "number": 56,
+              "text": "What is implied in the first paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "Scientists do not always tell the truth." }, { "label": "B", "text": "Scientists are richer than journalists." }, { "label": "C", "text": "Media always get the latest news about the scientific development." }, { "label": "D", "text": "Press pays greatest attention to the healthfulness of food." } ]
+            },
+            {
+              "id": "test-8-q57",
+              "number": 57,
+              "text": "What is the US administration's position about the global warming?",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "It accentuates the seriousness of the problem." }, { "label": "B", "text": "It plays down the whole complexion." }, { "label": "C", "text": "It focuses on its solution at the expense of profit." }, { "label": "D", "text": "It goes to great lengths to face it." } ]
+            },
+            {
+              "id": "test-8-q58",
+              "number": 58,
+              "text": "The purpose of mentioning “how some scientists in the 1970s worried about a new Ice Age\" is to",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "illustrate the US Administration's mitigation of the serious problem." }, { "label": "B", "text": "exemplify the consequences of advanced technological development." }, { "label": "C", "text": "compare the differences between the 1970s and 1980s." }, { "label": "D", "text": "stress the detailed effects of global warming." } ]
+            },
+            {
+              "id": "test-8-q59",
+              "number": 59,
+              "text": "An analogy is made between dioxide emissions and smoking in order to",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "support that global warming should be neglected." }, { "label": "B", "text": "substantiate that scientists are wielding great power." }, { "label": "C", "text": "illustrate that scientists are taking an environmentalist idea." }, { "label": "D", "text": "show that scientists are on the side of the government." } ]
+            },
+            {
+              "id": "test-8-q60",
+              "number": 60,
+              "text": "The word \"maverick\" in the last paragraph is closest in meaning to",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [ { "label": "A", "text": "grandiose." }, { "label": "B", "text": "presumptuous." }, { "label": "C", "text": "puzzled." }, { "label": "D", "text": "unusual." } ]
+            }
+          ],
+          "content": "One of the curiosities of our arguments over the environment is how often those who deny the damage manage to portray themselves as victims: big corporations inhibited from making an honest profit, caring politicians prevented from helping the hungry, lonely academics who suffer character assassination when they express scepticism about global warming. The green lobby is all-powerful, and even acts as a conspiracy, we are led to believe. Public opinion is in thrall to it; scientists can get research funding only if they subscribe to what Professor Lomborg calls the Litany of environmentalism; the media lap up scare stories.\n\nAll this is more or less the opposite of the truth. Green issues increasingly struggle for political or media attention (in this month's UK cabinet reshuffle, the end of the antiquated position of Lord Chancellor commanded far more attention than the sacking of an expert environment minister who had served for six years), while a moment's reflection will tell you that, if they need funds, scientists are better off getting money from big business and telling the corporate suits what they want to hear. Only GM crops get serious attention in the tabloid press, and then only because they arouse the traditional British suspicion of \"mucked-about” food. Governments still expect to win elections on their success in delivering economic growth and individual prosperity, not on their contribution to planetary health.\n\nThere are, to be sure, many uncertainties in the forecasts made by environmental scientists, whether of species extinction, the health effects of pesticides or global warming. The US administration deliberately exploits these, implying that, since scientists are divided over the environment, it is wrong to take any steps that might reduce corporate profits or curtail consumer freedom. Republican Party strategists forbid the use of the term \"global warming\", preferring the more neutral \"climate change\". Much is made of how some scientists in the 1970s worried about a new Ice Age (a worry that never amounted to more than brief minority speculation), and about oil and other natural resources running out (an argument made by the Club of Rome in 1972, only to be modified two years later and abandoned by the early 1980s). The scientific consensus on the broad facts, if not the detailed effects, of global warming is now overwhelming, however. In sharp contrast to the 1970s, scientists have strengthened their warnings, not weakened them, and the reputable dissenters have become fewer. It is as hard now to deny that carbon dioxide emissions and other results of human activity cause global warming as it is to deny that smoking causes lung cancer or that HIV leads to Aids — both denied, for some years, by a few, highly publicised maverick scientists."
+        },
+        {
+          "id": "test-8-reading-c",
+          "title": "Part II Reading Comprehension - Section C",
+          "instructions": "In the following passage, five sentences have been removed from the original text.",
+          "questions": [
+            { "id": "test-8-q61", "number": 61, "text": "Blank 61", "type": "fill-blank", "correctAnswer": "D" },
+            { "id": "test-8-q62", "number": 62, "text": "Blank 62", "type": "fill-blank", "correctAnswer": "E" },
+            { "id": "test-8-q63", "number": 63, "text": "Blank 63", "type": "fill-blank", "correctAnswer": "C" },
+            { "id": "test-8-q64", "number": 64, "text": "Blank 64", "type": "fill-blank", "correctAnswer": "F" },
+            { "id": "test-8-q65", "number": 65, "text": "Blank 65", "type": "fill-blank", "correctAnswer": "B" }
+          ],
+          "content": "To resolve a dispute means to turn opposing positions into a single outcome. The two parties may choose to focus their attention on one or more of three basic factors. They may seek to reconcile their interests, determine who is right, and/or determine who is more powerful.\n\nInterests are needs, desires, concerns, and fears - the things one cares about or wants. They provide the foundation for a person's or an organization's position in a dispute. {{61}} For example, the director of sales for an electronics company gets into a dispute with the director of manufacturing over the number of TV models because her interest is in selling TV sets; more models mean more choices for consumers and hence increased sales. The director of manufacturing, however, wants to produce fewer models. His interest is in decreasing manufacturing costs and more models mean higher costs.\n\nReconciling such interests is not easy. It involves probing for deeply rooted concerns, devising creative solutions, and making trade-offs and compromises where interests are opposed. {{62}} Another interests-based procedure is mediation, in which a third party assists the disputes, the two sides in the dispute, in reaching agreement.\n\nBy no means do all negotiations (or mediations) focus on reconciling interests. {{63}} Other negotiations focus on determining who is more powerful, such as when quarrelling neighbors or nations exchange threats and counter threats. Often negotiations involve a mix of all three – some attempts to satisfy interests, some discussion of rights, and some references to relative power. It is often complicated to attempt to determine who is right in a dispute. Although it is usually straightforward where rights are formalized in law, other rights take the form of unwritten but socially accepted standards of behavior, such as reciprocity, precedent, equality, and seniority.\n\nThere are often different and sometimes contradictory standards that apply to rights. Passage agreement on rights, where the outcome will determine who gets what, can often be so difficult that the parties frequently turn to a third party to determine who is right. The most typical rights procedure is adjudication, in which disputants present evidence and arguments to a neutral third party who has the power to make a decision that must be followed by both disputants. (In mediation, by contrast, the third party does not have the power to decide the dispute.) {{64}} Private adjudication is provided by arbitrators.\n\nA third way to resolve a dispute is on the basis of power. We define power, somewhat narrowly, as the ability to pressure someone to do something he would not otherwise do. {{65}} The exercise of power takes two common forms: acts of aggression, such as physical attack, and withholding the benefits that derives from a relationship, as when employees stop working in a strike.",
+          "sharedOptions": [
+            { "label": "A", "text": "Determine who is the more powerful party without a decisive and potentially destructive power contest is difficult because power is ultimately a matter of perceptions." },
+            { "label": "B", "text": "Exercising power typically means imposing costs on the other side or threatening to do so." },
+            { "label": "C", "text": "Some negotiations focus on determining who is right, such as when two lawyers argue about whose case has the greater merit." },
+            { "label": "D", "text": "In a dispute, not only do the interests of one party not coincide with those of the other party, but they are in conflict." },
+            { "label": "E", "text": "The most common procedure for doing this is negotiation; the act of communication intended to reach agreement." },
+            { "label": "F", "text": "Public adjudication is provided by courts and administrative agencies." }
+          ]
+        },
+        {
+          "id": "test-8-writing-a",
+          "title": "Part III Writing - Section A (Summary)",
+          "instructions": "Read the following article and write a summary of no more than 150 words.",
+          "questions": [
+            {
+              "id": "test-8-q66",
+              "number": 66,
+              "text": "Write a summary of the provided article.",
+              "type": "writing",
+              "correctAnswer": "This essay examines the principal causes and effects of the increase in fast-food consumption over the past 30 years in UK. There are two main reasons: one is the change in commercial practice and the loss of local shops; the other is the change in lifestyle: a busy working week and the loss of the cooking and shopping time for women. The effects are discussed in three aspects: nutrient deficiencies, obesity and the loss of a \"food culture\". Children suffered most from nutrient deficiency when they cannot have enough energy in schools with salty and sweet food; obesity among people may bring some problems both for a country's economy and the individual's health; people's increasing dependence on fast food will result in the loss of the cooking skills and once it happens, it will be difficult to recover."
+            }
+          ],
+          "content": "Although British food has never been known for its subtlety, what has traditionally been produced in the home has without doubt provided the energy needed for a largely industrial workforce and, at the same time, ensured an adequate mix of nutrients and fiber. There is a fear that this, however, is now changing. The post-war period has seen a gradual decrease in the quantity of fresh ingredients used in the home, with a growing use of canned food in the 1950's, then frozen food from the 1960's onwards. This trend has continued to the present day, with the growing popularity of TV-dinners, and of take-away restaurants. This essay will attempt an overview of the reasons for the growth of this \"fast-food culture\", and to outline some of the effects.\n\nGreenwood and Leslie (1999) argue that there are perhaps two main causes for the increase in fast-food consumption, particularly over the past thirty years; changes in commercial practice, and changes in lifestyle.\n\nOne change regarding commercial practice in this period which Greenwood and Leslie (ibid.) stress, has been the increased power of the advertiser. Advertising has been with us for over a century, but the growth of transnational companies, with great spending power and access to increasingly pervasive and persuasive media, has taken place only recently. Assailed from all sides by expensively-produced images in magazines, on television, and via sport sponsorship, it is little wonder that the consumer often chooses a \"brand\", rather than a more traditional source of food or drink.\n\nAnother change in commercial practice highlighted by Greenwood and Leslie has been the loss of local shops. In the recent past, most communities had access to fresh food via a butcher, baker, greengrocer or fishmonger. From the 1970's onwards many of these local food outlets have had to close, unable to compete with the large, out-of-town shopping centers; fresh food still exists, of course, and there is wider choice, but these foods are often accessible only to those with use of a car. The loss of this local resource has contributed considerably to the increased use of canned, frozen and ready-to-eat food.\n\nLet us now turn to the second principal reason for the growth of fast-food consumption, i.e. changes in lifestyle. A typical working week has been growing steadily over the past two decades, with a significant minority of employees working a fifty-hour week. It is hardly surprising in such circumstances that people lack the time either for serious cooking, or for a search for fresh ingredients. Alongside this general erosion of free time has been the more specific loss of time on the part of the mother, the member of the family traditionally associated with shopping and cooking. Greenwood and Leslie (ibid: 66) cite figures to show that over 50% of mothers in Britain now work, and not all are able to combine their traditional role as food-preparer with their new role as food-provider.\n\nHaving looked at the causes for the increase in fast-food consumption in the UK, let us now look at its three main effects: nutrient deficiencies, obesity, and the loss of what Geoffrey (2000) has termed a \"food culture\".\n\nThere has been growing evidence of nutrient deficiency in recent years, particularly among children, whose need for a balanced diet is of course greatest (HMSO, 1996, cited by Ridge 1997). Consumption of crisps and soft drinks, high in salt and sugar content, is growing, to the detriment of consumption of foods higher in nutrient value. As Ridge (ibid) points out, such foods may allow quick peaks of energy, but are unsuitable for the gradual energy release needed to sustain the body through the long school day.\n\nLinked to this change in eating habits has been the increase in obesity, among children as well as adults: according to Banff (1998) this negative development has not been restricted to the United Kingdom. In the United States, over 30% of the population is now officially classed as obese, and more recently developed countries such as China are reporting similar problems. The results of this, Banff warns, are twofold. Firstly, an overweight workforce is less productive. Secondly, people with a weight problem will require increased healthcare, and will die younger, than the non-obese. The economic implications of this for a nation are clear.\n\nA final effect of the increase in fast-food consumption is the gradual loss of a \"food culture\". The skills of cooking have been handed down from one generation to another (most traditionally from mother to daughter). If people become dependent upon ready-made meals from the freezer, or upon take-away meals, there is a danger that these skills will be lost. This is the \"cultural\" aspect to the increase in fast-food consumption, and its importance should not be underestimated; as Geoffrey (ibid: 88) points out, \"once this chain from generation to generation is broken, it may be very difficult to repair.\""
+        },
+        {
+          "id": "test-8-writing-b",
+          "title": "Part 3 Writing - Section B (Essay)",
+          "instructions": "Write an essay of no less than 250 words on the topic given below.",
+          "questions": [
+            {
+              "id": "test-8-q67",
+              "number": 67,
+              "text": "What if school sports were dropped?",
+              "type": "writing",
+              "correctAnswer": "Everyone knows that sports are absolutely necessary to education and school life. If our school sports were dropped, there would be a strong negative influence on school life of students. Firstly, school sports are part of school education. If they were dropped, school students would never get enough physical exercises. School sports can contribute to students' health, which leads to successful career. Middle school or college students are growing up; hence they need exercises as well as nutrients. When they spend lots of time in school, if school sports were dropped, they couldn't have enough exercises. Their interest of sports would be reduced and their agility and response would decline without sports. With a good grade and a poor body, how can a student make a living after graduation? Nobody wants to be a burden of society. Secondly, dropping school sports also affects students' mental health. The technique of cooperation cannot be experienced in classroom. People learn to face everything in sports, be it victory, failure or physical pain. Building up strong characters is what students need when they step into competitive society. Thirdly, dropping school sports would not enhance the academic studies; on the contrary, students would become less energetic and efficient on study. Without enough physical exercises, students would be apt to sleep and fail to concentrate on academic work. Some cven go to Internet bars for relaxation and become lost. In a word, school sports provide an effective way for students to communicate, cooperate among thernselves and care for each other. Those who advocate dropping school sports should be criticized."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "test-9",
+      "title": "Model Test 9",
+      "sections": [
+        {
+          "id": "test-9-listening-a",
+          "title": "Part I Listening Comprehension - Section A",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%209.mp3",
+          "instructions": "In this part, you will hear 10 short conversations.",
+          "questions": [
+            { "id": "test-9-q1", "number": 1, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "Because she may not be able to finish her work before the deadline." }, { "label": "B", "text": "Because she might be missing an appointment with Sarah." }, { "label": "C", "text": "Because she has broken her neck and feels very painful." }, { "label": "D", "text": "Because she doesn't like coffee at all." } ] },
+            { "id": "test-9-q2", "number": 2, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "Because he has no money to buy a new car." }, { "label": "B", "text": "Because he needs to go to work in weekend." }, { "label": "C", "text": "Because he needs to do something to kill time in weekend." }, { "label": "D", "text": "Because he loves his old car very much." } ] },
+            { "id": "test-9-q3", "number": 3, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "The woman thinks the man should make an issue of the damage." }, { "label": "B", "text": "The woman complained about the damage to the man." }, { "label": "C", "text": "The man complained about his tiredness to the woman." }, { "label": "D", "text": "The man caused the damage." } ] },
+            { "id": "test-9-q4", "number": 4, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "The director agreed to their plans completely." }, { "label": "B", "text": "The director objected to their plan." }, { "label": "C", "text": "The director partially agreed with them." }, { "label": "D", "text": "The director didn't say anything." } ] },
+            { "id": "test-9-q5", "number": 5, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "It was kept in the refrigerator." }, { "label": "B", "text": "It was bought yesterday." }, { "label": "C", "text": "It was not preserved well." }, { "label": "D", "text": "Someone has eaten it up." } ] },
+            { "id": "test-9-q6", "number": 6, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "The man forgot to connect his phone yesterday." }, { "label": "B", "text": "The woman tried to connect the man last night." }, { "label": "C", "text": "The man's telephone has broken last night." }, { "label": "D", "text": "Nobody called the man last night." } ] },
+            { "id": "test-9-q7", "number": 7, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "Because he has failed in the exam." }, { "label": "B", "text": "Because he is afraid of taking exams." }, { "label": "C", "text": "Because he is not ready for the exam yet." }, { "label": "D", "text": "Because he has no time to finish the work." } ] },
+            { "id": "test-9-q8", "number": 8, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "He has cut his fingers this morning." }, { "label": "B", "text": "He has drunk too much beer and got a red face." }, { "label": "C", "text": "He has cut his face when shaving." }, { "label": "D", "text": "He has grown mature and sophisticated." } ] },
+            { "id": "test-9-q9", "number": 9, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "Because he is eating something delicious." }, { "label": "B", "text": "Because he has bought two tickets for an excellent show." }, { "label": "C", "text": "Because he is telling a joke." }, { "label": "D", "text": "Because he has got free tickets for the trip to Hawaii." } ] },
+            { "id": "test-9-q10", "number": 10, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "He wants to buy an apartment." }, { "label": "B", "text": "He wants to rent an apartment." }, { "label": "C", "text": "He wants to book a room in a hotel." }, { "label": "D", "text": "He wants to find a safe place to live." } ] }
+          ]
+        },
+        {
+          "id": "test-9-listening-b",
+          "title": "Part I Listening Comprehension - Section B",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%209.mp3",
+          "instructions": "Sentence completion.",
+          "questions": [
+            { "id": "test-9-q11", "number": 11, "text": "The first lines of the book are \"You know more than you think you do\".", "type": "fill-blank", "correctAnswer": "Trust yourself" },
+            { "id": "test-9-q12", "number": 12, "text": "In the past, mothers had been told to reject their __________ about their babies.", "type": "fill-blank", "correctAnswer": "natural feelings" },
+            { "id": "test-9-q13", "number": 13, "text": "John B. Watson's book \"Psychological Care of Infant and Child\" advocates __________ in dealing with children.", "type": "fill-blank", "correctAnswer": "extreme firmness" },
+            { "id": "test-9-q14", "number": 14, "text": "Doctor Spock said that his book was __________ to help parents trust their own natural abilities in caring for their children.", "type": "fill-blank", "correctAnswer": "an effort" },
+            { "id": "test-9-q15", "number": 15, "text": "Doctor Spock's book discusses the __________ development of children.", "type": "fill-blank", "correctAnswer": "mental and emotional" },
+            { "id": "test-9-q16", "number": 16, "text": "During an earthquake, energy is __________ in several forms, including movement, heat, and seismic waves.", "type": "fill-blank", "correctAnswer": "released" },
+            { "id": "test-9-q17", "number": 17, "text": "Earthquakes take place from the __________ of the earth's outermost layer of crust and upper mantle.", "type": "fill-blank", "correctAnswer": "deformation" },
+            { "id": "test-9-q18", "number": 18, "text": "The rates of plate movements range from about __________ per year.", "type": "fill-blank", "correctAnswer": "2 to 12 centimeters" },
+            { "id": "test-9-q19", "number": 19, "text": "The \"Ring of Fire\" circling the Pacific Ocean is one of the most __________ in the world.", "type": "fill-blank", "correctAnswer": "active areas" },
+            { "id": "test-9-q20", "number": 20, "text": "At present, it is not possible to predict earthquakes or to specify __________ their exact date, time and location.", "type": "fill-blank", "correctAnswer": "in advance" }
+          ]
+        },
+        {
+          "id": "test-9-listening-c",
+          "title": "Part I Listening Comprehension - Section C",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%209.mp3",
+          "instructions": "Short answers.",
+          "questions": [
+            { "id": "test-9-q21", "number": 21, "text": "Which period in history is called \"The Age of Genius\"?", "type": "fill-blank", "correctAnswer": "The 16th century." },
+            { "id": "test-9-q22", "number": 22, "text": "According to this mini-talk, what is Leonardo de Vinci famous for?", "type": "fill-blank", "correctAnswer": "His paintings and his talent in the sciences." },
+            { "id": "test-9-q23", "number": 23, "text": "What is Michelangelo's best-known work?", "type": "fill-blank", "correctAnswer": "The painting on the ceiling of a church in Rome." },
+            { "id": "test-9-q24", "number": 24, "text": "What is one of the most surprising things about football in England?", "type": "fill-blank", "correctAnswer": "Even a small boy may have great knowledge of football." },
+            { "id": "test-9-q25", "number": 25, "text": "What does education mean in England?", "type": "fill-blank", "correctAnswer": "To fill one's mind with knowledge and to train one's character." },
+            { "id": "test-9-q26", "number": 26, "text": "Why is football a game in every school in England?", "type": "fill-blank", "correctAnswer": "Because the team game is good both for the body and the mind." },
+            { "id": "test-9-q27", "number": 27, "text": "What is a mystery according to the talk?", "type": "fill-blank", "correctAnswer": "The origin of language." },
+            { "id": "test-9-q28", "number": 28, "text": "According to the speaker, why did men invent sounds and words?", "type": "fill-blank", "correctAnswer": "To communicate with each other." },
+            { "id": "test-9-q29", "number": 29, "text": "What is the power of words?", "type": "fill-blank", "correctAnswer": "Their association." },
+            { "id": "test-9-q30", "number": 30, "text": "What is a real poet considered as?", "type": "fill-blank", "correctAnswer": "A master of words." }
+          ]
+        },
+        {
+          "id": "test-9-use-of-english-a",
+          "title": "Part II Use of English - Section A",
+          "instructions": "Cloze test.",
+          "questions": [
+            { "id": "test-9-q31", "number": 31, "text": "Fill in blank 31", "type": "fill-blank", "correctAnswer": "roads" },
+            { "id": "test-9-q32", "number": 32, "text": "Fill in blank 32", "type": "fill-blank", "correctAnswer": "events" },
+            { "id": "test-9-q33", "number": 33, "text": "Fill in blank 33", "type": "fill-blank", "correctAnswer": "Native" },
+            { "id": "test-9-q34", "number": 34, "text": "Fill in blank 34", "type": "fill-blank", "correctAnswer": "looked for" },
+            { "id": "test-9-q35", "number": 35, "text": "Fill in blank 35", "type": "fill-blank", "correctAnswer": "gold" },
+            { "id": "test-9-q36", "number": 36, "text": "Fill in blank 36", "type": "fill-blank", "correctAnswer": "popular" },
+            { "id": "test-9-q37", "number": 37, "text": "Fill in blank 37", "type": "fill-blank", "correctAnswer": "frightening" },
+            { "id": "test-9-q38", "number": 38, "text": "Fill in blank 38", "type": "fill-blank", "correctAnswer": "changed" },
+            { "id": "test-9-q39", "number": 39, "text": "Fill in blank 39", "type": "fill-blank", "correctAnswer": "adventures" },
+            { "id": "test-9-q40", "number": 40, "text": "Fill in blank 40", "type": "fill-blank", "correctAnswer": "society" },
+            { "id": "test-9-q41", "number": 41, "text": "Fill in blank 41", "type": "fill-blank", "correctAnswer": "escape" },
+            { "id": "test-9-q42", "number": 42, "text": "Fill in blank 42", "type": "fill-blank", "correctAnswer": "disappointed" },
+            { "id": "test-9-q43", "number": 43, "text": "Fill in blank 43", "type": "fill-blank", "correctAnswer": "supported" },
+            { "id": "test-9-q44", "number": 44, "text": "Fill in blank 44", "type": "fill-blank", "correctAnswer": "But" },
+            { "id": "test-9-q45", "number": 45, "text": "Fill in blank 45", "type": "fill-blank", "correctAnswer": "with" }
+          ],
+          "content": "The North American West has meant adventure since the journalist Horace Greeley said his famous words, \"Go West, young man!\" The West means long straight {{31}} or trails, open spaces and amazing views.\n\nThe story of the West is the story of American lives and the important {{32}} in history that changed them. {{33}} Americans who lost their lands in the East went west after the \"white man\" arrived. Cowboys went west for jobs on huge ranches in Texas. African-Americans left their homes in the South and {{34}} new lives in the West after the Civil War.\n\nIn the nineteenth century, people went west for {{35}} work, and good homes for their families. Tourism in the West was not {{36}} in those days. In fact, many people thought the West was ugly and {{37}}. One disgusted visitor from the East saw the Grand Canyon and said, \"It's no place for a gentleman, sir!\"\n\nThese feelings {{38}} completely in the twentieth century. Route 66, the road from Chicago to California, became the trail people followed to new and exciting {{39}} In the 1950s, the West offered an escape for young people who were not satisfied with American {{40}} In 1957, Jack Kerouac wrote On the Road, a book that described this {{41}} for the beat generation of the 1950s. In the 1960s, San Francisco became a center for the hippy generation. Many of these \"flower children\" were {{42}} in the United States government because it {{43}} the Vietnam War.\n\nThese days, many people who go west are buying expensive homes in states like Arizona and Montana. The West which we know today is not very wild anymore. {{44}} it is very beautiful, {{45}} a colorful history that holds magic for many people.",
+          "sharedOptions": [
+            { "label": "A", "text": "exhilarant" }, { "label": "B", "text": "changed" }, { "label": "C", "text": "looked for" }, { "label": "D", "text": "discouraged" }, { "label": "E", "text": "coast" },
+            { "label": "F", "text": "but" }, { "label": "G", "text": "roads" }, { "label": "H", "text": "supported" }, { "label": "I", "text": "welfare" }, { "label": "J", "text": "occurrences" },
+            { "label": "K", "text": "populous" }, { "label": "L", "text": "with" }, { "label": "M", "text": "as" }, { "label": "N", "text": "escape" }, { "label": "O", "text": "history" },
+            { "label": "P", "text": "adventures" }, { "label": "Q", "text": "and" }, { "label": "R", "text": "disappointed" }, { "label": "S", "text": "diamond" }, { "label": "T", "text": "turned to" },
+            { "label": "U", "text": "local" }, { "label": "V", "text": "frightening" }, { "label": "W", "text": "society" }, { "label": "X", "text": "curious" }, { "label": "Y", "text": "native" },
+            { "label": "Z", "text": "gold" }, { "label": "AA", "text": "avenue" }, { "label": "BB", "text": "popular" }, { "label": "CC", "text": "events" }, { "label": "DD", "text": "accidents" }
+          ]
+        },
+        {
+          "id": "test-9-reading-b-passage-1",
+          "title": "Part II Reading Comprehension - Section B - Passage 1",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-9-q46",
+              "number": 46,
+              "text": "What can be inferred about the modern media of communication?",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "Radio programs evoke deep thinking in audience." }, { "label": "B", "text": "Television talk shows expose more serious social problems with deep insight." }, { "label": "C", "text": "Newspapers tend to be more objective review of problems." }, { "label": "D", "text": "Audience are more in favor of real competition on the political scene not represented via media." } ]
+            },
+            {
+              "id": "test-9-q47",
+              "number": 47,
+              "text": "Talk shows are mentioned to illustrate that",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "the interviewees can express their own ideas as freely as possible." }, { "label": "B", "text": "they can provide information and stimulate healthy discussion." }, { "label": "C", "text": "the interviewer manipulates public idea to a great extent." }, { "label": "D", "text": "television plays a greater role in promoting knowledge spread." } ]
+            },
+            {
+              "id": "test-9-q48",
+              "number": 48,
+              "text": "How does the new elite influence the elected government?",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "They stick to an ideal and fight for it." }, { "label": "B", "text": "They can be constructive to those political officials in their campaigns for election." }, { "label": "C", "text": "They stealthily modify the constitution." }, { "label": "D", "text": "They unambiguously provide information without bias." } ]
+            },
+            {
+              "id": "test-9-q49",
+              "number": 49,
+              "text": "The new elite may temper the democracy in a bad way by",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "devoting to a public cause." }, { "label": "B", "text": "forgetting public interest." }, { "label": "C", "text": "striving for a public position." }, { "label": "D", "text": "appealing to a public institution." } ]
+            },
+            {
+              "id": "test-9-q50",
+              "number": 50,
+              "text": "What is the relationship between mediacracy and democracy according to the author?",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "Mediacracy may displace representative democracy." }, { "label": "B", "text": "They facilitate each other." }, { "label": "C", "text": "Representative democracy may be upgraded by mediacracy." }, { "label": "D", "text": "Mediacracy may be manipulated by representative democracy." } ]
+            }
+          ],
+          "content": "To be sure, the times and the setting differ. While we may still have Cleons and Cleophons vying for power on the political scene, and competing for elected office, there are also other ways through which influence and power can be gained in our age, ways offered by the modern media of communication. These include newspapers, radio, and television. The first have some tradition of a detached analysis and evaluation of political issues, a tradition which is still continued in some publications. The other two, due to their very nature, are more likely to generate intellectual bubbles than serious reflection. This may be particularly true of television. Moreover, the interviewers on these media wield considerable power in setting up the discussion, in selecting the interviewees, in directing the talk with them, and between them and the public. This transpires on the proliferating \"talk-shows,\" which captivate the attention of the American public. According to one report, one half of American adults listen to such talks at least once a week, and some talk-show hosts, like Rush Limbaugh, reach an audience of 20 million people.\n\nAll this involves the political ascendancy of the assorted journalists, television personalities, talk-radio hosts and the like. The gate is open to entertainers, ex-politicians, adventurers, to enter the arena of politics-ostensibly to provide information and to stimulate healthy discussion, but all too often to manipulate and control public opinion. Some of these new elites may be genuinely committed to an ideal, while others are self-seeking individuals trying to gain fame and power for themselves with little concern for the public weal. Moreover, the more popular personalities of the media can be of great help to political officials and candidates, and thus exert an indirect influence on the composition of the elected government.\n\nThus there is a possibility that in American democracy the leadership will at least partly slip into the hands of unelected and technically extra-constitutional individuals, eager for popularity and personal success and oblivious of public responsibility. This opens the door for demagoguery and may undermine the authority and stature of elected officials. Even if it would be an exaggeration to expect that this media elite will replace the official people's representatives, and make the latter completely dependent on the former, the ascendancy of the mediacracy threatens the present institutions and may facilitate the degeneration of representative democracy. We may well follow the pattern of decline of ancient Athens in our own peculiar modern way."
+        },
+        {
+          "id": "test-9-reading-b-passage-2",
+          "title": "Part II Reading Comprehension - Section B - Passage 2",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-9-q51",
+              "number": 51,
+              "text": "Why does the cover story explore Tony Blair's alternative job prospects?",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "People suspect that he can not serve a third term." }, { "label": "B", "text": "His grand election victories find him a way into other fields." }, { "label": "C", "text": "People suspect that he cheated in the former elections." }, { "label": "D", "text": "He did underhanded things so as not to be worthy of trust." } ]
+            },
+            {
+              "id": "test-9-q52",
+              "number": 52,
+              "text": "According to the author, what did Tony Blair NOT do?",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [ { "label": "A", "text": "He committed a serious mistake concerning the problem of Iraq." }, { "label": "B", "text": "He misinterpreted the situation in Iraq." }, { "label": "C", "text": "He undermined the image of his party." }, { "label": "D", "text": "He showed sympathy to Saddam Hussein." } ]
+            },
+            {
+              "id": "test-9-q53",
+              "number": 53,
+              "text": "What is Bremer's idea of Blair's claim of “massive evidence of a huge system of clandestine laboratories”?",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "It is a new way to reinforce the American security." }, { "label": "B", "text": "It condemns America to danger." }, { "label": "C", "text": "It is intended to work against American policy." }, { "label": "D", "text": "It is indeed invaluable because it is secret." } ]
+            },
+            {
+              "id": "test-9-q54",
+              "number": 54,
+              "text": "What is implied about political claims?",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "They are usually confirmed by solid evidence." }, { "label": "B", "text": "They are often proved by adequate information." }, { "label": "C", "text": "Statistics are often made deceptively reasonable." }, { "label": "D", "text": "Close examination often crystalize the truth." } ]
+            },
+            {
+              "id": "test-9-q55",
+              "number": 55,
+              "text": "What can be inferred about Tony Blair in the last paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "He lost trust from the public." }, { "label": "B", "text": "He is trying to compensate in other fields." }, { "label": "C", "text": "He is preoccupied with election campaigns." }, { "label": "D", "text": "He merits being listened to." } ]
+            }
+          ],
+          "content": "It may seem extraordinary that, with two spectacular election victories under his belt and a third likely, there should be so much speculation about whether Tony Blair can survive 2004 to the extent that our cover story this week explores his alternative job prospects. Yet every day, it becomes clearer that the Prime Minister's error over Iraq was so catastrophic, so patent an example of bad judgement, so contrary to the spirit of his party as to pollute the entire new Labour project. Nobody should shed tears for Saddam Hussein or doubt that most Iraqis rejoice at his downfall and subsequent capture. But what supposedly made Saddam different from dozens of other brutal dictators around the world (of whom some are treated as friends of the west) was the threat he posed to British and American security. Not a scrap of support for the existence of such a threat has been found. If, as Mr. Blair says, there is now \"massive evidence of a huge system of clandestine laboratories\", why can the laboratories themselves not be found? The claim seemed so absurd to Paul Bremer, America's equivalent of a colonial governor in Iraq, that until told that it had been made by the PM, he suggested it was part of some devious attempt to undermine US and British policy.\n\nMost political claims can be justified one way or another with sufficient massage of facts and figures; alternatively, it can be denied the claims were ever made in the form that people thought they were made. But Mr. Blair was unequivocal. Saddam had weapons of mass destruction; no ifs and buts; the PM knew more than he could tell us. Now the news from Iraq is just as unequivocal. Nobody is bothering to look for WMDs any more. Mr. Blair's insistence that he really meant “programmes\" or just \"intentions to acquire\" makes him look both comic and pathetic.\n\nThe result is that everything else his government says and does becomes suspect. Are the figures that show progress towards eradicating child poverty also sexed up? Can we believe anything we are told about improvements in health or education? Are the imminent terrorist attacks of which ministers warn as illusory as Saddam's WMDs? Mr Blair's authority is now so eroded that he does not get a hearing even when he deserves it. For top-up university fees, for example, there is a strong social democratic case to be made. But nobody would listen to Mr. Blair making it, even if he were capable of doing so. The whole issue has become so bound up with the political fallout from Iraq that there is almost no chance of a serious public debate."
+        },
+        {
+          "id": "test-9-reading-b-passage-3",
+          "title": "Part II Reading Comprehension - Section B - Passage 3",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-9-q56",
+              "number": 56,
+              "text": "It can be inferred from the first paragraph that",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [ { "label": "A", "text": "strict laws are brought into effect concerning treatment of the elderly." }, { "label": "B", "text": "mistreatment of the elderly is dealt with effectively in the States." }, { "label": "C", "text": "substantial abuses of the elderly are detected all over the country." }, { "label": "D", "text": "maltreatment of the elderly is not complained about as it should be." } ]
+            },
+            {
+              "id": "test-9-q57",
+              "number": 57,
+              "text": "What is one of the findings of the cited study?",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "Senior people are more vulnerable to mistreatment if they have many requirements." }, { "label": "B", "text": "It is difficult to keep better records of domestic abuse." }, { "label": "C", "text": "Compulsory reporting contributes to higher incidence of investigation." }, { "label": "D", "text": "Abuse of adults over 60 is reported more than that of those under 55." } ]
+            },
+            {
+              "id": "test-9-q58",
+              "number": 58,
+              "text": "What can be said about domestic eider abuse?",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "People are often abused because of bad mental condition." }, { "label": "B", "text": "Adults are better treated at home than at care facilities." }, { "label": "C", "text": "Those senior people who are weak physically or mentally sometimes become a victim to family abuse." }, { "label": "D", "text": "It renders old people more dependent on others for their daily living." } ]
+            },
+            {
+              "id": "test-9-q59",
+              "number": 59,
+              "text": "What is the drawback of the elder abuse reporting system?",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "The information collecting and laws concerning elder abuse are not consistent." }, { "label": "B", "text": "Reports of elder abuse received by the states are often alleged to be true." }, { "label": "C", "text": "The investigation and substantiation tend to be time-consuming." }, { "label": "D", "text": "It only aims to deal with some mistreatment of the elder that takes place at home." } ]
+            },
+            {
+              "id": "test-9-q60",
+              "number": 60,
+              "text": "It can be inferred from the last two paragraphs that the model elder abuse reporting system",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "is not shared by both adults and children." }, { "label": "B", "text": "does not apply effectively everywhere." }, { "label": "C", "text": "deals with children abuse more accurately." }, { "label": "D", "text": "works better with elder abuse." } ]
+            }
+          ],
+          "content": "Although all states have laws and services in place to detect domestic elder abuse, only about one in five actual cases is reported and substantiated. How cases are detected and dispatched differs significantly across the nation because laws and regulations vary greatly.\n\nIn particular, a University of Iowa, Ames, study found that states that demand mandatory reporting and tracking of domestic elder abuse have much higher investigation rates than those without these requirements.\n\nDomestic elder abuse is the victimization of adults or dependent/ vulnerable adults age 60 and older — age 65 and older in California, Maryland, and Nebraska; age 55 and older in Alabama — who live in private residences, not care facilities. Dependent adults are unable to care for themselves as a result of a physical or mental condition and depend on others to help them with tasks of daily living.\n\n\"Our findings suggest that improvements and standardization are needed nationwide in how information on elder abuse is collected and how state laws are created,\" says Gerald Jogerst, associate professor and interim head of family medicine in the Roy J. and Lucille A. Carver College of Medicine and lead investigator in the study.\n\nA \"report\" is an allegation or suspicion of maltreatment received by a state's adult protective service; an \"investigation\" involves actually going to a potential victim's home to see whether abuse is taking place; and \"substantiation\" is the finding of offenses as defined by that state's law.\n\nThe researchers found that domestic elder abuse reports varied from 4.5 per 1,000 elders in New Hampshire to 14.6 in California. \"The range of reporting rates is very high, and is one of the indicators that there is high variability in how states document elder abuse.\" Investigation rates ranged from 0.5 per 1,000 in Wyoming to 12.1 in Texas. Substantiations ranged from 0.1 per 1,000 in Wyoming to 8.6 in Minnesota. Forty-five percent of cases investigated were classified as actual abuse according to state laws.\n\n\"The National Association of Adult Protective Services has a model reporting system for states to mimic. However, some states are hindered in implementing the model because their adult and child protection services share a computerized system,\" points out Jeanette Daly, geriatric nurse researcher in family medicine and the study's co-principal investigator.\n\nThe researchers also found that states where investigators handle only elder abuse cases had a nearly 50% substantiation ratio compared to 34% where investigators handle both child and elder abuse cases. \"This substantiation difference may exist because investigators devoted to one type of abuse probably acquire more expertise by doing more elder abuse investigations,\" Jogerst concludes."
+        },
+        {
+          "id": "test-9-reading-c",
+          "title": "Part II Reading Comprehension - Section C",
+          "instructions": "In the following passage, five sentences have been removed from the original text.",
+          "questions": [
+            { "id": "test-9-q61", "number": 61, "text": "Choose the best sentence for blank 61", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "Access to inadequate facilities..." }, { "label": "B", "text": "As a result..." }, { "label": "C", "text": "The practice has been..." }, { "label": "D", "text": "Safer weaning can be achieved..." }, { "label": "E", "text": "Nutrition and health promotion..." }, { "label": "F", "text": "\"Dialogue on Diarrhoea\"..." } ] },
+            { "id": "test-9-q62", "number": 62, "text": "Choose the best sentence for blank 62", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "Access to inadequate facilities..." }, { "label": "B", "text": "As a result..." }, { "label": "C", "text": "The practice has been..." }, { "label": "D", "text": "Safer weaning can be achieved..." }, { "label": "E", "text": "Nutrition and health promotion..." }, { "label": "F", "text": "\"Dialogue on Diarrhoea\"..." } ] },
+            { "id": "test-9-q63", "number": 63, "text": "Choose the best sentence for blank 63", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "Access to inadequate facilities..." }, { "label": "B", "text": "As a result..." }, { "label": "C", "text": "The practice has been..." }, { "label": "D", "text": "Safer weaning can be achieved..." }, { "label": "E", "text": "Nutrition and health promotion..." }, { "label": "F", "text": "\"Dialogue on Diarrhoea\"..." } ] },
+            { "id": "test-9-q64", "number": 64, "text": "Choose the best sentence for blank 64", "type": "multiple-choice", "correctAnswer": "F", "options": [ { "label": "A", "text": "Access to inadequate facilities..." }, { "label": "B", "text": "As a result..." }, { "label": "C", "text": "The practice has been..." }, { "label": "D", "text": "Safer weaning can be achieved..." }, { "label": "E", "text": "Nutrition and health promotion..." }, { "label": "F", "text": "\"Dialogue on Diarrhoea\"..." } ] },
+            { "id": "test-9-q65", "number": 65, "text": "Choose the best sentence for blank 65", "type": "multiple-choice", "correctAnswer": "E", "options": [ { "label": "A", "text": "Access to inadequate facilities..." }, { "label": "B", "text": "As a result..." }, { "label": "C", "text": "The practice has been..." }, { "label": "D", "text": "Safer weaning can be achieved..." }, { "label": "E", "text": "Nutrition and health promotion..." }, { "label": "F", "text": "\"Dialogue on Diarrhoea\"..." } ] }
+          ],
+          "content": "Malnutrition during weaning age — when breast milk is being replaced by semi-solid foods — is highly prevalent in children of poor households in many developing countries. While the etiology is complex and multi-factorial, the immediate causes are recognized as feeding at less than adequate levels for child growth and development, and recurrent infections, including diarrhoea resulting mainly from ingestion of contaminated foods. Special weaning foods are seldom available at a cost affordable by the poor households. {{61}} Such traditional weaning food preparations do not satisfy the energy and other nutrient needs if they are either too liquid and, thus, have a very low energy density, or too bulky from which enough cannot be consumed by young children. On the other hand, the preparation itself is often contaminated with various germs. Highly contaminated weaning foods are reported to be associated with severity of malnutrition in young children. {{62}} Under conditions such as lack of clean water, refrigerator, fuel, adequate sewage disposal, as well as enough time to prepare fresh food for every meal it is hardly possible to provide young children with uncontaminated weaning foods. As a result of insufficient food intake and frequent diarrhoea, many young children, particularly between 6 months to two years of age, experience weight loss and impaired growth and development.\n\n{{63}} How to reach these goals in simple, practical and economical ways has been the subject of extensive studies by investigators from Ghana, India, Tanzania, Sweden and other countries in recent years. The efforts, concentrated on traditional food preparation methods, have resulted in offering cheap and practical answers to these problems from familiar, indigenous and culturally acceptable home-processing practices. {{64}}\n\nFirstly, cereal fermentation is used for reducing the risk of contamination under the existing inappropriate conditions for food preparation and storage in many households. Secondly, trials in some developing countries indicate the value of using a tiny amount of sprouted grains' flour in preparation of weaning foods as a magic way to thin down the viscosity without decreasing energy density. {{65}}",
+          "sharedOptions": [
+            { "label": "A", "text": "Access to inadequate facilities — for both preparation and storage of foods — by many poor households contribute substantially to weaning food contamination." },
+            { "label": "B", "text": "As a result, staple foods cooked in water are normally fed to weaning age children in the form of gruels." },
+            { "label": "C", "text": "The practice has been a traditional way of food preservation in many parts of the world." },
+            { "label": "D", "text": "Safer weaning can be achieved through preparation of hygienic and nutritionally balanced weaning foods with high energy density per unit volume, of which enough can be eaten." },
+            { "label": "E", "text": "Nutrition and health promotion programs can benefit greatly from such strategies in order to reduce the prevalence of food-related diarrhoeal diseases, as well as to increase energy intakes of many poor weaning-age children around the world." },
+            { "label": "F", "text": "\"Dialogue on Diarrhoea\" has recently produced an issue in which the method of fermentation is discussed for a safe weaning." }
+          ]
+        },
+        {
+          "id": "test-9-writing-a",
+          "title": "Part III Writing - Section A (Summary)",
+          "instructions": "Write a summary of no more than 150 words.",
+          "questions": [
+            {
+              "id": "test-9-q66",
+              "number": 66,
+              "text": "Write a summary of the provided article.",
+              "type": "writing",
+              "correctAnswer": "Some experts are worrying about the infections that donated tissue have brought to the recipients. They claim that there are serious holes in the system to monitor the trade in donor tissue, while the official from the donor tissue companies argues that hospitals should be responsible for the infections. Although organ procurement organizations can follow strict federal guidelines to match donors and recipients, the tissue banks get body parts from various sources. The industry of donor tissue is growing rapidly and making more money now, but experts are worrying about the lack of insight — there is not a guideline that all the tissue banks are supposed to follow to ensure that tissues are obtained in a germ-free way."
+            }
+          ],
+          "content": "Donation of organs like hearts and livers are regulated zealously, but when it comes to human tissues — ligaments, tendons, bones, skin and other body parts — there is little oversight. This situation worries a growing number of experts, who fear that improperly handled tissue can transmit dangerous or even lethal infections.\n\nA 23-year old student in Minnesota, Brian Lykins, died in November, after being given donor knee tissue the Centers for Disease Control and Prevention later determined was infected with Clostridium sordellii, a close relative of the bacteria that cause gas gangrene. Since his death, the centers have turned up six more cases of clostridia infections in knee surgery patients around the country.\n\nDr. Warren King, an orthopedic surgeon in Palo Alto, Calif., said he knew of four people in California alone who developed life-threatening clostridia infections after surgery involving donor tissue. One was a patient referred to him, Alan Monvielle of Aptos, Calif., who almost died of gangrene after an earlier operation to repair an injured knee. Antibiotics saved him, but Mr. Monvielle now has a limp and cannot handle the big cement trucks he once drove for a living. His only hope for a full recovery is a knee replacement, but doctors advise against it — the bacteria that cause his gangrene may be dormant in his tissue, and more surgery might activate them and kill him.\n\nOfficials from companies that provide donor tissue generally attribute the infections to ambient bacteria in hospital operating rooms. But other experts say the cases point to serious holes in the system to monitor the trade in donor tissue.\n\nWhole organs like hearts, kidneys and livers can be taken from only a small number of donors who are brain-dead but on life support. Organ procurement organizations work closely with hospitals to match donors and recipients, following strict federal guidelines.\n\nBy contrast, tissue banks obtain bone, skin, blood vessels and valves, corneas and other body parts from many organizations, including universities, hospitals, morgues and even funeral homes. Many of the banks are highly reputable national or regional organizations, which take great care to recover tissue from donors who are free of disease. Some are small local charities working with a single hospital or university. But, increasingly, donor tissue is being collected, processed and sold by subsidiaries of for-profit companies, in a rapidly growing industry that is largely unregulated.\n\nThere is no ventral registry of people who receive this tissue, so it is not clear how many tissue transplant recipients are being harmed. Last year, tissue bands distributed more than 750,000 grafts, and there were few reports of serious complications. Donor tissue unquestionably saves lives and helps thousands of people each year with a growing list of life-enhancing products like knee ligaments and bone cement.\n\nBut the lack of oversight is worrisome, according to experts like Dr. George F. Grob, a deputy inspector general at the Department of Health and Human Services, who testified on the issue before Congress last year.\n\nThough an industry group sets voluntary guidelines, most tissue banks are not members and many set their own guidelines. As a result, Dr. King of Palo Alto said, tissue may be obtained by poorly trained technicians who may not keep it germ-free. Some of the standard treatments used to kill bacteria in processed tissues are not effective against clostridia, the major problem in knee surgery cases.\n\nIt is illegal to sell body parts. But it is legal to charge \"reasonable\" fees for collecting, shipping, processing, marketing and implanting them. Reasonable fees are nowhere defined by any federal agency, but a typical human body is now widely estimated to be worth as much as $220,000 in useful parts.\n\nAccording to Senator Susan Collins, Republican of Maine, who was chairwoman of a hearing on tissue-bank practices in May, a decade ago tissue industry revenues were $20 million a year. By 2003, she said, revenues are expected to reach $1 billion. In 1994, 6,000 people became tissue donors; in 1999 there were 20,000. Tissue from one donor, she said, can be used by 50 to 100 people.\n\nThe engine driving this growth is biomedical innovation. A handful of companies have patented techniques for turning tissues into extremely useful products, like bones that are tooled into special shapes or ground into powders and pastes. Manufacturers market these products aggressively to hospital purchasing agents."
+        },
+        {
+          "id": "test-9-writing-b",
+          "title": "Part III Writing - Section B (Essay)",
+          "instructions": "Write an essay of no less than 250 words on the topic given below.",
+          "questions": [
+            {
+              "id": "test-9-q67",
+              "number": 67,
+              "text": "Topic: Is Google a blessing or a curse?",
+              "type": "writing",
+              "correctAnswer": "We live in an information era. The Internet leads to an information flood. The explosion of information really makes it hard for us to access the exactly information we need. So, Google came out. As a search engine, its efficiency and power make it our best assistant and information collector in our daily life and research. It can help us catch a little fish from a big pond very fast. However, Google makes plagiarism much easier. In the past, plagiarism was simply stealing and using someone else's idea without giving credit. But today, in the age of Internet, with the help of Google and other search engines, plagiarism means copy and paste. At universities, many students download articles from Internet and take them as their own. They search for everything and copy everything without any sense of guilt. It is no longer surprising to see two articles handed in by different students were almost the same. Google turns into a powerful weapon for the plagiarists. Though Google provides conveniences to plagiarism, it can detect plagiarism too. The easiest way to check suspect passages in a paper for plagiarism is to submit them to Google. Google can be used as a plagiarism detection tool to track down Internet plagiarism. Its advanced search engine helps to locate key phrases that may appear in students' papers. Obviously, Google is a two-edged weapon, which can be used equally for good or evil. It is now used for both. Google certainly will not just disappear, and neither will plagiarism. Whether it is a blessing or a curse lies in the attitude of the Google users. Building new ideas from old ideas, using exiting components and combing them in new ways, might be creativity, not plagiarism. We should make full use of Google and shouldn't copy everything blindly."
+            }
+          ]
+        }
+      ]
+    }
+]
+}

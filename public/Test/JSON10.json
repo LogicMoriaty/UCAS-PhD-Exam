@@ -8,7 +8,7 @@
         {
           "id": "test-10-listening-a",
           "title": "Part I Listening Comprehension - Section A",
-          "audioSrc": "https://ucasphdlistening.logicmoriaty.top/Model%20Test%2010.mp3",
+          "audioSrc": "https://image.logicmoriaty.top/UCASListening/Listen/Model%20Test%2010.mp3",
           "instructions": "In this part, you will hear 10 short conversations. At the end of each conversation, a question will be asked about what is said. Each conversation and the question will be spoken only once. When you hear the question, read the four choices of the answer given and choose the best one by marking the corresponding letter A, B, C, or D on your Answer Sheet I.",
           "questions": [
             { "id": "test-10-q1", "number": 1, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "He will be writing a report." }, { "label": "B", "text": "He will be driving to the airport." }, { "label": "C", "text": "He will be having a rest." }, { "label": "D", "text": "He will be attending a staff meeting." } ] },
@@ -26,7 +26,7 @@
         {
           "id": "test-10-listening-b",
           "title": "Part I Listening Comprehension - Section B",
-          "audioSrc": "https://ucasphdlistening.logicmoriaty.top/Model%20Test%2010.mp3",
+          "audioSrc": "https://image.logicmoriaty.top/UCASListening/Listen/Model%20Test%2010.mp3",
           "instructions": "In this part, you will hear two mini-talks. While you listen, complete the sentences in your Answer Sheet II for Questions 11 to 20 by writing NO MORE THAN THREE WORDS in each sentence. You will hear each talk or conversation TWICE.Questions I1 to 15 are based on a talk about home security. You now have 30 seconds to read Questions 11 to 15. Questions 16 to 20 are based on a talk about eclipses. You now have 30 seconds to read Questions 16 to 20.",
           "questions": [
             { "id": "test-10-q11", "number": 11, "text": "Unlocked doors or windows leave easy _______ the home for burglars.", "type": "fill-blank", "correctAnswer": "access to" },
@@ -44,7 +44,7 @@
         {
           "id": "test-10-listening-c",
           "title": "Part I Listening Comprehension - Section C",
-          "audioSrc": "https://ucasphdlistening.logicmoriaty.top/Model%20Test%2010.mp3",
+          "audioSrc": "https://image.logicmoriaty.top/UCASListening/Listen/Model%20Test%2010.mp3",
           "instructions": "In this part, you will hear three mini-talks and each of them will be spoken only once. While listening to them, read the questions that follow each talk. At the end of each mini-talk you will hear the questions read to you. There will be a 40-second-pause after each question. During the pause, you will be asked to write down your answer on your Answer Sheet II, using one sentence only, either complete or incomplete. Your answer should be concise and to the point.Questions 21 to 23 are based on Mini-talk One: Mini-talk One Questions 24 to 26 are based on Mini-talk Two: Mini-talk Two Questions 27 to 30 are based on Mini-talk Three: Mini-talk Three",
           "questions": [
             { "id": "test-10-q21", "number": 21, "text": "What was considered impolite behavior for a man a few years ago?", "type": "fill-blank", "correctAnswer": "To smoke on the street (or: when a lady was in the room)." },

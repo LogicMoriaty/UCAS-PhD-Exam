@@ -7,7 +7,7 @@ import VocabSidebar from './components/VocabSidebar';
 import { parseExamFiles, parseReferenceFiles, repairReferenceJson } from './services/geminiService';
 
 const translations: Translation = {
-  title: { en: "PhD English Prep", zh: "博士英语考试 By Logic Moriaty" },
+  title: { en: "PhD English Prep", zh: "博士英语资格考试" },
   subtitle: { en: "Upload your PDF containing multiple mock exams.", zh: "上传包含多套模拟题的PDF文件。" },
   uploadBtn: { en: "Upload PDF", zh: "上传 PDF" },
   loadTest: { en: "Load Built-in Tests", zh: "加载内置模拟题" },
@@ -119,6 +119,18 @@ const App: React.FC = () => {
     if (availableExams.length > 0) return;
 
     const loadDefaultExams = async () => {
+      // Try to load from localStorage first for persistence of AI explanations and analyses
+      const storedExams = localStorage.getItem('persistedExams');
+      if (storedExams) {
+          try {
+              const parsed = JSON.parse(storedExams);
+              if (parsed.length > 0) {
+                  setAvailableExams(parsed);
+                  return;
+              }
+          } catch(e) { console.error("Failed to load persisted exams", e); }
+      }
+
       const files = ['/Test/JSON1-5.json', '/Test/JSON6-9.json', '/Test/JSON10.json'];
       const loadedExams: ExamData[] = [];
       let hasError = false;
@@ -163,7 +175,76 @@ const App: React.FC = () => {
     };
     
     loadDefaultExams();
-  }, [availableExams.length]);
+  }, []);
+
+  // Save exams to localStorage whenever they change (to persist AI explanations and passage analyses)
+  useEffect(() => {
+      if (availableExams.length > 0) {
+          try {
+            localStorage.setItem('persistedExams', JSON.stringify(availableExams));
+          } catch (e) {
+            console.warn("Failed to persist exams (quota exceeded?)", e);
+          }
+      }
+  }, [availableExams]);
+
+  const handleUpdateQuestion = (examId: string, questionId: string, updates: any) => {
+      setAvailableExams(prev => prev.map(exam => {
+          if (exam.id !== examId) return exam;
+          return {
+              ...exam,
+              sections: exam.sections.map(sec => ({
+                  ...sec,
+                  questions: sec.questions.map(q => {
+                      if (q.id === questionId) return { ...q, ...updates };
+                      return q;
+                  })
+              }))
+          };
+      }));
+      // Update selected exam as well to reflect changes immediately
+      if (selectedExam && selectedExam.id === examId) {
+          setSelectedExam(prev => {
+              if (!prev) return null;
+              return {
+                  ...prev,
+                  sections: prev.sections.map(sec => ({
+                      ...sec,
+                      questions: sec.questions.map(q => {
+                          if (q.id === questionId) return { ...q, ...updates };
+                          return q;
+                      })
+                  }))
+              };
+          });
+      }
+  };
+
+  const handleUpdateSection = (examId: string, sectionId: string, updates: any) => {
+      setAvailableExams(prev => prev.map(exam => {
+          if (exam.id !== examId) return exam;
+          return {
+              ...exam,
+              sections: exam.sections.map(sec => {
+                  if (sec.id === sectionId) return { ...sec, ...updates };
+                  return sec;
+              })
+          };
+      }));
+      // Update selected exam as well
+      if (selectedExam && selectedExam.id === examId) {
+          setSelectedExam(prev => {
+              if (!prev) return null;
+              return {
+                  ...prev,
+                  sections: prev.sections.map(sec => {
+                      if (sec.id === sectionId) return { ...sec, ...updates };
+                      return sec;
+                  })
+              };
+          });
+      }
+  };
 
   const handleExamUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     if (!e.target.files || e.target.files.length === 0) return;
@@ -182,15 +263,9 @@ const App: React.FC = () => {
   };
 
   const handleLoadDefaultJson = async () => {
-    setIsProcessing(true);
-    try {
-      setAvailableExams([]); 
-      // Force reload by clearing. The useEffect will handle it.
-    } catch (error) {
-      console.error(error);
-      alert("Could not reload defaults.");
-    } finally {
-      setIsProcessing(false);
+    if (window.confirm("Reloading defaults will clear your current exam list (but saved vocabulary remains). Continue?")) {
+        localStorage.removeItem('persistedExams');
+        window.location.reload();
     }
   };
 
@@ -577,7 +652,7 @@ const App: React.FC = () => {
                     <div className="border-2 border-dashed border-orange-200 rounded-xl p-4 sm:p-6 hover:bg-orange-50 transition-colors flex flex-col items-center justify-center">
                         <h3 className="text-sm font-semibold text-orange-800 uppercase tracking-wide mb-2">{t('uploadMaterials')}</h3>
                         <label className="cursor-pointer text-sm text-orange-600 hover:text-orange-800 underline flex items-center gap-2">
-                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.707.293l5.414 5.414a1 1 0 01.707.293l5.414 5.414a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
                              Upload Answer Keys / Scripts
                              <input 
                                type="file"
@@ -603,7 +678,7 @@ const App: React.FC = () => {
                 </h3>
                 <div className="flex gap-2 w-full sm:w-auto">
                   <Button onClick={handleLoadDefaultJson} variant="secondary" className="text-sm py-1.5 flex-1 sm:flex-initial justify-center">{t('loadTest')}</Button>
-                  <Button onClick={handleDownloadJson} variant="outline" className="text-sm py-1.5 flex-1 sm:flex-initial justify-center">{t('saveJson')}</Button>
+                  <Button onClick={handleDownloadJson} variant="outline" className="text-sm py-1.5 flex-1 sm:flex-initial justify-center" title="Exports current state including AI explanations">{t('saveJson')}</Button>
                 </div>
               </div>
               
@@ -664,6 +739,8 @@ const App: React.FC = () => {
              score={score || undefined}
              onBack={handleBackToDashboard}
              onDashboard={handleBackToDashboard}
+             onUpdateQuestion={(examId, qId, updates) => handleUpdateQuestion(examId, qId, updates)}
+             onUpdateSection={(examId, sectionId, updates) => handleUpdateSection(examId, sectionId, updates)}
            />
         )}
       </div>

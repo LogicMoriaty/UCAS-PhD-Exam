@@ -1,6 +1,6 @@
 
 import { GoogleGenAI, Type } from "@google/genai";
-import { ExamBatch, VocabularyItem, DefinitionSource, ReferenceBatch, AppSettings } from "../types";
+import { ExamBatch, VocabularyItem, DefinitionSource, ReferenceBatch, AppSettings, QuestionType } from "../types";
 
 const getClient = () => {
   const apiKey = process.env.API_KEY;
@@ -222,11 +222,70 @@ export const explainQuestion = async (
   questionText: string, 
   userAnswer: string, 
   correctAnswer: string, 
-  context?: string,
-  settings?: AppSettings
+  context: string,
+  settings?: AppSettings,
+  questionType?: QuestionType,
+  sectionTitle: string = ""
 ): Promise<string> => {
-  const prompt = `Explain why the correct answer is correct. Question: ${questionText}. Context: ${context || "N/A"}. Correct: ${correctAnswer}. User: ${userAnswer}. Concise Chinese explanation.`;
-  const systemInstruction = "You are a helpful tutor.";
+  let systemInstruction = "";
+  let prompt = "";
+
+  const isWriting = questionType === 'writing' || sectionTitle.toLowerCase().includes('writing');
+  
+  if (isWriting) {
+    // Specialized Prompt for Writing (Summary & Essay)
+    // STRICT RULE: Model Answer MUST be in English.
+    systemInstruction = `You are an expert IELTS/Doctorate English writing tutor. 
+    Your goal is to help the student write excellent essays and summaries.
+    Provide the output in structured Markdown with clear headings.
+    Constraint 1: The Model Answer (参考范文) MUST BE IN ENGLISH.
+    Constraint 2: Do NOT use Pinyin for Chinese characters.`;
+    
+    prompt = `
+      Task: Provide a comprehensive guide for the following writing topic.
+      Topic/Question: "${questionText}"
+      Context (if summary task): "${context ? context.substring(0, 1500) + "..." : "N/A"}"
+
+      Please provide the response in the following Markdown format:
+
+      ### 1. 参考范文 (Model Answer)
+      (Provide a high-quality, Band 8.0+ level response. **Strictly in ENGLISH**. Do not use Chinese in this section).
+
+      ### 2. 写作技巧 (Writing Techniques)
+      (Explain the strategy, structure, or tone used in the model answer. Bullet points. Language: Chinese).
+
+      ### 3. 写作模板 (Useful Template)
+      (A generic skeleton structure the student can use for similar problems. Language: English structure with Chinese notes).
+
+      ### 4. 重点词汇与句型 (Key Vocabulary & Expressions)
+      (List 5-8 advanced words/phrases relevant to this topic with Chinese translations. Do not use Pinyin).
+    `;
+  } else {
+    // Standard Prompt for Multiple Choice, Cloze, Reading, etc.
+    // Relaxed Language Constraint: Chinese is primary, but English is allowed for quotes/terms.
+    systemInstruction = `You are a strict and professional English exam tutor for Chinese PhD candidates.
+    Constraint 1: Explain primarily in Chinese, but use English freely for quotes, terms, or examples from the text.
+    Constraint 2: Focus ONLY on this specific question. Do NOT summarize the whole passage.
+    Constraint 3: Do NOT list general vocabulary from the whole text. 
+    Constraint 4: Keep it concise (under 200 words).
+    Constraint 5: Do NOT use Pinyin for Chinese characters.`;
+
+    prompt = `
+      Question: "${questionText}"
+      Type: ${questionType}
+      Correct Answer: "${correctAnswer}"
+      User Answer: "${userAnswer}"
+      Context Snippet: "${context ? context.substring(0, 1000) + "..." : "N/A"}"
+      
+      Please provide a structured response in the following format:
+
+      **1. 深度解析 (Analysis)**
+      (Directly analyze the logic. Locate the specific sentence in the context that supports the correct answer. Explain why the correct answer is right and briefly why distractors are wrong. Language: Chinese, referencing English text where needed.)
+
+      **2. 做题技巧 (Test-Taking Tips)**
+      (Provide one specific strategy for this question type, e.g., "Look for synonyms", "Elimination method", "Context clues". Language: Chinese.)
+    `;
+  }
 
   // DeepSeek Attempt with Fallback
   if (settings?.aiProvider === 'deepseek' && settings.deepseekApiKey) {
@@ -244,7 +303,52 @@ export const explainQuestion = async (
     contents: prompt,
     config: { systemInstruction }
   });
-  return response.text || "No explanation.";
+  return response.text || "暂无解析。";
+};
+
+// NEW: Separate function for whole-passage analysis
+export const analyzePassage = async (
+  passage: string,
+  sectionTitle: string,
+  settings?: AppSettings
+): Promise<string> => {
+  const systemInstruction = `You are an expert English teacher. Provide a high-level analysis of the text structure and main vocabulary for a Chinese student.
+  Constraint: Do NOT use Pinyin.`;
+  
+  const prompt = `
+    Analyze this English exam passage for a Chinese student.
+    Section: "${sectionTitle}"
+    Passage Content: "${passage.substring(0, 5000)}"
+
+    Please provide a structured response in Markdown (Strictly in Chinese):
+
+    ### 1. 文章大意 (Main Idea)
+    (A concise summary of the passage in Chinese, approx 3-4 sentences).
+
+    ### 2. 语篇结构 (Structure Analysis)
+    (Briefly explain how the passage is organized, e.g., "Para 1: Introduction... Para 2: Counter-argument...").
+
+    ### 3. 核心词汇 (Core Vocabulary)
+    (List 10-15 high-frequency or difficult words/phrases from the WHOLE text that are important for understanding. Provide Chinese definitions. No Pinyin).
+  `;
+
+  // DeepSeek Attempt
+  if (settings?.aiProvider === 'deepseek' && settings.deepseekApiKey) {
+    try {
+      return await callDeepSeek(prompt, systemInstruction, settings.deepseekApiKey);
+    } catch (e) {
+      console.warn("DeepSeek analysis failed, falling back to Gemini.");
+    }
+  }
+
+  // Gemini
+  const ai = getClient();
+  const response = await ai.models.generateContent({
+    model: "gemini-2.5-flash",
+    contents: prompt,
+    config: { systemInstruction }
+  });
+  return response.text || "暂无文章解析。";
 };
 
 export const defineWord = async (word: string, context: string, source: DefinitionSource = 'llm', apiUrl?: string, settings?: AppSettings): Promise<VocabularyItem> => {
@@ -274,7 +378,8 @@ export const defineWord = async (word: string, context: string, source: Definiti
   const systemInstruction = `You are a professional English-Chinese Dictionary. 
   You MUST provide the Chinese translation for the target word.
   If the word has multiple meanings, pick the one that fits the context: "${context}".
-  Return synonyms, antonyms, and common usage examples.`;
+  Return synonyms, antonyms, and common usage examples.
+  Constraint: Do NOT use Pinyin.`;
 
   const prompt = `
     Define the word: "${word}". 
@@ -283,7 +388,7 @@ export const defineWord = async (word: string, context: string, source: Definiti
     Output JSON format:
     {
       "definition": "English definition",
-      "chineseDefinition": "中文释义 (Must provide this)",
+      "chineseDefinition": "中文释义 (Must provide this, No Pinyin)",
       "synonyms": ["syn1", "syn2"],
       "antonyms": ["ant1", "ant2"],
       "commonCollocations": ["phrase 1", "phrase 2"],

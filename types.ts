@@ -29,6 +29,7 @@ export interface ExamSection {
   audioSrc?: string; // Path to audio file (e.g., /Listen/file.mp3)
   sharedOptions?: Option[]; // NEW: For Banked Cloze (A-O word list) shared across questions
   questions: Question[];
+  passageAnalysis?: string; // NEW: AI generated analysis of the whole passage (Main Idea, Vocab)
 }
 
 export interface ExamData {

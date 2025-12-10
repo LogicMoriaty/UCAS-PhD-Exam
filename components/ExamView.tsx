@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { ExamData, ExamSection, Question, AppSettings, Language } from '../types';
 import Button from './Button';
-import { defineWord, explainQuestion } from '../services/geminiService';
+import { defineWord, explainQuestion, analyzePassage } from '../services/geminiService';
 
 interface ExamViewProps {
   data: ExamData;
@@ -14,6 +14,8 @@ interface ExamViewProps {
   score?: { correct: number; total: number };
   onBack?: () => void;
   onDashboard?: () => void;
+  onUpdateQuestion?: (examId: string, questionId: string, updates: any) => void;
+  onUpdateSection?: (examId: string, sectionId: string, updates: any) => void; // New prop for persistence
 }
 
 const translations: Record<string, { en: string; zh: string }> = {
@@ -37,7 +39,8 @@ const translations: Record<string, { en: string; zh: string }> = {
   results: { en: "Results", zh: "考试结果" },
   correct: { en: "Correct Answer", zh: "正确答案" },
   explanation: { en: "Explanation", zh: "解析" },
-  askAi: { en: "Ask AI Explain", zh: "AI 解析" },
+  askAi: { en: "AI Explain", zh: "AI 解析" },
+  aiAnalysis: { en: "AI Analysis", zh: "AI 深度解析" },
   back: { en: "Back", zh: "返回" },
   sampleAnswer: { en: "Sample Answer / Script", zh: "参考范文 / 听力原文" },
   modeFill: { en: "Mode: Fill Answer", zh: "模式: 填空答题" },
@@ -48,11 +51,16 @@ const translations: Record<string, { en: string; zh: string }> = {
   openAudio: { en: "Open Audio Directly", zh: "直接打开音频" },
   prevSection: { en: "Previous", zh: "上一节" },
   nextSection: { en: "Next", zh: "下一节" },
+  regenerate: { en: "Regenerate", zh: "重新生成" },
+  expand: { en: "Expand", zh: "展开" },
+  collapse: { en: "Collapse", zh: "折叠" },
+  analyzePassage: { en: "AI Passage Analysis", zh: "AI 文章精读" },
+  hideAnalysis: { en: "Hide Analysis", zh: "收起解析" },
 };
 
 const ExamView: React.FC<ExamViewProps> = ({ 
   data, settings, onAnswerChange, onSubmit, onAddVocab,
-  isReviewMode = false, score, onBack, onDashboard
+  isReviewMode = false, score, onBack, onDashboard, onUpdateQuestion, onUpdateSection
 }) => {
   const [activeSectionId, setActiveSectionId] = useState<string>(data.sections[0]?.id || '');
   const [selection, setSelection] = useState<{ text: string; top: number; left: number; context: string } | null>(null);
@@ -63,13 +71,18 @@ const ExamView: React.FC<ExamViewProps> = ({
   const [audioError, setAudioError] = useState(false);
   const [focusedQuestionId, setFocusedQuestionId] = useState<string | null>(null);
   const [explainingId, setExplainingId] = useState<string | null>(null);
-  const [explanations, setExplanations] = useState<Record<string, string>>({});
+  const [expandedExplanations, setExpandedExplanations] = useState<Record<string, boolean>>({});
+  
   const [openScripts, setOpenScripts] = useState<Record<string, boolean>>({});
   const [mobileTab, setMobileTab] = useState<'passage' | 'questions'>('passage');
   const audioRef = useRef<HTMLAudioElement>(null);
   
   // Word Bank Interaction Mode
   const [wordBankMode, setWordBankMode] = useState<'fill' | 'define'>('fill');
+
+  // Passage Analysis State
+  const [analyzingSectionId, setAnalyzingSectionId] = useState<string | null>(null);
+  const [showPassageAnalysis, setShowPassageAnalysis] = useState<Record<string, boolean>>({});
 
   const t = (key: string) => translations[key][settings.language];
 
@@ -94,7 +107,6 @@ const ExamView: React.FC<ExamViewProps> = ({
     return () => { if (audioUrl && audioUrl.startsWith('blob:')) URL.revokeObjectURL(audioUrl); };
   }, [activeSection?.id, activeSection?.audioSrc]);
 
-  // Robust mobile audio loading: trigger load() manually when url changes
   useEffect(() => {
     if (audioRef.current && audioUrl) {
         audioRef.current.pause();
@@ -102,7 +114,6 @@ const ExamView: React.FC<ExamViewProps> = ({
     }
   }, [audioUrl]);
 
-  // Reset mobile tab when section changes
   useEffect(() => {
     setMobileTab('passage');
   }, [activeSectionId]);
@@ -116,36 +127,82 @@ const ExamView: React.FC<ExamViewProps> = ({
     }
   };
 
-  const handleExplain = async (q: Question) => {
-    if (!q.correctAnswer) return;
+  const handleAnalyzePassage = async () => {
+    if (!activeSection?.content) return;
+    
+    // Toggle visibility if already analyzed (persisted in data)
+    if (activeSection.passageAnalysis) {
+        setShowPassageAnalysis(prev => ({ ...prev, [activeSection.id]: !prev[activeSection.id] }));
+        return;
+    }
+
+    setAnalyzingSectionId(activeSection.id);
+    try {
+        const analysis = await analyzePassage(activeSection.content, activeSection.title, settings);
+        
+        // Persist the analysis via parent handler
+        if (onUpdateSection) {
+            onUpdateSection(data.id, activeSection.id, { passageAnalysis: analysis });
+        }
+        setShowPassageAnalysis(prev => ({ ...prev, [activeSection.id]: true }));
+    } catch (e) {
+        alert("Failed to analyze passage");
+        console.error(e);
+    } finally {
+        setAnalyzingSectionId(null);
+    }
+  };
+
+  const handleExplain = async (q: Question, force: boolean = false) => {
+    if (!force && q.explanation && q.explanation.length > 50) { 
+        setExpandedExplanations(prev => ({ ...prev, [q.id]: true }));
+        return;
+    }
+
     setExplainingId(q.id);
     try {
-      const expl = await explainQuestion(q.text, q.userAnswer || "No Answer", q.correctAnswer, activeSection?.content || "", settings);
-      setExplanations(prev => ({ ...prev, [q.id]: expl }));
-    } catch (e) { alert("Failed to get explanation"); } 
+      const expl = await explainQuestion(
+          q.text, 
+          q.userAnswer || "No Answer", 
+          q.correctAnswer || "N/A", // Writing questions might not have correct answers
+          activeSection?.content || "", 
+          settings,
+          q.type, // Pass type for specific writing prompts
+          activeSection?.title || "" // Pass section title for context (e.g. Use of English)
+      );
+      
+      if (onUpdateQuestion) {
+          onUpdateQuestion(data.id, q.id, { explanation: expl });
+      }
+      setExpandedExplanations(prev => ({ ...prev, [q.id]: true }));
+    } catch (e) { 
+        alert("Failed to get explanation"); 
+        console.error(e);
+    } 
     finally { setExplainingId(null); }
+  };
+
+  const toggleExplanation = (qId: string) => {
+      setExpandedExplanations(prev => ({ ...prev, [qId]: !prev[qId] }));
   };
 
   const handleMouseUp = useCallback((e: React.MouseEvent | React.TouchEvent) => {
     const target = e.target as HTMLElement;
-    // Prevent selection logic when interacting with inputs, buttons, or the popover itself
     if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.closest('button') || target.closest('.dictionary-popover')) return;
 
-    // Use setTimeout to allow the browser to complete the selection process (fixes mobile issues)
     setTimeout(() => {
         const sel = window.getSelection();
         if (sel && sel.toString().trim().length > 0) {
           const range = sel.getRangeAt(0);
           const rect = range.getBoundingClientRect();
           
-          // Avoid phantom selections with zero size
           if (rect.width === 0 || rect.height === 0) return;
 
           const isMobile = window.innerWidth < 640;
           
           setSelection({
             text: sel.toString().trim(),
-            top: isMobile ? 0 : rect.bottom + window.scrollY + 8, // Mobile handles position via fixed CSS
+            top: isMobile ? 0 : rect.bottom + window.scrollY + 8, 
             left: isMobile ? 0 : rect.left + window.scrollX + (rect.width / 2),
             context: range.startContainer.textContent || ""
           });
@@ -155,14 +212,10 @@ const ExamView: React.FC<ExamViewProps> = ({
   }, []);
 
   const handleBackgroundClick = (e: React.MouseEvent) => {
-      // Important: If user just selected text, the native selection is still active.
-      // We should NOT clear the popover in this case.
       const nativeSelection = window.getSelection();
       if (nativeSelection && nativeSelection.toString().length > 0) {
           return;
       }
-
-      // Only clear if clicking purely on background, not on interactive elements
       if (selection && !(e.target as HTMLElement).closest('.dictionary-popover')) {
           setSelection(null);
           setDefinitionResult(null);
@@ -178,7 +231,6 @@ const ExamView: React.FC<ExamViewProps> = ({
     } catch (error) {
       console.error(error);
       alert("Failed to define word. Please check your settings and network.");
-      // Don't clear selection on error so user can try again
     } finally {
       setIsDefining(false);
     }
@@ -208,12 +260,47 @@ const ExamView: React.FC<ExamViewProps> = ({
       if (wordBankMode === 'fill') {
           if (focusedQuestionId && !isReviewMode) onAnswerChange(focusedQuestionId, wordText);
       } else {
-          // Define Mode
           triggerDefineDirectly(wordText, e.clientX, e.clientY);
       }
   };
 
   const toggleScript = (qId: string) => setOpenScripts(prev => ({ ...prev, [qId]: !prev[qId] }));
+
+  // Shared component for AI Passage Analysis display
+  const PassageAnalysisDisplay = ({ section }: { section: ExamSection }) => {
+      // Use persisted analysis if available
+      const analysisContent = section.passageAnalysis;
+      
+      if (!showPassageAnalysis[section.id] || !analysisContent) return null;
+      return (
+          <div className="mb-6 bg-gradient-to-r from-purple-50 to-indigo-50 border border-purple-100 p-5 rounded-xl shadow-sm animate-fadeIn relative">
+              <button 
+                  onClick={() => setShowPassageAnalysis(prev => ({ ...prev, [section.id]: false }))}
+                  className="absolute top-3 right-3 text-purple-400 hover:text-purple-700"
+              >
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+              </button>
+              <h4 className="text-purple-800 font-bold mb-3 flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                  {t('aiAnalysis')}
+              </h4>
+              <div className="prose prose-sm max-w-none text-gray-700">
+                  {analysisContent.split('\n').map((line, idx) => {
+                      if (line.startsWith('### ')) return <h5 key={idx} className="font-bold text-purple-900 mt-4 mb-2 text-sm uppercase tracking-wide border-b border-purple-200 pb-1">{line.replace('### ', '')}</h5>;
+                      if (line.startsWith('- ')) return <li key={idx} className="ml-4 list-disc marker:text-purple-300">{line.replace('- ', '')}</li>;
+                      const parts = line.split(/(\*\*.*?\*\*)/g);
+                      return <p key={idx} className="mb-2">
+                          {parts.map((part, i) => 
+                              part.startsWith('**') && part.endsWith('**') 
+                              ? <strong key={i} className="text-purple-900">{part.slice(2, -2)}</strong> 
+                              : part
+                          )}
+                      </p>;
+                  })}
+              </div>
+          </div>
+      );
+  }
 
   const renderQuestion = (q: Question) => {
     let isCorrect = false;
@@ -224,7 +311,8 @@ const ExamView: React.FC<ExamViewProps> = ({
            const matched = activeSection.sharedOptions.find(o => o.text.toLowerCase() === userAns?.toLowerCase());
            if (matched) userAns = matched.label; 
         }
-        isCorrect = q.correctAnswer.replace(/[^a-zA-Z0-9]/g, '').toLowerCase() === (userAns ? userAns.replace(/[^a-zA-Z0-9]/g, '').toLowerCase() : "");
+        // Normalize comparison
+        isCorrect = (q.correctAnswer || "").toString().trim().replace(/[^a-zA-Z0-9]/g, '').toLowerCase() === (userAns || "").toString().trim().replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
     }
     if (activeSection?.sharedOptions && q.correctAnswer) {
       const matched = activeSection.sharedOptions.find(o => o.label === q.correctAnswer);
@@ -235,7 +323,7 @@ const ExamView: React.FC<ExamViewProps> = ({
     }
 
     return (
-      <div key={q.id} className="mb-4">
+      <div key={q.id} className="mb-6">
           {q.scriptContext && <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4 rounded-r text-sm text-blue-900 whitespace-pre-line">{q.scriptContext}</div>}
           <div className={`bg-white p-4 sm:p-5 rounded-xl border shadow-sm ${isReviewMode && q.type !== 'writing' ? (isCorrect ? 'border-green-200 bg-green-50/20' : 'border-red-200 bg-red-50/20') : 'border-gray-200'}`}>
             <div className="flex gap-3 sm:gap-4">
@@ -263,10 +351,62 @@ const ExamView: React.FC<ExamViewProps> = ({
                 )}
                 {(q.type === 'fill-blank') && <input type="text" className="w-full p-3 border rounded-lg bg-white text-black text-sm" placeholder={isReviewMode ? '' : t('typeHere')} value={q.userAnswer || ''} onChange={(e) => !isReviewMode && onAnswerChange(q.id, e.target.value)} disabled={isReviewMode} />}
                 {q.type === 'writing' && <textarea className="w-full mt-2 p-3 border border-gray-300 rounded-lg h-48 bg-white text-black text-sm" placeholder={t('writeHere')} value={q.userAnswer || ''} onChange={(e) => !isReviewMode && onAnswerChange(q.id, e.target.value)} disabled={isReviewMode} />}
-                {isReviewMode && (
+                
+                {/* Review Mode / AI Explanation Section */}
+                {(isReviewMode || q.type === 'writing') && (
                   <div className="mt-4 pt-3 border-t border-gray-100 text-sm">
-                    {q.type === 'writing' && q.correctAnswer ? <div className="bg-white p-4 border rounded text-gray-800 whitespace-pre-line">{q.correctAnswer}</div> : <div className="flex justify-between items-center"><div className="text-academic-700 font-bold">{t('correct')}: {correctAnswerText}</div><button onClick={() => handleExplain(q)} disabled={!!explainingId} className="text-xs bg-academic-600 text-white px-3 py-1.5 rounded-full shadow-sm">{explainingId === q.id ? "..." : t('askAi')}</button></div>}
-                    {(q.explanation || explanations[q.id]) && <div className="mt-2 bg-blue-50 text-blue-900 p-3 rounded text-sm">{q.explanation && <div className="mb-1">{q.explanation}</div>}{explanations[q.id]}</div>}
+                    {q.type !== 'writing' && <div className="flex justify-between items-center"><div className="text-academic-700 font-bold">{t('correct')}: {correctAnswerText}</div></div>}
+                    
+                    <div className="mt-3">
+                       {!q.explanation ? (
+                           <button onClick={() => handleExplain(q)} disabled={!!explainingId} className="flex items-center gap-1.5 text-xs bg-gradient-to-r from-academic-600 to-academic-700 text-white px-4 py-2 rounded-lg shadow-sm hover:from-academic-700 hover:to-academic-800 transition-all">
+                               {explainingId === q.id ? (
+                                   <><svg className="animate-spin w-3 h-3 mr-1" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/></svg>{t('loading')}</>
+                               ) : (
+                                   <><svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>{t('askAi')}</>
+                               )}
+                           </button>
+                       ) : (
+                           <div className="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 rounded-lg mt-2 overflow-hidden shadow-sm">
+                               <div className="flex items-center justify-between p-3 border-b border-blue-100 bg-blue-50/50">
+                                   <div className="flex items-center gap-2">
+                                       <svg className="w-4 h-4 text-academic-600" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" /></svg>
+                                       <span className="font-bold text-academic-800 text-xs uppercase tracking-wide">{t('aiAnalysis')}</span>
+                                   </div>
+                                   <div className="flex gap-2">
+                                       <button onClick={() => handleExplain(q, true)} className="text-xs text-academic-600 hover:text-academic-800 hover:bg-white/50 px-2 py-1 rounded transition-colors flex items-center gap-1" disabled={explainingId === q.id}>
+                                           {explainingId === q.id ? <div className="animate-spin w-3 h-3 border-2 border-current border-t-transparent rounded-full"/> : <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>}
+                                           {t('regenerate')}
+                                       </button>
+                                       <button onClick={() => toggleExplanation(q.id)} className="text-xs text-gray-500 hover:text-gray-700 hover:bg-white/50 px-2 py-1 rounded transition-colors flex items-center gap-1">
+                                           {expandedExplanations[q.id] ? (
+                                               <><svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" /></svg>{t('collapse')}</>
+                                           ) : (
+                                               <><svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>{t('expand')}</>
+                                           )}
+                                       </button>
+                                   </div>
+                               </div>
+                               
+                               {expandedExplanations[q.id] && (
+                                   <div className="p-4 prose prose-sm max-w-none text-gray-700 whitespace-pre-wrap leading-relaxed animate-fadeIn">
+                                       {q.explanation.split('\n').map((line, idx) => {
+                                           if (line.startsWith('### ') || line.startsWith('**')) return <h4 key={idx} className="font-bold text-academic-800 mt-4 mb-2 text-sm">{line.replace(/### |\*\*/g, '')}</h4>;
+                                           if (line.startsWith('- ')) return <li key={idx} className="ml-4 list-disc">{line.replace('- ', '')}</li>;
+                                           const parts = line.split(/(\*\*.*?\*\*)/g);
+                                           return <p key={idx} className="mb-2">
+                                               {parts.map((part, i) => 
+                                                   part.startsWith('**') && part.endsWith('**') 
+                                                   ? <strong key={i} className="text-academic-900">{part.slice(2, -2)}</strong> 
+                                                   : part
+                                               )}
+                                           </p>;
+                                       })}
+                                   </div>
+                               )}
+                           </div>
+                       )}
+                    </div>
                   </div>
                 )}
               </div>
@@ -278,13 +418,29 @@ const ExamView: React.FC<ExamViewProps> = ({
 
   const renderSplitLayout = (section: ExamSection) => (
     <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-8 h-auto lg:h-[calc(100vh-140px)]">
-      {/* Mobile Tabs */}
       <div className="lg:hidden flex border-b border-gray-200 mb-4 bg-white sticky top-14 z-20 shadow-sm">
         <button onClick={() => setMobileTab('passage')} className={`flex-1 py-3 text-sm font-bold text-center border-b-2 transition-colors ${mobileTab === 'passage' ? 'border-academic-600 text-academic-800' : 'border-transparent text-gray-500'}`}>{t('tabPassage')}</button>
         <button onClick={() => setMobileTab('questions')} className={`flex-1 py-3 text-sm font-bold text-center border-b-2 transition-colors ${mobileTab === 'questions' ? 'border-academic-600 text-academic-800' : 'border-transparent text-gray-500'}`}>{t('tabQuestions')}</button>
       </div>
 
       <div className={`bg-white rounded-xl shadow-sm border border-gray-200 overflow-y-auto custom-scrollbar p-6 lg:p-8 h-auto lg:h-full ${mobileTab === 'questions' ? 'hidden lg:block' : 'block'}`}>
+        <div className="flex justify-between items-center mb-4">
+            <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider">{t('tabPassage')}</h3>
+            <button 
+                onClick={handleAnalyzePassage} 
+                disabled={!!analyzingSectionId}
+                className="text-xs flex items-center gap-1 bg-purple-100 text-purple-700 px-3 py-1.5 rounded-full hover:bg-purple-200 transition-colors font-medium"
+            >
+                {analyzingSectionId === section.id ? (
+                    <><svg className="animate-spin w-3 h-3" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/></svg>{t('loading')}</>
+                ) : (
+                    <><svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>{section.passageAnalysis && showPassageAnalysis[section.id] ? t('hideAnalysis') : t('analyzePassage')}</>
+                )}
+            </button>
+        </div>
+        
+        <PassageAnalysisDisplay section={section} />
+
         <div className="prose prose-lg font-serif text-justify text-gray-800 leading-8">
            {section.content?.split(/\n\n|\n/).map((para, idx) => (para.trim().length > 0 && <p key={idx} className="mb-4 indent-8">{para}</p>))}
         </div>
@@ -323,50 +479,63 @@ const ExamView: React.FC<ExamViewProps> = ({
              </div>
           </div>
         )}
-        <div className="bg-white p-6 sm:p-10 rounded-2xl shadow-sm border border-gray-200 font-serif text-lg leading-[2.5] text-justify text-gray-800">
-           {parts.map((part, idx) => {
-             const match = part.match(/\{\{(\d+)\}\}/);
-             if (match) {
-               const qNum = parseInt(match[1]);
-               const question = section.questions.find(q => q.number === qNum);
-               if (!question) return null;
-               
-               let style = 'border-gray-300';
-               if (isReviewMode && question.correctAnswer) {
-                 const cleanUser = (question.userAnswer || "").toLowerCase(); 
-                 const isCorrect = cleanUser.length > 0 && question.correctAnswer.toLowerCase().includes(cleanUser.charAt(0)); 
-                 style = isCorrect ? 'border-green-500 bg-green-50 text-green-900 font-bold' : 'border-red-400 bg-red-50 text-red-900 line-through decoration-red-500';
-               } else if (focusedQuestionId === question.id) style = 'border-academic-500 bg-blue-50 ring-2 ring-blue-100';
 
-               return (
-                 <span key={idx} className="inline-block mx-1 relative">
-                   <span className="absolute -top-3 left-0 text-[9px] font-bold text-gray-400">{question.number}</span>
-                   <input type="text"
-                    style={{ width: `${Math.max(6, (question.userAnswer?.length || 0) + 2)}ch` }}
-                    className={`border-b-2 text-center font-sans font-medium outline-none px-1 bg-transparent min-w-[30px] rounded-none ${style}`}
-                    value={question.userAnswer || ''}
-                    onFocus={() => setFocusedQuestionId(question.id)}
-                    onChange={(e) => !isReviewMode && onAnswerChange(question.id, e.target.value)}
-                    disabled={isReviewMode}
-                   />
-                   {isReviewMode && !question.userAnswer && <span className="text-xs text-green-600 ml-1 font-sans">{question.correctAnswer}</span>}
-                 </span>
-               );
-             }
-             return <span key={idx}>{part}</span>;
-           })}
+        <div className="bg-white p-6 sm:p-10 rounded-2xl shadow-sm border border-gray-200">
+           <div className="flex justify-end mb-4">
+                <button 
+                    onClick={handleAnalyzePassage} 
+                    disabled={!!analyzingSectionId}
+                    className="text-xs flex items-center gap-1 bg-purple-50 text-purple-700 border border-purple-200 px-3 py-1.5 rounded-full hover:bg-purple-100 transition-colors font-medium"
+                >
+                    {analyzingSectionId === section.id ? (
+                        <><svg className="animate-spin w-3 h-3" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/></svg>{t('loading')}</>
+                    ) : (
+                        <><svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>{section.passageAnalysis && showPassageAnalysis[section.id] ? t('hideAnalysis') : t('analyzePassage')}</>
+                    )}
+                </button>
+           </div>
+
+           <PassageAnalysisDisplay section={section} />
+
+           <div className="font-serif text-lg leading-[2.5] text-justify text-gray-800">
+               {parts.map((part, idx) => {
+                 const match = part.match(/\{\{(\d+)\}\}/);
+                 if (match) {
+                   const qNum = parseInt(match[1]);
+                   const question = section.questions.find(q => q.number === qNum);
+                   if (!question) return null;
+                   
+                   let style = 'border-gray-300';
+                   if (isReviewMode && question.correctAnswer) {
+                     const cleanUser = (question.userAnswer || "").toLowerCase(); 
+                     const isCorrect = cleanUser.length > 0 && question.correctAnswer.toLowerCase().includes(cleanUser.charAt(0)); 
+                     style = isCorrect ? 'border-green-500 bg-green-50 text-green-900 font-bold' : 'border-red-400 bg-red-50 text-red-900 line-through decoration-red-500';
+                   } else if (focusedQuestionId === question.id) style = 'border-academic-500 bg-blue-50 ring-2 ring-blue-100';
+
+                   return (
+                     <span key={idx} className="inline-block mx-1 relative">
+                       <span className="absolute -top-3 left-0 text-[9px] font-bold text-gray-400">{question.number}</span>
+                       <input type="text"
+                        style={{ width: `${Math.max(6, (question.userAnswer?.length || 0) + 2)}ch` }}
+                        className={`border-b-2 text-center font-sans font-medium outline-none px-1 bg-transparent min-w-[30px] rounded-none ${style}`}
+                        value={question.userAnswer || ''}
+                        onFocus={() => setFocusedQuestionId(question.id)}
+                        onChange={(e) => !isReviewMode && onAnswerChange(question.id, e.target.value)}
+                        disabled={isReviewMode}
+                       />
+                       {isReviewMode && !question.userAnswer && <span className="text-xs text-green-600 ml-1 font-sans">{question.correctAnswer}</span>}
+                     </span>
+                   );
+                 }
+                 return <span key={idx}>{part}</span>;
+               })}
+           </div>
         </div>
+        
         {isReviewMode && (
-          <div className="bg-white p-6 rounded-xl shadow border border-gray-100 mt-8">
-            <h4 className="font-bold text-lg mb-4 text-gray-800">{t('correct')}</h4>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              {section.questions.map(q => {
-                 let ans = q.correctAnswer;
-                 const matched = section.sharedOptions?.find(o => o.label === q.correctAnswer);
-                 if (matched) ans = `${q.correctAnswer}. ${matched.text}`;
-                 return <div key={q.id} className="text-sm bg-gray-50 p-2 rounded border border-gray-200"><span className="font-bold mr-2">{q.number}</span><span className="text-green-700 font-mono font-bold">{ans}</span></div>
-              })}
-            </div>
+          <div className="space-y-4 mt-8">
+             <h4 className="font-bold text-lg text-gray-800">{t('questions')}</h4>
+             {section.questions.map(q => renderQuestion(q))}
           </div>
         )}
       </div>

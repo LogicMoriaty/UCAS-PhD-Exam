@@ -8,7 +8,7 @@
           "id": "test-1-part-1-section-a",
           "title": "Part I Listening Comprehension - Section A",
           "instructions": "In this part, you will hear 10 short conversations. At the end of each conversation, a question will be asked about what is said. Each conversation and the question wiii be spoken only once.",
-          "audioSrc": "https://ucasphdlistening.logicmoriaty.top/Model%20Test%201.mp3",
+          "audioSrc": "https://image.logicmoriaty.top/UCASListening/Listen/Model%20Test%201.mp3",
           "questions": [
             {
               "id": "test-1-part-1-section-a-q1",
@@ -266,7 +266,7 @@
           "id": "test-1-part-1-section-b",
           "title": "Part I Listening Comprehension - Section B",
           "instructions": "In this part, you will hear two mini-talks. While you listen, complete the sentences.",
-          "audioSrc": "https://ucasphdlistening.logicmoriaty.top/Model%20Test%201.mp3",
+          "audioSrc": "https://image.logicmoriaty.top/UCASListening/Listen/Model%20Test%201.mp3",
           "questions": [
             {
               "id": "test-1-q11",
@@ -344,7 +344,7 @@
           "id": "test-1-part-1-section-c",
           "title": "Part I Listening Comprehension - Section C",
           "instructions": "In this part, you will hear three mini-talks and each of them will be spoken only once. Answer the questions.",
-          "audioSrc": "https://ucasphdlistening.logicmoriaty.top/Model%20Test%201.mp3",
+          "audioSrc": "https://image.logicmoriaty.top/UCASListening/Listen/Model%20Test%201.mp3",
           "questions": [
             {
               "id": "test-1-q21",
@@ -2309,5 +2309,6 @@
 }
 
     
+
 
 

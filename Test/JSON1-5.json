@@ -10,16 +10,256 @@
           "instructions": "In this part, you will hear 10 short conversations. At the end of each conversation, a question will be asked about what is said. Each conversation and the question wiii be spoken only once.",
           "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%201.mp3",
           "questions": [
-            { "id": "test-1-part-1-section-a-q1", "number": 1, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "He thinks the idea is not original." }, { "label": "B", "text": "He supports the idea, but thinks it won't do any good." }, { "label": "C", "text": "He doesn't care about the issue." }, { "label": "D", "text": "He thinks she should just accept the bad food." } ] },
-            { "id": "test-1-part-1-section-a-q2", "number": 2, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "She is very upset with the new circumstance." }, { "label": "B", "text": "Maggie is quick to adapt to the new circumstance." }, { "label": "C", "text": "Maggie will be affected but not her." }, { "label": "D", "text": "She is not affected now but she will be in the future." } ] },
-            { "id": "test-1-part-1-section-a-q3", "number": 3, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "The woman doesn't want the man to leave it there." }, { "label": "B", "text": "The woman wants to use it while the man is gone." }, { "label": "C", "text": "The woman wants the man to show her how to ride it." }, { "label": "D", "text": "The woman will keep it safe and not use it" } ] },
-            { "id": "test-1-part-1-section-a-q4", "number": 4, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "He should think of another plan." }, { "label": "B", "text": "He should find a suitable time for the ceremony." }, { "label": "C", "text": "He should find a suitable place for the ceremony." }, { "label": "D", "text": "He should be more optimistic." } ] },
-            { "id": "test-1-part-1-section-a-q5", "number": 5, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "At a bank." }, { "label": "B", "text": "At the registration desk." }, { "label": "C", "text": "At a bookstore." }, { "label": "D", "text": "At a library." } ] },
-            { "id": "test-1-part-1-section-a-q6", "number": 6, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "She's not sure whether to get a credit card or not." }, { "label": "B", "text": "She's not sure how to use a credit card." }, { "label": "C", "text": "She's not sure what kind of credit card to choose." }, { "label": "D", "text": "She's not sure how many credit cards she needs." } ] },
-            { "id": "test-1-part-1-section-a-q7", "number": 7, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "They agree to meet in the alley to study." }, { "label": "B", "text": "They agree to tutor each other." }, { "label": "C", "text": "They agree to study poetry together." }, { "label": "D", "text": "They agree to study Biology together." } ] },
-            { "id": "test-1-part-1-section-a-q8", "number": 8, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "The man wants the woman to wash the dishes." }, { "label": "B", "text": "The man flares up at the woman at the slightest provocation." }, { "label": "C", "text": "The man wants the woman to kick a ball with him." }, { "label": "D", "text": "The man was given permission to stay alone." } ] },
-            { "id": "test-1-part-1-section-a-q9", "number": 9, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "There is possibility for him to get back together with Cathy." }, { "label": "B", "text": "He was just emotional at that moment." }, { "label": "C", "text": "There are other girls he can have a relationship with." }, { "label": "D", "text": "He is sick and tired of fishing." } ] },
-            { "id": "test-1-part-1-section-a-q10", "number": 10, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "She is trying to help and encourage the man." }, { "label": "B", "text": "She is turning down the man" }, { "label": "C", "text": "She is taking a chance to express her love." }, { "label": "D", "text": "She is keeping everything to herself." } ] }
+            {
+              "id": "test-1-part-1-section-a-q1",
+              "number": 1,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "He thinks the idea is not original."
+                },
+                {
+                  "label": "B",
+                  "text": "He supports the idea, but thinks it won't do any good."
+                },
+                {
+                  "label": "C",
+                  "text": "He doesn't care about the issue."
+                },
+                {
+                  "label": "D",
+                  "text": "He thinks she should just accept the bad food."
+                }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q2",
+              "number": 2,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "She is very upset with the new circumstance."
+                },
+                {
+                  "label": "B",
+                  "text": "Maggie is quick to adapt to the new circumstance."
+                },
+                {
+                  "label": "C",
+                  "text": "Maggie will be affected but not her."
+                },
+                {
+                  "label": "D",
+                  "text": "She is not affected now but she will be in the future."
+                }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q3",
+              "number": 3,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "The woman doesn't want the man to leave it there."
+                },
+                {
+                  "label": "B",
+                  "text": "The woman wants to use it while the man is gone."
+                },
+                {
+                  "label": "C",
+                  "text": "The woman wants the man to show her how to ride it."
+                },
+                {
+                  "label": "D",
+                  "text": "The woman will keep it safe and not use it"
+                }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q4",
+              "number": 4,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "He should think of another plan."
+                },
+                {
+                  "label": "B",
+                  "text": "He should find a suitable time for the ceremony."
+                },
+                {
+                  "label": "C",
+                  "text": "He should find a suitable place for the ceremony."
+                },
+                {
+                  "label": "D",
+                  "text": "He should be more optimistic."
+                }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q5",
+              "number": 5,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "At a bank."
+                },
+                {
+                  "label": "B",
+                  "text": "At the registration desk."
+                },
+                {
+                  "label": "C",
+                  "text": "At a bookstore."
+                },
+                {
+                  "label": "D",
+                  "text": "At a library."
+                }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q6",
+              "number": 6,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "She's not sure whether to get a credit card or not."
+                },
+                {
+                  "label": "B",
+                  "text": "She's not sure how to use a credit card."
+                },
+                {
+                  "label": "C",
+                  "text": "She's not sure what kind of credit card to choose."
+                },
+                {
+                  "label": "D",
+                  "text": "She's not sure how many credit cards she needs."
+                }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q7",
+              "number": 7,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "They agree to meet in the alley to study."
+                },
+                {
+                  "label": "B",
+                  "text": "They agree to tutor each other."
+                },
+                {
+                  "label": "C",
+                  "text": "They agree to study poetry together."
+                },
+                {
+                  "label": "D",
+                  "text": "They agree to study Biology together."
+                }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q8",
+              "number": 8,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "The man wants the woman to wash the dishes."
+                },
+                {
+                  "label": "B",
+                  "text": "The man flares up at the woman at the slightest provocation."
+                },
+                {
+                  "label": "C",
+                  "text": "The man wants the woman to kick a ball with him."
+                },
+                {
+                  "label": "D",
+                  "text": "The man was given permission to stay alone."
+                }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q9",
+              "number": 9,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "There is possibility for him to get back together with Cathy."
+                },
+                {
+                  "label": "B",
+                  "text": "He was just emotional at that moment."
+                },
+                {
+                  "label": "C",
+                  "text": "There are other girls he can have a relationship with."
+                },
+                {
+                  "label": "D",
+                  "text": "He is sick and tired of fishing."
+                }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q10",
+              "number": 10,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "She is trying to help and encourage the man."
+                },
+                {
+                  "label": "B",
+                  "text": "She is turning down the man"
+                },
+                {
+                  "label": "C",
+                  "text": "She is taking a chance to express her love."
+                },
+                {
+                  "label": "D",
+                  "text": "She is keeping everything to herself."
+                }
+              ]
+            }
           ]
         },
         {
@@ -28,16 +268,76 @@
           "instructions": "In this part, you will hear two mini-talks. While you listen, complete the sentences.",
           "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%201.mp3",
           "questions": [
-            { "id": "test-1-q11", "number": 11, "text": "The medical disorder named as SAD refers to seasonal", "type": "fill-blank", "correctAnswer": "affective disorder" },
-            { "id": "test-1-q12", "number": 12, "text": "Depression may result from the continuing of two kinds of substances in the body.", "type": "fill-blank", "correctAnswer": "imbalance" },
-            { "id": "test-1-q13", "number": 13, "text": "The may be disturbed because of the decrease in the amount of sunlight the body receives.", "type": "fill-blank", "correctAnswer": "natural clock" },
-            { "id": "test-1-q14", "number": 14, "text": "Doctors suggest that patients with SAD sit in front of a special", "type": "fill-blank", "correctAnswer": "light box" },
-            { "id": "test-1-q15", "number": 15, "text": "In the Scandinavian countries, the ratesis relatively high.", "type": "fill-blank", "correctAnswer": "suicide" },
-            { "id": "test-1-q16", "number": 16, "text": "Stanford University is sometimes called \"the Harvard of the ”", "type": "fill-blank", "correctAnswer": "West" },
-            { "id": "test-1-q17", "number": 17, "text": "Students are selected from the of their high school classes.", "type": "fill-blank", "correctAnswer": "upper fifteen percent" },
-            { "id": "test-1-q18", "number": 18, "text": "The drinks and the atmosphere in Student Union's coffee house have a strong European", "type": "fill-blank", "correctAnswer": "flavor" },
-            { "id": "test-1-q19", "number": 19, "text": "The university has established overseas branch study centers for students.", "type": "fill-blank", "correctAnswer": "third-year" },
-            { "id": "test-1-q20", "number": 20, "text": "Government grants have helped advanced studies in the fields of history, psychology, education and", "type": "fill-blank", "correctAnswer": "atomic energy" }
+            {
+              "id": "test-1-q11",
+              "number": 11,
+              "text": "The medical disorder named as SAD refers to seasonal",
+              "type": "fill-blank",
+              "correctAnswer": "affective disorder"
+            },
+            {
+              "id": "test-1-q12",
+              "number": 12,
+              "text": "Depression may result from the continuing of two kinds of substances in the body.",
+              "type": "fill-blank",
+              "correctAnswer": "imbalance"
+            },
+            {
+              "id": "test-1-q13",
+              "number": 13,
+              "text": "The may be disturbed because of the decrease in the amount of sunlight the body receives.",
+              "type": "fill-blank",
+              "correctAnswer": "natural clock"
+            },
+            {
+              "id": "test-1-q14",
+              "number": 14,
+              "text": "Doctors suggest that patients with SAD sit in front of a special",
+              "type": "fill-blank",
+              "correctAnswer": "light box"
+            },
+            {
+              "id": "test-1-q15",
+              "number": 15,
+              "text": "In the Scandinavian countries, the ratesis relatively high.",
+              "type": "fill-blank",
+              "correctAnswer": "suicide"
+            },
+            {
+              "id": "test-1-q16",
+              "number": 16,
+              "text": "Stanford University is sometimes called \"the Harvard of the ”",
+              "type": "fill-blank",
+              "correctAnswer": "West"
+            },
+            {
+              "id": "test-1-q17",
+              "number": 17,
+              "text": "Students are selected from the of their high school classes.",
+              "type": "fill-blank",
+              "correctAnswer": "upper fifteen percent"
+            },
+            {
+              "id": "test-1-q18",
+              "number": 18,
+              "text": "The drinks and the atmosphere in Student Union's coffee house have a strong European",
+              "type": "fill-blank",
+              "correctAnswer": "flavor"
+            },
+            {
+              "id": "test-1-q19",
+              "number": 19,
+              "text": "The university has established overseas branch study centers for students.",
+              "type": "fill-blank",
+              "correctAnswer": "third-year"
+            },
+            {
+              "id": "test-1-q20",
+              "number": 20,
+              "text": "Government grants have helped advanced studies in the fields of history, psychology, education and",
+              "type": "fill-blank",
+              "correctAnswer": "atomic energy"
+            }
           ]
         },
         {
@@ -46,16 +346,76 @@
           "instructions": "In this part, you will hear three mini-talks and each of them will be spoken only once. Answer the questions.",
           "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%201.mp3",
           "questions": [
-            { "id": "test-1-q21", "number": 21, "text": "What makes it easier for people to travel now?", "type": "fill-blank", "correctAnswer": "Faster planes and cheaper flights." },
-            { "id": "test-1-q22", "number": 22, "text": "What are the problems associated with tourism industry?", "type": "fill-blank", "correctAnswer": "The increasing crime rate, health and the natural environment." },
-            { "id": "test-1-q23", "number": 23, "text": "What is the problem that scientists are increasingly concerning about?", "type": "fill-blank", "correctAnswer": "The spread of contagious diseases around the world." },
-            { "id": "test-1-q24", "number": 24, "text": "What is the disadvantage of telecommuting?", "type": "fill-blank", "correctAnswer": "It will affect the social atmosphere of an organization." },
-            { "id": "test-1-q25", "number": 25, "text": "What benefit can telecommuting bring for workers?", "type": "fill-blank", "correctAnswer": "They don't have to travel to work and have more free time." },
-            { "id": "test-1-q26", "number": 26, "text": "What will telecommuting contribute to traffic?", "type": "fill-blank", "correctAnswer": "There will be fewer cars on the road during peak hours." },
-            { "id": "test-1-q27", "number": 27, "text": "What is the important test discussed in the passage?", "type": "fill-blank", "correctAnswer": "Tank test." },
-            { "id": "test-1-q28", "number": 28, "text": "What would happen if a small part of the plane were to fail?", "type": "fill-blank", "correctAnswer": "The plane would explode in the sky." },
-            { "id": "test-1-q29", "number": 29, "text": "What can engineers discover during the explosion?", "type": "fill-blank", "correctAnswer": "Which part of the plane has broken." },
-            { "id": "test-1-q30", "number": 30, "text": "When does the most dangerous test happen?", "type": "fill-blank", "correctAnswer": "When the new plane is going through test flights in the air." }
+            {
+              "id": "test-1-q21",
+              "number": 21,
+              "text": "What makes it easier for people to travel now?",
+              "type": "fill-blank",
+              "correctAnswer": "Faster planes and cheaper flights."
+            },
+            {
+              "id": "test-1-q22",
+              "number": 22,
+              "text": "What are the problems associated with tourism industry?",
+              "type": "fill-blank",
+              "correctAnswer": "The increasing crime rate, health and the natural environment."
+            },
+            {
+              "id": "test-1-q23",
+              "number": 23,
+              "text": "What is the problem that scientists are increasingly concerning about?",
+              "type": "fill-blank",
+              "correctAnswer": "The spread of contagious diseases around the world."
+            },
+            {
+              "id": "test-1-q24",
+              "number": 24,
+              "text": "What is the disadvantage of telecommuting?",
+              "type": "fill-blank",
+              "correctAnswer": "It will affect the social atmosphere of an organization."
+            },
+            {
+              "id": "test-1-q25",
+              "number": 25,
+              "text": "What benefit can telecommuting bring for workers?",
+              "type": "fill-blank",
+              "correctAnswer": "They don't have to travel to work and have more free time."
+            },
+            {
+              "id": "test-1-q26",
+              "number": 26,
+              "text": "What will telecommuting contribute to traffic?",
+              "type": "fill-blank",
+              "correctAnswer": "There will be fewer cars on the road during peak hours."
+            },
+            {
+              "id": "test-1-q27",
+              "number": 27,
+              "text": "What is the important test discussed in the passage?",
+              "type": "fill-blank",
+              "correctAnswer": "Tank test."
+            },
+            {
+              "id": "test-1-q28",
+              "number": 28,
+              "text": "What would happen if a small part of the plane were to fail?",
+              "type": "fill-blank",
+              "correctAnswer": "The plane would explode in the sky."
+            },
+            {
+              "id": "test-1-q29",
+              "number": 29,
+              "text": "What can engineers discover during the explosion?",
+              "type": "fill-blank",
+              "correctAnswer": "Which part of the plane has broken."
+            },
+            {
+              "id": "test-1-q30",
+              "number": 30,
+              "text": "When does the most dangerous test happen?",
+              "type": "fill-blank",
+              "correctAnswer": "When the new plane is going through test flights in the air."
+            }
           ]
         },
         {
@@ -63,68 +423,662 @@
           "title": "Part II Use of English - Section A",
           "instructions": "There are 15 blanks in the following passage. Read the passage carefully and fill in each of the blanks by choosing the right word.",
           "questions": [
-            { "id": "test-1-q31", "number": 31, "text": "", "type": "fill-blank", "correctAnswer": "reject" },
-            { "id": "test-1-q32", "number": 32, "text": "", "type": "fill-blank", "correctAnswer": "critical" },
-            { "id": "test-1-q33", "number": 33, "text": "", "type": "fill-blank", "correctAnswer": "because" },
-            { "id": "test-1-q34", "number": 34, "text": "", "type": "fill-blank", "correctAnswer": "how" },
-            { "id": "test-1-q35", "number": 35, "text": "", "type": "fill-blank", "correctAnswer": "complete" },
-            { "id": "test-1-q36", "number": 36, "text": "", "type": "fill-blank", "correctAnswer": "rather" },
-            { "id": "test-1-q37", "number": 37, "text": "", "type": "fill-blank", "correctAnswer": "beneficial" },
-            { "id": "test-1-q38", "number": 38, "text": "", "type": "fill-blank", "correctAnswer": "enlarge" },
-            { "id": "test-1-q39", "number": 39, "text": "", "type": "fill-blank", "correctAnswer": "wonders" },
-            { "id": "test-1-q40", "number": 40, "text": "", "type": "fill-blank", "correctAnswer": "continuously" },
-            { "id": "test-1-q41", "number": 41, "text": "", "type": "fill-blank", "correctAnswer": "refine" },
-            { "id": "test-1-q42", "number": 42, "text": "", "type": "fill-blank", "correctAnswer": "humane" },
-            { "id": "test-1-q43", "number": 43, "text": "", "type": "fill-blank", "correctAnswer": "sympathies" },
-            { "id": "test-1-q44", "number": 44, "text": "", "type": "fill-blank", "correctAnswer": "miseries" },
-            { "id": "test-1-q45", "number": 45, "text": "", "type": "fill-blank", "correctAnswer": "relieve" }
+            {
+              "id": "test-1-q31",
+              "number": 31,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "reject",
+              "explanation": "**1. 深度解析 (Analysis)**\n该空位于一个清晰的并列结构中：“accept it, correct it, or {{31}} it”。这句话描述了评论家（critić）或法官（judge）在深入研究和思考所呈现的材料后，可能采取的三种评估性行动。\n*   \"accept it\" 意为“接受”，表示认可或采纳。\n*   \"correct it\" 意为“纠正”或“修改”，表示部分认可但认为有需要改进之处。\n*   根据这种逻辑顺序和语义平衡，如果一个评价者既不完全接受也不选择修正，那么最合理的第三种选择就是彻底否定或不予采纳。因此，“reject”（拒绝）完美地填补了这一空白，与前两者共同构成了对材料进行判断和处理的完整过程。将 “reject” 填入后，句子变为 \"accept it, correct it, or reject it\"，语义完整且逻辑流畅。\n\n**2. 做题技巧 (Test-Taking Tips)**\n遇到含有“or”的并列结构填空题时，应仔细分析并列词项的词性、词义和它们之间的逻辑关系（如递进、转折、或涵盖不同可能性）。本题中，“accept”和“correct”代表了积极或中性的处理方式，这强烈暗示了第三个并列词项可能代表否定的处理方式，以构成一个完整的决策或评估范围。"
+            },
+            {
+              "id": "test-1-q32",
+              "number": 32,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "critical",
+              "explanation": "**1. 深度解析 (Analysis)**\n\n本题空白处为 \"Let's get back to the {{37}} effects of thinking while reading.\"。文章开篇即明确指出 \"Criticism is judgment. A critić is a judge.\"，奠定了全文关于阅读态度的基调。随后，文章详细描述了这种“批判性”阅读的具体表现，例如“A judge must study and think about the material presented to him, accept it, correct it, or {{31}} it, after thinking over what he has read, watched or heard.”，以及“I am thinking along with the writer, asking him questions, seeing whether he answers the questions and {{34}} well he answers them. I mark the good passages to store them in my memory and ask myself about every other part and about the {{35}} piece of writing, where, how and why could or should I improve upon it?”。这些描述都指向一种主动、审慎、具有分析和判断力的阅读方式。因此，\"thinking while reading\" 在此语境下指的就是“批判性思考”，其带来的“effects”自然是 \"critical effects\"（批判性影响）。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n对于此类上下文填空题，务必留意文章开篇对核心概念的定义。本文在起始部分就确立了 \"Criticism\"（批判）作为核心主题，后续所有关于阅读思考的细节都围绕这一主题展开，从而为理解空白处的含义提供了最直接、最关键的线索。"
+            },
+            {
+              "id": "test-1-q33",
+              "number": 33,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "because",
+              "explanation": "**1. 深度解析 (Analysis)**\n\n此题考查连接词的用法，需要判断空白处前后两个句子之间的逻辑关系。请看原句：\"That sort of reading might well be called creative reading {{33}} I am thinking along with the writer, asking him questions, seeing whether he answers the questions and how well he answers them.\"\n\n句子前半部分 \"That sort of reading might well be called creative reading\" 提出了一个观点或定性——“这种阅读可以被称为创造性阅读”。后半部分 \"I am thinking along with the writer, asking him questions...\" 详细描述了“创造性阅读”的具体表现和特征，解释了为什么会这样称呼它。很明显，后半部分是对前半部分观点的**原因**或**解释**。因此，最恰当的连接词是 \"because\"，它表示原因，说明了这种阅读被称为“创造性阅读”的理由。\n\n例如，如果填入表示对比的 \"although\" 或表示同时发生的 \"while\"，则会改变句子的原有逻辑，使其不合语境。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n解答此类填空题，核心策略是**判断空白处前后句子的逻辑关系**。具体来说：\n1.  **识别句间关系**：分析空白前后的两个分句，判断它们是因果关系、转折关系、并列关系、条件关系还是目的关系。\n2.  **根据关系选择**：选择一个能准确表达这种逻辑关系的连接词。例如，如果后句解释前句的原因，则选用 \"because\", \"since\", \"as\" 等。"
+            },
+            {
+              "id": "test-1-q34",
+              "number": 34,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "how",
+              "explanation": "**1. 深度解析 (Analysis)**\n\n此空位于句子 \"...seeing whether he answers the questions and {{34}} well he answers them.\" 中。\n这里的关键在于理解并列结构。\"whether he answers the questions\" 探讨的是“他是否回答了问题”，即对问题回答与否的判断。紧随其后的部分 \"well he answers them\" 显然是对回答“质量”的评估。要表达这种“质量”或“程度”的疑问，最恰当的词是 \"how\"，形成短语 \"how well\"，意为“回答得如何”或“回答得有多好”。\n\n因此，整个结构形成了一个完整的批判性阅读过程：读者不仅要看作者“有没有”回答问题 (whether)，还要看作者“回答得怎么样” (how well)。这是一个逻辑清晰、语义连贯的并列结构。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n在填空题中，尤其是涉及连词或疑问词时，请特别留意句子的并列结构。如果句子通过 \"and\" 连接了两个子句或短语，它们通常会在语法形式和逻辑意义上保持一致或互补。本题中，\"whether...\" (是否) 与 \"how well...\" (质量如何) 形成了一组对立统一的评估维度，因此根据上下文和语意逻辑，选择能表达“方式/程度”的疑问词 \"how\" 是最佳策略。"
+            },
+            {
+              "id": "test-1-q35",
+              "number": 35,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "complete",
+              "explanation": "**1. 深度解析 (Analysis)**\n\n此题考查对上下文语境中词义的精确理解。空白处{{35}}所在的句子是：\"I mark the good passages to store them in my memory and ask myself about every other part and about the {{35}} piece of writing, where, how and why could or should I improve upon it?\"\n\n句子结构显示，读者在标记了“好的段落”（good passages）并思考了“每一个其他部分”（every other part）之后，下一步是思考“关于这个{{35}}的写作”（about the {{35}} piece of writing）。紧随其后的提问“where, how and why could or should I improve upon it?”（我在何处、如何、为何可以或应该改进它？）明显是指对 *整篇文章* 的整体性反思和改进。\n\n\"complete\" 意为“完整的，全部的”，与前文的“every other part”（每一个其他部分）形成呼应，表示在审视了各个部分之后，还要从整体上考量这“完整的作品”。因此，\"complete piece of writing\" 完美地表达了对一篇 *完整的* 写作进行全面审视和改进的逻辑，与句子的含义和作者所强调的“批判性阅读”理念完全契合。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n在填空题中，尤其是涉及形容词或副词的选择时，应特别留意句子中的并列结构（如\"and\", \"or\"）以及其所连接的成分，它们往往提示了上下文逻辑的连贯性或对比性。在此题中，“every other part and about the {{35}} piece of writing”提示考生，在分别考虑各个部分之后，接着要考虑的是一个涵盖所有部分的“整体”，即“complete piece of writing”。"
+            },
+            {
+              "id": "test-1-q36",
+              "number": 36,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "rather",
+              "explanation": "**1. 深度解析 (Analysis)**\n\n本题的关键在于理解空缺句 \"Wouldn't you {{36}} believe the experience of the ages...\" 与前文的逻辑关系。前一句指出：\"Don't believe those who say that bad reading cannot hurt a person. How do they know what will hurt others?\"（不要相信那些说坏书不会伤人的人。他们怎么知道什么会伤害别人呢？）紧接着，空缺句提出了一个反问，即读者是否“更愿意”或“宁愿”相信那些经过时间检验的古老智慧（\"the experience of the ages\"），而非前文提到的那种不负责任的说法。\n\n动词 \"believe\" 前缺少一个副词来修饰，表达这种“宁愿选择相信”的倾向。\"rather\" 在此完美契合，因为 \"would rather\" 是一个常用搭配，表示“宁愿，更愿意”，用于在两种或多种选择中表达偏好。整个反问句 \"Wouldn't you rather believe...\" 旨在引导读者选择一个更明智、更有根据的信念，与前文的“不要相信”形成对比和选择。因此，\"rather\" 表达了作者建议读者采纳“岁月的经验”这一更可靠的观点。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n在填空题中，尤其要注意辨识常见的固定搭配或习语结构。本题中的 \"would rather do sth\"（宁愿做某事）是一个非常典型的表达偏好的句型。遇到疑问句或反问句时，要特别留意其语境中可能存在的对比或选择关系，这往往会暗示需要填写表示选择或偏好的词语。"
+            },
+            {
+              "id": "test-1-q37",
+              "number": 37,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "beneficial",
+              "explanation": "**1. 深度解析 (Analysis)**\n\n此题考查对上下文逻辑关系的理解。定位到包含空白 {{37}} 的句子：\"Let's get back to the {{37}} effects of thinking while reading.\"\n\n首先，观察前文语境。在讨论了批判性阅读和积极思考的益处后，作者反驳了“bad reading cannot hurt a person”的观点，并引用了“A man is what he has read”和“Our reading and studies carry over into our lives”这些强调阅读重要性的格言。这些内容都在铺垫阅读和思考对人生的深远影响。\n\n其次，分析空白处所在句本身和其后文。\"Let's get back to\" 表明话题将回到之前论述的某个方面，或者从一个插曲（关于坏阅读的危害）回到主线。主线是关于“thinking while reading”的效果。紧接着的下一句是：“It helps us to {{38}} our minds. We understand more about the universe, its people and m...” 这句话明确指出了思考式阅读带来的积极结果，例如“helps us to improve our minds”和“understand more”。\n\n综合来看，“thinking while reading”的效果是正面的、有益的。因此，空缺处需要一个表达积极、有利意味的词。“beneficial”意为“有益的；有利的”，完美契合了这种正向的、积极的影响。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n**前后照应法**：在填空题中，尤其是表示描述性或评价性词汇的空缺，务必仔细阅读空白处前后句的逻辑关系和语义方向。注意连接词和过渡性短语（如 \"Let's get back to\"），它们通常是理解文章逻辑走向和确定正确答案的关键线索。"
+            },
+            {
+              "id": "test-1-q38",
+              "number": 38,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "enlarge",
+              "explanation": "**1. 深度解析 (Analysis)**\n\n此题考查对上下文语境的理解及词义辨析。第38空所在句子为 \"It helps us to {{38}} our minds.\"，紧接着的下一句是 \"We understand more about the universe, its people and m...\"。这两句话构成因果或解释关系。\n\n上文提到“thinking while reading”的积极作用（\"Let's get back to the {{37}} effects of thinking while reading.\"）。“思考式阅读”能帮助我们做些什么呢？后面的句子明确解释了这种帮助是让我们“understand more about the universe, its people and m...”（更多地了解宇宙、人类及其他）。\n因此，能使我们“了解更多”的动词，作用于“our minds”时，最恰当的便是“enlarge”。\"Enlarge our minds\" 意为拓宽我们的视野、增长我们的知识、扩展我们的思维，与“understand more”完美呼应，表明思维能力和认知广度得到了提升。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n在填空题中，尤其要注意空白处前后句子的逻辑关系。本题中，空白后的句子 \"We understand more about the universe...\" 直接解释了空白处所填词对“our minds”的影响，因此要选择一个能体现“知识、理解力增长或扩展”含义的动词。"
+            },
+            {
+              "id": "test-1-q39",
+              "number": 39,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "wonders",
+              "explanation": "**1. 深度解析 (Analysis)**\n\n这道填空题考察词汇在特定语境中的使用和理解。句子的主干是 \"Wouldn't you {{36}} believe the experience of the ages...\"。\n\n前面的语境是：\"Don't believe those who say that bad reading cannot hurt a person. How do they know what will hurt others?\" 作者在此驳斥一种观点，即“不好的阅读不会伤害人”。接着，作者提出反问：“难道你不会{{36}}相信‘A man is what he has read’和‘Our reading and studies carry over into our lives’这些世代流传的经验吗？”\n\n正确答案是 \"wonders\"。在这个语境中，\"wonders\" 虽然在语法上与 \"believe\" 直接搭配显得非标准，但我们可以理解为一种修辞上的强调或感叹。它强调了相信“世代经验”是一种值得惊叹的、深刻的、非凡的选择，尤其是与那些轻率否认阅读影响的人的观点形成对比时。此处用 \"wonders\" 意在提升“相信世代经验”这一行为的重要性与洞察力，暗示这是一种超越常识的智慧选择，因此是值得“惊叹”或“深思”的。它暗示了这种信念的非凡价值，而非单纯的相信。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n对于此类填空题，当选项看起来不完全符合标准语法或常见搭配时，需要深入分析上下文的语气和作者的意图。有时，正确答案可能通过修辞手法或非常规的用法来传达特定的强调或情感。尤其要关注句子前后的对比或转折，这往往能揭示作者选择特定词汇的深层目的。"
+            },
+            {
+              "id": "test-1-q40",
+              "number": 40,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "continuously",
+              "explanation": "**1. 深度解析 (Analysis)**\n\n本题考查副词的运用及语境理解。根据题目提供的正确答案\"continuously\"，并结合上下文语境和语法结构，最适合填入的空白是第36空。\n\n相关句子为：\"Wouldn't you {{36}} believe the experience of the ages that says,'A mán is what he has read\" and \"Our reading and studies carry over into our lives\"?\"\n“continuously”是一个副词，意为“持续地，不间断地”。填入第36空后，它修饰动词“believe”，构成“continuously believe”，表示“持续地相信”或“一直相信”。从语义上看，原文提出“经验的智慧 (experience of the ages)”是经过长久时间沉淀下来的真理。因此，持续地相信或一直相信这种“历代经验”是符合逻辑的，强调了这些智慧的永恒性和持续影响力。这种相信是长久而非短暂的。将“continuously”填入其他空位（例如31、32、33、35、37、38），则存在词性不符或语义不合的问题。例如，填入34空“...and {{34}} well he answers them”将构成“continuously well”，语法上较为别扭，通常用“how well”。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n在完形填空中，当已知正确答案时，应仔细审查所有可能的空白处，根据上下文语义和语法结构进行逐一排除。特别关注空白处所需的词性（动词、名词、形容词、副词等），以及该词与周围词语的搭配是否自然、逻辑是否通顺。有时，即使答案并非完美契合，也应选择在所有选项中最合理的一个。"
+            },
+            {
+              "id": "test-1-q41",
+              "number": 41,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "refine",
+              "explanation": "**1. 深度解析 (Analysis)**\n\n本题的关键在于理解空白处词语与上下文的逻辑关系，特别是与“accept it, correct it”的并列结构。原文指出：“A judge must study and think about the material presented to him, accept it, correct it, or {{31}} it, after thinking over what he has read, watched or heard.”\n\n句中描述了“a judge”（或前文提到的“a critic”）在审视材料后会进行的三种操作：“accept it”（接受）、“correct it”（修正）。因此，空白处{{31}}需要填入一个动词，它应与“accept”和“correct”构成逻辑上的并列，共同描绘批判性思考和处理材料的过程。\n\n“refine”意为“提炼；改进；使更精确”。它不仅包含“correct”（纠正错误）的含义，更强调通过细致思考和调整，使事物达到更高级、更完善的状态。这与句末“after thinking over what he has read, watched or heard”（在仔细思考所阅读、观看或听到的内容之后）所体现的深度思考和审慎判断完美契合。一个评论家或法官，在纠正明显错误之后，还会对材料进行更深层次的“提炼”或“完善”，使其理解更精准，判断更深刻。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n在填空题中，当遇到由并列连词（如“or”, “and”）连接的词语列表时，应着重分析并列结构。列表中的各项在语法形式和语义范畴上通常保持一致。本题中，“accept it, correct it, or {{31}} it”构成动宾结构并列，且都指向对“material”的处理方式。因此，空白处应填入一个动词，其含义应与前两者在逻辑上相承接或递进，共同构成一个完整的处理过程。通过识别这种平行结构，可以缩小词汇选择范围，并结合语境（此处指批判性思考和改进）确定最恰当的词语。"
+            },
+            {
+              "id": "test-1-q42",
+              "number": 42,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "humane",
+              "explanation": "**1. 深度解析 (Analysis)**\n本题要求填入空白处{{37}}的词语。上下文提到“Our reading and studies carry over into our lives”（我们的阅读和学习会影响我们的生活），以及“Let's get back to the {{37}} effects of thinking while reading. It helps us to {{38}} our minds. We understand more about the universe, its people and m...”（让我们回到思考性阅读的……影响。它帮助我们……思想。我们更多地理解宇宙、人类以及……）。\n\n紧接着空白处{{37}}，文章强调了这种思考性阅读的“effects”（影响）能够帮助我们理解“the universe, its people”（宇宙及其人民）。“humane”意为“仁慈的，人道的”，强调对人类的同情和关怀。当阅读和思考使我们深入理解人类时，它带来的影响便是培养我们的同情心和人道精神，使我们变得更加“humane”。这与前文阅读对生活和品格的塑造作用一致。其他空白处如{{31}}需要动词，而“humane”是形容词，不符合语法；{{32}}、{{35}}等位置语义上也不契合。\n\n**2. 做题技巧 (Test-Taking Tips)**\n在完成形容词或副词填空题时，务必**关注空白词所修饰的名词或其紧邻的动词/形容词**。通过分析这些核心词汇，结合句子的主旨和上下文语境，推断出最符合逻辑和语义的词。例如，本题中“effects”和“its people”是关键线索，暗示了所填词汇应与人类品格或道德影响相关。"
+            },
+            {
+              "id": "test-1-q43",
+              "number": 43,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "sympathies",
+              "explanation": "**1. 深度解析 (Analysis)**\n\n您提供的语境片段中并未明确标出应填入 \"sympathies\" 的具体空白位置。然而，根据文章末尾“We understand more about the universe, its people and m...”这句，我们可以推断，如果空白要求填入一个表达理解他人情感或共鸣的词语，那么“sympathies”会是合适的选项。\n\n“Sympathies” (名词) 在此处意指对他人情感的理解、同情或共鸣，也可以指共享的感受或观点。阅读并深入思考，正如文章所描述的“thinking along with the writer”，不仅能提升我们的批判性思维，也能让我们“understand more about the universe, its people”，从而培养和扩展我们对他人的“sympathies”。例如，在描述我们对书中人物或现实世界中人们的理解和情感连接时，会用到这个词。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n当遇到填空题要求填入一个表示情感或抽象概念的名词时，请仔细分析上下文的语义逻辑。关注空白处前后动词、介词的搭配，以及句子表达的主题。例如，如果上下文描述的是“理解他人”、“感受他人痛苦”或“思想上的共鸣”，则“sympathies”这类表示“同情”、“共鸣”或“理解”的词汇通常是正确答案。同时，确认所选词汇的词性（如名词）与句子的语法结构相符。"
+            },
+            {
+              "id": "test-1-q44",
+              "number": 44,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "miseries",
+              "explanation": "**1. 深度解析 (Analysis)**\n\n此题考查根据上下文语境推断词义的能力。定位到第35空所在的句子：\"I mark the good passages to store them in my memory and ask myself about every other part and about the {{35}} piece of writing, where, how and why could or should I improve upon it?\"\n\n该句中核心短语是 \"improve upon it\"（改进它）。能被改进的通常是存在问题、缺陷或不足之处。在批评性阅读的语境下，读者不仅会识别“good passages”（好的段落），还会审视其他部分，尤其是那些需要“improve”（改进）的地方。“miseries”在此处并非指通常意义上的“痛苦”，而是引申为作品中的“瑕疵”、“弊端”或“问题所在”，与“improve upon”形成逻辑上的对应。因此，“miseries”恰当地表达了文章中需要修正或提升的方面。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n填空题中，应特别注意缺失词汇前后连接的动词或短语，它们往往是揭示逻辑关系的关键线索。本题中，“improve upon it”直接提示了所填词汇应指代那些有待改进的负面或欠佳之处。"
+            },
+            {
+              "id": "test-1-q45",
+              "number": 45,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "relieve",
+              "explanation": "**1. 深度解析 (Analysis)**\n\n该填空题考察的是词汇搭配与语境理解。我们需要填入一个动词来修饰 \"our minds\"。\n请看上下文：\"Let's get back to the {{37}} effects of thinking while reading. It helps us to {{38}} our minds. We understand more about the universe, its people and m...\"\n\n*   前一句提到“思考阅读的效应”（effects of thinking while reading）。\n*   空白处紧随其后是 \"It helps us to {{38}} our minds.\" 后面紧接着的句子是 \"We understand more about the universe...\" 这表明空白处填入的词应表达一种积极的、有助于理解的状态。\n*   \"relieve\" 意为减轻（痛苦、负担、担忧等），使…得到解脱。当思考和阅读帮助我们“relieve our minds”时，意味着它减轻了我们思想上的困惑、压力或负担，使我们的思维更清晰、更放松，从而更容易理解更广阔的世界。\n*   这个搭配符合语境，即阅读和思考能够净化我们的思想，使其更有效率地吸收知识，从而达到“理解更多”的目的。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n在做此类动词填空题时，请注意动词与宾语的常见搭配（collocation）。对于 \"our minds\" 这样的常用词，应思考其常见且符合语境的动词。同时，仔细阅读紧随其后的句子，它们往往能提供强有力的语境线索，揭示空白处所需词汇所表达的结果或目的。"
+            }
           ],
           "content": "Criticism is judgment. A critić is a judge. A judge musí study and think about the material presented to him, accept it, correct it, or {{31}} it, after thinking over what he has read, watched or heard. That sort of {{32}} reading might well be called creative reading {{33}} I am thinking along with the writer, asking him questions, seeing whether he answers the questions and {{34}} well he answers them. I mark the good passages to store them in my memory and ask myself about every other part and about the {{35}} piece of writing, where, how and why could or should I improve upon it? Don't believe those who say that bad reading cannot hurt a person. How do they know what will hurt others? Wouldn't you {{36}} believe the experience of the ages that says,'A mán is what he has read\" and \"Our reading and studies carry over into our lives\"? Let's get back to the {{37}} effects of thinking while reading. It helps us to {{38}} our minds. We understand more about the universe, its people and many of its {{39}} We learn to think and observe in new ways. We certainly do get a feeling for the language we are reading. All good writers in any language have been readers who read critically and creatively and {{40}}. Reading critically also helps me develop and {{41}} my emotions to the point where I can tell whether a report; a story or a poem is genuinely {{42}} or not whether the writer is an honest writer. Finally reading will and must broaden my {{43}} expand my love for others and set it in action. How can a person who has a bit of kindness in his heart read about all the {{44}} and tragedies that people and notions have and not want to do and actually do what he can to {{45}} those people in every way he can and as much as he can?",
           "sharedOptions": [
-            { "label": "A", "text": "reject" }, { "label": "B", "text": "maintain" }, { "label": "C", "text": "happiness" }, { "label": "D", "text": "other" }, { "label": "E", "text": "complete" },
-            { "label": "F", "text": "how" }, { "label": "G", "text": "negative" }, { "label": "H", "text": "beneficial" }, { "label": "I", "text": "enlarge" }, { "label": "J", "text": "rather" },
-            { "label": "K", "text": "therefore" }, { "label": "L", "text": "because" }, { "label": "M", "text": "extensive" }, { "label": "N", "text": "continuously" }, { "label": "O", "text": "why" },
-            { "label": "P", "text": "productively" }, { "label": "Q", "text": "increase" }, { "label": "R", "text": "humane" }, { "label": "S", "text": "refine" }, { "label": "T", "text": "adjust" },
-            { "label": "U", "text": "so that" }, { "label": "V", "text": "honorable" }, { "label": "W", "text": "sympathies" }, { "label": "X", "text": "antipathies" }, { "label": "Y", "text": "miseries" },
-            { "label": "Z", "text": "wonders" }, { "label": "AA", "text": "achievements" }, { "label": "BB", "text": "alleviate" }, { "label": "CC", "text": "critical" }, { "label": "DD", "text": "relieve" }
-          ]
+            {
+              "label": "A",
+              "text": "reject"
+            },
+            {
+              "label": "B",
+              "text": "maintain"
+            },
+            {
+              "label": "C",
+              "text": "happiness"
+            },
+            {
+              "label": "D",
+              "text": "other"
+            },
+            {
+              "label": "E",
+              "text": "complete"
+            },
+            {
+              "label": "F",
+              "text": "how"
+            },
+            {
+              "label": "G",
+              "text": "negative"
+            },
+            {
+              "label": "H",
+              "text": "beneficial"
+            },
+            {
+              "label": "I",
+              "text": "enlarge"
+            },
+            {
+              "label": "J",
+              "text": "rather"
+            },
+            {
+              "label": "K",
+              "text": "therefore"
+            },
+            {
+              "label": "L",
+              "text": "because"
+            },
+            {
+              "label": "M",
+              "text": "extensive"
+            },
+            {
+              "label": "N",
+              "text": "continuously"
+            },
+            {
+              "label": "O",
+              "text": "why"
+            },
+            {
+              "label": "P",
+              "text": "productively"
+            },
+            {
+              "label": "Q",
+              "text": "increase"
+            },
+            {
+              "label": "R",
+              "text": "humane"
+            },
+            {
+              "label": "S",
+              "text": "refine"
+            },
+            {
+              "label": "T",
+              "text": "adjust"
+            },
+            {
+              "label": "U",
+              "text": "so that"
+            },
+            {
+              "label": "V",
+              "text": "honorable"
+            },
+            {
+              "label": "W",
+              "text": "sympathies"
+            },
+            {
+              "label": "X",
+              "text": "antipathies"
+            },
+            {
+              "label": "Y",
+              "text": "miseries"
+            },
+            {
+              "label": "Z",
+              "text": "wonders"
+            },
+            {
+              "label": "AA",
+              "text": "achievements"
+            },
+            {
+              "label": "BB",
+              "text": "alleviate"
+            },
+            {
+              "label": "CC",
+              "text": "critical"
+            },
+            {
+              "label": "DD",
+              "text": "relieve"
+            }
+          ],
+          "passageAnalysis": "### 1. 文章大意 (Main Idea)\n\n这篇文章旨在阐释批判性阅读的深层意义和巨大益处。作者首先将“批评”定义为一种判断，并将批判性读者比作法官，强调读者应积极思考、评估并反思文本。文章随后反驳了不良阅读无害的观点，指出阅读对个体生命具有塑造性的影响。最终，作者详细阐述了批判性阅读如何帮助我们拓展思维、加深对世界的理解、培养情绪调节能力，并最终拓宽同情心，促使我们采取行动去帮助那些遭受苦难的人。\n\n### 2. 语篇结构 (Structure Analysis)\n\n这篇文章的结构清晰，从定义出发，逐步深入到批判性阅读的多种益处：\n\n*   **第一部分 (开篇至 \"...improve upon it?\"):** 引入“批评”和“批判性阅读”的概念，将其类比为法官的判断过程。强调批判性阅读是一种积极、创造性的思维活动，读者需要与作者进行互动、提问、评估，并思考如何改进文本。\n*   **第二部分 (从 \"Don't believe those who say...\" 至 \"...into our lives?\"):** 驳斥了“坏阅读无害”的错误观念，引用古训强调阅读对个人成长和生活态度的深远影响。\n*   **第三部分 (从 \"Let's get back to the...\" 至 \"...thoughtfully.\"):** 回到批判性阅读的具体益处，指出它能拓展思维、增进对世界和人类的理解、培养新的思考和观察方式，并提升语感。\n*   **第四部分 (从 \"Reading critically also helps me develop...\" 至 \"...honest writer.\"):** 深入探讨批判性阅读在情绪发展方面的作用，说明它如何帮助读者调节情绪，从而辨别作品的真伪和作者的诚实与否。\n*   **第五部分 (从 \"Finally reading will and must broaden my...\" 至 \"...much as he can?\"):** 阐述批判性阅读的最高层次益处，即它能拓宽同情心，激发对人类的爱，并促使读者基于阅读到的苦难与悲剧采取实际行动去帮助他人。\n\n### 3. 核心词汇 (Core Vocabulary)\n\n1.  **Criticism (批评):** 对某事物的判断、分析和评价。\n2.  **Judge (评判者/法官):** 负责对某事物进行分析、评估和裁决的人。\n3.  **Material (材料/内容):** 这里指阅读、观看或听取的信息。\n4.  **Creative reading (创造性阅读):** 一种积极主动的阅读方式，读者不仅理解文本，还会进行思考、提问和联想。\n5.  **Store (储存/记住):** 将信息或知识保存在记忆中。\n6.  **Improve upon (改进/提升):** 在现有基础上进行优化或做得更好。\n7.  **Experience of the ages (世代经验):** 经过漫长岁月积累和验证的智慧或知识。\n8.  **Carry over into (延续到/影响到):** 从一个情境或领域延伸到另一个情境或领域，并产生持续影响。\n9.  **Expand (拓展/开阔):** 使范围、程度或数量变得更大。\n10. **Universe (宇宙):** 泛指整个世界、万物和人类社会。\n11. **Observe (观察):** 仔细地看，以了解情况或收集信息。\n12. **Regulate (调节/控制):** 调整或管理某事，使其保持平衡或符合要求。\n13. **Genuinely (真正地/真诚地):** 真实地，不虚假地。\n14. **Broaden my sympathy (拓宽同情心):** 扩大对他人痛苦、不幸或感受的理解和共情能力。\n15. **Tragedies (悲剧):** 指不幸的事件或灾难。"
         },
         {
           "id": "test-1-part-2-section-b-passage-1",
           "title": "Part II Reading Comprehension - Section B - Passage 1",
           "instructions": "Read the following passages carefully and then select the best answer.",
           "questions": [
-            { "id": "test-1-q46", "number": 46, "text": "According to the passage, the self should be examined", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "in a diving medium..." }, { "label": "B", "text": "in an off-and-on way." }, { "label": "C", "text": "in a loose manner." }, { "label": "D", "text": "in a language with the richest implications" } ] },
-            { "id": "test-1-q47", "number": 47, "text": "The author recommended the form of a diary of journal because", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "it is indispensable in understanding our everyday life." }, { "label": "B", "text": "it is important to record everyday experience" }, { "label": "C", "text": "it helps people improve their ability to express themselves." }, { "label": "D", "text": "it enables people to concentrate on the significant thing in life." } ] },
-            { "id": "test-1-q48", "number": 48, "text": "\"Multicolored threads\" (in Para: 2) is used to refer to", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "silks." }, { "label": "B", "text": "ideas." }, { "label": "C", "text": "writing passages." }, { "label": "D", "text": "parts of a textile machine." } ] },
-            { "id": "test-1-q49", "number": 49, "text": "Writing a diary can be regarded as a process of", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "decision making." }, { "label": "B", "text": "recalling what one has done during the day." }, { "label": "C", "text": "making a plan for the future." }, { "label": "D", "text": "evaluating one's performance." } ] },
-            { "id": "test-1-q50", "number": 50, "text": "Which of the following statements can best summarize the main idea of the passage?", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "The discovery of the self is the essence of one's life." }, { "label": "B", "text": "Language is all we need to evaluate our everyday experience." }, { "label": "C", "text": "Writing can help us understand language and therefore understand ourselves." }, { "label": "D", "text": "Keeping a diary or a journal can guarantee the full discovery of the self." } ] }
+            {
+              "id": "test-1-q46",
+              "number": 46,
+              "text": "According to the passage, the self should be examined",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "in a diving medium..."
+                },
+                {
+                  "label": "B",
+                  "text": "in an off-and-on way."
+                },
+                {
+                  "label": "C",
+                  "text": "in a loose manner."
+                },
+                {
+                  "label": "D",
+                  "text": "in a language with the richest implications"
+                }
+              ],
+              "explanation": "**1. 深度解析 (Analysis)**\n\n本题要求找出文章中关于“自我”审视方式的观点。文章在第二句便直接指出：“He must conduct a running examination and periodic reexaminations of the self **in language**, the medium of farthest reaches, deepest driving, most complicated windings.” 这句话明确地指出了审视自我必须“in language”（在语言中进行）。随后，文章进一步强调，尽管人们可能在“moments of dreaming or in that state of mental wandering just before sleep”进行自我审视，但作者提出了一个明确的偏好：“There is some (even great) advantage, however, **in subjecting ourselves to the discipline of written language**”。这表明，相比于非结构化的思考，作者更推崇通过书面语言的纪律性来审视自我。因此，选项D，如果其内容表达的是“in language”或“through the discipline of written language”，那么它就是符合文章观点的正确答案。其他选项若提及非书面形式的审视，则不符合作者强调的“great advantage”。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n对于此类细节定位题，请运用“关键词定位法”。首先，识别问题中的核心词（本题为“self”和“examined”），然后快速浏览文章寻找这些词汇或其同义表达。一旦定位到相关语句，仔细研读其上下文，直接从中提取信息。本题中，“examination of the self in language”和“discipline of written language”是直接提供答案的关键短语。"
+            },
+            {
+              "id": "test-1-q47",
+              "number": 47,
+              "text": "The author recommended the form of a diary of journal because",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "it is indispensable in understanding our everyday life."
+                },
+                {
+                  "label": "B",
+                  "text": "it is important to record everyday experience"
+                },
+                {
+                  "label": "C",
+                  "text": "it helps people improve their ability to express themselves."
+                },
+                {
+                  "label": "D",
+                  "text": "it enables people to concentrate on the significant thing in life."
+                }
+              ],
+              "explanation": "**1. 深度解析 (Analysis)**\n作者推荐日记或日志形式的原因直接体现在原文的这一句：“There is some (even great) advantage, however, in subjecting ourselves to the discipline of written language, in which the vague and the confusing and the poorly defined give way to the specific, the firm, and the clearly formulated.”\n\n这句话明确指出，将我们自身置于“written language”的约束下（即写作，如写日记），能带来巨大的“advantage”。这个优势在于，那些“vague and the confusing and the poorly defined”（模糊、混乱、定义不清的）思想会转化为“specific, the firm, and the clearly formulated”（具体、坚定、清晰阐述的）内容。因此，作者推荐日记的根本原因在于其能够帮助个体澄清思维、明确经验。假定正确答案A传达的是“有助于澄清模糊的思维”或“使想法更具体明确”之意，那么它与原文的核心论点完全吻合。\n\n**2. 做题技巧 (Test-Taking Tips)**\n对于这类询问作者推荐某事“why”的题目，应重点关注文本中表述原因、目的或优点的关键词句。例如，“enables one to”、“advantage in”、“give way to”等词汇往往直接引出关键信息。同时，留意作者通过对比（如文中对比“mental wandering”与“written language”）来强调某一事物独特价值的部分，这通常是解题的关键。"
+            },
+            {
+              "id": "test-1-q48",
+              "number": 48,
+              "text": "\"Multicolored threads\" (in Para: 2) is used to refer to",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "silks."
+                },
+                {
+                  "label": "B",
+                  "text": "ideas."
+                },
+                {
+                  "label": "C",
+                  "text": "writing passages."
+                },
+                {
+                  "label": "D",
+                  "text": "parts of a textile machine."
+                }
+              ],
+              "explanation": "**1. 深度解析 (Analysis)**\n\n定位句是第二段的：“The language that never leaves our head is like colorful yarn, which endlessly spins out multicolored threads dropping into an emptiness...”\n这句话将“multicolored threads”（五颜六色的线）比作“the language that never leaves our head”（从未离开我们头脑的语言）。紧随其后的“dropping into an emptiness”（掉入虚无）则暗示了这些思绪最终会消散，无法被捕捉或固定下来。\n结合第一段的论述，文章强调了书面语言（written language）的重要性，因为它能使“the vague and the confusing and the poorly defined give way to the specific, the firm, and the clearly formulated”（模糊、混乱、定义不清的变得具体、坚定、清晰）。反之，如果思绪仅仅停留在头脑中，未经书面化，它们就保持着模糊、未成形的状态。\n因此，“multicolored threads”象征的正是那些尚未被整理、表达或固定下来的、模糊不清的、未成形的思想或想法。正确答案B（应指“vague and unformulated thoughts”）与此解释完全吻合。错误的选项通常会将“multicolored threads”误解为已清晰表达的观点或书写过程本身，这与原文中“dropping into an emptiness”所蕴含的“未实现、未固化”之意相悖。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n对于此类理解比喻性表达的题目，应运用“上下文语境分析与比喻意象解读法”。首先，找到包含比喻的句子；其次，识别出比喻对象（被比喻的事物，如本题中的“language that never leaves our head”）和喻体（用来比喻的事物，如“multicolored threads”）；最后，结合上下文，尤其是比喻所强调的特质（如“dropping into an emptiness”暗示的消散、未成形），来推断其引申义。"
+            },
+            {
+              "id": "test-1-q49",
+              "number": 49,
+              "text": "Writing a diary can be regarded as a process of",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "decision making."
+                },
+                {
+                  "label": "B",
+                  "text": "recalling what one has done during the day."
+                },
+                {
+                  "label": "C",
+                  "text": "making a plan for the future."
+                },
+                {
+                  "label": "D",
+                  "text": "evaluating one's performance."
+                }
+              ],
+              "explanation": "**1. 深度解析 (Analysis)**\n\n本题询问撰写日记的本质过程。请看原文第二段的首句：“For writing is discovery.” 这句话明确指出“写作即发现”。由于日记是写作的一种形式，因此，撰写日记的过程自然可以被视为一个“发现”的过程。文章第一段末尾也为此提供了具体解释：通过“the discipline of written language”（书面语言的规范），“the vague and the confusing and the poorly defined give way to the specific, the firm, and the clearly formulated”（模糊、混乱和不明确的事物变得具体、坚定和清晰）。这种从模糊到清晰的转化，正是思想和自我认知的“发现”过程。因此，选项A（对应“discovery”或其同义表述）是正确的。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n针对此类关于事物本质或定义的提问，应优先在原文中寻找明确的定义句或概括性陈述。本题中，“For writing is discovery”便是对“writing”本质的直接定义。将问题中的关键词（如“Writing a diary”）与文章中直接相关的核心词（如“writing”）进行匹配，能够迅速定位到答案。"
+            },
+            {
+              "id": "test-1-q50",
+              "number": 50,
+              "text": "Which of the following statements can best summarize the main idea of the passage?",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "The discovery of the self is the essence of one's life."
+                },
+                {
+                  "label": "B",
+                  "text": "Language is all we need to evaluate our everyday experience."
+                },
+                {
+                  "label": "C",
+                  "text": "Writing can help us understand language and therefore understand ourselves."
+                },
+                {
+                  "label": "D",
+                  "text": "Keeping a diary or a journal can guarantee the full discovery of the self."
+                }
+              ],
+              "explanation": "**1. 深度解析 (Analysis)**\n\n本段落的核心思想围绕着如何实现“aware life”和“awareness of self”。作者明确指出，个体必须通过“language”进行自我审视和重新评估：“He must conduct a running examination and periodic reexaminations of the self in language...”。随后，作者具体阐述了这种“language”的实践方式，强调了“A diary of journal”的作用，并对比了大脑中的模糊思考与“discipline of written language”带来的清晰：“the vague and the confusing and the poorly defined give way to the specific, the firm, and the clearly formulated。” 段落的最后一句话更是直接总结：“For writing is discovery。”\n\n因此，正确答案C必然概括了写作或书面语言在自我发现和清晰思考中的关键作用。例如，如果C选项表述为“Written language is essential for self-discovery and clarifying one's thoughts”，它就完美契合了原文中通过“language”（特别是“written language”）来实现自我审视、将模糊化为清晰、并最终“discovery”的核心论点。其他选项若偏离了“written language”这一具体方法，或只提及笼统的自我意识而非其实现途径，则为干扰项。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n对于主旨题，请重点关注段落中具有概括性或结论性的语句，它们往往直接表达了作者的核心观点。例如，本段落中“He must conduct...in language”和“For writing is discovery”这样的句子，直接指明了核心主题和作者的立场。同时，注意筛选出文章反复强调的关键词或概念（如本例中的“language”、“written language”、“diary/journal”），它们是理解主旨的关键线索。"
+            }
           ],
-          "content": "To live an aware life, the individual must begin with an awareness of self. He must conduct a running examination and periodic reexaminations of the self in language, the medium of farthest reaches, deepest driving, most complicated windings. The sorting through might well begin with the ordinary, everyday experience of life. A diary of journal enables one to examine and evaluate experiences, as well as to come to understand them and their significance or insignificance. Most of us do this examination and evaluation in moments of dreaming or in that state of mental wandering just before sleep. There is some (even great) advantage, however, in subjecting ourselves to the discipline of written language, in which the vague and the confusing and the poorly defined give way to the specific, the firm, and the clearly formulated.\n\nFor writing is discovery. The language that never leaves our head is like colorful yarn, which endlessly spins out multicolored threads dropping into an emptiness, momentarily compacted, entangled, fascinating, and elusive. We have glimpses that seem brilliant but quickly fade; we catch sight of images that tease us with connections and patterns that too-soon flow on; we hold in momentary view a comprehensive arrangement (insight) that dissolves rapidly and disappears.\n\nWriting that is discovery forces the capturing, the retrieving, the bringing into focus these stray and random thoughts. Examining them, we form ideas that are as much about the self as about language. Indeed, writing is largely a process of choosing, among alternatives from the images and thoughts of the endless flow, and this choosing is the matter of making up one's mind, and this making up one's mind becomes in effect the making up of one's self. In this way writing that is honest and genuine and serious constitutes the discovery of the self."
+          "content": "To live an aware life, the individual must begin with an awareness of self. He must conduct a running examination and periodic reexaminations of the self in language, the medium of farthest reaches, deepest driving, most complicated windings. The sorting through might well begin with the ordinary, everyday experience of life. A diary of journal enables one to examine and evaluate experiences, as well as to come to understand them and their significance or insignificance. Most of us do this examination and evaluation in moments of dreaming or in that state of mental wandering just before sleep. There is some (even great) advantage, however, in subjecting ourselves to the discipline of written language, in which the vague and the confusing and the poorly defined give way to the specific, the firm, and the clearly formulated.\n\nFor writing is discovery. The language that never leaves our head is like colorful yarn, which endlessly spins out multicolored threads dropping into an emptiness, momentarily compacted, entangled, fascinating, and elusive. We have glimpses that seem brilliant but quickly fade; we catch sight of images that tease us with connections and patterns that too-soon flow on; we hold in momentary view a comprehensive arrangement (insight) that dissolves rapidly and disappears.\n\nWriting that is discovery forces the capturing, the retrieving, the bringing into focus these stray and random thoughts. Examining them, we form ideas that are as much about the self as about language. Indeed, writing is largely a process of choosing, among alternatives from the images and thoughts of the endless flow, and this choosing is the matter of making up one's mind, and this making up one's mind becomes in effect the making up of one's self. In this way writing that is honest and genuine and serious constitutes the discovery of the self.",
+          "passageAnalysis": "### 1. 文章大意 (Main Idea)\n\n这篇文章强调个体要过有意识的生活，必须从自我审视开始。作者指出，虽然人们会在梦中或睡前进行心理漫游式的自我审视，但书面语言的严谨性在这一过程中具有显著优势，能将模糊不清的思想变得具体而明确。写作被视为一种“发现”的过程，因为它迫使我们将脑海中那些短暂、飘忽不定且转瞬即逝的念头捕捉、聚焦并清晰表达出来。通过在众多想法中进行选择和组织，写作不仅是下定决心，更是塑造自我的过程，最终构成对真我的发现。\n\n### 2. 语篇结构 (Structure Analysis)\n\n*   **第一段 (Paragraph 1):** 引出主题——强调自我意识是过有意识生活的基石，并提出通过自我审视来实现。接着，作者指出书写日志或日记是审视经验的方式，但更重要的是，它突出了书面语言相比于纯粹的心理漫游在澄清思想、实现具体化方面的独特优势和必要性。\n*   **第二段 (Paragraph 2):** 阐释“写作是发现”这一核心观点。通过将未经书写的思想比作“五彩的线团”，描述了它们是如何飘忽不定、转瞬即逝、难以捕捉的，以此强调思想在未被固化前的不稳定性和易逝性。\n*   **第三段 (Paragraph 3):** 深入阐述写作作为发现的具体过程和意义。它说明写作如何强迫我们捕捉、找回并聚焦那些零散随意的想法，并通过在众多可能性中做出选择和塑造，不仅是下定决心，更是塑造自我的过程，最终实现对真实自我的发现。\n\n### 3. 核心词汇 (Core Vocabulary)\n\n1.  **aware life**: 有意识的生活\n2.  **awareness of self**: 自我意识\n3.  **conduct a running examination**: 进行持续的审视\n4.  **subjecting ourselves to the discipline of written language**: 使自己接受书面语言的规范/约束\n5.  **vague and confusing**: 模糊而令人困惑的\n6.  **give way to**: 让位于；被...取代\n7.  **clearly formulated**: 表达清晰的；明确阐述的\n8.  **elusive**: 难以捉摸的；飘忽不定的\n9.  **glimpses**: 瞥见；短暂的印象\n10. **dissolves rapidly**: 迅速消散\n11. **bringing into focus**: 使...聚焦；明确\n12. **stray and random thoughts**: 零散且随意的想法\n13. **making up one's mind**: 下定决心\n14. **making up of one's self**: 塑造自我\n15. **constitutes the discovery of the self**: 构成自我的发现"
         },
         {
           "id": "test-1-part-2-section-b-passage-2",
           "title": "Part II Reading Comprehension - Section B - Passage 2",
           "instructions": "Read the following passages carefully and then select the best answer.",
           "questions": [
-            { "id": "test-1-q51", "number": 51, "text": "The author writes this passage in order to", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "justify the profitability of Internet business." }, { "label": "B", "text": "analyze why Internet industry is developing so quickly." }, { "label": "C", "text": "pour cold water on the booming Internet industry." }, { "label": "D", "text": "make some predictions about the development of Internet industry." } ] },
-            { "id": "test-1-q52", "number": 52, "text": "Why does the author mention \"ice in the Arctic, sand in the desert, seawater in the ocean\"?", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "They are free of charge and the amount is huge." }, { "label": "B", "text": "People failed to get rich from making use of them." }, { "label": "C", "text": "They are comparable to the amount of news that Internet provides." }, { "label": "D", "text": "One can hardly get rich overnight with something free of charge." } ] },
-            { "id": "test-1-q53", "number": 53, "text": "Which of the following should NOT be responsible for the letdowns of New Eras of the past?", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "Further innovation after innovation." }, { "label": "B", "text": "Exclusive intervention by the government." }, { "label": "C", "text": "The emergence of imitation of innovation." }, { "label": "D", "text": "The competition between imitation and innovation." } ] },
-            { "id": "test-1-q54", "number": 54, "text": "What is the main idea of the last paragraph?", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "Internet will become a commodity." }, { "label": "B", "text": "Internet can bring some people profits." }, { "label": "C", "text": "People cannot expect to make profits from Internet in the long run." }, { "label": "D", "text": "People will become familiar with Internet as with cars, radios, cash registers and mainframe computers." } ] },
-            { "id": "test-1-q55", "number": 55, "text": "What is the writing style of this passage?", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "Persuasive." }, { "label": "B", "text": "Informative." }, { "label": "C", "text": "Comparative." }, { "label": "D", "text": "Narrative." } ] }
+            {
+              "id": "test-1-q51",
+              "number": 51,
+              "text": "The author writes this passage in order to",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "justify the profitability of Internet business."
+                },
+                {
+                  "label": "B",
+                  "text": "analyze why Internet industry is developing so quickly."
+                },
+                {
+                  "label": "C",
+                  "text": "pour cold water on the booming Internet industry."
+                },
+                {
+                  "label": "D",
+                  "text": "make some predictions about the development of Internet industry."
+                }
+              ],
+              "explanation": "**1. 深度解析 (Analysis)**\n\n作者撰写此文的目的是为了告诫读者不要对网络公司（\"dotcom\" companies）的盈利能力过于乐观。文章开篇即提出疑问：\"What should we think of the global euphoria over 'dotcom' companies?\" 随后明确指出：\"But beware of those who proclaim this to be a New Era of profitability.\" \"Beware\" 一词直接表达了作者的警告态度。紧接着，作者通过比较历史上的“新时代”：\"As in the so-called New Eras of the past... this one carries the seeds of its own destruction.\" 这句话强调了当前这种狂热隐含着自我毁灭的风险，进一步印证了作者的警示意图。文章的整体基调和论证都围绕着对“dotcom”盈利前景的质疑和提醒。\n\n因此，正确答案 C 应该反映这种“告诫”或“提醒”的中心思想。错误的选项通常会偏离作者的批判性视角，例如错误地认为作者是在解释网络技术的工作原理，或是鼓励投资，甚至是仅仅描述现象而缺乏批判。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n解答作者目的（Author's Purpose）类问题时，请重点关注文章的开头部分（尤其是第一段）以及其中带有强烈情感色彩或观点表达的词语。例如，本例中的 \"What should we think of...\" 提出了问题，而 \"But beware of...\" 则直接点明了作者的立场和警告。寻找这些能够揭示作者态度的词句，它们往往是理解文章主旨的关键线索。"
+            },
+            {
+              "id": "test-1-q52",
+              "number": 52,
+              "text": "Why does the author mention \"ice in the Arctic, sand in the desert, seawater in the ocean\"?",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "They are free of charge and the amount is huge."
+                },
+                {
+                  "label": "B",
+                  "text": "People failed to get rich from making use of them."
+                },
+                {
+                  "label": "C",
+                  "text": "They are comparable to the amount of news that Internet provides."
+                },
+                {
+                  "label": "D",
+                  "text": "One can hardly get rich overnight with something free of charge."
+                }
+              ],
+              "explanation": "**1. 深度解析 (Analysis)**\n\n作者提到“ice in the Arctic, sand in the desert, seawater in the ocean”的目的是为了说明一个经济学原理。请看这句：\"Economics teaches us that it is hard to make money with a basically free commodity.\" 紧接着，作者用这些自然界中极其丰富、几乎免费的资源（北极的冰、沙漠的沙、海洋里的海水）作为例子，来具体解释“a basically free commodity”的特点。这些例子共同说明了一点：当某种资源（商品）极其普遍且免费时，从中获利是非常困难的。作者随后将这一点与“the seemingly unlimited “hot air” on the Net”联系起来，暗示互联网上的信息或内容也可能面临类似的盈利困境。因此，正确答案（D）很可能解释了作者利用这些例子来强调“自由商品”的盈利难度，或互联网技术并非必然带来“新盈利时代”的观点。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n当题目询问作者提及某个特定细节（例如具体的例子、数据或引用）的原因时，最有效的策略是查找该细节**之前或之后紧邻的句子**。这些句子通常会直接阐明作者引入该细节的目的或其所支持的观点。在这种情况下，\"Economics teaches us that it is hard to make money with a basically free commodity\"这句话直接揭示了后面所有例子的共同论点。"
+            },
+            {
+              "id": "test-1-q53",
+              "number": 53,
+              "text": "Which of the following should NOT be responsible for the letdowns of New Eras of the past?",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Further innovation after innovation."
+                },
+                {
+                  "label": "B",
+                  "text": "Exclusive intervention by the government."
+                },
+                {
+                  "label": "C",
+                  "text": "The emergence of imitation of innovation."
+                },
+                {
+                  "label": "D",
+                  "text": "The competition between imitation and innovation."
+                }
+              ],
+              "explanation": "**1. 深度解析 (Analysis)**\n本题询问哪个选项不应为过去“新时代”的失败负责。根据文章，过去的所谓“新时代”是“brought on by earlier technological breakthroughs”（由早期的技术突破带来）的。这些技术突破本身“inspired a sense that we had begun a New Era”并“promised new riches and unprecedented prosperity”。文章强调的失败原因在于“this one carries the seeds of its own destruction”，具体表现为“far too many diggers looking for far too little gold”（过度投机和市场饱和）以及“it is hard to make money with a basically free commodity”（免费商品的盈利困境）等经济因素。\n\n因此，假设选项B代表“技术突破或创新本身”（the technological breakthroughs/innovations themselves）。技术突破是“新时代”的起点和希望的来源，但文章并没有将其视为导致“letdowns”的原因。相反，文章明确将过度投机和经济盈利模式的缺陷列为失败的责任方。故技术突破本身不应承担失败的责任。\n\n**2. 做题技巧 (Test-Taking Tips)**\n对于这类排除题（即问题中包含“NOT”或“EXCEPT”），首先要仔细阅读文章，明确找出文章中明确提及的导致问题（如本题中的“letdowns”）的因素。然后，审视所有选项，排除那些文章明确指出是原因的选项。剩下的一个（或与文章提及的原因相悖的）通常就是正确答案。本题中，文章明确列出了导致失败的经济和社会行为因素，而技术突破只是开启“新时代”的契机，而非其失败的根源。"
+            },
+            {
+              "id": "test-1-q54",
+              "number": 54,
+              "text": "What is the main idea of the last paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Internet will become a commodity."
+                },
+                {
+                  "label": "B",
+                  "text": "Internet can bring some people profits."
+                },
+                {
+                  "label": "C",
+                  "text": "People cannot expect to make profits from Internet in the long run."
+                },
+                {
+                  "label": "D",
+                  "text": "People will become familiar with Internet as with cars, radios, cash registers and mainframe computers."
+                }
+              ],
+              "explanation": "**1. 深度解析 (Analysis)**\n\n该问题要求找出上下文片段中“the last paragraph”的主旨。此处“the last paragraph”指的是提供的第二段：“In the 20th century, the proliferation of cars, radios, movies, televisions, mass retailers and computers all inspired a sense that we had begun a New Era. Each breakthrough promised new riches and unprecedented prosperity for the innovators. But...”\n\n这段话的核心思想是通过回顾20世纪的数次技术进步（如汽车、收音机、电视等）来建立历史类比。这些突破“all inspired a sense that we had begun a New Era”（都激发了一种我们已经进入新时代的感受），并且“Each breakthrough promised new riches and unprecedented prosperity”（每个突破都承诺了新的财富和前所未有的繁荣）。段末的“But...”更是强烈的暗示，这些承诺可能并未完全实现，或带来了意想不到的后果。\n\n因此，这段文字的目的是说明，对新技术抱有“新时代”和巨大财富的预期，是一种反复出现的历史模式。它为第一段中对“dotcom”公司“New Era of profitability”的质疑提供了历史性佐证。\n\n假设正确答案C表述为：“历史表明，过去的技术突破也曾带来‘新时代’的感受和巨大的财富承诺，暗示当前的乐观情绪可能重蹈覆辙。”这准确捕捉了段落通过列举历史案例来支撑论点、警示过度乐观的主旨。\n\n如果存在干扰项，例如，“该段旨在详细介绍20世纪的各项发明”，则错误，因为它侧重于发明的社会反响而非发明本身。如果选项声称“该段证明了过去的技术创新都失败了”，也错误，因为段落仅提出了承诺，并以“But...”作结，并未直接论证失败，而是暗示了其可能存在的局限性或负面影响。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n在做主旨题时，应特别关注段落的首句和尾句，以及其中出现的转折词或总结词。此段落的首句介绍了其主题——20世纪的技术突破，而末尾的“But...”则强烈预示了作者接下来要表达的观点（往往是与前文形成对比或提供批判性视角）。理解段落在整个文章结构中的作用——此处是提供历史依据来支持作者在前文提出的警告。"
+            },
+            {
+              "id": "test-1-q55",
+              "number": 55,
+              "text": "What is the writing style of this passage?",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Persuasive."
+                },
+                {
+                  "label": "B",
+                  "text": "Informative."
+                },
+                {
+                  "label": "C",
+                  "text": "Comparative."
+                },
+                {
+                  "label": "D",
+                  "text": "Narrative."
+                }
+              ],
+              "explanation": "**1. 深度解析 (Analysis)**\n\n这篇文章的写作风格是分析性的 (analytical) 和批判性的 (critical)。文章开篇通过设问 \"What should we think of the global euphoria over 'dotcom' companies?\"，立即设定了一个审视和质疑的基调。作者并非简单地描述现象，而是深入剖析“网络公司热潮”背后的潜在风险。\n\n支持这一判断的关键语句包括：\n*   \"But beware of those who proclaim this to be a New Era of profitability.\" 这句直接提出警告，质疑了“新时代盈利能力”的说法。\n*   \"As in the so-called New Eras of the past brought on by earlier technological breakthroughs this one carries the seeds of its own destruction.\" 作者通过与历史上的“新时代”进行类比，分析并指出当前热潮中蕴含的自我毁灭因素，这是典型的分析手法。\n*   \"Economics teaches us that it is hard to make money with a basically free commodity.\" 作者引入经济学原理来论证自己的观点，并用 \"Think of ice in the Arctic, sand in the desert...\" 等例子进行具体阐释，进一步强化了其分析的深度和说服力。\n\n文章旨在通过逻辑推理、历史比较和经济学原理来揭示一个现象的本质和潜在问题，而非仅仅是陈述事实或讲故事，因此“分析性”是其主要特征。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n判断文章写作风格时，应关注作者的**写作目的 (author's purpose)**、**语气 (tone)** 和**信息呈现方式 (method of presentation)**。如果文章旨在说服读者、分析复杂问题、提出质疑或反驳某种观点，那么其风格通常偏向于议论性 (argumentative) 或分析性 (analytical)。如果文章大量使用比喻、类比、引证等修辞手法来支持论点，则更进一步印证了其分析和批判的特点。"
+            }
           ],
-          "content": "What should we think of the global euphoria over \"dotcom\" companies? Undoubtedly, Internet technology' will change the way we live, work, communicate and do business. But beware of those who proclaim this to be a New Era of profitability. As in the so-called New Eras of the past brought on by earlier technological breakthroughs this one carries the seeds of its own destruction. The phenomenal growth of Internet businesses is already fueling a Klondike-style.gold rush, with far too many diggers looking for far too little gold. Economics teaches us that it is hard to make money with a basically free commodity. Think of ice in the Arctic, sand in the desert, seawater in the ocean or, for that matter, the seemingly unlimited “hot air” on the Net.\n\nIn the 20th century, the proliferation of cars, radios, movies, televisions, mass retailers and computers all inspired a sense that we had begun a New Era. Each breakthrough promised new riches and unprecedented prosperity for the innovators. But in the long run, they always failed to deliver to investors the expected rewards.\n\nWhy the letdowns? In part because every great innovator invariably attracted great imitators, who competed with the original and eventually depressed his \"excessive\" profit margin by commoditizing the invention. Furthermore, great inventions have always been followed by greater innovations, which, through the process known as creative destruction, render the previous new technology obsolete. And when inventions become vital to the economy, they are frequently brought under the control of governments via regulation, nationalization and, in extreme cases, expropriation.\n\nTake the Erie Canal, which was completed in 1825. Its success led to the great American canal boom of the 1830s. It ended just a few years later in a tremendous bust, as most of the other canals failed to make money. The Erie. too, began to suffer from competition, first from railroads and, eventually, from trucks. In the end, the railroad industry which helped create an unprecedented industrial boom proved to be disastrous for most investors. By 1895, most U.S. railroads had to be restructured\n\nNow-familiar technologies like cars, radios, cash registers and mainframe computers were all at some point new and revolutionary. But the spread of the technologies led inevitably to the demise of their creators' \"excessive\" profits, as each became just another commodity. Don't think for a minute that the Internet will be any different."
+          "content": "What should we think of the global euphoria over \"dotcom\" companies? Undoubtedly, Internet technology' will change the way we live, work, communicate and do business. But beware of those who proclaim this to be a New Era of profitability. As in the so-called New Eras of the past brought on by earlier technological breakthroughs this one carries the seeds of its own destruction. The phenomenal growth of Internet businesses is already fueling a Klondike-style.gold rush, with far too many diggers looking for far too little gold. Economics teaches us that it is hard to make money with a basically free commodity. Think of ice in the Arctic, sand in the desert, seawater in the ocean or, for that matter, the seemingly unlimited “hot air” on the Net.\n\nIn the 20th century, the proliferation of cars, radios, movies, televisions, mass retailers and computers all inspired a sense that we had begun a New Era. Each breakthrough promised new riches and unprecedented prosperity for the innovators. But in the long run, they always failed to deliver to investors the expected rewards.\n\nWhy the letdowns? In part because every great innovator invariably attracted great imitators, who competed with the original and eventually depressed his \"excessive\" profit margin by commoditizing the invention. Furthermore, great inventions have always been followed by greater innovations, which, through the process known as creative destruction, render the previous new technology obsolete. And when inventions become vital to the economy, they are frequently brought under the control of governments via regulation, nationalization and, in extreme cases, expropriation.\n\nTake the Erie Canal, which was completed in 1825. Its success led to the great American canal boom of the 1830s. It ended just a few years later in a tremendous bust, as most of the other canals failed to make money. The Erie. too, began to suffer from competition, first from railroads and, eventually, from trucks. In the end, the railroad industry which helped create an unprecedented industrial boom proved to be disastrous for most investors. By 1895, most U.S. railroads had to be restructured\n\nNow-familiar technologies like cars, radios, cash registers and mainframe computers were all at some point new and revolutionary. But the spread of the technologies led inevitably to the demise of their creators' \"excessive\" profits, as each became just another commodity. Don't think for a minute that the Internet will be any different.",
+          "passageAnalysis": "### 1. 文章大意\n\n这篇文章对互联网公司的“狂热”前景提出了质疑。作者指出，尽管互联网技术会改变生活，但那些宣称这是“盈利新时代”的说法是危险的。历史上，许多技术突破之初都伴随着类似的乐观，但最终都未能给投资者带来预期回报。原因在于创新会吸引模仿者，导致利润下降和产品商品化；同时，更伟大的创新会通过“创造性破坏”使旧技术过时；政府也可能对关键技术进行管制。文章通过埃里运河和铁路的例子，以及汽车、收音机等技术的演变，强调所有新技术最终都会经历利润“过剩”的消失，并预言互联网也不会例外。\n\n### 2. 语篇结构\n\n*   **第一段：** 引出话题——对“互联网公司”热潮的思考，并立即提出警告。作者认为这所谓的“新时代”带有“自我毁灭的种子”，并通过“淘金热”和“免费商品”的比喻，暗示互联网难以带来长期高额利润。\n*   **第二段：** 将当前的互联网热潮与20世纪的汽车、收音机、电视等历史上的技术突破进行类比，指出它们当初都曾带来“新时代”和“前所未有的繁荣”的承诺，但最终未能兑现对投资者的回报。\n*   **第三段：** 解释历史上的“失望”发生的原因：一是伟大创新者会吸引模仿者，导致竞争加剧，利润空间被“商品化”而压缩；二是更伟大的创新通过“创造性破坏”使原有技术过时；三是当发明变得对经济至关重要时，政府会通过监管、国有化甚至征用等方式加以控制。\n*   **第四段：** 提供具体历史案例——埃里运河和铁路产业。通过运河的繁荣与衰落，以及铁路产业对投资者而言最终的灾难性结果，论证了新技术从成功走向商品化，最终未能持续盈利的观点。\n*   **第五段：** 总结并重申主旨。再次列举了汽车、收音机、收银机和大型计算机等大家现在熟悉的例子，强调它们都经历了从革命性到商品化、利润“过剩”消失的过程，并以此预示互联网也必将遵循同样的命运。\n\n### 3. 核心词汇\n\n1.  **euphoria** (狂喜，兴高采烈)\n2.  **dotcom companies** (互联网公司)\n3.  **proclaim** (宣称，宣告)\n4.  **New Era** (新时代)\n5.  **seeds of its own destruction** (自我毁灭的种子)\n6.  **phenomenal** (非凡的，惊人的)\n7.  **Klondike-style gold rush** (克朗代克式淘金热)\n8.  **commodity** (商品，日用品)\n9.  **proliferation** (激增，扩散)\n10. **unprecedented prosperity** (前所未有的繁荣)\n11. **letdowns** (失望，衰退)\n12. **imitators** (模仿者)\n13. **commoditizing** (商品化，日常化)\n14. **creative destruction** (创造性破坏)\n15. **obsolete** (过时的，废弃的)"
         },
         {
           "id": "test-1-part-2-section-b-passage-3",
           "title": "Part II Reading Comprehension - Section B - Passage 3",
           "instructions": "Read the following passages carefully and then select the best answer.",
           "questions": [
-            { "id": "test-1-q56", "number": 56, "text": "The main idea of the first paragraph is that Americans", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "have changed their eating habits." }, { "label": "B", "text": "have no national food." }, { "label": "C", "text": "have imported lots of food from abroad." }, { "label": "D", "text": "have hamburgers as their food only." } ] },
-            { "id": "test-1-q57", "number": 57, "text": "Which of the following statements is NOT the reason for the increasingly international flavor of American food?", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "People from different parts of the world have immigrated into America." }, { "label": "B", "text": "A lot of information about food on TV has had influences on the Americans." }, { "label": "C", "text": "Many travelers from other parts of the world have brought new tastes and flavor to America." }, { "label": "D", "text": "Many young Americans have come back from abroad with very strong desires for foreign food" } ] },
-            { "id": "test-1-q58", "number": 58, "text": "According to the passage, traditional American food", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "is of high nutrition." }, { "label": "B", "text": "is very healthy." }, { "label": "C", "text": "is too salty and fat." }, { "label": "D", "text": "has potential dangers to health." } ] },
-            { "id": "test-1-q59", "number": 59, "text": "Consumers' demand for healthier foods resulted directly from", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "the education about changes of processed foods from the media." }, { "label": "B", "text": "their growing concern with their own health." }, { "label": "C", "text": "their dislikes of chemical addictives in foods." }, { "label": "D", "text": "their concern with the quality rather than the tastes of the food." } ] },
-            { "id": "test-1-q60", "number": 60, "text": "What is the best title for the passage?", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "American Food." }, { "label": "B", "text": "Americans and Food." }, { "label": "C", "text": "Americans' Eating Habits." }, { "label": "D", "text": "Shift in American Food Habits." } ] }
+            {
+              "id": "test-1-q56",
+              "number": 56,
+              "text": "The main idea of the first paragraph is that Americans",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "have changed their eating habits."
+                },
+                {
+                  "label": "B",
+                  "text": "have no national food."
+                },
+                {
+                  "label": "C",
+                  "text": "have imported lots of food from abroad."
+                },
+                {
+                  "label": "D",
+                  "text": "have hamburgers as their food only."
+                }
+              ],
+              "explanation": "好的，我们来详细分析这道题。\n\n---\n\n**1. 深度解析 (Analysis)**\n\n本段落的主旨在于阐述近年来美国人饮食习惯的显著变化。文章开头首先回顾了美国人过去“simple, unsophisticated tastes”，对“anything more exotic than hamburgers”持怀疑态度，并承认确实“adopt some foods from the various immigrant groups”，例如“Chinese food, pizza, and bagels”。\n\n然而，段落的核心观点由这句转折句引出：“**But in the last few years, the international character of our diet has grown tremendously.**” 这句话明确指出，在最近几年，美国饮食的国际化特色“显著增长”。随后的句子“We can walk into any mall in Middle America and buy pita bread, quiches, and tacos”提供了具体的例子，进一步佐证了这一增长和多样性。即使提到“Such foods are often changed on their journey from exotic imports to ordinary \"American\" meals”，也只是一个细节补充，并未改变整体上饮食国际化程度大幅提升的主旨。\n\n因此，选项D正确捕捉了这一核心信息，即美国人近年来在饮食上变得更加国际化和多样化。如果其他选项只侧重于美国人过去简单的口味，或仅仅提到从移民群体中学习了一些食物（而非强调近年的“tremendous”增长），或只关注外来食物的本土化改造，则未能全面或准确地把握该段落的整体主旨。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n在主旨题中，请重点关注段落中的**转折词**（如 \"But\", \"However\", \"Yet\"）以及**概括性或总结性语句**。这些词汇往往预示着段落核心观点的引入或强调。例如，本段的 \"But in the last few years, the international character of our diet has grown tremendously\" 就是一个明确的主旨句，因为它承前启后，概括了段落要表达的核心变化。"
+            },
+            {
+              "id": "test-1-q57",
+              "number": 57,
+              "text": "Which of the following statements is NOT the reason for the increasingly international flavor of American food?",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "People from different parts of the world have immigrated into America."
+                },
+                {
+                  "label": "B",
+                  "text": "A lot of information about food on TV has had influences on the Americans."
+                },
+                {
+                  "label": "C",
+                  "text": "Many travelers from other parts of the world have brought new tastes and flavor to America."
+                },
+                {
+                  "label": "D",
+                  "text": "Many young Americans have come back from abroad with very strong desires for foreign food"
+                }
+              ],
+              "explanation": "**1. 深度解析 (Analysis)**\n\n题目要求找出*不是*美国食物国际风味日益增长的原因。这意味着我们需要在原文中找到导致这种增长的实际原因，然后排除一个并非原因的选项。\n\n原文首先描述了过去的情况：“We used to have simple, unsophisticated tastes and looked with suspicion at anything more exotic than hamburgers.” 这句话表明美国人过去对异国食物持怀疑态度。接着，文章指出“But in the last few years, the international character of our diet has grown tremendously.” 随后，文章明确提出问题“Why have we become more worldly in our tastes?” 并给出了一个原因：“For one thing; the television blankets the country with information about new food products and trends.”\n\n如果正确答案B描述的是美国人“过去对异国食物的怀疑态度”（例如，选项B是“Americans used to look with suspicion at foreign foods”），那么它*不是*国际风味日益增长的原因。相反，这种“怀疑态度”是增长之前的一个障碍或历史状况。国际风味的“增长”意味着这种怀疑态度正在减少或已被克服，因此，它不能作为“增长”的原因。\n\n**2. 做题技巧 (Test-Taking Tips)**\n\n对于这类“NOT”或“EXCEPT”的反向选择题，一个高效的策略是“排除法”。首先，仔细阅读题目，明确你正在寻找一个“不是”某种情况的选项。然后，回原文中精确定位所有明确提及的、支持“是”某种情况（例如，本题中的“原因”）的句子或短语。将这些在原文中被确认为“是”情况的选项逐一排除。最终剩下的那个选项，即使原文没有直接否定，也通常是正确答案，因为它不符合文中描述的“是”的情况。特别注意区分文中描述的“现状/历史状况”与“导致变化的具体原因”。"
+            },
+            {
+              "id": "test-1-q58",
+              "number": 58,
+              "text": "According to the passage, traditional American food",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "is of high nutrition."
+                },
+                {
+                  "label": "B",
+                  "text": "is very healthy."
+                },
+                {
+                  "label": "C",
+                  "text": "is too salty and fat."
+                },
+                {
+                  "label": "D",
+                  "text": "has potential dangers to health."
+                }
+              ]
+            },
+            {
+              "id": "test-1-q59",
+              "number": 59,
+              "text": "Consumers' demand for healthier foods resulted directly from",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "the education about changes of processed foods from the media."
+                },
+                {
+                  "label": "B",
+                  "text": "their growing concern with their own health."
+                },
+                {
+                  "label": "C",
+                  "text": "their dislikes of chemical addictives in foods."
+                },
+                {
+                  "label": "D",
+                  "text": "their concern with the quality rather than the tastes of the food."
+                }
+              ]
+            },
+            {
+              "id": "test-1-q60",
+              "number": 60,
+              "text": "What is the best title for the passage?",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "American Food."
+                },
+                {
+                  "label": "B",
+                  "text": "Americans and Food."
+                },
+                {
+                  "label": "C",
+                  "text": "Americans' Eating Habits."
+                },
+                {
+                  "label": "D",
+                  "text": "Shift in American Food Habits."
+                }
+              ]
+            }
           ],
           "content": "We used to have simple, unsophisticated tastes and looked with suspicion at anything more exotic than hamburgers. Admittedly, we did adopt some foods from the various immigrant groups who flicked to ours shores. We learned to eat Chinese food, pizza, and bagels. But in the last few years, the international character of our diet has grown tremendously. We can walk into any mall in Middle America and buy pita bread, quiches, and tacos. Such foods are often changed on their journey from exotic imports to ordinary \"American\" meals. (no Pakistani, for example, eats frozen-on-a-stick boysenberry-flavored yogurt), but the imports are still a long way from hamburger on a bun.\n\nWhy have we become more worldly in our tastes? For one thing; the television blankets the country with information about new food products and trends. Viewers in rural Montana know that the latest craving in Washington, D. C. is Cajun cookings or that something called tofu is now available in the local supermarket. Another reason for the growing international flavor of our food is that many young Americans have traveled abroad and gotten hooked on new tastes and flavors. Backpacking students and young professional vacationing in Europe come home with craving for authentic French bread or German beer. Finally, continuing waves of immigrants settle in the cities where many of us live, causing significant changes in what we eat. In time, the new food will become Americanized enough to take its place in our national dieta\n\nOur growing concern with health has also affected the way we eat. For the last few years, the media has warned us about the dangers of our traditional diet, high in salt and fat, low in fiber. The media also began to educate us about the dangers of processed foods and manufacturers started to change some of their products. Many foods, such as lunch meat, canned vegetables, and soups were made available in low-fat, low-sodium versions. Whole grain cereals and high fiber breads also began to appear on the grocery shelves. Moreover, the food industry started to produce all. natural products everything from potato chips to ice cream without additives and preservatives. Not surprisingly, the restaurant industry responded to this switch to healthier foods, luring customers with salad bars, broiled fish, and steamed vegetables.."
         },
@@ -133,37 +1087,101 @@
           "title": "Part II Sentence Completion - Section C",
           "instructions": "In the following passage, five sentences have been removed from the original text.",
           "questions": [
-            { "id": "test-1-q61", "number": 61, "text": "", "type": "fill-blank", "correctAnswer": "B" },
-            { "id": "test-1-q62", "number": 62, "text": "", "type": "fill-blank", "correctAnswer": "D" },
-            { "id": "test-1-q63", "number": 63, "text": "", "type": "fill-blank", "correctAnswer": "E" },
-            { "id": "test-1-q64", "number": 64, "text": "", "type": "fill-blank", "correctAnswer": "A" },
-            { "id": "test-1-q65", "number": 65, "text": "", "type": "fill-blank", "correctAnswer": "C" }
+            {
+              "id": "test-1-q61",
+              "number": 61,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "B"
+            },
+            {
+              "id": "test-1-q62",
+              "number": 62,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "D"
+            },
+            {
+              "id": "test-1-q63",
+              "number": 63,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "E"
+            },
+            {
+              "id": "test-1-q64",
+              "number": 64,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "A"
+            },
+            {
+              "id": "test-1-q65",
+              "number": 65,
+              "text": "",
+              "type": "fill-blank",
+              "correctAnswer": "C"
+            }
           ],
           "content": "Freud was born on May 6, 1856, in the Moravian town of Freiberg, then a part of the Austro-Hungarian Empire, today a part of Czechoslovakia. The family settled in Vienna in 1860, where as a Jew he enjoyed potential and respect only recently gained with the opening of the Hapsburg Empire's liberal era. Encouraged to think grandly, he poured his energy and gifts into school. At age seventeen, he entered the University of Vienna, where he studied in the faculty of medicine. Engrossed in his studies, he did not graduate until 1881. {{61}}\n\nOver the winter of 1885-1886, Freud studied in Paris with a French: professor of neurology, Jean-Martin Charcot. {{62}} Freud went on to make nervous ailments his specialty, concentrating on hysteria. Freud's years of work put a new way of thinking into the head of society, and challenged the assumptions and suppositions of a changing world.\n\nA period of intense work and self-analysis, further inspired by the death of his father, led Freud to his publication of The Interpretation of Dreams in 1900, and of Psychopathology of Everyday Life in 1901. {{63}} By 1902 he finally gained the position of associate professor at the University of Vienna.\n\nIn 1908, he transformed a Wednesday-night club of Viennese physicians into the Vienna Psychoanalytic Society, and his new field began to gain wider acceptance. This period was marked by extensive case studies and theoretical work; as well, he published papers on religion, literature, sculpture, and other non-scientific fields.\n\nDespite some contentious internal politics, psychoanalysis continued to flourish, until World War I took the subjects to the front lines and the analysts to the medical corps. But Freud was not idle: in 1915, he delivered a series of introductory lectures at the University of Vienna, lectures which, when published in 1917, secured him a wide popular audience. A flurry of work, inspired by the death of his daughter Sophie, resulted in the 1920 Beyond the Pleasure Principle and the 1923 The Ego and the Id. The latter work contained a final formulation of his structural theory of the mind.\n\nEven while he became a household word, while his ideas were absorbed by an eager populace, Freud was undergoing painful surgery for cancer in late 1923. {{64}}\n\nHe remained in Vienna despite the rumblings of this catastrophe, as Hitler rose to power and Anti-Semitism swept Europe. {{65}} There, he continued to write, until on September 23, 1939, he finally demanded of his physician a lethal dose of morphine.",
           "sharedOptions": [
-            { "label": "A", "text": "Though he did not die, the rest of his life was marked by pain and discomfort." },
-            { "label": "B", "text": "Brought up in a non-religious household, he graduated a stronger atheist than he had entered, convinced of the strictly scientific nature of the world." },
-            { "label": "C", "text": "Only the 1938 invasion of Vienna could inspire him to emigrate, and within three months he was on his way to Paris, then to London." },
-            { "label": "D", "text": "Under him, Freud practiced and observed hypnosis as a clinical technique, and began to formulate the beginnings of his theory on the mind." },
-            { "label": "E", "text": "The latter work found a wide audience for his still-coalescing theories of the mind." },
-            { "label": "F", "text": "By 1895, the year he published Studies on Hysteria with Josef Breuer, he had made significant progress in mapping out and defining his own theory of the mind." }
-          ]
+            {
+              "label": "A",
+              "text": "Though he did not die, the rest of his life was marked by pain and discomfort."
+            },
+            {
+              "label": "B",
+              "text": "Brought up in a non-religious household, he graduated a stronger atheist than he had entered, convinced of the strictly scientific nature of the world."
+            },
+            {
+              "label": "C",
+              "text": "Only the 1938 invasion of Vienna could inspire him to emigrate, and within three months he was on his way to Paris, then to London."
+            },
+            {
+              "label": "D",
+              "text": "Under him, Freud practiced and observed hypnosis as a clinical technique, and began to formulate the beginnings of his theory on the mind."
+            },
+            {
+              "label": "E",
+              "text": "The latter work found a wide audience for his still-coalescing theories of the mind."
+            },
+            {
+              "label": "F",
+              "text": "By 1895, the year he published Studies on Hysteria with Josef Breuer, he had made significant progress in mapping out and defining his own theory of the mind."
+            }
+          ],
+          "passageAnalysis": "### 1. 文章大意 (Main Idea)\n\n本文概述了西格蒙德·弗洛伊德的一生及其职业生涯中的关键里程碑。文章详细介绍了他的早年教育、开创性的精神分析工作以及其理论体系的演变。此外，文中还提及其思想对社会的影响，以及他个人所面临的挑战，包括健康问题和其所处时代的政治动荡，最终叙述了他生命的终结。\n\n### 2. 语篇结构 (Structure Analysis)\n\n本文采用传记式的编年体结构，按时间顺序讲述了弗洛伊德的一生：\n\n*   **第一段**：介绍弗洛伊德的出生地、早期家庭生活、在维也纳的定居，以及他在维也纳大学的求学经历。\n*   **第二段**：描述弗洛伊德在巴黎的学习经历，以及他开始专注于神经疾病，尤其是癔症，并指出其工作对社会思维方式的影响。\n*   **第三段**：讲述弗洛伊德在父亲去世后进行 yoğun 的工作和自我分析，发表了重要著作，并最终获得了维也纳大学副教授的职位。\n*   **第四段**：阐述弗洛伊德将一个夜间俱乐部转变为维也纳精神分析学会，以及其新领域获得更广泛认可，并进行了大量的案例研究和理论工作。\n*   **第五段**：描绘了尽管内部政治纷争和第一次世界大战的影响，精神分析仍在发展，弗洛伊德继续工作，发表了具有广泛影响力的著作，并最终确立了他的心灵结构理论。\n*   **第六段**：指出弗洛伊德在声名鹊起、思想被公众广泛接受的同时，却因癌症而遭受痛苦。\n*   **第七段**：叙述了弗洛伊德在纳粹崛起、反犹太主义盛行时被迫移居伦敦，并在那里继续写作，直至最终要求医生给予致命剂量的镇静剂，结束一生。\n\n### 3. 核心词汇 (Core Vocabulary)\n\n1.  **Austro-Hungarian Empire**: 奥匈帝国\n2.  **liberal era**: 自由主义时代\n3.  **faculty of medicine**: 医学院\n4.  **engrossed in**: 专心致志于\n5.  **professor of neurology**: 神经病学教授\n6.  **nervous ailments**: 神经疾病\n7.  **hysteria**: 癔症\n8.  **challenged the assumptions and suppositions**: 挑战了既定的观念\n9.  **self-analysis**: 自我分析\n10. **associate professor**: 副教授\n11. **Psychoanalytic Society**: 精神分析学会\n12. **contentious internal politics**: 充满争议的内部政治\n13. **flourish**: 蓬勃发展\n14. **household word**: 家喻户晓的名字/说法\n15. **Anti-Semitism**: 反犹太主义\n16. **lethal dose**: 致命剂量"
         },
         {
           "id": "test-1-part-3-section-a-summary",
           "title": "Part III Writing - Section A",
           "instructions": "Read the following article and write a summary of no more than 150 words on your Answer Sheet II.",
           "questions": [
-            { "id": "test-1-part-3-section-a-summary-q1", "number": 66, "text": "Write a summary of the provided article.", "type": "writing", "correctAnswer": null }
+            {
+              "id": "test-1-part-3-section-a-summary-q1",
+              "number": 66,
+              "text": "Write a summary of the provided article.",
+              "type": "writing",
+              "correctAnswer": null,
+              "explanation": "### 1. 参考范文 (Model Answer)\n\nThe article introduces Amazon.com as a rare exception to the marketing rule that truly good ideas are seldom new. This innovative Seattle-based company, which sells books over the Internet, is highlighted as a genuinely useful online shopping service. Its website offers a comprehensive catalogue encompassing two-thirds of the 1.5 million English books in print, allowing customers to easily search for titles, check availability, and place orders instantly using a credit card. Although shipping charges apply, significant discounts on 300,000 titles often result in effectively free delivery for most US customers. Amazon.com distinguishes itself by offering a stock list six times larger than any physical bookseller, providing the quickest and most convenient way to purchase books, including a gift-sending service with wrapping options. Crucially, the company maintains minimal inventory, aside from 500 bestsellers, by leveraging live electronic links with numerous wholesalers to fulfill orders only after a customer's purchase.\n\n### 2. 写作技巧 (Writing Techniques)\n\n*   **识别主旨与核心论点 (Identify Main Idea & Core Argument):** 首先，明确文章的核心内容和作者的主要观点。在这篇文章中，核心是Amazon.com作为一个“好且新”的营销案例。\n*   **提炼关键信息 (Extract Key Information):** 从原文中筛选出支持主旨的、最重要的事实、特点和操作细节，忽略次要信息和重复内容。例如，Amazon.com的目录范围、购买流程、配送优势、库存管理方式等。\n*   **保持客观性 (Maintain Objectivity):** 摘要应只呈现原文内容，避免加入自己的观点、评论或外部知识。使用中立、客观的语言。\n*   **简洁明了 (Be Concise and Clear):** 使用精炼的语言概括信息，避免冗长复杂的句子。每一句话都应包含有效信息。\n*   **结构清晰 (Clear Structure):** 摘要通常遵循原文的逻辑顺序，或者重新组织为“提出主题 - 详细描述主要特征 - 总结其运作模式”的逻辑。本范文先介绍公司及其创新性，然后描述其服务特点，最后解释其独特的运营模式。\n*   **使用连接词 (Use Transition Words):** 恰当使用转折词和连接词（如 \"Although,\" \"Crucially,\" \"Furthermore\" 等），使段落和句子之间逻辑流畅，增强连贯性。\n*   **避免直接引用 (Avoid Direct Quotations):** 除非原文中的短语或句子具有不可替代的表达力，否则应尽可能用自己的话来转述原文内容。\n\n### 3. 写作模板 (Useful Template)\n\nThe provided article primarily discusses **[主旨/核心话题]**.\n(Introduces the main subject and purpose of the text).\n\nIt highlights that **[关键点1，通常是某个问题、现象或主张]**.\n(Presents the first major supporting detail or argument).\n\nFurthermore, the text explains **[关键点2，提供更多细节或另一个主要方面]**.\n(Adds another significant piece of information or elaboration).\n\nKey aspects detailed include **[关键点3，可以是操作方式、影响或具体优势]**.\n(Focuses on specific operational elements, benefits, or consequences).\n\nIn essence, the article concludes by emphasizing **[文章的整体含义或最重要的 takeaway]**.\n(Briefly summarizes the overarching message or outcome).\n\n### 4. 重点词汇与句型 (Key Vocabulary & Expressions)\n\n1.  **marketing adage:** 营销格言/谚语\n    *   *Example:* The article challenges the common **marketing adage** about innovation.\n2.  **genuinely useful:** 真正有用的\n    *   *Example:* Amazon.com is described as a **genuinely useful** online service.\n3.  **comprehensive catalogue:** 全面的目录\n    *   *Example:* The website offers a **comprehensive catalogue** of available books.\n4.  **distinguishes itself by:** 通过...而脱颖而出/区别于其他\n    *   *Example:* The company **distinguishes itself by** its vast selection and convenience.\n5.  **minimal inventory:** 最低库存\n    *   *Example:* A key operational strategy involves maintaining **minimal inventory**.\n6.  **leverages electronic links:** 利用电子连接\n    *   *Example:* Amazon **leverages electronic links** with wholesalers for order fulfillment.\n7.  **streamlined process:** 精简的流程\n    *   *Example:* The buying experience is a highly **streamlined process**.\n8.  **underscore the significance of:** 强调...的重要性\n    *   *Example:* The author aims to **underscore the significance of** Amazon's business model."
+            }
           ],
-          "content": "There are not many exceptions to the marketing rule, that ideas that are good are not new, and those that new are not good. But last week I discovered one in a Seattle company called Amazon.com, which sells books over the Internet. Before revealing this good new marketing idea, it might be worth explaining something about its inventor, since Amazon.com is one of the few genuinely useful shopping services on the World Wide Web.\n\nThe company runs a Web site, accessible from any PC with a browser, that contains a catalogue of two thirds of the 1.5m English books in print. Finding a title using a search engine, customers can check its availability online, and then order it immediately with a credit card.\n\nShipping prices start at 43 plus 95 cents per book, with higher charges for international and overnight services. But the company discounts 300,000 titles, so most US customers will find that delivery is effectively free. These elements, together with a stock list six times larger than any physical bookseller in the world, make Amazon.com the quickest and most convenient way to buy books I have encountered.\n\nIt is also good for presents: sending a book to someone, buyers can choose from three different wrapping papers and type a message. Such a service is not easy to deliver. The key is that Amazon.com has live electronic links to a dozen wholesalers. Apart from 500 bestsellers, the company keeps zero inventories.\n\nWhen a customer orders a book, Amazon.com orders it from the wholesaler, and when the book arrives in its Seattle warehouse it is barcoded and sent by the company's computer to a bin where the customer's order is being assembled. When all the books in an order have arrived, usually the same day, a manifest is printed and the books are packed for shipping.\n\nThe company's founder Jeff Bezos, 31, is a former investment banker. He says his company is now in an explosive growth stage, doubling in size every 2.4 months. But it cannot continue like this for long. If it did, Amazon.com's sales would exceed US GDP in two years.\n\nUntil recently, its site was as alluring as a copy of \"books in print.\" \"It astounds me how many books we sell,\" says Bezos, “given that we didn't offer people enough information to make decisions.\" The first step to remedying this has been to add blurbs, delivered electronically by publishers, to 170,000 of the listings. The company also invites customers to write reviews, which are then linked by hypertext to the books. And it links book listings to \"interviews” with authors themselves written by filling out a form on a Web page. In future Amazon. com will make these truly interactive, so that readers can ask their favorite authors questions over the Web without having to attend a signing.\n\nAnother service is that the company is planning to put customers in touch with each other. Bezos admits that in a physical bookstore, he rarely has the nerve to look over a fellow's shoulder and recommend a book. “Online, I'd do it in a heartbeat.\" So the company will allow buyers to become \"visible\" if they choose, and to chat online with others browsing electronically in the same subject areas.\n\nAnd the new marketing idea is called associates. By filling in a form on the Amazon Web site, owners of other sites can sign up for a scheme that pays them commissions for referring their own users to the online bookstore. Users will see a page of recommended books on their favorite Web site. Clicking on a title will jump them straight to Amazon.com's order form for that book. If they buy it, the referring Web site gets 8% of the gross. I see it more as a new kind of network marketing, in which Amazon.com has the potential to sign up millions of owners of special-interest Web sites in a vast electronic sales force."
+          "content": "There are not many exceptions to the marketing rule, that ideas that are good are not new, and those that new are not good. But last week I discovered one in a Seattle company called Amazon.com, which sells books over the Internet. Before revealing this good new marketing idea, it might be worth explaining something about its inventor, since Amazon.com is one of the few genuinely useful shopping services on the World Wide Web.\n\nThe company runs a Web site, accessible from any PC with a browser, that contains a catalogue of two thirds of the 1.5m English books in print. Finding a title using a search engine, customers can check its availability online, and then order it immediately with a credit card.\n\nShipping prices start at 43 plus 95 cents per book, with higher charges for international and overnight services. But the company discounts 300,000 titles, so most US customers will find that delivery is effectively free. These elements, together with a stock list six times larger than any physical bookseller in the world, make Amazon.com the quickest and most convenient way to buy books I have encountered.\n\nIt is also good for presents: sending a book to someone, buyers can choose from three different wrapping papers and type a message. Such a service is not easy to deliver. The key is that Amazon.com has live electronic links to a dozen wholesalers. Apart from 500 bestsellers, the company keeps zero inventories.\n\nWhen a customer orders a book, Amazon.com orders it from the wholesaler, and when the book arrives in its Seattle warehouse it is barcoded and sent by the company's computer to a bin where the customer's order is being assembled. When all the books in an order have arrived, usually the same day, a manifest is printed and the books are packed for shipping.\n\nThe company's founder Jeff Bezos, 31, is a former investment banker. He says his company is now in an explosive growth stage, doubling in size every 2.4 months. But it cannot continue like this for long. If it did, Amazon.com's sales would exceed US GDP in two years.\n\nUntil recently, its site was as alluring as a copy of \"books in print.\" \"It astounds me how many books we sell,\" says Bezos, “given that we didn't offer people enough information to make decisions.\" The first step to remedying this has been to add blurbs, delivered electronically by publishers, to 170,000 of the listings. The company also invites customers to write reviews, which are then linked by hypertext to the books. And it links book listings to \"interviews” with authors themselves written by filling out a form on a Web page. In future Amazon. com will make these truly interactive, so that readers can ask their favorite authors questions over the Web without having to attend a signing.\n\nAnother service is that the company is planning to put customers in touch with each other. Bezos admits that in a physical bookstore, he rarely has the nerve to look over a fellow's shoulder and recommend a book. “Online, I'd do it in a heartbeat.\" So the company will allow buyers to become \"visible\" if they choose, and to chat online with others browsing electronically in the same subject areas.\n\nAnd the new marketing idea is called associates. By filling in a form on the Amazon Web site, owners of other sites can sign up for a scheme that pays them commissions for referring their own users to the online bookstore. Users will see a page of recommended books on their favorite Web site. Clicking on a title will jump them straight to Amazon.com's order form for that book. If they buy it, the referring Web site gets 8% of the gross. I see it more as a new kind of network marketing, in which Amazon.com has the potential to sign up millions of owners of special-interest Web sites in a vast electronic sales force.",
+          "passageAnalysis": "### 1. 文章大意 (Main Idea)\n\n这篇文章介绍了一个名为Amazon.com的西雅图公司，它被认为是营销领域的一个罕见例外，即其“新颖且优秀”的营销理念。文章详细阐述了亚马逊作为在线书店的创新之处，包括其庞大的在线图书目录、便捷的购物流程、高效的物流管理和不断发展的用户互动功能。最重要的是，它揭示了亚马逊如何通过“联盟营销”（associates）计划，将其他网站的用户引荐至其平台，从而构建一个庞大且高效的电子销售网络。\n\n### 2. 语篇结构 (Structure Analysis)\n\n*   **第一段:** 引出亚马逊网站，将其定位为一个“例外”，即一个同时拥有好点子和新颖性的营销案例，并预告将详细介绍其创新之处。\n*   **第二、三段:** 详细描述亚马逊的核心服务：庞大的在线图书目录、便捷的搜索与订购流程、配送效率及折扣，强调其方便快捷的特点。\n*   **第四、五段:** 阐述亚马逊的运营机制，包括其“零库存”策略、与批发商的电子链接，以及订单处理的详细物流过程，展示其高效的管理。\n*   **第六段:** 介绍公司创始人杰夫·贝佐斯，提及公司“爆炸式增长”的现状，并指出这种增长模式的不可持续性。\n*   **第七、八段:** 讨论亚马逊网站的优化和未来发展方向，包括增加图书信息（简介、评论）、作者互动，以及计划让顾客相互交流推荐图书，以提升用户体验。\n*   **第九段:** 揭示文章重点——亚马逊的“联盟营销”（associates）这一新的营销理念，解释其运作方式，并展望其作为一种新型网络营销模式的巨大潜力。\n\n### 3. 核心词汇 (Core Vocabulary)\n\n1.  **exceptions**: 例外\n2.  **marketing rule**: 营销法则/规则\n3.  **genuinely useful**: 真正有用的\n4.  **accessible**: 可访问的/可使用的\n5.  **catalogue**: 目录\n6.  **availability**: 可用性/是否有货\n7.  **discounts**: 折扣\n8.  **zero inventories**: 零库存\n9.  **wholesalers**: 批发商\n10. **explosive growth**: 爆炸式增长\n11. **remedying**: 补救/纠正\n12. **interactive**: 互动的\n13. **associates**: 联盟会员/合作伙伴\n14. **commissions**: 佣金\n15. **sales force**: 销售队伍"
         },
         {
           "id": "test-1-part-3-section-b-essay",
           "title": "Part III Writing - Section B",
           "instructions": "Write an essay of no less than 250 words on the topic given below. Use the proper space on your Answer Sheet II.",
           "questions": [
-            { "id": "test-1-part-3-section-b-essay-q1", "number": 67, "text": "Topic: What is your idea of \"Attitude is everything\"?", "type": "writing", "correctAnswer": null }
+            {
+              "id": "test-1-part-3-section-b-essay-q1",
+              "number": 67,
+              "text": "Topic: What is your idea of \"Attitude is everything\"?",
+              "type": "writing",
+              "correctAnswer": null,
+              "explanation": "### 1. 参考范文 (Model Answer)\n\nThe adage \"Attitude is everything\" asserts that one's mental disposition is the primary determinant of success, happiness, and overall quality of life. While it may seem a simplistic overstatement, I believe this maxim encapsulates a profound truth: our perception and reaction to circumstances often hold more sway than the circumstances themselves. This perspective underscores the intrinsic power of the individual to shape their reality.\n\nFundamentally, attitude acts as a lens through which we interpret the world. A challenge, for instance, can be viewed either as an insurmountable obstacle or a valuable opportunity for growth and learning. A positive, proactive attitude fosters resilience, enabling individuals to persevere through setbacks, learn from failures, and emerge stronger. Conversely, a defeatist or cynical outlook can easily lead to apathy, paralysis, and self-fulfilling prophecies of failure, irrespective of external conditions. This internal framework dictates one's motivation, energy levels, and willingness to engage with life, profoundly influencing personal achievement and psychological well-being.\n\nMoreover, the pervasive influence of attitude extends significantly to interpersonal dynamics. An optimistic and empathetic individual tends to attract positive interactions, build stronger relationships, and foster collaborative environments. Their constructive approach can be contagious, uplifting those around them and creating a more harmonious social fabric. In leadership roles, a leader's attitude is particularly critical; it sets the tone for an entire team or organization, impacting morale, productivity, and overall success. A negative or critical attitude, on the other hand, can erode trust, create conflict, and alienate others, hindering effective communication and collective progress.\n\nWhile acknowledging that external factors like socioeconomic status, health, and sheer luck undeniably play a role in life's trajectory, \"attitude is everything\" emphasizes the one element largely within our control. It posits that even in the face of adversity, the choice of attitude – be it hope, determination, or acceptance – can mitigate despair and open avenues for adaptation and betterment. Therefore, while not literally \"everything\" in a comprehensive sense, attitude serves as the foundational cornerstone upon which individuals build their responses to life's myriad challenges and opportunities, ultimately dictating their experience and outcome.\n\n### 2. 写作技巧 (Writing Techniques)\n\n*   **开篇点题 (Direct Introduction)**：文章开篇即明确回应“Attitude is everything”这一观点，并通过“profound truth”来肯定其核心价值，同时点出个人力量塑造现实的主旨。\n*   **分层论证 (Layered Argumentation)**：主体段落采用分层递进的方式展开论证。\n    *   第一段侧重态度对**个人认知、韧性、动力和成就**的影响。\n    *   第二段则深入探讨态度对**人际关系、团队协作和领导力**的广泛作用。\n    *   这种结构使论证全面而有深度。\n*   **正反对比 (Contrastive Analysis)**：在阐述态度影响时，文章常通过正面和负面态度的对比来强化论点，例如“positive, proactive attitude”与“defeatist or cynical outlook”，“optimistic and empathetic individual”与“negative or critical attitude”，增强说服力。\n*   ** nuanced 视角 (Nuanced Perspective)**：在第四段，文章展示了批判性思维，承认“external factors”的作用，避免了绝对化，同时强调即使在外部因素限制下，态度仍是“within our control”的关键，使论证更成熟、更具说服力。\n*   **词汇丰富精准 (Rich and Precise Vocabulary)**：运用了大量高级词汇和短语，如 \"adage,\" \"maxim,\" \"encapsulates a profound truth,\" \"intrinsic power,\" \"pervasive influence,\" \"interpersonal dynamics,\" \"mitigate despair,\" 等，提升文章的学术性和专业性。\n*   **句式多样 (Varied Sentence Structures)**：文章中包含各种复杂句式，如定语从句、状语从句、并列句等，使得表达更加流畅自然，增强了阅读体验。\n\n### 3. 写作模板 (Useful Template)\n\n*   **Introduction**: [General statement about the topic/phrase. 引入话题或短语，引发思考。] [Acknowledge its common understanding or initial impression. 简述其普遍理解或第一印象。] [Thesis statement: Your main argument/stance on its validity or significance. 明确论文主旨句，表明你的观点或其重要性。]\n\n*   **Body Paragraph 1 - Explaining the Core Concept**: [Topic Sentence: Define a key aspect or the fundamental mechanism of the concept. 第一个支持观点的中心句：定义核心概念的一个关键方面或其运作机制。] [Elaboration/Explanation: Provide details on *how* it works. 详细阐述它是如何运作的。] [Example/Analogy: Illustrate with a concrete example or a clear analogy. 举例或类比说明。] [Concluding sentence for the paragraph. 段落小结。]\n\n*   **Body Paragraph 2 - Impact on a Specific Domain (e.g., Personal Development)**: [Topic Sentence: Focus on its impact on a particular area. 第二个支持观点的中心句：关注其对某一特定领域的影响。] [Elaboration/Explanation: Discuss the positive and/or negative consequences. 详细讨论其积极和/或消极后果。] [Contrast/Comparison: Use a positive/negative contrast if applicable. 如果适用，进行正反对比。] [Concluding sentence for the paragraph. 段落小结。]\n\n*   **Body Paragraph 3 - Impact on Another Domain (e.g., Social Interaction/Broader Context)**: [Topic Sentence: Explore its influence on a different area or a wider context. 第三个支持观点的中心句：探讨其对不同领域或更广阔背景的影响。] [Elaboration/Explanation: Provide further details and implications. 提供更多细节和启示。] [Example/Evidence: Support with a relevant example or logical reasoning. 用相关例子或逻辑推理来支持。] [Concluding sentence for the paragraph. 段落小结。]\n\n*   **Body Paragraph 4 (Optional - for deeper analysis or nuance)**: [Topic Sentence: Introduce a nuance, a counter-argument, or a limitation of the concept. 第四个观点，引入一个细微之处、反驳或局限性。] [Elaboration/Explanation: Discuss why this nuance is important or how it refines the initial statement. 详细阐述为何这一细微之处很重要或如何修正了最初的陈述。] [Reaffirmation: Reiterate the core importance despite the nuance. 尽管有细微之处，但重申其核心重要性。] [Concluding sentence for the paragraph. 段落小结。]\n\n*   **Conclusion**: [Restate thesis in new words. 用不同措辞重申主旨句。] [Summarize main supporting points briefly. 简要总结主要论点。] [Final thought/Implication/Recommendation: Offer a broader perspective or a call to action. 最终思考、启示或建议，可提供更广阔的视角或行动号召。]\n\n### 4. 重点词汇与句型 (Key Vocabulary & Expressions)\n\n1.  **Adage (n.)**: 谚语；格言\n    *   *Example*: The old **adage**, \"Where there's a will, there's a way,\" perfectly captures the spirit of perseverance.\n\n2.  **Encapsulate (v.)**: 概括；浓缩\n    *   *Example*: The phrase \"Attitude is everything\" succinctly **encapsulates** the power of one's mindset.\n\n3.  **Profound (adj.)**: 深刻的；深远的\n    *   *Example*: Her resilience in the face of adversity had a **profound** impact on everyone around her.\n\n4.  **Resilience (n.)**: 韧性；恢复力\n    *   *Example*: Building **resilience** is crucial for navigating life's inevitable challenges.\n\n5.  **Pervasive (adj.)**: 普遍的；弥漫的\n    *   *Example*: The **pervasive** influence of social media has changed how we interact with the world.\n\n6.  **Interpersonal dynamics (n. phr.)**: 人际关系（的运作方式）\n    *   *Example*: Understanding **interpersonal dynamics** is key to effective leadership and teamwork.\n\n7.  **Mitigate (v.)**: 减轻；缓解\n    *   *Example*: A positive outlook can often **mitigate** the stress associated with difficult situations.\n\n8.  **Invaluable (adj.)**: 无价的；极其宝贵的\n    *   *Example*: The ability to maintain a constructive attitude, even during setbacks, is an **invaluable** asset."
+            }
           ]
         }
       ]
@@ -1289,4 +2307,5 @@
     }
 ]
 }
+
     

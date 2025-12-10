@@ -37,7 +37,8 @@ const translations: Translation = {
   aiRepair: { en: "AI Repair & Organize", zh: "AI 修复与整理" },
   applyChanges: { en: "Apply Changes", zh: "应用更改" },
   navUpload: { en: "Upload", zh: "上传" },
-  noExams: { en: "No exams loaded. Please upload a file or load built-in tests.", zh: "暂无试题。请上传文件 or 加载内置试题。" }
+  noExams: { en: "No exams loaded. Please upload a file or load built-in tests.", zh: "暂无试题。请上传文件 or 加载内置试题。" },
+  loadError: { en: "Failed to load built-in tests. Please ensure the '/Test' folder is in your 'public' or static directory.", zh: "无法加载内置试题。请确保 '/Test' 文件夹位于您部署的 'public' 或静态资源目录中。" }
 };
 
 const App: React.FC = () => {
@@ -60,6 +61,7 @@ const App: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
   const [score, setScore] = useState<{ correct: number; total: number } | null>(null);
+  const [loadError, setLoadError] = useState(false);
   
   // Reference Materials State
   const [referenceBatch, setReferenceBatch] = useState<ReferenceBatch | null>(null);
@@ -99,6 +101,7 @@ const App: React.FC = () => {
     const loadDefaultExams = async () => {
       const files = ['/Test/JSON1-5.json', '/Test/JSON6-9.json', '/Test/JSON10.json'];
       const loadedExams: ExamData[] = [];
+      let hasError = false;
       
       for (const path of files) {
         try {
@@ -121,14 +124,21 @@ const App: React.FC = () => {
             }
 
             loadedExams.push(...examsFromFile);
+          } else {
+            console.warn(`Failed to fetch ${path}: ${res.status}`);
+            hasError = true;
           }
         } catch (e) {
           console.warn(`Failed to load default exam from ${path}`, e);
+          hasError = true;
         }
       }
       
       if (loadedExams.length > 0) {
         appendExams(loadedExams);
+        setLoadError(false);
+      } else if (hasError) {
+        setLoadError(true);
       }
     };
     
@@ -582,8 +592,17 @@ const App: React.FC = () => {
                     <div className="text-gray-400 mb-4">
                        <svg className="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
                     </div>
-                    <h3 className="text-lg font-medium text-gray-900">{t('noExams')}</h3>
-                    <p className="text-gray-500 mt-2 mb-6">Upload a new exam file to get started.</p>
+                    {loadError ? (
+                        <div className="mb-6">
+                            <h3 className="text-lg font-medium text-red-600 mb-2">{t('loadError').split("。")[0]}</h3>
+                            <p className="text-sm text-gray-500 max-w-md mx-auto">{t('loadError').split("。")[1]}</p>
+                        </div>
+                    ) : (
+                        <>
+                            <h3 className="text-lg font-medium text-gray-900">{t('noExams')}</h3>
+                            <p className="text-gray-500 mt-2 mb-6">Upload a new exam file to get started.</p>
+                        </>
+                    )}
                     <Button onClick={() => setView(AppView.UPLOAD)} className="w-full sm:w-auto">{t('uploadBtn')}</Button>
                 </div>
               ) : (

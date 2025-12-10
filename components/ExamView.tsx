@@ -103,26 +103,41 @@ const ExamView: React.FC<ExamViewProps> = ({
   };
 
   const handleMouseUp = useCallback((e: React.MouseEvent | React.TouchEvent) => {
-    if ((e.target as HTMLElement).tagName === 'INPUT' || (e.target as HTMLElement).tagName === 'TEXTAREA' || (e.target as HTMLElement).closest('button')) return;
-    if ((e.target as HTMLElement).closest('.dictionary-popover')) return;
+    const target = e.target as HTMLElement;
+    // Prevent selection logic when interacting with inputs, buttons, or the popover itself
+    if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.closest('button') || target.closest('.dictionary-popover')) return;
 
-    const sel = window.getSelection();
-    if (sel && sel.toString().trim().length > 0) {
-      const range = sel.getRangeAt(0);
-      const rect = range.getBoundingClientRect();
-      const isMobile = window.innerWidth < 640;
-      
-      setSelection({
-        text: sel.toString().trim(),
-        top: isMobile ? 0 : rect.bottom + window.scrollY + 8, // Mobile handles position via fixed CSS
-        left: isMobile ? 0 : rect.left + window.scrollX + (rect.width / 2),
-        context: range.startContainer.textContent || ""
-      });
-      setDefinitionResult(null); 
-    }
+    // Use setTimeout to allow the browser to complete the selection process (fixes mobile issues)
+    setTimeout(() => {
+        const sel = window.getSelection();
+        if (sel && sel.toString().trim().length > 0) {
+          const range = sel.getRangeAt(0);
+          const rect = range.getBoundingClientRect();
+          
+          // Avoid phantom selections with zero size
+          if (rect.width === 0 || rect.height === 0) return;
+
+          const isMobile = window.innerWidth < 640;
+          
+          setSelection({
+            text: sel.toString().trim(),
+            top: isMobile ? 0 : rect.bottom + window.scrollY + 8, // Mobile handles position via fixed CSS
+            left: isMobile ? 0 : rect.left + window.scrollX + (rect.width / 2),
+            context: range.startContainer.textContent || ""
+          });
+          setDefinitionResult(null); 
+        }
+    }, 10);
   }, []);
 
   const handleBackgroundClick = (e: React.MouseEvent) => {
+      // Important: If user just selected text, the native selection is still active.
+      // We should NOT clear the popover in this case.
+      const nativeSelection = window.getSelection();
+      if (nativeSelection && nativeSelection.toString().length > 0) {
+          return;
+      }
+
       // Only clear if clicking purely on background, not on interactive elements
       if (selection && !(e.target as HTMLElement).closest('.dictionary-popover')) {
           setSelection(null);
@@ -139,7 +154,7 @@ const ExamView: React.FC<ExamViewProps> = ({
     } catch (error) {
       console.error(error);
       alert("Failed to define word. Please check your settings and network.");
-      setSelection(null);
+      // Don't clear selection on error so user can try again
     } finally {
       setIsDefining(false);
     }

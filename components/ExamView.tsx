@@ -66,6 +66,7 @@ const ExamView: React.FC<ExamViewProps> = ({
   const [explanations, setExplanations] = useState<Record<string, string>>({});
   const [openScripts, setOpenScripts] = useState<Record<string, boolean>>({});
   const [mobileTab, setMobileTab] = useState<'passage' | 'questions'>('passage');
+  const audioRef = useRef<HTMLAudioElement>(null);
   
   // Word Bank Interaction Mode
   const [wordBankMode, setWordBankMode] = useState<'fill' | 'define'>('fill');
@@ -92,6 +93,14 @@ const ExamView: React.FC<ExamViewProps> = ({
     else setAudioUrl(null);
     return () => { if (audioUrl && audioUrl.startsWith('blob:')) URL.revokeObjectURL(audioUrl); };
   }, [activeSection?.id, activeSection?.audioSrc]);
+
+  // Robust mobile audio loading: trigger load() manually when url changes
+  useEffect(() => {
+    if (audioRef.current && audioUrl) {
+        audioRef.current.pause();
+        audioRef.current.load();
+    }
+  }, [audioUrl]);
 
   // Reset mobile tab when section changes
   useEffect(() => {
@@ -374,20 +383,39 @@ const ExamView: React.FC<ExamViewProps> = ({
                 {audioUrl ? (
                   <div>
                     {audioError ? (
-                        <div className="flex items-center justify-between text-sm text-red-600 bg-red-50 p-2 rounded border border-red-200">
-                            <span>{t('audioError')}</span>
-                            <a href={audioUrl} target="_blank" rel="noopener noreferrer" className="underline font-bold text-red-700">{t('openAudio')}</a>
+                        <div className="flex flex-col gap-2 p-3 bg-red-50 border border-red-200 rounded-lg">
+                            <div className="text-sm text-red-800 font-medium flex items-center gap-2">
+                                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                {t('audioError')}
+                            </div>
+                            <div className="flex gap-3">
+                                <button 
+                                    onClick={() => { setAudioError(false); if(audioRef.current) audioRef.current.load(); }}
+                                    className="text-xs bg-white border border-red-300 text-red-700 px-3 py-1 rounded shadow-sm hover:bg-red-50 font-medium"
+                                >
+                                    Retry
+                                </button>
+                                <a href={audioUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-red-700 underline flex items-center font-medium">
+                                    {t('openAudio')}
+                                    <svg className="w-3 h-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                                </a>
+                            </div>
                         </div>
                     ) : (
                         <audio 
-                            key={audioUrl} /* Force re-render on url change to fix mobile loading */
+                            ref={audioRef}
                             controls 
-                            className="w-full h-10" 
-                            src={audioUrl} 
+                            className="w-full h-10 focus:outline-none rounded-lg" 
                             controlsList="nodownload" 
                             preload="metadata"
-                            onError={() => setAudioError(true)}
-                        />
+                            onError={(e) => {
+                                console.warn("Audio load error", e);
+                                setAudioError(true);
+                            }}
+                        >
+                            <source src={audioUrl} type="audio/mpeg" />
+                            <source src={audioUrl} type="audio/mp3" />
+                        </audio>
                     )}
                   </div>
                 ) : (

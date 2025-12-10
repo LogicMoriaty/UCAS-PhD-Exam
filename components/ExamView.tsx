@@ -43,7 +43,11 @@ const translations: Record<string, { en: string; zh: string }> = {
   modeFill: { en: "Mode: Fill Answer", zh: "模式: 填空答题" },
   modeDefine: { en: "Mode: Dictionary", zh: "模式: 查词典" },
   tabPassage: { en: "Passage", zh: "文章" },
-  tabQuestions: { en: "Questions", zh: "题目" }
+  tabQuestions: { en: "Questions", zh: "题目" },
+  audioError: { en: "Audio failed to load.", zh: "音频加载失败。" },
+  openAudio: { en: "Open Audio Directly", zh: "直接打开音频" },
+  prevSection: { en: "Previous", zh: "上一节" },
+  nextSection: { en: "Next", zh: "下一节" },
 };
 
 const ExamView: React.FC<ExamViewProps> = ({ 
@@ -56,6 +60,7 @@ const ExamView: React.FC<ExamViewProps> = ({
   const [definitionResult, setDefinitionResult] = useState<any | null>(null);
   const [showTapescript, setShowTapescript] = useState(false);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
+  const [audioError, setAudioError] = useState(false);
   const [focusedQuestionId, setFocusedQuestionId] = useState<string | null>(null);
   const [explainingId, setExplainingId] = useState<string | null>(null);
   const [explanations, setExplanations] = useState<Record<string, string>>({});
@@ -72,8 +77,17 @@ const ExamView: React.FC<ExamViewProps> = ({
   }, [data.id]);
 
   const activeSection = useMemo(() => data.sections.find(s => s.id === activeSectionId), [data.sections, activeSectionId]);
+  const activeSectionIndex = data.sections.findIndex(s => s.id === activeSectionId);
+  const prevSection = data.sections[activeSectionIndex - 1];
+  const nextSection = data.sections[activeSectionIndex + 1];
+
+  const handleSectionChange = (sectionId: string) => {
+    setActiveSectionId(sectionId);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   useEffect(() => {
+    setAudioError(false);
     if (activeSection?.audioSrc) setAudioUrl(activeSection.audioSrc);
     else setAudioUrl(null);
     return () => { if (audioUrl && audioUrl.startsWith('blob:')) URL.revokeObjectURL(audioUrl); };
@@ -89,6 +103,7 @@ const ExamView: React.FC<ExamViewProps> = ({
     if (file) {
       if (audioUrl && audioUrl.startsWith('blob:')) URL.revokeObjectURL(audioUrl);
       setAudioUrl(URL.createObjectURL(file));
+      setAudioError(false);
     }
   };
 
@@ -354,9 +369,30 @@ const ExamView: React.FC<ExamViewProps> = ({
     return (
       <div className="max-w-3xl mx-auto space-y-8 pb-20">
         {isListening && !isReviewMode && (
-           <div className="bg-white p-4 rounded-xl shadow-sm border border-academic-100 mb-6 flex flex-col sm:flex-row items-center gap-4 sticky top-14 z-10 backdrop-blur-md bg-white/90">
+           <div className="bg-white p-4 rounded-xl shadow-sm border border-academic-100 mb-6 flex flex-col sm:flex-row items-center gap-4 sticky top-14 sm:top-14 z-10 backdrop-blur-md bg-white/90">
               <div className="flex-1 w-full">
-                {audioUrl ? <audio controls className="w-full h-10" src={audioUrl} controlsList="nodownload" /> : <div className="text-gray-400 text-sm italic text-center py-2 bg-gray-50 rounded border border-dashed border-gray-300">{t('uploadAudioHint')}</div>}
+                {audioUrl ? (
+                  <div>
+                    {audioError ? (
+                        <div className="flex items-center justify-between text-sm text-red-600 bg-red-50 p-2 rounded border border-red-200">
+                            <span>{t('audioError')}</span>
+                            <a href={audioUrl} target="_blank" rel="noopener noreferrer" className="underline font-bold text-red-700">{t('openAudio')}</a>
+                        </div>
+                    ) : (
+                        <audio 
+                            key={audioUrl} /* Force re-render on url change to fix mobile loading */
+                            controls 
+                            className="w-full h-10" 
+                            src={audioUrl} 
+                            controlsList="nodownload" 
+                            preload="metadata"
+                            onError={() => setAudioError(true)}
+                        />
+                    )}
+                  </div>
+                ) : (
+                    <div className="text-gray-400 text-sm italic text-center py-2 bg-gray-50 rounded border border-dashed border-gray-300">{t('uploadAudioHint')}</div>
+                )}
               </div>
               <label className="cursor-pointer bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded text-sm font-medium flex items-center gap-2 w-full sm:w-auto justify-center">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" /></svg>
@@ -398,6 +434,34 @@ const ExamView: React.FC<ExamViewProps> = ({
                 <div className="text-gray-600 bg-white p-4 rounded-xl border-l-4 border-academic-400 text-xs sm:text-sm shadow-sm leading-relaxed">{activeSection.instructions}</div>
               </div>
               {isCloze ? renderClozeLayout(activeSection) : isReadingOrWriting ? renderSplitLayout(activeSection) : renderStandardLayout(activeSection)}
+              
+              <div className="flex justify-between items-center mt-10 pt-6 border-t border-gray-200">
+                 <button
+                    onClick={() => prevSection && handleSectionChange(prevSection.id)}
+                    disabled={!prevSection}
+                    className={`flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium transition-all ${prevSection ? 'text-gray-600 hover:bg-gray-100 hover:text-gray-900' : 'text-gray-300 cursor-not-allowed'}`}
+                 >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+                    <div className="text-left hidden sm:block">
+                        <div className="text-xs text-gray-400 uppercase tracking-wider">{t('prevSection')}</div>
+                        <div className="text-sm font-bold truncate max-w-[150px]">{prevSection?.title.replace(/Part \w+ /, '')}</div>
+                    </div>
+                    <span className="sm:hidden">{t('prevSection')}</span>
+                 </button>
+
+                 <button
+                    onClick={() => nextSection && handleSectionChange(nextSection.id)}
+                    disabled={!nextSection}
+                    className={`flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium transition-all shadow-sm ${nextSection ? 'bg-academic-800 text-white hover:bg-academic-900 hover:shadow-md' : 'bg-gray-100 text-gray-300 cursor-not-allowed'}`}
+                 >
+                    <div className="text-right hidden sm:block">
+                        <div className="text-xs text-blue-200 uppercase tracking-wider">{t('nextSection')}</div>
+                        <div className="text-sm font-bold truncate max-w-[150px]">{nextSection?.title.replace(/Part \w+ /, '')}</div>
+                    </div>
+                    <span className="sm:hidden">{t('nextSection')}</span>
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                 </button>
+              </div>
            </div>
       </main>
 

@@ -55,7 +55,9 @@ const translations: Record<string, { en: string; zh: string }> = {
   expand: { en: "Expand", zh: "展开" },
   collapse: { en: "Collapse", zh: "折叠" },
   analyzePassage: { en: "AI Passage Analysis", zh: "AI 文章精读" },
-  hideAnalysis: { en: "Hide Analysis", zh: "收起解析" },
+  viewAnalysis: { en: "View Analysis", zh: "查看文章解析" },
+  hideAnalysis: { en: "Hide Analysis", zh: "收起文章解析" },
+  regenerateAnalysis: { en: "Regenerate Analysis", zh: "重新生成解析" },
 };
 
 const ExamView: React.FC<ExamViewProps> = ({ 
@@ -127,11 +129,11 @@ const ExamView: React.FC<ExamViewProps> = ({
     }
   };
 
-  const handleAnalyzePassage = async () => {
+  const handleAnalyzePassage = async (force: boolean = false) => {
     if (!activeSection?.content) return;
     
-    // Toggle visibility if already analyzed (persisted in data)
-    if (activeSection.passageAnalysis) {
+    // Toggle visibility if already analyzed and not forcing regeneration
+    if (!force && activeSection.passageAnalysis) {
         setShowPassageAnalysis(prev => ({ ...prev, [activeSection.id]: !prev[activeSection.id] }));
         return;
     }
@@ -416,7 +418,11 @@ const ExamView: React.FC<ExamViewProps> = ({
     );
   };
 
-  const renderSplitLayout = (section: ExamSection) => (
+  const renderSplitLayout = (section: ExamSection) => {
+    const hasAnalysis = !!section.passageAnalysis;
+    const isAnalysisVisible = showPassageAnalysis[section.id];
+
+    return (
     <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-8 h-auto lg:h-[calc(100vh-140px)]">
       <div className="lg:hidden flex border-b border-gray-200 mb-4 bg-white sticky top-14 z-20 shadow-sm">
         <button onClick={() => setMobileTab('passage')} className={`flex-1 py-3 text-sm font-bold text-center border-b-2 transition-colors ${mobileTab === 'passage' ? 'border-academic-600 text-academic-800' : 'border-transparent text-gray-500'}`}>{t('tabPassage')}</button>
@@ -426,17 +432,28 @@ const ExamView: React.FC<ExamViewProps> = ({
       <div className={`bg-white rounded-xl shadow-sm border border-gray-200 overflow-y-auto custom-scrollbar p-6 lg:p-8 h-auto lg:h-full ${mobileTab === 'questions' ? 'hidden lg:block' : 'block'}`}>
         <div className="flex justify-between items-center mb-4">
             <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider">{t('tabPassage')}</h3>
-            <button 
-                onClick={handleAnalyzePassage} 
-                disabled={!!analyzingSectionId}
-                className="text-xs flex items-center gap-1 bg-purple-100 text-purple-700 px-3 py-1.5 rounded-full hover:bg-purple-200 transition-colors font-medium"
-            >
-                {analyzingSectionId === section.id ? (
-                    <><svg className="animate-spin w-3 h-3" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/></svg>{t('loading')}</>
-                ) : (
-                    <><svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>{section.passageAnalysis && showPassageAnalysis[section.id] ? t('hideAnalysis') : t('analyzePassage')}</>
+            <div className="flex gap-2">
+                <button 
+                    onClick={() => handleAnalyzePassage(false)} 
+                    disabled={!!analyzingSectionId}
+                    className={`text-xs flex items-center gap-1 px-3 py-1.5 rounded-full transition-colors font-medium border ${hasAnalysis ? 'bg-purple-600 text-white border-purple-600 hover:bg-purple-700' : 'bg-purple-50 text-purple-700 border-purple-200 hover:bg-purple-100'}`}
+                >
+                    {analyzingSectionId === section.id ? (
+                        <><svg className="animate-spin w-3 h-3" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/></svg>{t('loading')}</>
+                    ) : (
+                        <>{hasAnalysis ? (isAnalysisVisible ? t('hideAnalysis') : t('viewAnalysis')) : <><svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>{t('analyzePassage')}</>}</>
+                    )}
+                </button>
+                {hasAnalysis && !analyzingSectionId && (
+                    <button 
+                        onClick={() => handleAnalyzePassage(true)} 
+                        className="text-xs bg-white text-gray-500 border border-gray-200 hover:bg-gray-50 px-2 py-1.5 rounded-full transition-colors"
+                        title={t('regenerateAnalysis')}
+                    >
+                        {t('regenerate')}
+                    </button>
                 )}
-            </button>
+            </div>
         </div>
         
         <PassageAnalysisDisplay section={section} />
@@ -450,11 +467,14 @@ const ExamView: React.FC<ExamViewProps> = ({
         {section.questions.map((q) => renderQuestion(q))}
       </div>
     </div>
-  );
+  )};
 
   const renderClozeLayout = (section: ExamSection) => {
     if (!section.content) return <div>No content.</div>;
     const parts = section.content.split(/(\{\{\d+\}\})/g);
+    const hasAnalysis = !!section.passageAnalysis;
+    const isAnalysisVisible = showPassageAnalysis[section.id];
+
     return (
       <div className="max-w-4xl mx-auto space-y-8 pb-20">
         {!isReviewMode && (
@@ -481,18 +501,27 @@ const ExamView: React.FC<ExamViewProps> = ({
         )}
 
         <div className="bg-white p-6 sm:p-10 rounded-2xl shadow-sm border border-gray-200">
-           <div className="flex justify-end mb-4">
+           <div className="flex justify-end mb-4 gap-2">
                 <button 
-                    onClick={handleAnalyzePassage} 
+                    onClick={() => handleAnalyzePassage(false)} 
                     disabled={!!analyzingSectionId}
-                    className="text-xs flex items-center gap-1 bg-purple-50 text-purple-700 border border-purple-200 px-3 py-1.5 rounded-full hover:bg-purple-100 transition-colors font-medium"
+                    className={`text-xs flex items-center gap-1 px-3 py-1.5 rounded-full transition-colors font-medium border ${hasAnalysis ? 'bg-purple-600 text-white border-purple-600 hover:bg-purple-700' : 'bg-purple-50 text-purple-700 border-purple-200 hover:bg-purple-100'}`}
                 >
                     {analyzingSectionId === section.id ? (
                         <><svg className="animate-spin w-3 h-3" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/></svg>{t('loading')}</>
                     ) : (
-                        <><svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>{section.passageAnalysis && showPassageAnalysis[section.id] ? t('hideAnalysis') : t('analyzePassage')}</>
+                        <>{hasAnalysis ? (isAnalysisVisible ? t('hideAnalysis') : t('viewAnalysis')) : <><svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>{t('analyzePassage')}</>}</>
                     )}
                 </button>
+                {hasAnalysis && !analyzingSectionId && (
+                    <button 
+                        onClick={() => handleAnalyzePassage(true)} 
+                        className="text-xs bg-white text-gray-500 border border-gray-200 hover:bg-gray-50 px-2 py-1.5 rounded-full transition-colors"
+                        title={t('regenerateAnalysis')}
+                    >
+                        {t('regenerate')}
+                    </button>
+                )}
            </div>
 
            <PassageAnalysisDisplay section={section} />

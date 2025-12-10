@@ -7,8 +7,8 @@ import VocabSidebar from './components/VocabSidebar';
 import { parseExamFiles, parseReferenceFiles, repairReferenceJson } from './services/geminiService';
 
 const translations: Translation = {
-  title: { en: "PhD English Prep", zh: "博士英语资格考试" },
-  subtitle: { en: "Upload your PDF containing multiple mock exams.", zh: "上传包含多套模拟题的PDF文件。" },
+  title: { en: "PhD English Prep", zh: "博士英语考试 By LogicMoriaty" },
+  subtitle: { en: "Upload your PDF containing multiple mock exams.", zh: "上传模拟题PDF文件。" },
   uploadBtn: { en: "Upload PDF", zh: "上传 PDF" },
   loadTest: { en: "Load Built-in Tests", zh: "加载内置模拟题" },
   dashboard: { en: "Dashboard", zh: "试题面板" },

@@ -97,7 +97,7 @@ const App: React.FC = () => {
     if (availableExams.length > 0) return;
 
     const loadDefaultExams = async () => {
-      const files = ['/Test/JSON1-5.json', '/Test/JSON6-9.json', '/Test/JSON10.json'];
+      const files = ['./Test/JSON1-5.json', './Test/JSON6-9.json', './Test/JSON10.json'];
       const loadedExams: ExamData[] = [];
       
       for (const path of files) {

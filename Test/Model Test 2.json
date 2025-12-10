@@ -1,0 +1,1305 @@
+{
+  "exams": [
+    {
+      "id": "test-2",
+      "title": "Model Test 2",
+      "sections": [
+        {
+          "id": "test-2-sec-listening-A",
+          "title": "Part I Listening Comprehension - Section A",
+          "instructions": "In this part, you will hear 10 short conversations. At the end of each conversation, a question will be asked about what is said. Each conversation and the question will be spoken only once. When you hear the question, read the four choices of the answer given and choose the best one by marking the corresponding letter A, B, C, or D on your Answer Sheet I.",
+          "questions": [
+            {
+              "id": "test-2-q-1",
+              "number": 1,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "She wants a registration form."
+                },
+                {
+                  "label": "B",
+                  "text": "She wants a copy of the schedule."
+                },
+                {
+                  "label": "C",
+                  "text": "She wants the man to tell her the fees."
+                },
+                {
+                  "label": "D",
+                  "text": "She wants a paper about aerobics."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-2",
+              "number": 2,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "The world is very competitive and often unfair."
+                },
+                {
+                  "label": "B",
+                  "text": "There are over 300 jobs for you to apply for."
+                },
+                {
+                  "label": "C",
+                  "text": "People are very kind to dogs and give them a lot to eat."
+                },
+                {
+                  "label": "D",
+                  "text": "Dogs run everywhere in the world."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-3",
+              "number": 3,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "To do some creative work at home."
+                },
+                {
+                  "label": "B",
+                  "text": "To spend the weekend at home."
+                },
+                {
+                  "label": "C",
+                  "text": "To enjoy the conveniences of modern life at home."
+                },
+                {
+                  "label": "D",
+                  "text": "To stay at home and do nothing."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-4",
+              "number": 4,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "She will find a teacher for him."
+                },
+                {
+                  "label": "B",
+                  "text": "She will teach the man how to ski."
+                },
+                {
+                  "label": "C",
+                  "text": "She wants to learn how to ski."
+                },
+                {
+                  "label": "D",
+                  "text": "She thinks skiing is difficult."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-5",
+              "number": 5,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Boss and secretary."
+                },
+                {
+                  "label": "B",
+                  "text": "Teacher and student."
+                },
+                {
+                  "label": "C",
+                  "text": "Customer and waitress."
+                },
+                {
+                  "label": "D",
+                  "text": "Doctor and patient."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-6",
+              "number": 6,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "He has some pet apes in his apartment."
+                },
+                {
+                  "label": "B",
+                  "text": "He's worried the chicken he left out will spoil."
+                },
+                {
+                  "label": "C",
+                  "text": "He's worried his roommates will worry about him."
+                },
+                {
+                  "label": "D",
+                  "text": "He's worried he will miss out in his dinner."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-7",
+              "number": 7,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "She has her own money."
+                },
+                {
+                  "label": "B",
+                  "text": "She wouldn't be able to get a loan."
+                },
+                {
+                  "label": "C",
+                  "text": "She prefers to be independent."
+                },
+                {
+                  "label": "D",
+                  "text": "Her tuition fees are too high."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-8",
+              "number": 8,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Tooth pain can't be that bad."
+                },
+                {
+                  "label": "B",
+                  "text": "The man tries to avoid the plague."
+                },
+                {
+                  "label": "C",
+                  "text": "Eating a chicken will help reduce the tooth pain."
+                },
+                {
+                  "label": "D",
+                  "text": "The man refuses to see the dentist."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-9",
+              "number": 9,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "The man knows someone who's had plastic surgery."
+                },
+                {
+                  "label": "B",
+                  "text": "The man thinks woman shouldn't keep attractive by plastic surgery."
+                },
+                {
+                  "label": "C",
+                  "text": "The woman had a breast enlargement."
+                },
+                {
+                  "label": "D",
+                  "text": "The woman agrees what the man said."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-10",
+              "number": 10,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "The woman sympathized with the man and gave him an advice."
+                },
+                {
+                  "label": "B",
+                  "text": "The air-conditioner of the car was checked carefully."
+                },
+                {
+                  "label": "C",
+                  "text": "The man knew very well about cars."
+                },
+                {
+                  "label": "D",
+                  "text": "The car was broken, so it was taken to the garage to be repaired."
+                }
+              ]
+            }
+          ],
+          "content": null,
+          "sharedOptions": null,
+          "tapescript": null
+        },
+        {
+          "id": "test-2-sec-listening-B",
+          "title": "Part I Listening Comprehension - Section B",
+          "instructions": "In this part, you will hear two mini-talks. While you listen, complete the sentences in your Answer Sheet II for Questions 11 to 20 by writing NO MORE THAN THREE WORDS in each sentence. You will hear each talk or conversation TWICE.",
+          "questions": [
+            {
+              "id": "test-2-q-11",
+              "number": 11,
+              "text": "In the desert, many plants have _______",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-12",
+              "number": 12,
+              "text": "In _______, people introduced rabbits into Australia.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-13",
+              "number": 13,
+              "text": "Land is likely to _______ when a drought lasts one or two years in dry areas.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-14",
+              "number": 14,
+              "text": "In some developing countries, people use wood for _______ and provide heating.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-15",
+              "number": 15,
+              "text": "To stop the sand, Algeria is planting _______ of trees.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-16",
+              "number": 16,
+              "text": "When Miller Browstein arrived for an interview recently, he found himself sitting in front of _______",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-17",
+              "number": 17,
+              "text": "In this passage, VIP refers to _______ Portal.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-18",
+              "number": 18,
+              "text": "Undoubtedly, more and more companies are using _______ when they recruit new members.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-19",
+              "number": 19,
+              "text": "At Boston University's Law school, the VIP method works in part as _______",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-20",
+              "number": 20,
+              "text": "The founder and chief technology officer said that this kind of interview greatly expands the pool of _______",
+              "type": "fill-blank",
+              "correctAnswer": null
+            }
+          ],
+          "content": null,
+          "sharedOptions": null,
+          "tapescript": null
+        },
+        {
+          "id": "test-2-sec-listening-C",
+          "title": "Part I Listening Comprehension - Section C",
+          "instructions": "In this part, you will hear three mini-talks and each of them will be spoken only once. While listening to them, read the questions that follow each talk. At the end of each mini-talk you will hear the questions read to you. There will be a 40-second-pause after each question. During the pause, you will be asked to write down your answer on your Answer Sheet II, using one sentence only, either complete or incomplete. Your answer should be concise and to the point.",
+          "questions": [
+            {
+              "id": "test-2-q-21",
+              "number": 21,
+              "text": "How can government decrease traffic jams caused by the growing number of private cars?",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-22",
+              "number": 22,
+              "text": "When will commuters probably take buses or trains instead of driving cars?",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-23",
+              "number": 23,
+              "text": "What kind of public transport will attract its passengers?",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-24",
+              "number": 24,
+              "text": "Why women are better than men in child-rearing?",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-25",
+              "number": 25,
+              "text": "With whom do girls identify themselves?",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-26",
+              "number": 26,
+              "text": "What is most important in raising children?",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-27",
+              "number": 27,
+              "text": "What did Joanna and Henry notice about their older son?",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-28",
+              "number": 28,
+              "text": "According to Mark, when will his daughter cuddle up with him on the sofa and talk?",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-29",
+              "number": 29,
+              "text": "According to Michael Riera, who will the teenagers talk to first?",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-30",
+              "number": 30,
+              "text": "Why is it necessary to give children a mental break?",
+              "type": "fill-blank",
+              "correctAnswer": null
+            }
+          ],
+          "content": null,
+          "sharedOptions": null,
+          "tapescript": null
+        },
+        {
+          "id": "test-2-sec-use-of-english-A",
+          "title": "Part II Use of English and Reading Comprehension - Section A",
+          "instructions": "There are 15 blanks in the following passage. Read the passage carefully and fill in each of the blanks by choosing the right word or phrase from the list given below. Write your answer on the Answer Sheet II. Capitalize the word when it is necessary. The words and phrases listed are twice as many as the blanks. Once a word or phrase is chosen, it must be used only once.",
+          "questions": [
+            {
+              "id": "test-2-q-31",
+              "number": 31,
+              "text": "Complete the blank 31.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-32",
+              "number": 32,
+              "text": "Complete the blank 32.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-33",
+              "number": 33,
+              "text": "Complete the blank 33.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-34",
+              "number": 34,
+              "text": "Complete the blank 34.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-35",
+              "number": 35,
+              "text": "Complete the blank 35.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-36",
+              "number": 36,
+              "text": "Complete the blank 36.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-37",
+              "number": 37,
+              "text": "Complete the blank 37.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-38",
+              "number": 38,
+              "text": "Complete the blank 38.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-39",
+              "number": 39,
+              "text": "Complete the blank 39.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-40",
+              "number": 40,
+              "text": "Complete the blank 40.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-41",
+              "number": 41,
+              "text": "Complete the blank 41.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-42",
+              "number": 42,
+              "text": "Complete the blank 42.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-43",
+              "number": 43,
+              "text": "Complete the blank 43.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-44",
+              "number": 44,
+              "text": "Complete the blank 44.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            },
+            {
+              "id": "test-2-q-45",
+              "number": 45,
+              "text": "Complete the blank 45.",
+              "type": "fill-blank",
+              "correctAnswer": null
+            }
+          ],
+          "content": "It is becoming increasingly recognized that education is a process which continues throughout adult life. The {{31}} of adult and continuing education has widened in recent years and now included, in addition to the development of the individual through cultural, physical and craft {{32}} such subjects as basic education: education for disadvantaged groups and those with special needs such as {{33}} minorities or the disabled, consumer education, health education, and pre-retirement education. Continuing education includes training for those in employment, to enable them to keep {{34}} with technological change. The British government has taken a number of recent {{35}} to improve opportunities for both adult and continuing education. In 1982 it launched a Professional, Industrial and Commercial Updating Programmer, {{36}} to help colleges and universities to {{37}} the need to up-date and broaden the skills of those in mid-career in industry, commerce and the professions. A three-year programmer to {{38}} the expansion of educational opportunities for the adult unemployed was launched in 1984.\n\n{{39}} provision for mature students at universities, courses are provided by further education colleges, adult education centers, {{40}} colleges, the Open Universities and various other bodies including a number of voluntary organizations. Most of the provision is made by the local education authorities in a wide variety of {{41}} including schools used for adult evening classes and community schools which provide educational, social and cultural opportunities for the {{42}} community. Most courses are part-time. Local authorities also maintain or aid many courses lasting between a weekend and a {{43}} Long-term residential colleges, grant-aided by central government departments, provide courses of one or two years and aim to provide a {{44}} education without academic entry tests. Most students admitted are {{45}} to full maintenance grants.",
+          "sharedOptions": [
+            {
+              "label": "word_1",
+              "text": "better"
+            },
+            {
+              "label": "word_2",
+              "text": "ethnic"
+            },
+            {
+              "label": "word_3",
+              "text": "instruct"
+            },
+            {
+              "label": "word_4",
+              "text": "initiatives"
+            },
+            {
+              "label": "word_5",
+              "text": "concept"
+            },
+            {
+              "label": "word_6",
+              "text": "designed"
+            },
+            {
+              "label": "word_7",
+              "text": "entitled"
+            },
+            {
+              "label": "word_8",
+              "text": "pursuits"
+            },
+            {
+              "label": "word_9",
+              "text": "compiled"
+            },
+            {
+              "label": "word_10",
+              "text": "national"
+            },
+            {
+              "label": "word_11",
+              "text": "meet"
+            },
+            {
+              "label": "word_12",
+              "text": "emphasize"
+            },
+            {
+              "label": "word_13",
+              "text": "pace"
+            },
+            {
+              "label": "word_14",
+              "text": "subside"
+            },
+            {
+              "label": "word_15",
+              "text": "corporations"
+            },
+            {
+              "label": "word_16",
+              "text": "stride"
+            },
+            {
+              "label": "word_17",
+              "text": "available"
+            },
+            {
+              "label": "word_18",
+              "text": "encourage"
+            },
+            {
+              "label": "word_19",
+              "text": "scope"
+            },
+            {
+              "label": "word_20",
+              "text": "liberal"
+            },
+            {
+              "label": "word_21",
+              "text": "twilight"
+            },
+            {
+              "label": "word_22",
+              "text": "unrestrained"
+            },
+            {
+              "label": "word_23",
+              "text": "apart from"
+            },
+            {
+              "label": "word_24",
+              "text": "procedures"
+            },
+            {
+              "label": "word_25",
+              "text": "among"
+            },
+            {
+              "label": "word_26",
+              "text": "residential"
+            },
+            {
+              "label": "word_27",
+              "text": "fortnight"
+            },
+            {
+              "label": "word_28",
+              "text": "dwelling"
+            },
+            {
+              "label": "word_29",
+              "text": "establishments"
+            },
+            {
+              "label": "word_30",
+              "text": "wider"
+            }
+          ],
+          "tapescript": null
+        },
+        {
+          "id": "test-2-sec-reading-B-passage-1",
+          "title": "Part II Use of English and Reading Comprehension - Section B - Passage 1",
+          "instructions": "Read the following passages carefully and then select the best answer from among the four choices given to answer each of the questions or complete each of the statements that follow each passage. Mark the letter of your choice on your Answer Sheet I.",
+          "questions": [
+            {
+              "id": "test-2-q-46",
+              "number": 46,
+              "text": "Which of the following can best replace \"were being purged of\" in the first paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Were aware of."
+                },
+                {
+                  "label": "B",
+                  "text": "Were got rid of."
+                },
+                {
+                  "label": "C",
+                  "text": "Were paid attention to."
+                },
+                {
+                  "label": "D",
+                  "text": "Were ignorant of."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-47",
+              "number": 47,
+              "text": "Which of the following statements is true according to the second paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Religious schools are not run by the government."
+                },
+                {
+                  "label": "B",
+                  "text": "Religious schools are established because of its proportional representation system."
+                },
+                {
+                  "label": "C",
+                  "text": "In Israel children were only taught religion in the first 15 years."
+                },
+                {
+                  "label": "D",
+                  "text": "There are as many religious schools as non-religious schools in Israel."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-48",
+              "number": 48,
+              "text": "What can be inferred from the third paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "English is not important for students in Israel."
+                },
+                {
+                  "label": "B",
+                  "text": "The local language hinders the development of education."
+                },
+                {
+                  "label": "C",
+                  "text": "English medium schools can provide education because of the better teachers."
+                },
+                {
+                  "label": "D",
+                  "text": "Science education is given much emphasis in private schools."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-49",
+              "number": 49,
+              "text": "What does “it” stand for in the last paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Inequality."
+                },
+                {
+                  "label": "B",
+                  "text": "Education."
+                },
+                {
+                  "label": "C",
+                  "text": "English."
+                },
+                {
+                  "label": "D",
+                  "text": "Pakistan."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-50",
+              "number": 50,
+              "text": "Compared with Israel, what is the advantage of India in education?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Girl students are treated equally with boy students."
+                },
+                {
+                  "label": "B",
+                  "text": "Students in India don't have to convert to English."
+                },
+                {
+                  "label": "C",
+                  "text": "There is no distinction between religious schools and non-religious schools."
+                },
+                {
+                  "label": "D",
+                  "text": "Indian schools are better resourced than Israeli schools."
+                }
+              ]
+            }
+          ],
+          "content": "PTV interviewed students who had obtained top positions in the matriculation examination in the country. One hafiz of Koran who had obtained top position said that in Israel children were only taught religion in the first 15 years, but in Pakistan the syllabi were being purged of Islam and Islamic seminaries were being closed down. A boy from Isakhel said that his area needed more colleges especially women's colleges. In the girls college in Isakhel there was only one teacher and the girls had to sit on the floor.\n\nThe information given by the hafiz boy on Israel is not correct. Israel is 97 per cent literate and girls' literacy is 93 per cent. The state-run institutions are not religious. There is a parallel system of religious schools run by the orthodox Jews but that is a minority. In state-run schools, there is no system of 15 years of purely religious education. The state of Israel has not yet been declared a religious state. It doesn't yet have a constitution. For all practical purposes it is a secular state with a strong presence of the religious parties in the Knesset because of Israel's proportional representation system.\n\nOne girl from Peshawar said that private schools had better quality because they taught from imported books. All the students agreed that in English medium schools science education was of better quality because science could not be translated into Urdu. In any case after matriculation students had to convert to English and thus English medium schools were essential. The boy from Isakhel confessed that Urdu did not help in science and that English is essential for which better teachers should be provided. The top students were more interested in saving the Islamic values.\n\nThe girl from Peshawar put her finger on a very important issue. What should we do about the English medium schools? Most politicians who want to change Pakistan and make it better want the English medium schools abolished in favor of equality. There is confusion here on two points. Do we want equality or uniformity? The ideologue wants uniformity of thought and most of us are for ideology as that would enable us better to combat the world. Do we want economic advancement from education or formation of personality? If both, then how do we maintain the balance? Urdu medium schools are at a disadvantage not only because they are less well resourced but also because their science students have to convert to English after matriculation. Across the border, India is less tortured over this issue.",
+          "sharedOptions": null,
+          "tapescript": null
+        },
+        {
+          "id": "test-2-sec-reading-B-passage-2",
+          "title": "Part II Use of English and Reading Comprehension - Section B - Passage 2",
+          "instructions": "Read the following passages carefully and then select the best answer from among the four choices given to answer each of the questions or complete each of the statements that follow each passage. Mark the letter of your choice on your Answer Sheet I.",
+          "questions": [
+            {
+              "id": "test-2-q-51",
+              "number": 51,
+              "text": "What does “there” refer to in the first paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Lahore."
+                },
+                {
+                  "label": "B",
+                  "text": "Hang Ten."
+                },
+                {
+                  "label": "C",
+                  "text": "Levis."
+                },
+                {
+                  "label": "D",
+                  "text": "Cuckoo."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-52",
+              "number": 52,
+              "text": "What is out of the author's expectation?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "The decoration and environment of the outlet."
+                },
+                {
+                  "label": "B",
+                  "text": "The location of the outlet."
+                },
+                {
+                  "label": "C",
+                  "text": "The marketing gimmick."
+                },
+                {
+                  "label": "D",
+                  "text": "The date of the opening ceremony."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-53",
+              "number": 53,
+              "text": "Why Giordano has more male customers than female customers?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "It offers more clothes for male than female."
+                },
+                {
+                  "label": "B",
+                  "text": "Men have more time doing shopping."
+                },
+                {
+                  "label": "C",
+                  "text": "The author does not give a reason."
+                },
+                {
+                  "label": "D",
+                  "text": "Men like its style more than women do."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-54",
+              "number": 54,
+              "text": "What is the potential competitor of Giordano, according to its owner?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Levis."
+                },
+                {
+                  "label": "B",
+                  "text": "Nike."
+                },
+                {
+                  "label": "C",
+                  "text": "GAP."
+                },
+                {
+                  "label": "D",
+                  "text": "Clarks."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-55",
+              "number": 55,
+              "text": "What can be concluded from the last paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Giordano should not put its advertisements on billboard."
+                },
+                {
+                  "label": "B",
+                  "text": "People in Lahori prefer to shop in big stores."
+                },
+                {
+                  "label": "C",
+                  "text": "Advertisements are important than the opening ceremony."
+                },
+                {
+                  "label": "D",
+                  "text": "Giordano in Lahori does not quite understand the local psyche."
+                }
+              ]
+            }
+          ],
+          "content": "Lahorites can never run out of ideas. Be it brands like Hang Ten and Levis, eateries like Cuckoo's cafe and Gunsmoke, there's always something new happening. Giordano is good news for all those who wish to keep themselves updated with the latest trends. The brand is doing well in the cosmopolitan city. But then, what doesn't do well there? A famous name, a bit of style...that is all you need to make a place run successfully. Lahore is a different kind of market. Brands here need to offer something more than just their names. Established in 1981, Giordano places emphasis on good fabric and clean cuts, and thus has a relatively good chance of capturing the Lahori market.\n\nThe quiet opening ceremony was held on July 30th and that is probably the reason why most people don't even know Giordano has opened. Is that a marketing gimmick or just a blunder on their behalf? The outlet, located in a basement, is usually hard to find. It literally took me four rounds of the market before I could spot that GIORDANO board. When you think of a basement, you think of a dark gloomy place with spider webs all over. But walking down the stairs to this outlet makes you feel fresh and bright. The shop's interior is done in white, with big posters all over.\n\nThe idea is the outcome of a partnership between Mr. Janjua and Mr. Majid who own the sole distribution of Giordano in Lahore. According to them, the shop has been very successful so far, with the male customers proving to be much more responsive than the female ones. Could this be because our men have all the time in the world and are forever \"on the round\"?\n\nWhen asked about Giordano's competitors in the market, Janjua said that the brand did not have any as such. He feels that Levis and Nike cater to a completely different segment and unless brands like GAP come into the market, Giordano faces no threat. Now that might be called living in a fools' paradise. People here normally have a perception that all international brands are good and alike. Giordano will have to offer something more than just the name and that might take time and effort.\n\nThe start could have been more exciting. People hardly know about the outlet, where it is, what they offer, etc. One billboard is not enough for a market that is surrounded by advertisements. We hope Giordano understands the Lahori psyche, which feels big is better!",
+          "sharedOptions": null,
+          "tapescript": null
+        },
+        {
+          "id": "test-2-sec-reading-B-passage-3",
+          "title": "Part II Use of English and Reading Comprehension - Section B - Passage 3",
+          "instructions": "Read the following passages carefully and then select the best answer from among the four choices given to answer each of the questions or complete each of the statements that follow each passage. Mark the letter of your choice on your Answer Sheet I.",
+          "questions": [
+            {
+              "id": "test-2-q-56",
+              "number": 56,
+              "text": "According to the author, what is neglected by the readers?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "The source text."
+                },
+                {
+                  "label": "B",
+                  "text": "The process of translation."
+                },
+                {
+                  "label": "C",
+                  "text": "The final result of translation."
+                },
+                {
+                  "label": "D",
+                  "text": "The translators' unique understanding of the source text."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-57",
+              "number": 57,
+              "text": "According to Bell, what is the reason for people's ignoring the process of translation?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "People's understanding of the nature of translating is not adequate."
+                },
+                {
+                  "label": "B",
+                  "text": "People think translation is the communication between language users."
+                },
+                {
+                  "label": "C",
+                  "text": "There is no obvious development in translation studies over the years."
+                },
+                {
+                  "label": "D",
+                  "text": "There is a tendency for people to put more emphasis on the result rather than on the process."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-58",
+              "number": 58,
+              "text": "Which word can best replace the word \"embodiment\" in Para. 2?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Expression."
+                },
+                {
+                  "label": "B",
+                  "text": "Significance."
+                },
+                {
+                  "label": "C",
+                  "text": "Symbolism."
+                },
+                {
+                  "label": "D",
+                  "text": "Intention."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-59",
+              "number": 59,
+              "text": "What is important in translating metaphor?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "To fully understand the original meaning."
+                },
+                {
+                  "label": "B",
+                  "text": "To capture the special understanding of reality."
+                },
+                {
+                  "label": "C",
+                  "text": "To avoid adding the translator's own point of view."
+                },
+                {
+                  "label": "D",
+                  "text": "To achieve the best effect in the target language."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-60",
+              "number": 60,
+              "text": "Which word will the author use to describe the process of translation?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Passive."
+                },
+                {
+                  "label": "B",
+                  "text": "Motivated."
+                },
+                {
+                  "label": "C",
+                  "text": "Sclf-contained."
+                },
+                {
+                  "label": "D",
+                  "text": "Self-generating."
+                }
+              ]
+            }
+          ],
+          "content": "It is in the nature of things that the target text displays only the translator's final decisions. Readers perceive an end-product, a result of a decision making process; they do not have access to pathways leading to decisions, to the dilemmas to be resolved by the translator. What is available for scrutiny is the end-product, the result of translation practice rather than the practice itself. In other words, we are looking at translation as product instead of translating as process. Bell suggests that the tendency to ignore the process involved in the act of translating lies behind the relative stagnation of translation studies in recent years. If we treat text merely as a self-contained and self-generating entity, instead of as a decision-making procedure and an instance of communication between language users, our understanding of the nature of translating will be impaired.\n\nThe view that underlies this book, then, is of translation as a process, involving the negotiation of meaning between producers and receivers of texts. In other words, the resulting translated texts are to be seen as evidence of a transaction, a means of retracing the pathways of the translators, decision-making procedures. In the same way, the source text is an end product and again should be treated as evidence of a writer's intended meaning rather than as the embodiment of the meaning itself. In translating metaphor, for example, there is little point in seeking to match target-language words with those in the source-language in isolation from a consideration of the writer's whole worldview. Occurrence of metaphor has a cumulative effect which suggests a particular perception of reality and it is this which the translator seeks to capture.\n\nIn this sense, texts can be seen as the result of motivated choice: producers of texts have their own communicative aims and select lexical items and grammatical arrangement to serve those aims. Naturally, in translating, there are potentially two sets of motivations: those of the producer of the source text and those of the translator.",
+          "sharedOptions": null,
+          "tapescript": null
+        },
+        {
+          "id": "test-2-sec-reading-C",
+          "title": "Part II Use of English and Reading Comprehension - Section C",
+          "instructions": "In the following passage, five sentences have been removed from the original text. They are listed from A to F and put below the passage. Choose the most suitable sentence from the list to fill in each of the blanks numbered 61 to 65. There is one sentence that does not fit in any of the blanks. Mark your answers on your Answer Sheet I.",
+          "questions": [
+            {
+              "id": "test-2-q-61",
+              "number": 61,
+              "text": "Choose the best sentence to fill in blank 61.",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "But the most significant difference between the natural meat-eaters and other animals is their teeth."
+                },
+                {
+                  "label": "B",
+                  "text": "The diet of these apes consists mostly of fruit and nuts."
+                },
+                {
+                  "label": "C",
+                  "text": "This is because flesh decays very rapidly, and the products of this decay quickly poison the bloodstream if they remain too long in the body."
+                },
+                {
+                  "label": "D",
+                  "text": "A cat, for example, can hardly chew at all."
+                },
+                {
+                  "label": "E",
+                  "text": "These foods must be chewed well and thoroughly mixed with ptyalin in order to be broken down."
+                },
+                {
+                  "label": "F",
+                  "text": "Human digestive systems, like the rabbit's, are also not designed to digest meat, and they become diseased the more they eat it."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-62",
+              "number": 62,
+              "text": "Choose the best sentence to fill in blank 62.",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "But the most significant difference between the natural meat-eaters and other animals is their teeth."
+                },
+                {
+                  "label": "B",
+                  "text": "The diet of these apes consists mostly of fruit and nuts."
+                },
+                {
+                  "label": "C",
+                  "text": "This is because flesh decays very rapidly, and the products of this decay quickly poison the bloodstream if they remain too long in the body."
+                },
+                {
+                  "label": "D",
+                  "text": "A cat, for example, can hardly chew at all."
+                },
+                {
+                  "label": "E",
+                  "text": "These foods must be chewed well and thoroughly mixed with ptyalin in order to be broken down."
+                },
+                {
+                  "label": "F",
+                  "text": "Human digestive systems, like the rabbit's, are also not designed to digest meat, and they become diseased the more they eat it."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-63",
+              "number": 63,
+              "text": "Choose the best sentence to fill in blank 63.",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "But the most significant difference between the natural meat-eaters and other animals is their teeth."
+                },
+                {
+                  "label": "B",
+                  "text": "The diet of these apes consists mostly of fruit and nuts."
+                },
+                {
+                  "label": "C",
+                  "text": "This is because flesh decays very rapidly, and the products of this decay quickly poison the bloodstream if they remain too long in the body."
+                },
+                {
+                  "label": "D",
+                  "text": "A cat, for example, can hardly chew at all."
+                },
+                {
+                  "label": "E",
+                  "text": "These foods must be chewed well and thoroughly mixed with ptyalin in order to be broken down."
+                },
+                {
+                  "label": "F",
+                  "text": "Human digestive systems, like the rabbit's, are also not designed to digest meat, and they become diseased the more they eat it."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-64",
+              "number": 64,
+              "text": "Choose the best sentence to fill in blank 64.",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "But the most significant difference between the natural meat-eaters and other animals is their teeth."
+                },
+                {
+                  "label": "B",
+                  "text": "The diet of these apes consists mostly of fruit and nuts."
+                },
+                {
+                  "label": "C",
+                  "text": "This is because flesh decays very rapidly, and the products of this decay quickly poison the bloodstream if they remain too long in the body."
+                },
+                {
+                  "label": "D",
+                  "text": "A cat, for example, can hardly chew at all."
+                },
+                {
+                  "label": "E",
+                  "text": "These foods must be chewed well and thoroughly mixed with ptyalin in order to be broken down."
+                },
+                {
+                  "label": "F",
+                  "text": "Human digestive systems, like the rabbit's, are also not designed to digest meat, and they become diseased the more they eat it."
+                }
+              ]
+            },
+            {
+              "id": "test-2-q-65",
+              "number": 65,
+              "text": "Choose the best sentence to fill in blank 65.",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                {
+                  "label": "A",
+                  "text": "But the most significant difference between the natural meat-eaters and other animals is their teeth."
+                },
+                {
+                  "label": "B",
+                  "text": "The diet of these apes consists mostly of fruit and nuts."
+                },
+                {
+                  "label": "C",
+                  "text": "This is because flesh decays very rapidly, and the products of this decay quickly poison the bloodstream if they remain too long in the body."
+                },
+                {
+                  "label": "D",
+                  "text": "A cat, for example, can hardly chew at all."
+                },
+                {
+                  "label": "E",
+                  "text": "These foods must be chewed well and thoroughly mixed with ptyalin in order to be broken down."
+                },
+                {
+                  "label": "F",
+                  "text": "Human digestive systems, like the rabbit's, are also not designed to digest meat, and they become diseased the more they eat it."
+                }
+              ]
+            }
+          ],
+          "content": "Carnivorous animals have many unique characteristics which set them apart from all other members of the animal kingdom. They all possess a very simple and short digestive system — only three times the length of their bodies. {{61}} Meat-eating animals that hunt in the cool of the night and sleep during the day when it is hot do not need sweat glands to cool their bodies; they therefore do not perspire through their skin, but rather they sweat through their tongues. On the other hand, vegetarian animals spend much of their time in the sun gathering their food, and they freely perspire through their skin to cool their bodies. {{62}} Along with sharp claws, all meat-eaters, since they have to kill mainly with their teeth, possess powerful jaws and pointed, elongated, \"canine\" teeth to pierce tough hide and to spear and tear flesh. They do NOT have molars (flat, back teeth) which vegetarian animals need for grinding their food. Unlike grains, flesh does not need to be chewed in the mouth to predigest it; it is digested mostly in the stomach and the intestines. {{63}} Grass-and-leaf-eating animals live on grass, herbs, and other plants, much of which is coarse and bulky. {{64}} For this reason, grass-and-leaf eaters have 24 special \"molar\" teeth and a slight side-to-side motion to grind their food, as opposed to the exclusively up-and-down motion of carnivores. They have no claws or sharp teeth; they drink by sucking water up into their mouths. Since they do not eat rapidly decaying foods like the meat eaters, and since their food can take a longer time to pass through, they have much longer digestive systems — intestines which are ten times the length of the body. Interestingly, recent studies have shown that a meat diet has an extremely harmful effect on these grass-and-leaf eaters. If a half pound of animal fat is added daily over a long period of time to a rabbit's diet, after two months his blood vessels become caked with fat and the serious disease called atherosclerosis (动脉粥样硬化) develops. {{65}}",
+          "sharedOptions": [
+            {
+              "label": "A",
+              "text": "But the most significant difference between the natural meat-eaters and other animals is their teeth."
+            },
+            {
+              "label": "B",
+              "text": "The diet of these apes consists mostly of fruit and nuts."
+            },
+            {
+              "label": "C",
+              "text": "This is because flesh decays very rapidly, and the products of this decay quickly poison the bloodstream if they remain too long in the body."
+            },
+            {
+              "label": "D",
+              "text": "A cat, for example, can hardly chew at all."
+            },
+            {
+              "label": "E",
+              "text": "These foods must be chewed well and thoroughly mixed with ptyalin in order to be broken down."
+            },
+            {
+              "label": "F",
+              "text": "Human digestive systems, like the rabbit's, are also not designed to digest meat, and they become diseased the more they eat it."
+            }
+          ],
+          "tapescript": null
+        },
+        {
+          "id": "test-2-sec-writing-A",
+          "title": "Part III Writing - Section A",
+          "instructions": "Read the following article and write a summary of no more than 150 words on your Answer Sheet II.",
+          "questions": [
+            {
+              "id": "test-2-q-66",
+              "number": 66,
+              "text": "Write a summary of the provided article.",
+              "type": "writing",
+              "correctAnswer": null
+            }
+          ],
+          "content": "Sympathetic interpreters of the beat generation or the beatniks have described them as \"taking a revenge on society”. The hero of a recent novel “undertakes an alcoholic strike against humanity\". But the phrase \"an alcoholic strike\", like \"a revenge on society\", seems to me merely comic. It suggests the popular saying about \"biting off your nose to spite your face\", that being precisely what some intellectuals (including many somewhat above the beatnik level) are doing — as though turning into a dope addict does not hurt oneself even more than it hurts anyone else. It seems only slightly less obvious that the more responsible intellectuals who devote themselves exclusively to exploring and exploiting their \"alienation\" are doing much the same thing. Surely it is more productive of personal happiness and even \"more useful to society\" to be a candle throwing its beam into a naughty world than a beatnik crying \"revenge, revenge\" from the gutter. We hear a great deal about the responsibility of society toward the individual. The individual also has a responsibility toward society. And if things are as bad as the alienated say, the only way one can discharge that responsibility is by being an honorable man.\n\nI am not preaching universal indifference to society and social action as the highest wisdom. I am saying simply that if and when one individual feels (as so many articulate people do seem to feel) that the world is hopeless, then it is wiser to see what one can do about oneself than to give up all hope of that. I will go so far as to suggest the possibility that society may be in a bad way partly because we have laid so much stress on public education and so little upon self-education.\n\nPerhaps the most curious and shocking result of the exclusive stress upon social rather than upon private ethics is the disappearance of the concept of honor as distinct from that of morality. One of the difference between the two is simply that honor is relevant to the individual only. True, society may be more affected than some social scientists seem to think by the prevalence or scarcity of honor in the code of the individuals who make it up. But the man of honor always asks first whether or not an action would dishonor him personally, and he is not influenced by an argument that his dishonorable act would have no bad (perhaps even some good) effect upon society and is therefore \"moral\" even if dishonorable.\n\nThe world would not now be profcundly shocked as it was a generation ago by the phrase \"a scrape of paper\". We are used to having promises so treated, as if there was nothing immoral in a broken oath. Many college students see nothing wrong about cheating on examinations. \"Everybody does it and it does not really hurt anyone.\"\n\nWhen some scandal breaks in government or journalism or business or broadcasting, the usual reaction of even that part of the public which is shocked by it is to say that it could not have happened if there had been adequate laws supervising this or that activity. But usually, is it not equally true that it could not have happened if a whole group of men, often including the supposed guardians of public morality, had not been devoid of any sense of the meaning and importance of individual integrity? May one not go further and ask whether any amount of \"social consciousness\" and government control can make decent a society composed of people who have no conception of personal dignity and honor? It was a favorite and no doubt sound argument among early twentieth-century reformers that \"playing the game\" as the gentleman was supposed to play it was not enough. But has the time not come to add that it is, nevertheless, indispensable?",
+          "sharedOptions": null,
+          "tapescript": null
+        },
+        {
+          "id": "test-2-sec-writing-B",
+          "title": "Part III Writing - Section B",
+          "instructions": "Write an essay of no less than 250 words on the topic given below. Use the proper space on your Answer Sheet II.",
+          "questions": [
+            {
+              "id": "test-2-q-67",
+              "number": 67,
+              "text": "Many young people nowadays like to live in big cities like Beijing and Shanghai. Do you think it's good to stay in large modern cities?",
+              "type": "writing",
+              "correctAnswer": null
+            }
+          ],
+          "content": null,
+          "sharedOptions": null,
+          "tapescript": null
+        }
+      ]
+    }
+  ]
+}

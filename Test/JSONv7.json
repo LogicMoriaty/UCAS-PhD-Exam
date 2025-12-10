@@ -1,0 +1,675 @@
+
+{
+  "exams": [
+    {
+      "id": "test-1",
+      "title": "Model Test 1",
+      "sections": [
+        {
+          "id": "test-1-part-1-section-a",
+          "title": "Part I Listening Comprehension - Section A",
+          "instructions": "In this part, you will hear 10 short conversations. At the end of each conversation, a question will be asked about what is said. Each conversation and the question wiii be spoken only once. When you hear the question, read the four choices of the answer given and choose the best one by marking the corresponding letter A, B, C, or D on your Answer Sheet I.",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%201.mp3",
+          "questions": [
+            {
+              "id": "test-1-part-1-section-a-q1",
+              "number": 1,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                { "label": "A", "text": "He thinks the idea is not original." },
+                { "label": "B", "text": "He supports the idea, but thinks it won't do any good." },
+                { "label": "C", "text": "He doesn't care about the issue." },
+                { "label": "D", "text": "He thinks she should just accept the bad food." }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q2",
+              "number": 2,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                { "label": "A", "text": "She is very upset with the new circumstance." },
+                { "label": "B", "text": "Maggie is quick to adapt to the new circumstance." },
+                { "label": "C", "text": "Maggie will be affected but not her." },
+                { "label": "D", "text": "She is not affected now but she will be in the future." }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q3",
+              "number": 3,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                { "label": "A", "text": "The woman doesn't want the man to leave it there." },
+                { "label": "B", "text": "The woman wants to use it while the man is gone." },
+                { "label": "C", "text": "The woman wants the man to show her how to ride it." },
+                { "label": "D", "text": "The woman will keep it safe and not use it" }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q4",
+              "number": 4,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                { "label": "A", "text": "He should think of another plan." },
+                { "label": "B", "text": "He should find a suitable time for the ceremony." },
+                { "label": "C", "text": "He should find a suitable place for the ceremony." },
+                { "label": "D", "text": "He should be more optimistic." }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q5",
+              "number": 5,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                { "label": "A", "text": "At a bank." },
+                { "label": "B", "text": "At the registration desk." },
+                { "label": "C", "text": "At a bookstore." },
+                { "label": "D", "text": "At a library." }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q6",
+              "number": 6,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                { "label": "A", "text": "She's not sure whether to get a credit card or not." },
+                { "label": "B", "text": "She's not sure how to use a credit card." },
+                { "label": "C", "text": "She's not sure what kind of credit card to choose." },
+                { "label": "D", "text": "She's not sure how many credit cards she needs." }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q7",
+              "number": 7,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                { "label": "A", "text": "They agree to meet in the alley to study." },
+                { "label": "B", "text": "They agree to tutor each other." },
+                { "label": "C", "text": "They agree to study poetry together." },
+                { "label": "D", "text": "They agree to study Biology together." }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q8",
+              "number": 8,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                { "label": "A", "text": "The man wants the woman to wash the dishes." },
+                { "label": "B", "text": "The man flares up at the woman at the slightest provocation." },
+                { "label": "C", "text": "The man wants the woman to kick a ball with him." },
+                { "label": "D", "text": "The man was given permission to stay alone." }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q9",
+              "number": 9,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                { "label": "A", "text": "There is possibility for him to get back together with Cathy." },
+                { "label": "B", "text": "He was just emotional at that moment." },
+                { "label": "C", "text": "There are other girls he can have a relationship with." },
+                { "label": "D", "text": "He is sick and tired of fishing." }
+              ]
+            },
+            {
+              "id": "test-1-part-1-section-a-q10",
+              "number": 10,
+              "text": "Listen to the conversation",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [
+                { "label": "A", "text": "She is trying to help and encourage the man." },
+                { "label": "B", "text": "She is turning down the man" },
+                { "label": "C", "text": "She is taking a chance to express her love:" },
+                { "label": "D", "text": "She is keeping everything to herself." }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "test-1-part-1-section-b",
+          "title": "Part I Listening Comprehension - Section B",
+          "instructions": "In this part, you will hear two mini-talks. While you listen, complete the sentences in your Answer Sheet II for Questions 11 to 20 by writing NO MORE THAN THREE WORDS in each sentence. You will hear each talk or conversation TWICE.",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%201.mp3",
+          "questions": [
+            { "id": "test-1-q11", "number": 11, "text": "The medical disorder named as SAD refers to seasonal", "type": "fill-blank" },
+            { "id": "test-1-q12", "number": 12, "text": "Depression may result from the continuing of two kinds of substances in the body.", "type": "fill-blank" },
+            { "id": "test-1-q13", "number": 13, "text": "The may be disturbed because of the decrease in the amount of sunlight the body receives.", "type": "fill-blank" },
+            { "id": "test-1-q14", "number": 14, "text": "Doctors suggest that patients with SAD sit in front of a special", "type": "fill-blank" },
+            { "id": "test-1-q15", "number": 15, "text": "In the Scandinavian countries, the ratesis relatively high.", "type": "fill-blank" },
+            { "id": "test-1-q16", "number": 16, "text": "Stanford University is sometimes called \"the Harvard of the ”", "type": "fill-blank" },
+            { "id": "test-1-q17", "number": 17, "text": "Students are selected from the of their high school classes.", "type": "fill-blank" },
+            { "id": "test-1-q18", "number": 18, "text": "The drinks and the atmosphere in Student Union's coffee house have a strong European", "type": "fill-blank" },
+            { "id": "test-1-q19", "number": 19, "text": "The university has established overseas branch study centers for students.", "type": "fill-blank" },
+            { "id": "test-1-q20", "number": 20, "text": "Government grants have helped advanced studies in the fields of history, psychology, education and", "type": "fill-blank" }
+          ]
+        },
+        {
+          "id": "test-1-part-1-section-c",
+          "title": "Part I Listening Comprehension - Section C",
+          "instructions": "In this part, you will hear three mini-talks and each of them will be spoken only once. While listening to them, read the questions that follow each talk.",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%201.mp3",
+          "questions": [
+            { "id": "test-1-q21", "number": 21, "text": "What makes it easier for people to travel now?", "type": "fill-blank" },
+            { "id": "test-1-q22", "number": 22, "text": "What are the problems associated with tourism industry?", "type": "fill-blank" },
+            { "id": "test-1-q23", "number": 23, "text": "What is the problem that scientists are increasingly concerning about?", "type": "fill-blank" },
+            { "id": "test-1-q24", "number": 24, "text": "What is the disadvantage of telecommuting?", "type": "fill-blank" },
+            { "id": "test-1-q25", "number": 25, "text": "What benefit can telecommuting bring for workers?", "type": "fill-blank" },
+            { "id": "test-1-q26", "number": 26, "text": "What will telecommuting contribute to traffic?", "type": "fill-blank" },
+            { "id": "test-1-q27", "number": 27, "text": "What is the important test discussed in the passage?", "type": "fill-blank" },
+            { "id": "test-1-q28", "number": 28, "text": "What would happen if a small part of the plane were to fail?", "type": "fill-blank" },
+            { "id": "test-1-q29", "number": 29, "text": "What can engineers discover during the explosion?", "type": "fill-blank" },
+            { "id": "test-1-q30", "number": 30, "text": "When does the most dangerous test happen?", "type": "fill-blank" }
+          ]
+        },
+        {
+          "id": "test-1-part-2-section-a-cloze",
+          "title": "Part II Use of English - Section A",
+          "instructions": "There are 15 blanks in the following passage. Read the passage carefully and fill in each of the blanks by choosing the right word.",
+          "questions": [
+            { "id": "test-1-q31", "number": 31, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q32", "number": 32, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q33", "number": 33, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q34", "number": 34, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q35", "number": 35, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q36", "number": 36, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q37", "number": 37, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q38", "number": 38, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q39", "number": 39, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q40", "number": 40, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q41", "number": 41, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q42", "number": 42, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q43", "number": 43, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q44", "number": 44, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q45", "number": 45, "text": "", "type": "fill-blank" }
+          ],
+          "content": "Criticism is judgment. A critić is a judge. A judge musí study and think about the material presented to him, accept it, correct it, or {{31}} it, after thinking over what he has read, watched or heard. That sort of {{32}} reading might well be called creative reading {{33}} I am thinking along with the writer, asking him questions, seeing whether he answers the questions and {{34}} well he answers them. I mark the good passages to store them in my memory and ask myself about every other part and about the {{35}} piece of writing, where, how and why could or should I improve upon it? Don't believe those who say that bad reading cannot hurt a person. How do they know what will hurt others? Wouldn't you {{36}} believe the experience of the ages that says,'A mán is what he has read\" and \"Our reading and studies carry over into our lives\"? Let's get back to the {{37}} effects of thinking while reading. It helps us to {{38}} our minds. We understand more about the universe, its people and many of its {{39}} We learn to think and observe in new ways. We certainly do get a feeling for the language we are reading. All good writers in any language have been readers who read critically and creatively and {{40}}. Reading critically also helps me develop and {{41}} my emotions to the point where I can tell whether a report; a story or a poem is genuinely {{42}} or not whether the writer is an honest writer. Finally reading will and must broaden my {{43}} expand my love for others and set it in action. How can a person who has a bit of kindness in his heart read about all the {{44}} and tragedies that people and notions have and not want to do and actually do what he can to {{45}} those people in every way he can and as much as he can?",
+          "sharedOptions": [
+            { "label": "A", "text": "reject" }, { "label": "B", "text": "maintain" }, { "label": "C", "text": "happiness" }, { "label": "D", "text": "other" }, { "label": "E", "text": "complete" },
+            { "label": "F", "text": "how" }, { "label": "G", "text": "negative" }, { "label": "H", "text": "beneficial" }, { "label": "I", "text": "enlarge" }, { "label": "J", "text": "rather" },
+            { "label": "K", "text": "therefore" }, { "label": "L", "text": "because" }, { "label": "M", "text": "extensive" }, { "label": "N", "text": "continuously" }, { "label": "O", "text": "why" },
+            { "label": "P", "text": "productively" }, { "label": "Q", "text": "increase" }, { "label": "R", "text": "humane" }, { "label": "S", "text": "refine" }, { "label": "T", "text": "adjust" },
+            { "label": "U", "text": "so that" }, { "label": "V", "text": "honorable" }, { "label": "W", "text": "sympathies" }, { "label": "X", "text": "antipathies" }, { "label": "Y", "text": "miseries" },
+            { "label": "Z", "text": "wonders" }, { "label": "AA", "text": "achievements" }, { "label": "BB", "text": "alleviate" }, { "label": "CC", "text": "critical" }, { "label": "DD", "text": "relieve" }
+          ]
+        },
+        {
+          "id": "test-1-part-2-section-b-passage-1",
+          "title": "Part II Reading Comprehension - Section B - Passage 1",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-1-q46",
+              "number": 46,
+              "text": "According to the passage, the self should be examined",
+              "type": "multiple-choice",
+              "options": [ { "label": "A", "text": "in a diving medium..." }, { "label": "B", "text": "in an off-and-on way." }, { "label": "C", "text": "in a loose manner." }, { "label": "D", "text": "in a language with the richest implications" } ]
+            },
+            {
+              "id": "test-1-q47",
+              "number": 47,
+              "text": "The author recommended the form of a diary of journal because",
+              "type": "multiple-choice",
+              "options": [ { "label": "A", "text": "it is indispensable in understanding our everyday life." }, { "label": "B", "text": "it is important to record everyday experience" }, { "label": "C", "text": "it helps people improve their ability to express themselves." }, { "label": "D", "text": "it enables people to concentrate on the significant thing in life." } ]
+            },
+            {
+              "id": "test-1-q48",
+              "number": 48,
+              "text": "\"Multicolored threads\" (in Para: 2) is used to refer to",
+              "type": "multiple-choice",
+              "options": [ { "label": "A", "text": "silks." }, { "label": "B", "text": "ideas." }, { "label": "C", "text": "writing passages." }, { "label": "D", "text": "parts of a textile machine." } ]
+            },
+            {
+              "id": "test-1-q49",
+              "number": 49,
+              "text": "Writing a diary can be regarded as a process of",
+              "type": "multiple-choice",
+              "options": [ { "label": "A", "text": "decision making." }, { "label": "B", "text": "recalling what one has done during the day." }, { "label": "C", "text": "making a plan for the future." }, { "label": "D", "text": "evaluating one's performance." } ]
+            },
+            {
+              "id": "test-1-q50",
+              "number": 50,
+              "text": "Which of the following statements can best summarize the main idea of the passage?",
+              "type": "multiple-choice",
+              "options": [ { "label": "A", "text": "The discovery of the self is the essence of one's life." }, { "label": "B", "text": "Language is all we need to evaluate our everyday experience." }, { "label": "C", "text": "Writing can help us understand language and therefore understand ourselves." }, { "label": "D", "text": "Keeping a diary or a journal can guarantee the full discovery of the self." } ]
+            }
+          ],
+          "content": "To live an aware life, the individual must begin with an awareness of self. He must conduct a running examination and periodic reexaminations of the self in language, the medium of farthest reaches, deepest driving, most complicated windings. The sorting through might well begin with the ordinary, everyday experience of life. A diary of journal enables one to examine and evaluate experiences, as well as to come to understand them and their significance or insignificance. Most of us do this examination and evaluation in moments of dreaming or in that state of mental wandering just before sleep. There is some (even great) advantage, however, in subjecting ourselves to the discipline of written language, in which the vague and the confusing and the poorly defined give way to the specific, the firm, and the clearly formulated.\n\nFor writing is discovery. The language that never leaves our head is like colorful yarn, which endlessly spins out multicolored threads dropping into an emptiness, momentarily compacted, entangled, fascinating, and elusive. We have glimpses that seem brilliant but quickly fade; we catch sight of images that tease us with connections and patterns that too-soon flow on; we hold in momentary view a comprehensive arrangement (insight) that dissolves rapidly and disappears.\n\nWriting that is discovery forces the capturing, the retrieving, the bringing into focus these stray and random thoughts. Examining them, we form ideas that are as much about the self as about language. Indeed, writing is largely a process of choosing, among alternatives from the images and thoughts of the endless flow, and this choosing is the matter of making up one's mind, and this making up one's mind becomes in effect the making up of one's self. In this way writing that is honest and genuine and serious constitutes the discovery of the self."
+        },
+        {
+          "id": "test-1-part-2-section-b-passage-2",
+          "title": "Part II Reading Comprehension - Section B - Passage 2",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-1-q51",
+              "number": 51,
+              "text": "The author writes this passage in order to",
+              "type": "multiple-choice",
+              "options": [ { "label": "A", "text": "justify the profitability of Internet business." }, { "label": "B", "text": "analyze why Internet industry is developing so quickly." }, { "label": "C", "text": "pour cold water on the booming Internet industry." }, { "label": "D", "text": "make some predictions about the development of Internet industry." } ]
+            },
+            {
+              "id": "test-1-q52",
+              "number": 52,
+              "text": "Why does the author mention \"ice in the Arctic, sand in the desert, seawater in the ocean\"?",
+              "type": "multiple-choice",
+              "options": [ { "label": "A", "text": "They are free of charge and the amount is huge." }, { "label": "B", "text": "People failed to get rich from making use of them." }, { "label": "C", "text": "They are comparable to the amount of news that Internet provides." }, { "label": "D", "text": "One can hardly get rich overnight with something free of charge." } ]
+            },
+            {
+              "id": "test-1-q53",
+              "number": 53,
+              "text": "Which of the following should NOT be responsible for the letdowns of New Eras of the past?",
+              "type": "multiple-choice",
+              "options": [ { "label": "A", "text": "Further innovation after innovation." }, { "label": "B", "text": "Exclusive intervention by the government." }, { "label": "C", "text": "The emergence of imitation of innovation." }, { "label": "D", "text": "The competition between imitation and innovation." } ]
+            },
+            {
+              "id": "test-1-q54",
+              "number": 54,
+              "text": "What is the main idea of the last paragraph?",
+              "type": "multiple-choice",
+              "options": [ { "label": "A", "text": "Internet will become a commodity." }, { "label": "B", "text": "Internet can bring some people profits." }, { "label": "C", "text": "People cannot expect to make profits from Internet in the long run." }, { "label": "D", "text": "People will become familiar with Internet as with cars, radios, cash registers and mainframe computers." } ]
+            },
+            {
+              "id": "test-1-q55",
+              "number": 55,
+              "text": "What is the writing style of this passage?",
+              "type": "multiple-choice",
+              "options": [ { "label": "A", "text": "Persuasive." }, { "label": "B", "text": "Informative." }, { "label": "C", "text": "Comparative." }, { "label": "D", "text": "Narrative." } ]
+            }
+          ],
+          "content": "What should we think of the global euphoria over \"dotcom\" companies? Undoubtedly, Internet technology' will change the way we live, work, communicate and do business. But beware of those who proclaim this to be a New Era of profitability. As in the so-called New Eras of the past brought on by earlier technological breakthroughs this one carries the seeds of its own destruction. The phenomenal growth of Internet businesses is already fueling a Klondike-style.gold rush, with far too many diggers looking for far too little gold. Economics teaches us that it is hard to make money with a basically free commodity. Think of ice in the Arctic, sand in the desert, seawater in the ocean or, for that matter, the seemingly unlimited “hot air” on the Net.\n\nIn the 20th century, the proliferation of cars, radios, movies, televisions, mass retailers and computers all inspired a sense that we had begun a New Era. Each breakthrough promised new riches and unprecedented prosperity for the innovators. But in the long run, they always failed to deliver to investors the expected rewards.\n\nWhy the letdowns? In part because every great innovator invariably attracted great imitators, who competed with the original and eventually depressed his \"excessive\" profit margin by commoditizing the invention. Furthermore, great inventions have always been followed by greater innovations, which, through the process known as creative destruction, render the previous new technology obsolete. And when inventions become vital to the economy, they are frequently brought under the control of governments via regulation, nationalization and, in extreme cases, expropriation.\n\nTake the Erie Canal, which was completed in 1825. Its success led to the great American canal boom of the 1830s. It ended just a few years later in a tremendous bust, as most of the other canals failed to make money. The Erie. too, began to suffer from competition, first from railroads and, eventually, from trucks. In the end, the railroad industry which helped create an unprecedented industrial boom proved to be disastrous for most investors. By 1895, most U.S. railroads had to be restructured\n\nNow-familiar technologies like cars, radios, cash registers and mainframe computers were all at some point new and revolutionary. But the spread of the technologies led inevitably to the demise of their creators' \"excessive\" profits, as each became just another commodity. Don't think for a minute that the Internet will be any different."
+        },
+        {
+          "id": "test-1-part-2-section-b-passage-3",
+          "title": "Part II Reading Comprehension - Section B - Passage 3",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-1-q56",
+              "number": 56,
+              "text": "The main idea of the first paragraph is that Americans",
+              "type": "multiple-choice",
+              "options": [ { "label": "A", "text": "have changed their eating habits." }, { "label": "B", "text": "have no national food." }, { "label": "C", "text": "have imported lots of food from abroad." }, { "label": "D", "text": "have hamburgers as their food only." } ]
+            },
+            {
+              "id": "test-1-q57",
+              "number": 57,
+              "text": "Which of the following statements is NOT the reason for the increasingly international flavor of American food?",
+              "type": "multiple-choice",
+              "options": [ { "label": "A", "text": "People from different parts of the world have immigrated into America." }, { "label": "B", "text": "A lot of information about food on TV has had influences on the Americans." }, { "label": "C", "text": "Many travelers from other parts of the world have brought new tastes and flavor to America." }, { "label": "D", "text": "Many young Americans have come back from abroad with very strong desires for foreign food" } ]
+            },
+            {
+              "id": "test-1-q58",
+              "number": 58,
+              "text": "According to the passage, traditional American food",
+              "type": "multiple-choice",
+              "options": [ { "label": "A", "text": "is of high nutrition." }, { "label": "B", "text": "is very healthy." }, { "label": "C", "text": "is too salty and fat." }, { "label": "D", "text": "has potential dangers to health." } ]
+            },
+            {
+              "id": "test-1-q59",
+              "number": 59,
+              "text": "Consumers' demand for healthier foods resulted directly from",
+              "type": "multiple-choice",
+              "options": [ { "label": "A", "text": "the education about changes of processed foods from the media." }, { "label": "B", "text": "their growing concern with their own health." }, { "label": "C", "text": "their dislikes of chemical addictives in foods." }, { "label": "D", "text": "their concern with the quality rather than the tastes of the food." } ]
+            },
+            {
+              "id": "test-1-q60",
+              "number": 60,
+              "text": "What is the best title for the passage?",
+              "type": "multiple-choice",
+              "options": [ { "label": "A", "text": "American Food." }, { "label": "B", "text": "Americans and Food." }, { "label": "C", "text": "Americans' Eating Habits." }, { "label": "D", "text": "Shift in American Food Habits." } ]
+            }
+          ],
+          "content": "We used to have simple, unsophisticated tastes and looked with suspicion at anything more exotic than hamburgers. Admittedly, we did adopt some foods from the various immigrant groups who flicked to ours shores. We learned to eat Chinese food, pizza, and bagels. But in the last few years, the international character of our diet has grown tremendously. We can walk into any mall in Middle America and buy pita bread, quiches, and tacos. Such foods are often changed on their journey from exotic imports to ordinary \"American\" meals. (no Pakistani, for example, eats frozen-on-a-stick boysenberry-flavored yogurt), but the imports are still a long way from hamburger on a bun.\n\nWhy have we become more worldly in our tastes? For one thing; the television blankets the country with information about new food products and trends. Viewers in rural Montana know that the latest craving in Washington, D. C. is Cajun cookings or that something called tofu is now available in the local supermarket. Another reason for the growing international flavor of our food is that many young Americans have traveled abroad and gotten hooked on new tastes and flavors. Backpacking students and young professional vacationing in Europe come home with craving for authentic French bread or German beer. Finally, continuing waves of immigrants settle in the cities where many of us live, causing significant changes in what we eat. In time, the new food will become Americanized enough to take its place in our national dieta\n\nOur growing concern with health has also affected the way we eat. For the last few years, the media has warned us about the dangers of our traditional diet, high in salt and fat, low in fiber. The media also began to educate us about the dangers of processed foods and manufacturers started to change some of their products. Many foods, such as lunch meat, canned vegetables, and soups were made available in low-fat, low-sodium versions. Whole grain cereals and high fiber breads also began to appear on the grocery shelves. Moreover, the food industry started to produce all. natural products everything from potato chips to ice cream without additives and preservatives. Not surprisingly, the restaurant industry responded to this switch to healthier foods, luring customers with salad bars, broiled fish, and steamed vegetables.."
+        },
+        {
+          "id": "test-1-part-2-section-c-sentence-completion",
+          "title": "Part II Sentence Completion - Section C",
+          "instructions": "In the following passage, five sentences have been removed from the original text.",
+          "questions": [
+            { "id": "test-1-q61", "number": 61, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q62", "number": 62, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q63", "number": 63, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q64", "number": 64, "text": "", "type": "fill-blank" },
+            { "id": "test-1-q65", "number": 65, "text": "", "type": "fill-blank" }
+          ],
+          "content": "Freud was born on May 6, 1856, in the Moravian town of Freiberg, then a part of the Austro-Hungarian Empire, today a part of Czechoslovakia. The family settled in Vienna in 1860, where as a Jew he enjoyed potential and respect only recently gained with the opening of the Hapsburg Empire's liberal era. Encouraged to think grandly, he poured his energy and gifts into school. At age seventeen, he entered the University of Vienna, where he studied in the faculty of medicine. Engrossed in his studies, he did not graduate until 1881. {{61}}\n\nOver the winter of 1885-1886, Freud studied in Paris with a French: professor of neurology, Jean-Martin Charcot. {{62}} Freud went on to make nervous ailments his specialty, concentrating on hysteria. Freud's years of work put a new way of thinking into the head of society, and challenged the assumptions and suppositions of a changing world.\n\nA period of intense work and self-analysis, further inspired by the death of his father, led Freud to his publication of The Interpretation of Dreams in 1900, and of Psychopathology of Everyday Life in 1901. {{63}} By 1902 he finally gained the position of associate professor at the University of Vienna.\n\nIn 1908, he transformed a Wednesday-night club of Viennese physicians into the Vienna Psychoanalytic Society, and his new field began to gain wider acceptance. This period was marked by extensive case studies and theoretical work; as well, he published papers on religion, literature, sculpture, and other non-scientific fields.\n\nDespite some contentious internal politics, psychoanalysis continued to flourish, until World War I took the subjects to the front lines and the analysts to the medical corps. But Freud was not idle: in 1915, he delivered a series of introductory lectures at the University of Vienna, lectures which, when published in 1917, secured him a wide popular audience. A flurry of work, inspired by the death of his daughter Sophie, resulted in the 1920 Beyond the Pleasure Principle and the 1923 The Ego and the Id. The latter work contained a final formulation of his structural theory of the mind.\n\nEven while he became a household word, while his ideas were absorbed by an eager populace, Freud was undergoing painful surgery for cancer in late 1923. {{64}}\n\nHe remained in Vienna despite the rumblings of this catastrophe, as Hitler rose to power and Anti-Semitism swept Europe. {{65}} There, he continued to write, until on September 23, 1939, he finally demanded of his physician a lethal dose of morphine.",
+          "sharedOptions": [
+            { "label": "A", "text": "Though he did not die, the rest of his life was marked by pain and discomfort." },
+            { "label": "B", "text": "Brought up in a non-religious household, he graduated a stronger atheist than he had entered, convinced of the strictly scientific nature of the world." },
+            { "label": "C", "text": "Only the 1938 invasion of Vienna could inspire him to emigrate, and within three months he was on his way to Paris, then to London." },
+            { "label": "D", "text": "Under him, Freud practiced and observed hypnosis as a clinical technique, and began to formulate the beginnings of his theory on the mind." },
+            { "label": "E", "text": "The latter work found a wide audience for his still-coalescing theories of the mind." },
+            { "label": "F", "text": "By 1895, the year he published Studies on Hysteria with Josef Breuer, he had made significant progress in mapping out and defining his own theory of the mind." }
+          ]
+        },
+        {
+          "id": "test-1-part-3-section-a-summary",
+          "title": "Part III Writing - Section A",
+          "instructions": "Read the following article and write a summary of no more than 150 words on your Answer Sheet II.",
+          "questions": [
+            {
+              "id": "test-1-q66",
+              "number": 66,
+              "text": "Write a summary of the provided article.",
+              "type": "writing",
+              "correctAnswer": null
+            }
+          ],
+          "content": "There are not many exceptions to the marketing rule, that ideas that are good are not new, and those that new are not good. But last week I discovered one in a Seattle company called Amazon.com, which sells books over the Internet. Before revealing this good new marketing idea, it might be worth explaining something about its inventor, since Amazon.com is one of the few genuinely useful shopping services on the World Wide Web.\n\nThe company runs a Web site, accessible from any PC with a browser, that contains a catalogue of two thirds of the 1.5m English books in print. Finding a title using a search engine, customers can check its availability online, and then order it immediately with a credit card.\n\nShipping prices start at 43 plus 95 cents per book, with higher charges for international and overnight services. But the company discounts 300,000 titles, so most US customers will find that delivery is effectively free. These elements, together with a stock list six times larger than any physical bookseller in the world, make Amazon.com the quickest and most convenient way to buy books I have encountered.\n\nIt is also good for presents: sending a book to someone, buyers can choose from three different wrapping papers and type a message. Such a service is not easy to deliver. The key is that Amazon.com has live electronic links to a dozen wholesalers. Apart from 500 bestsellers, the company keeps zero inventories.\n\nWhen a customer orders a book, Amazon.com orders it from the wholesaler, and when the book arrives in its Seattle warehouse it is barcoded and sent by the company's computer to a bin where the customer's order is being assembled. When all the books in an order have arrived, usually the same day, a manifest is printed and the books are packed for shipping.\n\nThe company's founder Jeff Bezos, 31, is a former investment banker. He says his company is now in an explosive growth stage, doubling in size every 2.4 months. But it cannot continue like this for long. If it did, Amazon.com's sales would exceed US GDP in two years.\n\nUntil recently, its site was as alluring as a copy of \"books in print.\" \"It astounds me how many books we sell,\" says Bezos, “given that we didn't offer people enough information to make decisions.\" The first step to remedying this has been to add blurbs, delivered electronically by publishers, to 170,000 of the listings. The company also invites customers to write reviews, which are then linked by hypertext to the books. And it links book listings to \"interviews” with authors themselves written by filling out a form on a Web page. In future Amazon. com will make these truly interactive, so that readers can ask their favorite authors questions over the Web without having to attend a signing.\n\nAnother service is that the company is planning to put customers in touch with each other. Bezos admits that in a physical bookstore, he rarely has the nerve to look over a fellow's shoulder and recommend a book. “Online, I'd do it in a heartbeat.\" So the company will allow buyers to become \"visible\" if they choose, and to chat online with others browsing electronically in the same subject areas.\n\nAnd the new marketing idea is called associates. By filling in a form on the Amazon Web site, owners of other sites can sign up for a scheme that pays them commissions for referring their own users to the online bookstore. Users will see a page of recommended books on their favorite Web site. Clicking on a title will jump them straight to Amazon.com's order form for that book. If they buy it, the referring Web site gets 8% of the gross. I see it more as a new kind of network marketing, in which Amazon.com has the potential to sign up millions of owners of special-interest Web sites in a vast electronic sales force."
+        },
+        {
+          "id": "test-1-part-3-section-b-essay",
+          "title": "Part III Writing - Section B",
+          "instructions": "Write an essay of no less than 250 words on the topic given below. Use the proper space on your Answer Sheet II.",
+          "questions": [
+            {
+              "id": "test-1-q67",
+              "number": 67,
+              "text": "Topic: What is your idea of \"Attitude is everything\"?",
+              "type": "writing",
+              "correctAnswer": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "test-2",
+      "title": "Model Test 2",
+      "sections": [
+        {
+          "id": "test-2-sec-listening-A",
+          "title": "Part I Listening Comprehension - Section A",
+          "instructions": "In this part, you will hear 10 short conversations. At the end of each conversation, a question will be asked about what is said. Each conversation and the question will be spoken only once.",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%202.mp3",
+          "questions": [
+            { "id": "test-2-q-1", "number": 1, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": null, "options": [ { "label": "A", "text": "She wants a registration form." }, { "label": "B", "text": "She wants a copy of the schedule." }, { "label": "C", "text": "She wants the man to tell her the fees." }, { "label": "D", "text": "She wants a paper about aerobics." } ] },
+            { "id": "test-2-q-2", "number": 2, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": null, "options": [ { "label": "A", "text": "The world is very competitive and often unfair." }, { "label": "B", "text": "There are over 300 jobs for you to apply for." }, { "label": "C", "text": "People are very kind to dogs and give them a lot to eat." }, { "label": "D", "text": "Dogs run everywhere in the world." } ] },
+            { "id": "test-2-q-3", "number": 3, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": null, "options": [ { "label": "A", "text": "To do some creative work at home." }, { "label": "B", "text": "To spend the weekend at home." }, { "label": "C", "text": "To enjoy the conveniences of modern life at home." }, { "label": "D", "text": "To stay at home and do nothing." } ] },
+            { "id": "test-2-q-4", "number": 4, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": null, "options": [ { "label": "A", "text": "She will find a teacher for him." }, { "label": "B", "text": "She will teach the man how to ski." }, { "label": "C", "text": "She wants to learn how to ski." }, { "label": "D", "text": "She thinks skiing is difficult." } ] },
+            { "id": "test-2-q-5", "number": 5, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": null, "options": [ { "label": "A", "text": "Boss and secretary." }, { "label": "B", "text": "Teacher and student." }, { "label": "C", "text": "Customer and waitress." }, { "label": "D", "text": "Doctor and patient." } ] },
+            { "id": "test-2-q-6", "number": 6, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": null, "options": [ { "label": "A", "text": "He has some pet apes in his apartment." }, { "label": "B", "text": "He's worried the chicken he left out will spoil." }, { "label": "C", "text": "He's worried his roommates will worry about him." }, { "label": "D", "text": "He's worried he will miss out in his dinner." } ] },
+            { "id": "test-2-q-7", "number": 7, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": null, "options": [ { "label": "A", "text": "She has her own money." }, { "label": "B", "text": "She wouldn't be able to get a loan." }, { "label": "C", "text": "She prefers to be independent." }, { "label": "D", "text": "Her tuition fees are too high." } ] },
+            { "id": "test-2-q-8", "number": 8, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": null, "options": [ { "label": "A", "text": "Tooth pain can't be that bad." }, { "label": "B", "text": "The man tries to avoid the plague." }, { "label": "C", "text": "Eating a chicken will help reduce the tooth pain." }, { "label": "D", "text": "The man refuses to see the dentist." } ] },
+            { "id": "test-2-q-9", "number": 9, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": null, "options": [ { "label": "A", "text": "The man knows someone who's had plastic surgery." }, { "label": "B", "text": "The man thinks woman shouldn't keep attractive by plastic surgery." }, { "label": "C", "text": "The woman had a breast enlargement." }, { "label": "D", "text": "The woman agrees what the man said." } ] },
+            { "id": "test-2-q-10", "number": 10, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": null, "options": [ { "label": "A", "text": "The woman sympathized with the man and gave him an advice." }, { "label": "B", "text": "The air-conditioner of the car was checked carefully." }, { "label": "C", "text": "The man knew very well about cars." }, { "label": "D", "text": "The car was broken, so it was taken to the garage to be repaired." } ] }
+          ]
+        },
+        {
+          "id": "test-2-sec-listening-B",
+          "title": "Part I Listening Comprehension - Section B",
+          "instructions": "In this part, you will hear two mini-talks. While you listen, complete the sentences in your Answer Sheet II for Questions 11 to 20.",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%202.mp3",
+          "questions": [
+            { "id": "test-2-q-11", "number": 11, "text": "In the desert, many plants have _______", "type": "fill-blank" },
+            { "id": "test-2-q-12", "number": 12, "text": "In _______, people introduced rabbits into Australia.", "type": "fill-blank" },
+            { "id": "test-2-q-13", "number": 13, "text": "Land is likely to _______ when a drought lasts one or two years in dry areas.", "type": "fill-blank" },
+            { "id": "test-2-q-14", "number": 14, "text": "In some developing countries, people use wood for _______ and provide heating.", "type": "fill-blank" },
+            { "id": "test-2-q-15", "number": 15, "text": "To stop the sand, Algeria is planting _______ of trees.", "type": "fill-blank" },
+            { "id": "test-2-q-16", "number": 16, "text": "When Miller Browstein arrived for an interview recently, he found himself sitting in front of _______", "type": "fill-blank" },
+            { "id": "test-2-q-17", "number": 17, "text": "In this passage, VIP refers to _______ Portal.", "type": "fill-blank" },
+            { "id": "test-2-q-18", "number": 18, "text": "Undoubtedly, more and more companies are using _______ when they recruit new members.", "type": "fill-blank" },
+            { "id": "test-2-q-19", "number": 19, "text": "At Boston University's Law school, the VIP method works in part as _______", "type": "fill-blank" },
+            { "id": "test-2-q-20", "number": 20, "text": "The founder and chief technology officer said that this kind of interview greatly expands the pool of _______", "type": "fill-blank" }
+          ]
+        },
+        {
+          "id": "test-2-sec-listening-C",
+          "title": "Part I Listening Comprehension - Section C",
+          "instructions": "In this part, you will hear three mini-talks and each of them will be spoken only once.",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%202.mp3",
+          "questions": [
+            { "id": "test-2-q-21", "number": 21, "text": "How can government decrease traffic jams caused by the growing number of private cars?", "type": "fill-blank" },
+            { "id": "test-2-q-22", "number": 22, "text": "When will commuters probably take buses or trains instead of driving cars?", "type": "fill-blank" },
+            { "id": "test-2-q-23", "number": 23, "text": "What kind of public transport will attract its passengers?", "type": "fill-blank" },
+            { "id": "test-2-q-24", "number": 24, "text": "Why women are better than men in child-rearing?", "type": "fill-blank" },
+            { "id": "test-2-q-25", "number": 25, "text": "With whom do girls identify themselves?", "type": "fill-blank" },
+            { "id": "test-2-q-26", "number": 26, "text": "What is most important in raising children?", "type": "fill-blank" },
+            { "id": "test-2-q-27", "number": 27, "text": "What did Joanna and Henry notice about their older son?", "type": "fill-blank" },
+            { "id": "test-2-q-28", "number": 28, "text": "According to Mark, when will his daughter cuddle up with him on the sofa and talk?", "type": "fill-blank" },
+            { "id": "test-2-q-29", "number": 29, "text": "According to Michael Riera, who will the teenagers talk to first?", "type": "fill-blank" },
+            { "id": "test-2-q-30", "number": 30, "text": "Why is it necessary to give children a mental break?", "type": "fill-blank" }
+          ]
+        },
+        {
+          "id": "test-2-sec-use-of-english-A",
+          "title": "Part II Use of English and Reading Comprehension - Section A",
+          "instructions": "There are 15 blanks in the following passage. Read the passage carefully and fill in each of the blanks.",
+          "questions": [
+            { "id": "test-2-q-31", "number": 31, "text": "Complete the blank 31.", "type": "fill-blank" },
+            { "id": "test-2-q-32", "number": 32, "text": "Complete the blank 32.", "type": "fill-blank" },
+            { "id": "test-2-q-33", "number": 33, "text": "Complete the blank 33.", "type": "fill-blank" },
+            { "id": "test-2-q-34", "number": 34, "text": "Complete the blank 34.", "type": "fill-blank" },
+            { "id": "test-2-q-35", "number": 35, "text": "Complete the blank 35.", "type": "fill-blank" },
+            { "id": "test-2-q-36", "number": 36, "text": "Complete the blank 36.", "type": "fill-blank" },
+            { "id": "test-2-q-37", "number": 37, "text": "Complete the blank 37.", "type": "fill-blank" },
+            { "id": "test-2-q-38", "number": 38, "text": "Complete the blank 38.", "type": "fill-blank" },
+            { "id": "test-2-q-39", "number": 39, "text": "Complete the blank 39.", "type": "fill-blank" },
+            { "id": "test-2-q-40", "number": 40, "text": "Complete the blank 40.", "type": "fill-blank" },
+            { "id": "test-2-q-41", "number": 41, "text": "Complete the blank 41.", "type": "fill-blank" },
+            { "id": "test-2-q-42", "number": 42, "text": "Complete the blank 42.", "type": "fill-blank" },
+            { "id": "test-2-q-43", "number": 43, "text": "Complete the blank 43.", "type": "fill-blank" },
+            { "id": "test-2-q-44", "number": 44, "text": "Complete the blank 44.", "type": "fill-blank" },
+            { "id": "test-2-q-45", "number": 45, "text": "Complete the blank 45.", "type": "fill-blank" }
+          ],
+          "content": "It is becoming increasingly recognized that education is a process which continues throughout adult life. The {{31}} of adult and continuing education has widened in recent years and now included, in addition to the development of the individual through cultural, physical and craft {{32}} such subjects as basic education: education for disadvantaged groups and those with special needs such as {{33}} minorities or the disabled, consumer education, health education, and pre-retirement education. Continuing education includes training for those in employment, to enable them to keep {{34}} with technological change. The British government has taken a number of recent {{35}} to improve opportunities for both adult and continuing education. In 1982 it launched a Professional, Industrial and Commercial Updating Programmer, {{36}} to help colleges and universities to {{37}} the need to up-date and broaden the skills of those in mid-career in industry, commerce and the professions. A three-year programmer to {{38}} the expansion of educational opportunities for the adult unemployed was launched in 1984.\n\n{{39}} provision for mature students at universities, courses are provided by further education colleges, adult education centers, {{40}} colleges, the Open Universities and various other bodies including a number of voluntary organizations. Most of the provision is made by the local education authorities in a wide variety of {{41}} including schools used for adult evening classes and community schools which provide educational, social and cultural opportunities for the {{42}} community. Most courses are part-time. Local authorities also maintain or aid many courses lasting between a weekend and a {{43}} Long-term residential colleges, grant-aided by central government departments, provide courses of one or two years and aim to provide a {{44}} education without academic entry tests. Most students admitted are {{45}} to full maintenance grants.",
+          "sharedOptions": [
+            { "label": "word_1", "text": "better" }, { "label": "word_2", "text": "ethnic" }, { "label": "word_3", "text": "instruct" }, { "label": "word_4", "text": "initiatives" }, { "label": "word_5", "text": "concept" },
+            { "label": "word_6", "text": "designed" }, { "label": "word_7", "text": "entitled" }, { "label": "word_8", "text": "pursuits" }, { "label": "word_9", "text": "compiled" }, { "label": "word_10", "text": "national" },
+            { "label": "word_11", "text": "meet" }, { "label": "word_12", "text": "emphasize" }, { "label": "word_13", "text": "pace" }, { "label": "word_14", "text": "subside" }, { "label": "word_15", "text": "corporations" },
+            { "label": "word_16", "text": "stride" }, { "label": "word_17", "text": "available" }, { "label": "word_18", "text": "encourage" }, { "label": "word_19", "text": "scope" }, { "label": "word_20", "text": "liberal" },
+            { "label": "word_21", "text": "twilight" }, { "label": "word_22", "text": "unrestrained" }, { "label": "word_23", "text": "apart from" }, { "label": "word_24", "text": "procedures" }, { "label": "word_25", "text": "among" },
+            { "label": "word_26", "text": "residential" }, { "label": "word_27", "text": "fortnight" }, { "label": "word_28", "text": "dwelling" }, { "label": "word_29", "text": "establishments" }, { "label": "word_30", "text": "wider" }
+          ]
+        },
+        {
+          "id": "test-2-sec-reading-B-passage-1",
+          "title": "Part II Use of English and Reading Comprehension - Section B - Passage 1",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-2-q-46",
+              "number": 46,
+              "text": "Which of the following can best replace \"were being purged of\" in the first paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [ { "label": "A", "text": "Were aware of." }, { "label": "B", "text": "Were got rid of." }, { "label": "C", "text": "Were paid attention to." }, { "label": "D", "text": "Were ignorant of." } ]
+            },
+            {
+              "id": "test-2-q-47",
+              "number": 47,
+              "text": "Which of the following statements is true according to the second paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [ { "label": "A", "text": "Religious schools are not run by the government." }, { "label": "B", "text": "Religious schools are established because of its proportional representation system." }, { "label": "C", "text": "In Israel children were only taught religion in the first 15 years." }, { "label": "D", "text": "There are as many religious schools as non-religious schools in Israel." } ]
+            },
+            {
+              "id": "test-2-q-48",
+              "number": 48,
+              "text": "What can be inferred from the third paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [ { "label": "A", "text": "English is not important for students in Israel." }, { "label": "B", "text": "The local language hinders the development of education." }, { "label": "C", "text": "English medium schools can provide education because of the better teachers." }, { "label": "D", "text": "Science education is given much emphasis in private schools." } ]
+            },
+            {
+              "id": "test-2-q-49",
+              "number": 49,
+              "text": "What does “it” stand for in the last paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [ { "label": "A", "text": "Inequality." }, { "label": "B", "text": "Education." }, { "label": "C", "text": "English." }, { "label": "D", "text": "Pakistan." } ]
+            },
+            {
+              "id": "test-2-q-50",
+              "number": 50,
+              "text": "Compared with Israel, what is the advantage of India in education?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [ { "label": "A", "text": "Girl students are treated equally with boy students." }, { "label": "B", "text": "Students in India don't have to convert to English." }, { "label": "C", "text": "There is no distinction between religious schools and non-religious schools." }, { "label": "D", "text": "Indian schools are better resourced than Israeli schools." } ]
+            }
+          ],
+          "content": "PTV interviewed students who had obtained top positions in the matriculation examination in the country. One hafiz of Koran who had obtained top position said that in Israel children were only taught religion in the first 15 years, but in Pakistan the syllabi were being purged of Islam and Islamic seminaries were being closed down. A boy from Isakhel said that his area needed more colleges especially women's colleges. In the girls college in Isakhel there was only one teacher and the girls had to sit on the floor.\n\nThe information given by the hafiz boy on Israel is not correct. Israel is 97 per cent literate and girls' literacy is 93 per cent. The state-run institutions are not religious. There is a parallel system of religious schools run by the orthodox Jews but that is a minority. In state-run schools, there is no system of 15 years of purely religious education. The state of Israel has not yet been declared a religious state. It doesn't yet have a constitution. For all practical purposes it is a secular state with a strong presence of the religious parties in the Knesset because of Israel's proportional representation system.\n\nOne girl from Peshawar said that private schools had better quality because they taught from imported books. All the students agreed that in English medium schools science education was of better quality because science could not be translated into Urdu. In any case after matriculation students had to convert to English and thus English medium schools were essential. The boy from Isakhel confessed that Urdu did not help in science and that English is essential for which better teachers should be provided. The top students were more interested in saving the Islamic values.\n\nThe girl from Peshawar put her finger on a very important issue. What should we do about the English medium schools? Most politicians who want to change Pakistan and make it better want the English medium schools abolished in favor of equality. There is confusion here on two points. Do we want equality or uniformity? The ideologue wants uniformity of thought and most of us are for ideology as that would enable us better to combat the world. Do we want economic advancement from education or formation of personality? If both, then how do we maintain the balance? Urdu medium schools are at a disadvantage not only because they are less well resourced but also because their science students have to convert to English after matriculation. Across the border, India is less tortured over this issue."
+        },
+        {
+          "id": "test-2-sec-reading-B-passage-2",
+          "title": "Part II Use of English and Reading Comprehension - Section B - Passage 2",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-2-q-51",
+              "number": 51,
+              "text": "What does “there” refer to in the first paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [ { "label": "A", "text": "Lahore." }, { "label": "B", "text": "Hang Ten." }, { "label": "C", "text": "Levis." }, { "label": "D", "text": "Cuckoo." } ]
+            },
+            {
+              "id": "test-2-q-52",
+              "number": 52,
+              "text": "What is out of the author's expectation?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [ { "label": "A", "text": "The decoration and environment of the outlet." }, { "label": "B", "text": "The location of the outlet." }, { "label": "C", "text": "The marketing gimmick." }, { "label": "D", "text": "The date of the opening ceremony." } ]
+            },
+            {
+              "id": "test-2-q-53",
+              "number": 53,
+              "text": "Why Giordano has more male customers than female customers?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [ { "label": "A", "text": "It offers more clothes for male than female." }, { "label": "B", "text": "Men have more time doing shopping." }, { "label": "C", "text": "The author does not give a reason." }, { "label": "D", "text": "Men like its style more than women do." } ]
+            },
+            {
+              "id": "test-2-q-54",
+              "number": 54,
+              "text": "What is the potential competitor of Giordano, according to its owner?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [ { "label": "A", "text": "Levis." }, { "label": "B", "text": "Nike." }, { "label": "C", "text": "GAP." }, { "label": "D", "text": "Clarks." } ]
+            },
+            {
+              "id": "test-2-q-55",
+              "number": 55,
+              "text": "What can be concluded from the last paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [ { "label": "A", "text": "Giordano should not put its advertisements on billboard." }, { "label": "B", "text": "People in Lahori prefer to shop in big stores." }, { "label": "C", "text": "Advertisements are important than the opening ceremony." }, { "label": "D", "text": "Giordano in Lahori does not quite understand the local psyche." } ]
+            }
+          ],
+          "content": "Lahorites can never run out of ideas. Be it brands like Hang Ten and Levis, eateries like Cuckoo's cafe and Gunsmoke, there's always something new happening. Giordano is good news for all those who wish to keep themselves updated with the latest trends. The brand is doing well in the cosmopolitan city. But then, what doesn't do well there? A famous name, a bit of style...that is all you need to make a place run successfully. Lahore is a different kind of market. Brands here need to offer something more than just their names. Established in 1981, Giordano places emphasis on good fabric and clean cuts, and thus has a relatively good chance of capturing the Lahori market.\n\nThe quiet opening ceremony was held on July 30th and that is probably the reason why most people don't even know Giordano has opened. Is that a marketing gimmick or just a blunder on their behalf? The outlet, located in a basement, is usually hard to find. It literally took me four rounds of the market before I could spot that GIORDANO board. When you think of a basement, you think of a dark gloomy place with spider webs all over. But walking down the stairs to this outlet makes you feel fresh and bright. The shop's interior is done in white, with big posters all over.\n\nThe idea is the outcome of a partnership between Mr. Janjua and Mr. Majid who own the sole distribution of Giordano in Lahore. According to them, the shop has been very successful so far, with the male customers proving to be much more responsive than the female ones. Could this be because our men have all the time in the world and are forever \"on the round\"?\n\nWhen asked about Giordano's competitors in the market, Janjua said that the brand did not have any as such. He feels that Levis and Nike cater to a completely different segment and unless brands like GAP come into the market, Giordano faces no threat. Now that might be called living in a fools' paradise. People here normally have a perception that all international brands are good and alike. Giordano will have to offer something more than just the name and that might take time and effort.\n\nThe start could have been more exciting. People hardly know about the outlet, where it is, what they offer, etc. One billboard is not enough for a market that is surrounded by advertisements. We hope Giordano understands the Lahori psyche, which feels big is better!"
+        },
+        {
+          "id": "test-2-sec-reading-B-passage-3",
+          "title": "Part II Use of English and Reading Comprehension - Section B - Passage 3",
+          "instructions": "Read the following passages carefully and then select the best answer.",
+          "questions": [
+            {
+              "id": "test-2-q-56",
+              "number": 56,
+              "text": "According to the author, what is neglected by the readers?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [ { "label": "A", "text": "The source text." }, { "label": "B", "text": "The process of translation." }, { "label": "C", "text": "The final result of translation." }, { "label": "D", "text": "The translators' unique understanding of the source text." } ]
+            },
+            {
+              "id": "test-2-q-57",
+              "number": 57,
+              "text": "According to Bell, what is the reason for people's ignoring the process of translation?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [ { "label": "A", "text": "People's understanding of the nature of translating is not adequate." }, { "label": "B", "text": "People think translation is the communication between language users." }, { "label": "C", "text": "There is no obvious development in translation studies over the years." }, { "label": "D", "text": "There is a tendency for people to put more emphasis on the result rather than on the process." } ]
+            },
+            {
+              "id": "test-2-q-58",
+              "number": 58,
+              "text": "Which word can best replace the word \"embodiment\" in Para. 2?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [ { "label": "A", "text": "Expression." }, { "label": "B", "text": "Significance." }, { "label": "C", "text": "Symbolism." }, { "label": "D", "text": "Intention." } ]
+            },
+            {
+              "id": "test-2-q-59",
+              "number": 59,
+              "text": "What is important in translating metaphor?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [ { "label": "A", "text": "To fully understand the original meaning." }, { "label": "B", "text": "To capture the special understanding of reality." }, { "label": "C", "text": "To avoid adding the translator's own point of view." }, { "label": "D", "text": "To achieve the best effect in the target language." } ]
+            },
+            {
+              "id": "test-2-q-60",
+              "number": 60,
+              "text": "Which word will the author use to describe the process of translation?",
+              "type": "multiple-choice",
+              "correctAnswer": null,
+              "options": [ { "label": "A", "text": "Passive." }, { "label": "B", "text": "Motivated." }, { "label": "C", "text": "Sclf-contained." }, { "label": "D", "text": "Self-generating." } ]
+            }
+          ],
+          "content": "It is in the nature of things that the target text displays only the translator's final decisions. Readers perceive an end-product, a result of a decision making process; they do not have access to pathways leading to decisions, to the dilemmas to be resolved by the translator. What is available for scrutiny is the end-product, the result of translation practice rather than the practice itself. In other words, we are looking at translation as product instead of translating as process. Bell suggests that the tendency to ignore the process involved in the act of translating lies behind the relative stagnation of translation studies in recent years. If we treat text merely as a self-contained and self-generating entity, instead of as a decision-making procedure and an instance of communication between language users, our understanding of the nature of translating will be impaired.\n\nThe view that underlies this book, then, is of translation as a process, involving the negotiation of meaning between producers and receivers of texts. In other words, the resulting translated texts are to be seen as evidence of a transaction, a means of retracing the pathways of the translators, decision-making procedures. In the same way, the source text is an end product and again should be treated as evidence of a writer's intended meaning rather than as the embodiment of the meaning itself. In translating metaphor, for example, there is little point in seeking to match target-language words with those in the source-language in isolation from a consideration of the writer's whole worldview. Occurrence of metaphor has a cumulative effect which suggests a particular perception of reality and it is this which the translator seeks to capture.\n\nIn this sense, texts can be seen as the result of motivated choice: producers of texts have their own communicative aims and select lexical items and grammatical arrangement to serve those aims. Naturally, in translating, there are potentially two sets of motivations: those of the producer of the source text and those of the translator."
+        },
+        {
+          "id": "test-2-sec-reading-C",
+          "title": "Part II Use of English and Reading Comprehension - Section C",
+          "instructions": "In the following passage, five sentences have been removed from the original text.",
+          "questions": [
+            { "id": "test-2-q-61", "number": 61, "text": "Choose the best sentence to fill in blank 61.", "type": "multiple-choice", "options": [ { "label": "A", "text": "But the most significant difference..." }, { "label": "B", "text": "The diet of these apes..." }, { "label": "C", "text": "This is because flesh decays..." }, { "label": "D", "text": "A cat, for example..." }, { "label": "E", "text": "These foods must be chewed..." }, { "label": "F", "text": "Human digestive systems..." } ] },
+            { "id": "test-2-q-62", "number": 62, "text": "Choose the best sentence to fill in blank 62.", "type": "multiple-choice", "options": [ { "label": "A", "text": "But the most significant difference..." }, { "label": "B", "text": "The diet of these apes..." }, { "label": "C", "text": "This is because flesh decays..." }, { "label": "D", "text": "A cat, for example..." }, { "label": "E", "text": "These foods must be chewed..." }, { "label": "F", "text": "Human digestive systems..." } ] },
+            { "id": "test-2-q-63", "number": 63, "text": "Choose the best sentence to fill in blank 63.", "type": "multiple-choice", "options": [ { "label": "A", "text": "But the most significant difference..." }, { "label": "B", "text": "The diet of these apes..." }, { "label": "C", "text": "This is because flesh decays..." }, { "label": "D", "text": "A cat, for example..." }, { "label": "E", "text": "These foods must be chewed..." }, { "label": "F", "text": "Human digestive systems..." } ] },
+            { "id": "test-2-q-64", "number": 64, "text": "Choose the best sentence to fill in blank 64.", "type": "multiple-choice", "options": [ { "label": "A", "text": "But the most significant difference..." }, { "label": "B", "text": "The diet of these apes..." }, { "label": "C", "text": "This is because flesh decays..." }, { "label": "D", "text": "A cat, for example..." }, { "label": "E", "text": "These foods must be chewed..." }, { "label": "F", "text": "Human digestive systems..." } ] },
+            { "id": "test-2-q-65", "number": 65, "text": "Choose the best sentence to fill in blank 65.", "type": "multiple-choice", "options": [ { "label": "A", "text": "But the most significant difference..." }, { "label": "B", "text": "The diet of these apes..." }, { "label": "C", "text": "This is because flesh decays..." }, { "label": "D", "text": "A cat, for example..." }, { "label": "E", "text": "These foods must be chewed..." }, { "label": "F", "text": "Human digestive systems..." } ] }
+          ],
+          "content": "Carnivorous animals have many unique characteristics which set them apart from all other members of the animal kingdom. They all possess a very simple and short digestive system — only three times the length of their bodies. {{61}} Meat-eating animals that hunt in the cool of the night and sleep during the day when it is hot do not need sweat glands to cool their bodies; they therefore do not perspire through their skin, but rather they sweat through their tongues. On the other hand, vegetarian animals spend much of their time in the sun gathering their food, and they freely perspire through their skin to cool their bodies. {{62}} Along with sharp claws, all meat-eaters, since they have to kill mainly with their teeth, possess powerful jaws and pointed, elongated, \"canine\" teeth to pierce tough hide and to spear and tear flesh. They do NOT have molars (flat, back teeth) which vegetarian animals need for grinding their food. Unlike grains, flesh does not need to be chewed in the mouth to predigest it; it is digested mostly in the stomach and the intestines. {{63}} Grass-and-leaf-eating animals live on grass, herbs, and other plants, much of which is coarse and bulky. {{64}} For this reason, grass-and-leaf eaters have 24 special \"molar\" teeth and a slight side-to-side motion to grind their food, as opposed to the exclusively up-and-down motion of carnivores. They have no claws or sharp teeth; they drink by sucking water up into their mouths. Since they do not eat rapidly decaying foods like the meat eaters, and since their food can take a longer time to pass through, they have much longer digestive systems — intestines which are ten times the length of the body. Interestingly, recent studies have shown that a meat diet has an extremely harmful effect on these grass-and-leaf eaters. If a half pound of animal fat is added daily over a long period of time to a rabbit's diet, after two months his blood vessels become caked with fat and the serious disease called atherosclerosis (动脉粥样硬化) develops. {{65}}",
+          "sharedOptions": [
+            { "label": "A", "text": "But the most significant difference..." }, { "label": "B", "text": "The diet of these apes..." }, { "label": "C", "text": "This is because flesh decays..." }, { "label": "D", "text": "A cat, for example..." }, { "label": "E", "text": "These foods must be chewed..." }, { "label": "F", "text": "Human digestive systems..." }
+          ]
+        },
+        {
+          "id": "test-2-sec-writing-A",
+          "title": "Part III Writing - Section A",
+          "instructions": "Read the following article and write a summary of no more than 150 words on your Answer Sheet II.",
+          "questions": [
+            {
+              "id": "test-2-q-66",
+              "number": 66,
+              "text": "Write a summary of the provided article.",
+              "type": "writing",
+              "correctAnswer": null
+            }
+          ],
+          "content": "Sympathetic interpreters of the beat generation or the beatniks have described them as \"taking a revenge on society”. The hero of a recent novel “undertakes an alcoholic strike against humanity\". But the phrase \"an alcoholic strike\", like \"a revenge on society\", seems to me merely comic. It suggests the popular saying about \"biting off your nose to spite your face\", that being precisely what some intellectuals (including many somewhat above the beatnik level) are doing — as though turning into a dope addict does not hurt oneself even more than it hurts anyone else. It seems only slightly less obvious that the more responsible intellectuals who devote themselves exclusively to exploring and exploiting their \"alienation\" are doing much the same thing. Surely it is more productive of personal happiness and even \"more useful to society\" to be a candle throwing its beam into a naughty world than a beatnik crying \"revenge, revenge\" from the gutter. We hear a great deal about the responsibility of society toward the individual. The individual also has a responsibility toward society. And if things are as bad as the alienated say, the only way one can discharge that responsibility is by being an honorable man.\n\nI am not preaching universal indifference to society and social action as the highest wisdom. I am saying simply that if and when one individual feels (as so many articulate people do seem to feel) that the world is hopeless, then it is wiser to see what one can do about oneself than to give up all hope of that. I will go so far as to suggest the possibility that society may be in a bad way partly because we have laid so much stress on public education and so little upon self-education.\n\nPerhaps the most curious and shocking result of the exclusive stress upon social rather than upon private ethics is the disappearance of the concept of honor as distinct from that of morality. One of the difference between the two is simply that honor is relevant to the individual only. True, society may be more affected than some social scientists seem to think by the prevalence or scarcity of honor in the code of the individuals who make it up. But the man of honor always asks first whether or not an action would dishonor him personally, and he is not influenced by an argument that his dishonorable act would have no bad (perhaps even some good) effect upon society and is therefore \"moral\" even if dishonorable.\n\nThe world would not now be profcundly shocked as it was a generation ago by the phrase \"a scrape of paper\". We are used to having promises so treated, as if there was nothing immoral in a broken oath. Many college students see nothing wrong about cheating on examinations. \"Everybody does it and it does not really hurt anyone.\"\n\nWhen some scandal breaks in government or journalism or business or broadcasting, the usual reaction of even that part of the public which is shocked by it is to say that it could not have happened if there had been adequate laws supervising this or that activity. But usually, is it not equally true that it could not have happened if a whole group of men, often including the supposed guardians of public morality, had not been devoid of any sense of the meaning and importance of individual integrity? May one not go further and ask whether any amount of \"social consciousness\" and government control can make decent a society composed of people who have no conception of personal dignity and honor? It was a favorite and no doubt sound argument among early twentieth-century reformers that \"playing the game\" as the gentleman was supposed to play it was not enough. But has the time not come to add that it is, nevertheless, indispensable?"
+        },
+        {
+          "id": "test-2-sec-writing-B",
+          "title": "Part III Writing - Section B",
+          "instructions": "Write an essay of no less than 250 words on the topic given below. Use the proper space on your Answer Sheet II.",
+          "questions": [
+            {
+              "id": "test-2-q-67",
+              "number": 67,
+              "text": "Many young people nowadays like to live in big cities like Beijing and Shanghai. Do you think it's good to stay in large modern cities?",
+              "type": "writing",
+              "correctAnswer": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

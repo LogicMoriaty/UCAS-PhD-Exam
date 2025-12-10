@@ -1,0 +1,442 @@
+
+{
+  "exams": [
+    {
+      "id": "test-10",
+      "title": "Model Test 10",
+      "sections": [
+        {
+          "id": "test-10-listening-a",
+          "title": "Part I Listening Comprehension - Section A",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%2010.mp3",
+          "instructions": "In this part, you will hear 10 short conversations. At the end of each conversation, a question will be asked about what is said. Each conversation and the question will be spoken only once. When you hear the question, read the four choices of the answer given and choose the best one by marking the corresponding letter A, B, C, or D on your Answer Sheet I.",
+          "questions": [
+            { "id": "test-10-q1", "number": 1, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "He will be writing a report." }, { "label": "B", "text": "He will be driving to the airport." }, { "label": "C", "text": "He will be having a rest." }, { "label": "D", "text": "He will be attending a staff meeting." } ] },
+            { "id": "test-10-q2", "number": 2, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "D", "options": [ { "label": "A", "text": "Patrick has bought a quite apartment." }, { "label": "B", "text": "Patrick has bought an expensive house." }, { "label": "C", "text": "Patrick has left the place because he lacks money." }, { "label": "D", "text": "Patrick used to live in a noisy place." } ] },
+            { "id": "test-10-q3", "number": 3, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "Because he can't get into the classroom." }, { "label": "B", "text": "Because he may fail the course." }, { "label": "C", "text": "Because he may not be able to register a class." }, { "label": "D", "text": "Because he can't find an empty seat in the classroom." } ] },
+            { "id": "test-10-q4", "number": 4, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "He is going to give some tips to the waitress." }, { "label": "B", "text": "He is going to pay the fares for the bus." }, { "label": "C", "text": "He wants to borrow some money from the woman." }, { "label": "D", "text": "He wants to change a bus route." } ] },
+            { "id": "test-10-q5", "number": 5, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "He suggests that the woman dress well." }, { "label": "B", "text": "He suggests that the woman show her good personality." }, { "label": "C", "text": "He advises her to emphasize her experience." }, { "label": "D", "text": "He advises her to be punctual that day." } ] },
+            { "id": "test-10-q6", "number": 6, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "There are too many people everywhere." }, { "label": "B", "text": "She doesn't want to leave her job." }, { "label": "C", "text": "She is too busy to go for a vacation." }, { "label": "D", "text": "There are no good places to go." } ] },
+            { "id": "test-10-q7", "number": 7, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "He is actually very rich." }, { "label": "B", "text": "He doesn't want to lend the woman any money." }, { "label": "C", "text": "He has used up his money already." }, { "label": "D", "text": "He has broken his jacket and lost some money." } ] },
+            { "id": "test-10-q8", "number": 8, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "C", "options": [ { "label": "A", "text": "He couldn't find his car." }, { "label": "B", "text": "His girlfriend drove his car away." }, { "label": "C", "text": "He couldn't get into his car until his girlfriend helped him." }, { "label": "D", "text": "He was caught in the way by the traffic jam." } ] },
+            { "id": "test-10-q9", "number": 9, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "A", "options": [ { "label": "A", "text": "She kept contact with very few of her old friends." }, { "label": "B", "text": "Her old friends are still writing letters to her frequently." }, { "label": "C", "text": "She doesn't have any friends." }, { "label": "D", "text": "She misses her friends very much." } ] },
+            { "id": "test-10-q10", "number": 10, "text": "Listen to the conversation", "type": "multiple-choice", "correctAnswer": "B", "options": [ { "label": "A", "text": "He's got a stomachache." }, { "label": "B", "text": "He's run a fever." }, { "label": "C", "text": "His computer has attacked by some viruses." }, { "label": "D", "text": "He's got his head hurt." } ] }
+          ]
+        },
+        {
+          "id": "test-10-listening-b",
+          "title": "Part I Listening Comprehension - Section B",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%2010.mp3",
+          "instructions": "In this part, you will hear two mini-talks. While you listen, complete the sentences in your Answer Sheet II for Questions 11 to 20 by writing NO MORE THAN THREE WORDS in each sentence. You will hear each talk or conversation TWICE.Questions I1 to 15 are based on a talk about home security. You now have 30 seconds to read Questions 11 to 15. Questions 16 to 20 are based on a talk about eclipses. You now have 30 seconds to read Questions 16 to 20.",
+          "questions": [
+            { "id": "test-10-q11", "number": 11, "text": "Unlocked doors or windows leave easy _______ the home for burglars.", "type": "fill-blank", "correctAnswer": "access to" },
+            { "id": "test-10-q12", "number": 12, "text": "If your exterior doors have glass in them, the burglar can _______ and open the door.", "type": "fill-blank", "correctAnswer": "smash the glass" },
+            { "id": "test-10-q13", "number": 13, "text": "An unsecured _______ gives a burglar an opportunity to enter your property or find tools to assist him.", "type": "fill-blank", "correctAnswer": "garage door" },
+            { "id": "test-10-q14", "number": 14, "text": "One advice to avoid burglary is to keep the main entryways and exterior sections of your home lit _______", "type": "fill-blank", "correctAnswer": "constantly" },
+            { "id": "test-10-q15", "number": 15, "text": "Overgrown bushes and trees which are close to your home provide leverage to _______", "type": "fill-blank", "correctAnswer": "higher windows" },
+            { "id": "test-10-q16", "number": 16, "text": "Looking up, you catch a _______ of what looks like a disk of pure blackness sliding across the face of the sun.", "type": "fill-blank", "correctAnswer": "glimpse" },
+            { "id": "test-10-q17", "number": 17, "text": "The Greek origin of the word eclipse is _______", "type": "fill-blank", "correctAnswer": "abandonment" },
+            { "id": "test-10-q18", "number": 18, "text": "A common embodiment of the eclipse was a _______ or demon.", "type": "fill-blank", "correctAnswer": "sun-eating dragon" },
+            { "id": "test-10-q19", "number": 19, "text": "While the ancient Chinese made great noise and commotion to _______ the dragon, the Incas tried to intimidate the sun-eating creatures.", "type": "fill-blank", "correctAnswer": "frighten away" },
+            { "id": "test-10-q20", "number": 20, "text": "According to David Dearborn, for most early cultures, the sun was seen as a _______", "type": "fill-blank", "correctAnswer": "life-giver" }
+          ]
+        },
+        {
+          "id": "test-10-listening-c",
+          "title": "Part I Listening Comprehension - Section C",
+          "audioSrc": "https://nervous-black-gqnpksvpsh-souzjt9v10.edgeone.dev/Model%20Test%2010.mp3",
+          "instructions": "In this part, you will hear three mini-talks and each of them will be spoken only once. While listening to them, read the questions that follow each talk. At the end of each mini-talk you will hear the questions read to you. There will be a 40-second-pause after each question. During the pause, you will be asked to write down your answer on your Answer Sheet II, using one sentence only, either complete or incomplete. Your answer should be concise and to the point.Questions 21 to 23 are based on Mini-talk One: Mini-talk One Questions 24 to 26 are based on Mini-talk Two: Mini-talk Two Questions 27 to 30 are based on Mini-talk Three: Mini-talk Three",
+          "questions": [
+            { "id": "test-10-q21", "number": 21, "text": "What was considered impolite behavior for a man a few years ago?", "type": "fill-blank", "correctAnswer": "To smoke on the street (or: when a lady was in the room)." },
+            { "id": "test-10-q22", "number": 22, "text": "What should one do if a person cannot show up on time for a dinner invitation in the US?", "type": "fill-blank", "correctAnswer": "He/She should call up to explain his/her delay." },
+            { "id": "test-10-q23", "number": 23, "text": "What is the important thing to remember about social customs?", "type": "fill-blank", "correctAnswer": "To avoid making other people feel uncomfortable." },
+            { "id": "test-10-q24", "number": 24, "text": "What did ancient people believe lightning and thunder to be?", "type": "fill-blank", "correctAnswer": "The weapon of the gods." },
+            { "id": "test-10-q25", "number": 25, "text": "What is the function of lightning rods?", "type": "fill-blank", "correctAnswer": "To protect buildings from damage by lightning." },
+            { "id": "test-10-q26", "number": 26, "text": "What is the safest place during a storm of lightning according to this talk?", "type": "fill-blank", "correctAnswer": "In a closed car." },
+            { "id": "test-10-q27", "number": 27, "text": "What were put in the wallets before they were turned in to the police officers?", "type": "fill-blank", "correctAnswer": "Cash, identification with names, addresses and phone numbers." },
+            { "id": "test-10-q28", "number": 28, "text": "How many wallets were recovered in 1970s in Miami?", "type": "fill-blank", "correctAnswer": "21." },
+            { "id": "test-10-q29", "number": 29, "text": "What happened to some officers in Miami after that report?", "type": "fill-blank", "correctAnswer": "They were fired or took early retirement." },
+            { "id": "test-10-q30", "number": 30, "text": "What was the result of the wallet test in LA?", "type": "fill-blank", "correctAnswer": "All the 20 wallets were returned and not a penny was missing." }
+          ]
+        },
+        {
+          "id": "test-10-use-of-english-a",
+          "title": "Part II Use of English - Section A",
+          "instructions": "There are 15 blanks in the following passage. Read the passage carefully and fill in each of the blanks by choosing the right word or phrase from the list given below. Write your answer on the Answer Sheet II. Capitalize the word when it is necessary. The words and phrases listed are twice as many as the blanks. Once a word or phrase is chosen, it must be used only once.",
+          "questions": [
+            { "id": "test-10-q31", "number": 31, "text": "Fill in blank 31.", "type": "fill-blank", "correctAnswer": "Specifically" },
+            { "id": "test-10-q32", "number": 32, "text": "Fill in blank 32.", "type": "fill-blank", "correctAnswer": "what" },
+            { "id": "test-10-q33", "number": 33, "text": "Fill in blank 33.", "type": "fill-blank", "correctAnswer": "sense" },
+            { "id": "test-10-q34", "number": 34, "text": "Fill in blank 34.", "type": "fill-blank", "correctAnswer": "interaction" },
+            { "id": "test-10-q35", "number": 35, "text": "Fill in blank 35.", "type": "fill-blank", "correctAnswer": "where" },
+            { "id": "test-10-q36", "number": 36, "text": "Fill in blank 36.", "type": "fill-blank", "correctAnswer": "recognized" },
+            { "id": "test-10-q37", "number": 37, "text": "Fill in blank 37.", "type": "fill-blank", "correctAnswer": "barrier" },
+            { "id": "test-10-q38", "number": 38, "text": "Fill in blank 38.", "type": "fill-blank", "correctAnswer": "because" },
+            { "id": "test-10-q39", "number": 39, "text": "Fill in blank 39.", "type": "fill-blank", "correctAnswer": "maximize" },
+            { "id": "test-10-q40", "number": 40, "text": "Fill in blank 40.", "type": "fill-blank", "correctAnswer": "available" },
+            { "id": "test-10-q41", "number": 41, "text": "Fill in blank 41.", "type": "fill-blank", "correctAnswer": "indispensable" },
+            { "id": "test-10-q42", "number": 42, "text": "Fill in blank 42.", "type": "fill-blank", "correctAnswer": "dealt with" },
+            { "id": "test-10-q43", "number": 43, "text": "Fill in blank 43.", "type": "fill-blank", "correctAnswer": "proposals" },
+            { "id": "test-10-q44", "number": 44, "text": "Fill in blank 44.", "type": "fill-blank", "correctAnswer": "objective" },
+            { "id": "test-10-q45", "number": 45, "text": "Fill in blank 45.", "type": "fill-blank", "correctAnswer": "knowledgeable" }
+          ],
+          "content": "My major social concerns all revolve around the future. In other words, I'm concerned about what prevents people from rising above their disadvantages. {{31}} I am most concerned with the handicapped, education, and crime.\n\nI feel society's response to handicaps is {{32}} really hampers the potential of the disabled. It is important for the disabled to get a better {{33}} of worth and to be able to adapt to, and survive in, today's world. Through National Honor Society (NHS), I have done just that. I have helped out at a lock-in that was designed to foster {{34}} among the children of the organization, as well as at Special Olympics, {{35}} the children participate in sports on a competitive basis so their talents and abilities can be {{36}} Whenever the disabled can be successful at an activity, the {{37}} between them and the rest of society is drastically reduced.\n\nEducation is the key to other problems such as gangs, drugs, and crime {{38}} it can prevent and eliminate them. I try to get students in our school to {{39}} their opportunities by using the educational resources {{40}} By setting up a tutoring program through NHS, I have matched up needy students with other students who can assist them with their problems in classes. More directly, I help students out with English and show them how to use the Writing Center Lab, a(n) {{41}} for English students at any level. The more educated a person is, I believe, the more able he is to be successful in the future.\n\nI have {{42}} criminal problems in my school by discussing solutions to gangs and other crime in the Student Advisory Committee. We have drafted several {{43}} to help reduce those problems in our school.\n\nEducating people about such social concerns is also very crucial because they won't fix what they don't think is broken. That is one {{44}} of our newspaper, in which we have written various editorials and news stories to educate the student body on social topics. Through debate, I myself have become {{45}} on such topics as the homeless, poverty, health care, and the environment. That way I can practice vihat 1 preach.",
+          "sharedOptions": [
+            { "label": "1", "text": "knowledgeable" }, { "label": "2", "text": "sensitivity" }, { "label": "3", "text": "activity" }, { "label": "4", "text": "what" }, { "label": "5", "text": "available" },
+            { "label": "6", "text": "which" }, { "label": "7", "text": "depreciated" }, { "label": "8", "text": "got into" }, { "label": "9", "text": "additionally" }, { "label": "10", "text": "difficulty" },
+            { "label": "11", "text": "perspectives" }, { "label": "12", "text": "although" }, { "label": "13", "text": "minimize" }, { "label": "14", "text": "dealt with" }, { "label": "15", "text": "where" },
+            { "label": "16", "text": "necessary" }, { "label": "17", "text": "maximize" }, { "label": "18", "text": "objective" }, { "label": "19", "text": "perplexed" }, { "label": "20", "text": "because" },
+            { "label": "21", "text": "recognized" }, { "label": "22", "text": "indispensable" }, { "label": "23", "text": "issues" }, { "label": "24", "text": "sense" }, { "label": "25", "text": "proposals" },
+            { "label": "26", "text": "barrier" }, { "label": "27", "text": "subjective" }, { "label": "28", "text": "irreversible" }, { "label": "29", "text": "interaction" }, { "label": "30", "text": "specifically" }
+          ]
+        },
+        {
+          "id": "test-10-reading-b-passage-1",
+          "title": "Part II Reading Comprehension - Section B - Passage 1",
+          "instructions": "Read the following passages carefully and then select the best answer from among the four choices given to answer each of the questions or complete each of the statements that follow each passage. Mark the letter of your choice on your Answer Sheet I.",
+          "questions": [
+            {
+              "id": "test-10-q46",
+              "number": 46,
+              "text": "The author holds that politics of democracy of the 19th century",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "allowed people to have greater say than nowadays." }, { "label": "B", "text": "was more advanced than that of Iraq." }, { "label": "C", "text": "put females at a disadvantage." }, { "label": "D", "text": "reached its peak of development." } ]
+            },
+            {
+              "id": "test-10-q47",
+              "number": 47,
+              "text": "It can be safely said that men outdo women",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "superficially." }, { "label": "B", "text": "instinctively." }, { "label": "C", "text": "physically." }, { "label": "D", "text": "emotionally." } ]
+            },
+            {
+              "id": "test-10-q48",
+              "number": 48,
+              "text": "What is discussed as on disadvantage for women to become leaders?",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [ { "label": "A", "text": "They tend to complain a lot." }, { "label": "B", "text": "They often shed tears and shout." }, { "label": "C", "text": "They have a weak will." }, { "label": "D", "text": "They lack military experience." } ]
+            },
+            {
+              "id": "test-10-q49",
+              "number": 49,
+              "text": "What is implied about the Bush Administration?",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "They incorrectly call the terrorists “uncivilized”." }, { "label": "B", "text": "Its policy is just as primitive." }, { "label": "C", "text": "It found a proper excuse to invade Iraq." }, { "label": "D", "text": "It should assimilate other civilizations." } ]
+            },
+            {
+              "id": "test-10-q50",
+              "number": 50,
+              "text": "What is the main idea of the last paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "Comparison and contrast of brutal and inhumane." }, { "label": "B", "text": "Definition of primitive politics." }, { "label": "C", "text": "Illustration of brutality and atrocity." }, { "label": "D", "text": "Historical development of inhumane human behavior." } ]
+            }
+          ],
+          "content": "Although there are clear exceptions, in general it is males who get to choose. This translates into the American politics of the 19th century — males get to vote; females do not. This clearly was a more primitive time in the politics of democracy. Without debating how far we have advanced in the U.S., this issue is still being fought in the cities and towns of Afghanistan, Iraq, Iran, and other countries in the Islamic world and elsewhere.\n\nIn a modern age, it is difficult to maintain that men have anything other than size and strength as an advantage over women. Yet, we continue to argue — openly or implicitly — that men should be leaders and women should not. Look at the upcoming 2004 presidential election. Both parties have played up the roles of military experience and leadership as critical factors in potential political chiefdom. It is the same as saying that political leaders have to be warriors. This certainly would rule out the leadership skills of women, few of whom serve in combat roles let alone have opportunities to lead a screaming charge. Biology determines the nature of political rule.\n\nPrimitive is the not the same as \"uncivilized,\" at least not in the way the latter word has been used by the Bush Administration in labeling terrorists. War is war and there is nothing more primitive in the deeds of the terrorists than in those of the U.S. armed forces. Uncivilized in this usage really just means \"not from our civilization.\" It does not signify primitive, although it certainly is implied.\n\nThe word also is sometimes incorrectly used to mean brutal or inhumane. Here we have to be cognizant of writer Mark Twain's observation that those acts we label as “inhumane\" are really only those behaviors conducted by humans, so it is a misnomer at best. Among humans, brutality is something that we want to think of as reflecting human behavior of an earlier time. Torture, rape, genocide, and use of insidious weapons are methods that we want to associate with ruthless Mongolian warlord Genghis Khan. Then we have Rwanda, Serbia, Sierra Leone, Myanmar, Sudan, Cambodia under Pol Pot, the Congo, and numerous others (some specifically unnamed) where each of these behaviors has been ruthlessly employed. Were we being primitives just last year or last month?"
+        },
+        {
+          "id": "test-10-reading-b-passage-2",
+          "title": "Part II Reading Comprehension - Section B - Passage 2",
+          "instructions": "Read the following passages carefully and then select the best answer from among the four choices given to answer each of the questions or complete each of the statements that follow each passage. Mark the letter of your choice on your Answer Sheet I.",
+          "questions": [
+            {
+              "id": "test-10-q51",
+              "number": 51,
+              "text": "What is the common image of nature?",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "It is full of danger." }, { "label": "B", "text": "It brims with troubling bugs and infections." }, { "label": "C", "text": "It seems to provide beauty and romance." }, { "label": "D", "text": "It evokes boredom in people." } ]
+            },
+            {
+              "id": "test-10-q52",
+              "number": 52,
+              "text": "It is implied in the first two paragraph that people",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "are very liable to get into trouble in nature." }, { "label": "B", "text": "have wrong ideas about nature." }, { "label": "C", "text": "are likely to feel real nature if careful enough." }, { "label": "D", "text": "need protection when go to nature." } ]
+            },
+            {
+              "id": "test-10-q53",
+              "number": 53,
+              "text": "What does the sentence \"it is uninformed talk” in the second paragraph probably mean?",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "People only imagine what nature is but they do not know what it is exactly." }, { "label": "B", "text": "As more and more people are moving to cities, they enjoy going to nature." }, { "label": "C", "text": "Nature is the symbol of simplicity that does not require much information." }, { "label": "D", "text": "Taking a relaxing trip to nature serves as a trigger of endless talk in cities." } ]
+            },
+            {
+              "id": "test-10-q54",
+              "number": 54,
+              "text": "What is the main purpose of the third paragraph?",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [ { "label": "A", "text": "To list the cases where people die accidentally." }, { "label": "B", "text": "To show the connection between carelessness and danger." }, { "label": "C", "text": "To trace the cause of some people's peril." }, { "label": "D", "text": "To illustrate people's ignorance of real nature." } ]
+            },
+            {
+              "id": "test-10-q55",
+              "number": 55,
+              "text": "According to the last paragraph,",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [ { "label": "A", "text": "people often curse nature because it is not as expected." }, { "label": "B", "text": "nature is accurately represented as it is on TV." }, { "label": "C", "text": "tough guys manage to change nature." }, { "label": "D", "text": "people are shocked to find that nature is beyond man's control." } ]
+            }
+          ],
+          "content": "If you put yourself in nature, if only for a matter of days, you quickly will be disabused of all your romantic fantasies. Take a trek through the jungles of Borneo, and in short order you will have festering sores on your skin and bugs all over your body, biting in your hair and crawling up your nose and into your ears. You will have infections and sickness, and if you are not with somebody who knows what he or she is doing, you very rapidly will starve to death. Chances are that even in the jungles of Borneo you will not experience nature so directly since you will have covered your entire body with DEET.\n\nThe truth is, almost nobody wants to experience real nature. What people desire is to spend a week or two in a cabin in the woods, with screens on the windows. They want a simplified life for a while, a nice river rafting trip for a few days, with somebody else doing the cooking. Nobody wants to go back to nature in any real sense, and no one does. It is all talk, and as the years go on and the world population grows increasingly urban, it is uninformed talk. Farmers know of what they speak; city people do not. They just their fantasies.\n\nOne way to measure the prevalence of fantasy is to note the number of people who die because they have not the least knowledge of how nature truly is. They stand beside wild animals, like buffalo, for a picture and get trampled; they climb a mountain in dangerous weather, without the proper gear, and freeze to death. They drown in the surf on their holiday because they cannot conceive the real power of what we blithely call \"the force of nature.\" They have seen the ocean, but they never have been in it.\n\nThe television generation expects nature to act the way they picture it. They think all life experiences can be TiVo-ed. The notion that the natural world obeys its own rules and does not give a damn about their expectations comes as a massive shock. Well-to-do, educated individuals in an urban environment experience the ability to fashion their daily lives as they wish. They buy clothes that suit their taste and decorate their apartments as they like. Within limits, they can contrive a daily urban world that pleases them. The natural world is not so malleable, however. On the contrary, it will demand that you adapt to it and if you do not, you will die. It is a harsh, powerful, and unforgiving world that most urban Westerners never have experienced."
+        },
+        {
+          "id": "test-10-reading-b-passage-3",
+          "title": "Part II Reading Comprehension - Section B - Passage 3",
+          "instructions": "Read the following passages carefully and then select the best answer from among the four choices given to answer each of the questions or complete each of the statements that follow each passage. Mark the letter of your choice on your Answer Sheet I.",
+          "questions": [
+            {
+              "id": "test-10-q56",
+              "number": 56,
+              "text": "What is looked down upon in the US?",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "To obtain relief to plant crops." }, { "label": "B", "text": "To use government relief in consumption." }, { "label": "C", "text": "To change policies frequently." }, { "label": "D", "text": "To depend on the government for money all the time." } ]
+            },
+            {
+              "id": "test-10-q57",
+              "number": 57,
+              "text": "Aid to families with dependent children and that to American farmers are similar in that",
+              "type": "multiple-choice",
+              "correctAnswer": "C",
+              "options": [ { "label": "A", "text": "they both encourage self-sufficiency." }, { "label": "B", "text": "they both facilitate cooperation between generations." }, { "label": "C", "text": "they both discourage hard working." }, { "label": "D", "text": "they both are unanimously approved of." } ]
+            },
+            {
+              "id": "test-10-q58",
+              "number": 58,
+              "text": "The problem that Lyle Sjostrom is likely to encounter is that",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "equipment and fertilizer would impose a burden on his life." }, { "label": "B", "text": "his son has to become a farmer in his spare time." }, { "label": "C", "text": "he has to allow part of his land to be at the mercy of the government." }, { "label": "D", "text": "he was likely to be accused of cheating." } ]
+            },
+            {
+              "id": "test-10-q59",
+              "number": 59,
+              "text": "What does the sentence \"working a farm and relying on subsidies has been a plus for me\" mean?",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [ { "label": "A", "text": "Depending on the government is humiliating." }, { "label": "B", "text": "Working a farm and depending on government support benefits me a lot." }, { "label": "C", "text": "Being a farmer has become a burden for me." }, { "label": "D", "text": "Working a farm requires me to put in extra work and money." } ]
+            },
+            {
+              "id": "test-10-q60",
+              "number": 60,
+              "text": "What is the main idea of the passage?",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [ { "label": "A", "text": "Government money to support farmers is not always effectively made use of." }, { "label": "B", "text": "American farmers have to do with the rise and fall of economy." }, { "label": "C", "text": "The government does not offer good care to cover American farmers." }, { "label": "D", "text": "American farmers are clever enough to take advantage of the government." } ]
+            }
+          ],
+          "content": "Why is there a stigma attached to using government-financed stamps to purchase food but no stigma attached to accepting government money to grow the food in the first place? American farm policy is filled with such stumpers.\n\nConsider that federal cash payments to individuals — the program known as Aid to Families with Dependent Children — were widely criticized for creating intergenerational dependency on the federal government and allowing people to maintain an idle lifestylc. Yct cash payments to American farmers are justified by some precisely because they promote intergenerational dependency on government and allow for an idle lifestyle.\n\n\"If we'd kept our land in wheat, the fixed costs for equipment and fertilizer would have played havoc with our budget,\" North Dakota farmer Lyle Sjostrom told The New York Times in late August. He dedicated 40 percent of his 4,000 acres to the federal government's conservation prograın, a move he credits with allowing his son, a full-time seed peddler, to become a farmer in his spare time. (When women on welfare work a job on the side to supplement their government checks it's considered welfare fraud, but when farmers take outside jobs, such as selling seeds or legislating farm policy, it's considered noble.)\n\nOthers praise farm handouts for the leisure they provide. \"Subsidies are critical to most gentlemen farming in Arkansas,” Sen. Blanche Lincoln (D-Ark.) told the Times.\n\nLincoln is one of seven congressional farmers who receive thousands of dollars every year from taxpayers. Some, like Rep. Charles Stenholm (D-Texas), an author of farm legislation, find value in dependence on government. \"Working a farm and relying on subsidies has been a plus for me,\" Stenholm told the Times. Perhaps that's why Stenholm joined with Rep. Marion Berry (D-Ark.) in voting against the modest tax cut passed earlier this year. They recognized that handing people's money back in individual increments of up to $300 means there is less money for five- and six-figure checks to farmers such as themselves. (Berry's family enterprises raked in $649,750 in farm subsidies over the last five years. Stenholm received $39,298 over tne same period.)\n\nAdvocates for American farmers are extremely worried about what the declining fortune of the federal treasury means for them. In July, Democrats were forced to accept $2 billion less in the routine emergency farm bill (the end result: farmers only got a bonus $5.5 billion in their pockets this time around). And, as of press time, the House was set to debate a 10-year, $171 billion farm package that guarantees payments to indigent farmers."
+        },
+        {
+          "id": "test-10-reading-c",
+          "title": "Part II Reading Comprehension - Section C",
+          "instructions": "In the following passage, five sentences have been removed from the original text. They are listed from A to F and put below the passage. Choose the most suitable sentence from the list to fill in each of the blanks numbered 61 to 65. There is one sentence that does not fit in any of the blanks. Mark your answers on your Answer Sheet I.",
+          "questions": [
+            {
+              "id": "test-10-q61",
+              "number": 61,
+              "text": "Fill in blank 61.",
+              "type": "multiple-choice",
+              "correctAnswer": "B",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Access to inadequate facilities — for both preparation and storage of foods — by many poor households contribute substantially to weaning food contamination."
+                },
+                {
+                  "label": "B",
+                  "text": "As a result, staple foods cooked in water are normally fed to weaning age children in the form of gruels."
+                },
+                {
+                  "label": "C",
+                  "text": "The practice has been a traditional way of food preservation in many parts of the world."
+                },
+                {
+                  "label": "D",
+                  "text": "Safer weaning can be achieved through preparation of hygienic and nutritionally balanced weaning foods with high energy density per unit volume, of which enough can be eaten."
+                },
+                {
+                  "label": "E",
+                  "text": "Nutrition and health promotion programs can benefit greatly from such strategies in order to reduce the prevalence of food-related diarrhoeal diseases, as well as to increase energy intakes of many poor weaning-age children around the world."
+                },
+                {
+                  "label": "F",
+                  "text": "\"Dialogue on Diarrhoea\" has recently produced an issue in which the method of fermentation is discussed for a safe weaning."
+                }
+              ]
+            },
+            {
+              "id": "test-10-q62",
+              "number": 62,
+              "text": "Fill in blank 62.",
+              "type": "multiple-choice",
+              "correctAnswer": "A",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Access to inadequate facilities — for both preparation and storage of foods — by many poor households contribute substantially to weaning food contamination."
+                },
+                {
+                  "label": "B",
+                  "text": "As a result, staple foods cooked in water are normally fed to weaning age children in the form of gruels."
+                },
+                {
+                  "label": "C",
+                  "text": "The practice has been a traditional way of food preservation in many parts of the world."
+                },
+                {
+                  "label": "D",
+                  "text": "Safer weaning can be achieved through preparation of hygienic and nutritionally balanced weaning foods with high energy density per unit volume, of which enough can be eaten."
+                },
+                {
+                  "label": "E",
+                  "text": "Nutrition and health promotion programs can benefit greatly from such strategies in order to reduce the prevalence of food-related diarrhoeal diseases, as well as to increase energy intakes of many poor weaning-age children around the world."
+                },
+                {
+                  "label": "F",
+                  "text": "\"Dialogue on Diarrhoea\" has recently produced an issue in which the method of fermentation is discussed for a safe weaning."
+                }
+              ]
+            },
+            {
+              "id": "test-10-q63",
+              "number": 63,
+              "text": "Fill in blank 63.",
+              "type": "multiple-choice",
+              "correctAnswer": "D",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Access to inadequate facilities — for both preparation and storage of foods — by many poor households contribute substantially to weaning food contamination."
+                },
+                {
+                  "label": "B",
+                  "text": "As a result, staple foods cooked in water are normally fed to weaning age children in the form of gruels."
+                },
+                {
+                  "label": "C",
+                  "text": "The practice has been a traditional way of food preservation in many parts of the world."
+                },
+                {
+                  "label": "D",
+                  "text": "Safer weaning can be achieved through preparation of hygienic and nutritionally balanced weaning foods with high energy density per unit volume, of which enough can be eaten."
+                },
+                {
+                  "label": "E",
+                  "text": "Nutrition and health promotion programs can benefit greatly from such strategies in order to reduce the prevalence of food-related diarrhoeal diseases, as well as to increase energy intakes of many poor weaning-age children around the world."
+                },
+                {
+                  "label": "F",
+                  "text": "\"Dialogue on Diarrhoea\" has recently produced an issue in which the method of fermentation is discussed for a safe weaning."
+                }
+              ]
+            },
+            {
+              "id": "test-10-q64",
+              "number": 64,
+              "text": "Fill in blank 64.",
+              "type": "multiple-choice",
+              "correctAnswer": "F",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Access to inadequate facilities — for both preparation and storage of foods — by many poor households contribute substantially to weaning food contamination."
+                },
+                {
+                  "label": "B",
+                  "text": "As a result, staple foods cooked in water are normally fed to weaning age children in the form of gruels."
+                },
+                {
+                  "label": "C",
+                  "text": "The practice has been a traditional way of food preservation in many parts of the world."
+                },
+                {
+                  "label": "D",
+                  "text": "Safer weaning can be achieved through preparation of hygienic and nutritionally balanced weaning foods with high energy density per unit volume, of which enough can be eaten."
+                },
+                {
+                  "label": "E",
+                  "text": "Nutrition and health promotion programs can benefit greatly from such strategies in order to reduce the prevalence of food-related diarrhoeal diseases, as well as to increase energy intakes of many poor weaning-age children around the world."
+                },
+                {
+                  "label": "F",
+                  "text": "\"Dialogue on Diarrhoea\" has recently produced an issue in which the method of fermentation is discussed for a safe weaning."
+                }
+              ]
+            },
+            {
+              "id": "test-10-q65",
+              "number": 65,
+              "text": "Fill in blank 65.",
+              "type": "multiple-choice",
+              "correctAnswer": "E",
+              "options": [
+                {
+                  "label": "A",
+                  "text": "Access to inadequate facilities — for both preparation and storage of foods — by many poor households contribute substantially to weaning food contamination."
+                },
+                {
+                  "label": "B",
+                  "text": "As a result, staple foods cooked in water are normally fed to weaning age children in the form of gruels."
+                },
+                {
+                  "label": "C",
+                  "text": "The practice has been a traditional way of food preservation in many parts of the world."
+                },
+                {
+                  "label": "D",
+                  "text": "Safer weaning can be achieved through preparation of hygienic and nutritionally balanced weaning foods with high energy density per unit volume, of which enough can be eaten."
+                },
+                {
+                  "label": "E",
+                  "text": "Nutrition and health promotion programs can benefit greatly from such strategies in order to reduce the prevalence of food-related diarrhoeal diseases, as well as to increase energy intakes of many poor weaning-age children around the world."
+                },
+                {
+                  "label": "F",
+                  "text": "\"Dialogue on Diarrhoea\" has recently produced an issue in which the method of fermentation is discussed for a safe weaning."
+                }
+              ]
+            }
+          ],
+          "content": "Malnutrition during weaning age — when breast milk is being replaced by semi-solid foods — is highly prevalent in children of poor households in many developing countries. While the etiology is complex and multi-factorial, the immediate causes are recognized as feeding at less than adequate levels for child growth and development, and recurrent infections, including diarrhoea resulting mainly from ingestion of contaminated foods. Special weaning foods are seldom available at a cost affordable by the poor households. {{61}} Such traditional weaning food preparations do not satisfy the energy and other nutrient needs if they are either too liquid and, thus, have a very low energy density, or too bulky from which enough cannot be consumed by young children. On the other hand, the preparation itself is often contaminated with various germs. Highly contaminated weaning foods are reported to be associated with severity of malnutrition in young children. {{62}} Under conditions such as lack of clean water, refrigerator, fuel, adequate sewage disposal, as well as enough time to prepare fresh food for every meal it is hardly possible to provide young children with uncontaminated weaning foods. As a result of insufficient food intake and frequent diarrhoea, many young children, particularly between 6 months to two years of age, experience weight loss and impaired growth and development.\n\n{{63}} How to reach these goals in simple, practical and economical ways has been the subject of extensive studies by investigators from Ghana, India, Tanzania, Sweden and other countries in recent years. The efforts, concentrated on traditional food preparation methods, have resulted in offering cheap and practical answers to these problems from familiar, indigenous and culturally acceptable home-processing practices. {{64}}\n\nFirstly, cereal fermentation is used for reducing the risk of contamination under the existing inappropriate conditions for food preparation and storage in many households. Secondly, trials in some developing countries indicate the value of using a tiny amount of sprouted grains' flour in preparation of weaning foods as a magic way to thin down the viscosity without decreasing energy density. {{65}}"
+        },
+        {
+          "id": "test-10-writing-a",
+          "title": "Part III Writing - Section A (Summary Writing)",
+          "instructions": "Read the following article and write a summary of no more than 150 words on your Answer Sheet II.",
+          "questions": [
+            {
+              "id": "test-10-q-summary",
+              "number": 66,
+              "text": "Write a summary of the article above, no more than 150 words.",
+              "type": "writing",
+              "correctAnswer": "A doctor's function has changed over time. In the past, the doctor was a person who treated the diseases. Now a doctor is a stranger who combats diseases. They are expected not only to prevent death but also to improve their patient's quality of life. Many times there is nothing a doctor can do to prevent a patient from dying if the patient has a terminal disease; all he/she can do is waiting for death to arrive. This waiting time can be very painful for both the patients and the people who surround them. Not practicing euthanasia at the request of the dying person is violating a person's rights, creating an economic burden and increasing suffering. First of all, deciding to be alive or not is a personal decision. Neither the doctors nor the government has the power to decide if you should live or not. Since it is not their life and you are not in your situation, they cannot make that kind of decision for you. They give us the liberty to decide our job, our family, our religion, and even our sex preference. Why should they not give us the right to decide if we want to live or not? Next, the economic factor should be considered. Many times we are just wasting time and money on a situation that won't get better. If the patient wants euthanasia, why not do it and end the huge amount of money wasted on a treatment that won't help.. Finally, the basic reason why euthanasia should be practiced is because it stops the person from suffering. Having a patient suffering is not giving him a better quality of life. When the patient feels he is not getting the quality of life he wants, the least a doctor can do is grant him what he wants. If the patient's decision is to die, so do it. Why not end this suffering if we have the power? There is no point waiting for the person to die if there is nothing the doctors can do about it. If the person wishes to die, we should satisfy his last wish. This is why euthanasia should be legal for anyone who desires it."
+            }
+          ],
+          "content": "Americans rank a bright, white smile as one of the most important aspects of an attractive appearance. Yet adults in our country get a barely passing grade when it comes to taking care of their teeth. According to the Academy of General Dentistry, almost 60 percent of Americans don't even have a dentist.\n\nOur poor oral health report card means that diseases that start in the mouth have reached epidemic proportions, according to a report released by former surgeon general David Satcher, M.D. \"We're just beginning to understand how the mouth serves as a gateway to infections that can trigger a host of chronic diseases,\" says Gordon L. Douglass, D.D.S., president of the American Academy of Periodontology (AAP). That's why visiting a dentist regularly can be a lifesaver.\n\nExcuses for neglecting oral health are predictable enough — people fear the pain, the cost and the scary diagnosis they might hear precisely because they've stayed away for so long. Here's some good news to entice them back: “The dentist's office is no longer a torture chamber,\" says Richard Hansen, D.M.D., whose practice is in Fullerton, California. \"We're investing in comfortable, heated cushions for the chairs and virtual-reality headsets, for example.\" Dr. Hansen and a growing number of dentists are also setting aside the drill in favor of technology that eliminates almost entirely the pain and the shots associated with filling cavities and other common procedures. And finally, \"Some of the therapeutic procedures used today have a huge cosmetic bonus,\" says New York City's Jonathan Levine, D.M.D., a specialist in reconstructive and cosmetic dentistry. \"They can actually make your teeth look better.\"\n\n\"Finding cavities sooner allows us to use pinpoint fillings,\" says Dr. Hansen. He explains that removing and replacing small areas of decay is far preferable to creating a huge hole in the tooth's core to clear away a more advanced cavity — a process that compromises the strength and longevity of the tooth. Some of the most significant advancements in dentistry have affected restoration, repair and replacement work — which now result in teeth being stronger, healthier and also more attractive. Dr. Levine calls this marriage of health and good looks \"functional aesthetics.\" For example, he explains, \"If the enamel on several of your teeth has eroded from wear, which can compromise their health, we can repair that damage with certain substances. At the same time, we can reshape and realign those teeth, if necessary, to make your smile more cosmetically appealing, as well as correct how the teeth come together. Often the proper realignment and reshaping of teeth will prevent the same wear from happening again.\"\n\nPeriodontal disorders, which affect a third of America's adult population, start mildly enough, often with gingivitis, an easily reversible condition caused by bacteria-laden plaque, with symptoms that include swollen, tender and bleeding gums. Mounting research suggests that gingivitis, if left untreated, spreads to threaten much more than the mouth: Full-blown periodontal disease can contribute to the blood clotting that causes heart attacks and strokes; it's also linked to the onset of type 2 diabetes, chronic bronchitis and, among pregnant women, premature delivery.\n\nIn the case of diabetes, the chain reaction seems to start with bacteria entering the bloodstream, where they cause immune cells to produce high levels of substances that can damage the cells responsible for insulin production, according to new research. When it comes to heart disease, bacteria and their byproducts cause inflammation in the arteries, which may contribute to blockages.\n\nAnd with chronic bronchitis and emphysema, research suggests that bacteria in the mouth travel via inhalation to lodge in lung tissue, making the existing diseases worse. People with family histories of these diseases are at the highest risk — but only after the underlying periodontal disorder is full-blown are the chain reactions triggered.\n\nOral cancer, the sixth most common cancer worldwide, is life threatening, too. To aid in early detection, the ADA has launched a campaign to encourage adults to examine themselves for suspicious lumps and lesions. Currently, because these cancers are usually caught after they've spread to the lymph nodes in the neck, for example — only about half of all oral-cancer sufferers survive for more than five years after diagnosis. If your dentist doesn't initiate a checkup, insist on one. And it's a misperception that all oral cancers are caused by cigarettes, according to Sol Silverman, D.D.S., a spokesperson for the ADA. A full 25 percent of oral cancers strike nonsmokers, he says.\n\nThe bottom line, according to the AAP: Three easy oralhealth habits — twice-daily brushing, daily flossing and twice-annual dental checkups, including tooth cleaning — stop gingivitis before it can progress. Establishing these routine and low-cost habits can eliminate the need for the enormously expensive restorative work that's typically required later in life if oral health has been neglected."
+        },
+        {
+          "id": "test-10-writing-b",
+          "title": "Part III Writing - Section B (Essay Writing)",
+          "instructions": "Write an essay of no less than 250 words on the topic given below. Use the proper space on your Answer Sheet II.",
+          "questions": [
+            {
+              "id": "test-10-q-essay",
+              "number": 67,
+              "text": "Topic: There's a hot debate on legalizing assisted suicide and euthanasia. Please state your opinion on it with sounding reasons.",
+              "type": "writing",
+              "correctAnswer": "A doctor's function has changed over time. In the past, the doctor was a person who treated the diseases. Now a doctor is a stranger who combats diseases. They are expected not only to prevent death but also to improve their patient's quality of life. Many times there is nothing a doctor can do to prevent a patient from dying if the patient has a terminal disease; all he/she can do is waiting for death to arrive. This waiting time can be very painful for both the patients and the people who surround them. Not practicing euthanasia at the request of the dying person is violating a person's rights, creating an economic burden and increasing suffering. First of all, deciding to be alive or not is a personal decision. Neither the doctors nor the government has the power to decide if you should live or not. Since it is not their life and you are not in your situation, they cannot make that kind of decision for you. They give us the liberty to decide our job, our family, our religion, and even our sex preference. Why should they not give us the right to decide if we want to live or not? Next, the economic factor should be considered. Many times we are just wasting time and money on a situation that won't get better. If the patient wants euthanasia, why not do it and end the huge amount of money wasted on a treatment that won't help.. Finally, the basic reason why euthanasia should be practiced is because it stops the person from suffering. Having a patient suffering is not giving him a better quality of life. When the patient feels he is not getting the quality of life he wants, the least a doctor can do is grant him what he wants. If the patient's decision is to die, so do it. Why not end this suffering if we have the power? There is no point waiting for the person to die if there is nothing the doctors can do about it. If the person wishes to die, we should satisfy his last wish. This is why euthanasia should be legal for anyone who desires it."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

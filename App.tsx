@@ -11,7 +11,7 @@ import { parseExamFiles, parseReferenceFiles, repairReferenceJson } from './serv
 const CHANGELOG_DATA: ChangelogEntry[] = [
   {
     version: "1.3.0",
-    date: "2024-05-22",
+    date: "2025-12-12",
     title: "DeepSeek Integration & Passage Analysis",
     isMajor: true,
     changes: [
@@ -23,7 +23,7 @@ const CHANGELOG_DATA: ChangelogEntry[] = [
   },
   {
     version: "1.2.5",
-    date: "2024-05-18",
+    date: "2025-12-11",
     title: "Audio & Reference Materials",
     changes: [
       "Added 'Reference Materials' panel: Upload separate Answer Key/Script PDFs to auto-grade exams.",
@@ -33,7 +33,7 @@ const CHANGELOG_DATA: ChangelogEntry[] = [
   },
   {
     version: "1.2.0",
-    date: "2024-05-10",
+    date: "2025-12-10",
     title: "Vocabulary Notebook & Smart Dictionary",
     changes: [
       "Introduced the Vocabulary Sidebar: Save words with definitions, context, and translations.",
@@ -43,7 +43,7 @@ const CHANGELOG_DATA: ChangelogEntry[] = [
   },
   {
     version: "1.0.0",
-    date: "2024-05-01",
+    date: "2025-12-10",
     title: "Initial Release",
     changes: [
       "Launch of PhD English Prep platform.",

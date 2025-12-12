@@ -77,6 +77,7 @@ export enum AppView {
   DASHBOARD = 'DASHBOARD', // New view for listing multiple exams
   EXAM = 'EXAM',
   RESULTS = 'RESULTS',
+  CHANGELOG = 'CHANGELOG', // New view for updates
 }
 
 export type Language = 'en' | 'zh';
@@ -88,6 +89,7 @@ export interface AppSettings {
   dictionaryApiUrl: string;
   aiProvider: 'gemini' | 'deepseek';
   deepseekApiKey?: string;
+  deepseekBaseUrl?: string; // NEW: Allow custom base URL for proxy/CORS support
 }
 
 export interface Translation {

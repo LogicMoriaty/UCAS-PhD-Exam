@@ -1,9 +1,58 @@
+
 import React, { useState, useRef, useEffect } from 'react';
 import { AppView, ExamData, VocabularyItem, ExamBatch, AppSettings, Translation, ReferenceBatch, ReferenceData } from './types';
 import Button from './components/Button';
 import ExamView from './components/ExamView';
 import VocabSidebar from './components/VocabSidebar';
+import ChangelogView, { ChangelogEntry } from './components/ChangelogView';
 import { parseExamFiles, parseReferenceFiles, repairReferenceJson } from './services/geminiService';
+
+// --- Changelog Data ---
+const CHANGELOG_DATA: ChangelogEntry[] = [
+  {
+    version: "1.3.0",
+    date: "2024-05-22",
+    title: "DeepSeek Integration & Passage Analysis",
+    isMajor: true,
+    changes: [
+      "Added DeepSeek V3/R1 as an alternative AI provider for faster and more logical explanations.",
+      "New 'AI Passage Analysis' feature: Get a comprehensive breakdown of reading passages (Main Idea, Structure, Core Vocab) with one click.",
+      "Added persistent storage for AI explanations: Your generated analyses are now saved locally so you don't have to regenerate them.",
+      "Improved Reference Material merging logic for matching answer keys to questions."
+    ]
+  },
+  {
+    version: "1.2.5",
+    date: "2024-05-18",
+    title: "Audio & Reference Materials",
+    changes: [
+      "Added 'Reference Materials' panel: Upload separate Answer Key/Script PDFs to auto-grade exams.",
+      "Added Audio Player support: Use built-in audio links or upload your own MP3s for listening sections.",
+      "Added 'Raw JSON Edit' mode for advanced users to fix parsing errors manually."
+    ]
+  },
+  {
+    version: "1.2.0",
+    date: "2024-05-10",
+    title: "Vocabulary Notebook & Smart Dictionary",
+    changes: [
+      "Introduced the Vocabulary Sidebar: Save words with definitions, context, and translations.",
+      "Added 'Contextual Definition': Select text anywhere in the exam to get AI-powered definitions relevant to that specific sentence.",
+      "Added CSV Export for Vocabulary lists."
+    ]
+  },
+  {
+    version: "1.0.0",
+    date: "2024-05-01",
+    title: "Initial Release",
+    changes: [
+      "Launch of PhD English Prep platform.",
+      "Support for PDF parsing into structured exams.",
+      "Interactive modes: Multiple Choice, Fill-in-the-blank, and Writing.",
+      "Auto-grading and Review mode."
+    ]
+  }
+];
 
 const translations: Translation = {
   title: { en: "PhD English Prep", zh: "博士英语考试 By Logic Moriaty" },
@@ -26,6 +75,7 @@ const translations: Translation = {
   dictApiUrl: { en: "Dictionary API URL", zh: "词典 API 接口地址" },
   aiProviderLabel: { en: "AI Provider", zh: "AI 服务提供商" },
   deepseekKeyLabel: { en: "DeepSeek API Key", zh: "DeepSeek API 密钥" },
+  deepseekUrlLabel: { en: "DeepSeek API Base URL", zh: "DeepSeek 接口地址 (Base URL)" },
   close: { en: "Close", zh: "关闭" },
   loading: { en: "Loading...", zh: "加载中..." },
   uploadMaterials: { en: "Upload Ref Materials (Keys/Scripts)", zh: "上传参考资料 (答案/听力)" },
@@ -37,7 +87,10 @@ const translations: Translation = {
   applyChanges: { en: "Apply Changes", zh: "应用更改" },
   navUpload: { en: "Upload", zh: "上传" },
   noExams: { en: "No exams loaded. Please upload a file or load built-in tests.", zh: "暂无试题。请上传文件 or 加载内置试题。" },
-  loadError: { en: "Failed to load built-in tests. Please ensure the '/Test' folder is in your 'public' or static directory.", zh: "无法加载内置试题。请确保 '/Test' 文件夹位于您部署的 'public' 或静态资源目录中。" }
+  loadError: { en: "Failed to load built-in tests. Please ensure the '/Test' folder is in your 'public' or static directory.", zh: "无法加载内置试题。请确保 '/Test' 文件夹位于您部署的 'public' 或静态资源目录中。" },
+  whatsNew: { en: "What's New", zh: "更新日志" },
+  newUpdate: { en: "New Update", zh: "新版本更新" },
+  viewDetails: { en: "View Details", zh: "查看详情" }
 };
 
 const App: React.FC = () => {
@@ -51,11 +104,14 @@ const App: React.FC = () => {
       language: 'zh', 
       definitionSource: 'llm', 
       dictionaryApiUrl: 'https://api.dictionaryapi.dev/api/v2/entries/en/',
-      aiProvider: 'gemini'
+      aiProvider: 'gemini',
+      deepseekBaseUrl: 'https://api.deepseek.com'
     };
   });
 
   const [showSettings, setShowSettings] = useState(false);
+  // Banner state: Show if not dismissed in this session
+  const [showBanner, setShowBanner] = useState(true);
 
   // Persist Settings
   useEffect(() => {
@@ -96,21 +152,13 @@ const App: React.FC = () => {
   const t = (key: string) => translations[key][settings.language];
 
   // Helper to merge exams. 
-  // If an exam with the same ID exists, the NEW one (from upload) takes precedence.
-  // This allows users to re-upload a JSON with saved analysis and overwrite the default empty one.
   const mergeExams = (newExams: ExamData[]) => {
     setAvailableExams((prev: ExamData[]) => {
       const examMap = new Map<string, ExamData>();
-      // Explicitly populate map to avoid type inference issues with new Map([ ... ])
       prev.forEach(e => examMap.set(e.id, e));
-      
-      // Update or add new exams
-      newExams.forEach(e => {
-          examMap.set(e.id, e);
-      });
+      newExams.forEach(e => examMap.set(e.id, e));
       
       const combined = Array.from(examMap.values());
-      // Sort exams by extracted number from ID or Title (e.g. "test-1", "Model Test 10")
       return combined.sort((a, b) => {
         const getNum = (str: string) => {
           const match = str.match(/(\d+)/);
@@ -128,7 +176,6 @@ const App: React.FC = () => {
     if (availableExams.length > 0) return;
 
     const loadDefaultExams = async () => {
-      // Try to load from localStorage first for persistence of AI explanations and analyses
       const storedExams = localStorage.getItem('persistedExams');
       if (storedExams) {
           try {
@@ -186,7 +233,7 @@ const App: React.FC = () => {
     loadDefaultExams();
   }, []);
 
-  // Save exams to localStorage whenever they change (to persist AI explanations and passage analyses)
+  // Save exams to localStorage
   useEffect(() => {
       if (availableExams.length > 0) {
           try {
@@ -211,7 +258,6 @@ const App: React.FC = () => {
               }))
           };
       }));
-      // Update selected exam as well to reflect changes immediately
       if (selectedExam && selectedExam.id === examId) {
           setSelectedExam(prev => {
               if (!prev) return null;
@@ -240,7 +286,6 @@ const App: React.FC = () => {
               })
           };
       }));
-      // Update selected exam as well
       if (selectedExam && selectedExam.id === examId) {
           setSelectedExam(prev => {
               if (!prev) return null;
@@ -606,7 +651,13 @@ const App: React.FC = () => {
               <button onClick={() => setView(AppView.UPLOAD)} className="sm:hidden text-white p-2 hover:bg-white/10 rounded-full">
                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" /></svg>
               </button>
+              
+              <button onClick={() => setView(AppView.CHANGELOG)} className="p-2 hover:bg-white/10 rounded-full transition-colors text-white" title={t('whatsNew')}>
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+              </button>
+
               <div className="h-6 w-px bg-white/20 mx-1 hidden sm:block"></div>
+              
               <button onClick={() => setShowSettings(true)} className="p-2 hover:bg-white/10 rounded-full transition-colors text-blue-200" title={t('settings')}>
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
               </button>
@@ -635,6 +686,7 @@ const App: React.FC = () => {
         {/* UPLOAD PAGE */}
         {view === AppView.UPLOAD && (
            <div className="space-y-8 animate-fadeIn max-w-3xl mx-auto mt-4 sm:mt-10">
+              <Button onClick={() => setView(AppView.DASHBOARD)} variant="secondary" className="mb-4 text-xs">{t('back')}</Button>
               <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8 text-center relative overflow-hidden">
                  <h2 className="text-2xl sm:text-3xl font-serif font-bold text-gray-900 mb-4">{t('uploadBtn')}</h2>
                  <p className="text-gray-500 mb-8 max-w-xl mx-auto text-sm sm:text-base">{t('subtitle')}</p>
@@ -661,7 +713,7 @@ const App: React.FC = () => {
                     <div className="border-2 border-dashed border-orange-200 rounded-xl p-4 sm:p-6 hover:bg-orange-50 transition-colors flex flex-col items-center justify-center">
                         <h3 className="text-sm font-semibold text-orange-800 uppercase tracking-wide mb-2">{t('uploadMaterials')}</h3>
                         <label className="cursor-pointer text-sm text-orange-600 hover:text-orange-800 underline flex items-center gap-2">
-                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.707.293l5.414 5.414a1 1 0 01.707.293l5.414 5.414a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.707.293l5.414 5.414a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
                              Upload Answer Keys / Scripts
                              <input 
                                type="file"
@@ -680,6 +732,38 @@ const App: React.FC = () => {
         {/* DASHBOARD PAGE */}
         {view === AppView.DASHBOARD && (
           <div className="animate-fadeIn">
+              {/* Announcement Banner */}
+              {showBanner && CHANGELOG_DATA.length > 0 && (
+                <div className="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg shadow-md mb-8 p-4 flex flex-col sm:flex-row items-center justify-between text-white animate-fadeIn gap-4">
+                  <div className="flex items-center gap-3">
+                    <span className="bg-white/20 p-2 rounded-lg">
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" /></svg>
+                    </span>
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <span className="font-bold text-sm bg-white/20 px-2 py-0.5 rounded uppercase tracking-wider">{t('newUpdate')}</span>
+                        <span className="text-xs font-mono opacity-80">v{CHANGELOG_DATA[0].version}</span>
+                      </div>
+                      <p className="font-medium mt-1">{CHANGELOG_DATA[0].title}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 w-full sm:w-auto">
+                    <button 
+                      onClick={() => setView(AppView.CHANGELOG)}
+                      className="flex-1 sm:flex-initial px-4 py-2 bg-white text-indigo-700 rounded-lg font-bold text-sm hover:bg-indigo-50 transition-colors"
+                    >
+                      {t('viewDetails')}
+                    </button>
+                    <button 
+                      onClick={() => setShowBanner(false)}
+                      className="p-2 hover:bg-white/20 rounded-lg transition-colors text-white/80 hover:text-white"
+                    >
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
+                  </div>
+                </div>
+              )}
+
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
                 <h3 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
                   <span className="w-2 h-8 bg-academic-500 rounded-full"></span>
@@ -735,6 +819,13 @@ const App: React.FC = () => {
                 </div>
               )}
           </div>
+        )}
+
+        {view === AppView.CHANGELOG && (
+          <ChangelogView 
+            entries={CHANGELOG_DATA} 
+            onBack={() => setView(AppView.DASHBOARD)} 
+          />
         )}
 
         {(view === AppView.EXAM || view === AppView.RESULTS) && selectedExam && (
@@ -886,18 +977,31 @@ const App: React.FC = () => {
               </div>
 
               {settings.aiProvider === 'deepseek' && (
-                <div className="animate-fadeIn bg-gray-50 p-4 rounded-lg border border-gray-200">
-                   <label className="block text-sm font-medium text-gray-700 mb-2">{t('deepseekKeyLabel')}</label>
-                   <input 
-                     type="password" 
-                     className="w-full p-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 outline-none text-sm"
-                     placeholder="sk-..."
-                     value={settings.deepseekApiKey || ''}
-                     onChange={(e) => setSettings({...settings, deepseekApiKey: e.target.value})}
-                   />
-                   <p className="text-xs text-gray-500 mt-2 leading-relaxed">
-                     <strong>Note:</strong> Calling DeepSeek directly from the browser may be blocked by CORS policy. If you see "Failed to fetch", please use a proxy or switch back to Gemini.
-                   </p>
+                <div className="animate-fadeIn bg-gray-50 p-4 rounded-lg border border-gray-200 space-y-4">
+                   <div>
+                       <label className="block text-sm font-medium text-gray-700 mb-2">{t('deepseekKeyLabel')}</label>
+                       <input 
+                         type="password" 
+                         className="w-full p-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 outline-none text-sm"
+                         placeholder="sk-..."
+                         value={settings.deepseekApiKey || ''}
+                         onChange={(e) => setSettings({...settings, deepseekApiKey: e.target.value})}
+                       />
+                   </div>
+                   
+                   <div>
+                       <label className="block text-sm font-medium text-gray-700 mb-2">{t('deepseekUrlLabel')}</label>
+                       <input 
+                         type="text" 
+                         className="w-full p-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 outline-none text-sm"
+                         placeholder="https://api.deepseek.com"
+                         value={settings.deepseekBaseUrl || 'https://api.deepseek.com'}
+                         onChange={(e) => setSettings({...settings, deepseekBaseUrl: e.target.value})}
+                       />
+                       <p className="text-xs text-gray-500 mt-2 leading-relaxed">
+                         <strong>Note:</strong> Calling DeepSeek directly from a browser is usually blocked by CORS policy. Please use a proxy URL (e.g., via Cloudflare Worker) or a compatible local proxy if you see "Failed to fetch".
+                       </p>
+                   </div>
                 </div>
               )}
 

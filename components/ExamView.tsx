@@ -140,7 +140,52 @@ const ExamView: React.FC<ExamViewProps> = ({
 
     setAnalyzingSectionId(activeSection.id);
     try {
-        const analysis = await analyzePassage(activeSection.content, activeSection.title, settings);
+        let contentToAnalyze = activeSection.content;
+
+        // PRE-PROCESSING: Inject correct answers into the text if it contains placeholders
+        if (contentToAnalyze.includes("{{")) {
+            activeSection.questions.forEach(q => {
+                const pattern = new RegExp(`\\{\\{${q.number}\\}\\}`, 'g');
+                let replacement = "______"; // Default placeholder
+
+                if (q.correctAnswer) {
+                    // Check if it's a Banked Cloze (Shared Options)
+                    if (activeSection.sharedOptions) {
+                         // Find the option label (A, B, C...) that matches correct answer
+                         // Often correctAnswer is the label "A". We need the TEXT.
+                         let ansLabel = q.correctAnswer; 
+                         const match = activeSection.sharedOptions.find(o => o.label === ansLabel || o.text === ansLabel);
+                         
+                         // Sometimes correctAnswer IS the text, sometimes it's the label.
+                         // If correct answer is "A", find option A and get its text.
+                         // If correct answer is "apple", use "apple".
+                         if (match) {
+                             replacement = match.text;
+                         } else {
+                             // Fallback: search by label
+                             const byLabel = activeSection.sharedOptions.find(o => o.label === q.correctAnswer);
+                             if (byLabel) replacement = byLabel.text;
+                             else replacement = q.correctAnswer; // Just use what we have
+                         }
+                    }
+                    // Check if it's a Multiple Choice Cloze (Specific Options)
+                    else if (q.options) {
+                         const match = q.options.find(o => o.label === q.correctAnswer);
+                         if (match) replacement = match.text;
+                         else replacement = q.correctAnswer;
+                    }
+                    // Or simple Sentence Completion / direct text match
+                    else {
+                         replacement = q.correctAnswer;
+                    }
+                }
+                // Replace the {{number}} with the actual answer text (bolded for clarity to AI)
+                // Use a function replacer to avoid issues with special chars in replacement
+                contentToAnalyze = contentToAnalyze.replace(pattern, ` **${replacement}** `);
+            });
+        }
+
+        const analysis = await analyzePassage(contentToAnalyze, activeSection.title, settings);
         
         // Persist the analysis via parent handler
         if (onUpdateSection) {

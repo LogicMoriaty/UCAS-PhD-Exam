@@ -12,9 +12,19 @@ const getClient = () => {
 };
 
 // DeepSeek Helper
-const callDeepSeek = async (prompt: string, systemInstruction: string, apiKey: string, jsonMode: boolean = false) => {
+const callDeepSeek = async (prompt: string, systemInstruction: string, apiKey: string, baseUrl?: string, jsonMode: boolean = false) => {
   try {
-    const response = await fetch('https://api.deepseek.com/chat/completions', {
+    // Default to official API if baseUrl is missing or empty string
+    let url = baseUrl && baseUrl.trim() !== '' ? baseUrl : 'https://api.deepseek.com';
+    
+    // Ensure formatting
+    if (!url.startsWith('http')) url = `https://${url}`;
+    if (!url.endsWith('/chat/completions')) {
+        // Handle trailing slash
+        url = url.replace(/\/$/, '') + '/chat/completions';
+    }
+
+    const response = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -39,7 +49,7 @@ const callDeepSeek = async (prompt: string, systemInstruction: string, apiKey: s
     const data = await response.json();
     return data.choices?.[0]?.message?.content || "";
   } catch (error) {
-    console.warn("DeepSeek Call Failed (Check CORS/Key):", error);
+    console.warn("DeepSeek Call Failed (Check CORS/Key/Proxy):", error);
     throw error;
   }
 };
@@ -232,50 +242,82 @@ export const explainQuestion = async (
 
   const isWriting = questionType === 'writing' || sectionTitle.toLowerCase().includes('writing');
   
+  // INCREASE CONTEXT LIMIT to 25000 chars to cover long passages and end-of-passage questions
+  const contextSnippet = context ? context.substring(0, 25000) : "N/A";
+
   if (isWriting) {
-    // Specialized Prompt for Writing (Summary & Essay)
-    // STRICT RULE: Model Answer MUST be in English.
-    systemInstruction = `You are an expert IELTS/Doctorate English writing tutor. 
-    Your goal is to help the student write excellent essays and summaries.
-    Provide the output in structured Markdown with clear headings.
-    Constraint 1: The Model Answer (参考范文) MUST BE IN ENGLISH.
-    Constraint 2: Do NOT use Pinyin for Chinese characters.`;
-    
-    prompt = `
-      Task: Provide a comprehensive guide for the following writing topic.
-      Topic/Question: "${questionText}"
-      Context (if summary task): "${context ? context.substring(0, 1500) + "..." : "N/A"}"
+    // Check if it is a Summary task
+    const isSummaryTask = questionText.toLowerCase().includes("summary") || 
+                          questionText.toLowerCase().includes("summarize") || 
+                          sectionTitle.toLowerCase().includes("summary");
 
-      Please provide the response in the following Markdown format:
+    if (isSummaryTask) {
+        systemInstruction = `You are an expert English writing tutor creating a standard 'Model Answer' for a summary writing task.
+        
+        **CRITICAL STYLE RULES (Direct Paraphrasing / Précis):**
+        1. **NO Meta-Commentary**: Do NOT use phrases like "The author argues", "The article suggests", "This passage discusses".
+        2. **Direct Stance**: Write as if you are condensing the facts directly. E.g., instead of "The text says pollution is bad," write "Pollution is a significant problem."
+        3. **Flow**: Use transition words (However, Therefore, As a result, For example) to connect the points logically.
+        4. **Tone**: Objective, formal, and factual.
+        5. **Length**: Approximately 150 words.
+        
+        Constraint: Do NOT use Pinyin.`;
 
-      ### 1. 参考范文 (Model Answer)
-      (Provide a high-quality, Band 8.0+ level response. **Strictly in ENGLISH**. Do not use Chinese in this section).
+        prompt = `
+          Task: Write a Model Summary (Précis) for the following article.
+          Question/Topic: "${questionText}"
+          Article Content: "${contextSnippet}"
 
-      ### 2. 写作技巧 (Writing Techniques)
-      (Explain the strategy, structure, or tone used in the model answer. Bullet points. Language: Chinese).
+          Please provide the response in the following Markdown format:
 
-      ### 3. 写作模板 (Useful Template)
-      (A generic skeleton structure the student can use for similar problems. Language: English structure with Chinese notes).
+          ### 1. 参考范文 (Model Summary)
+          (Write a direct, high-quality summary in English. It must read like a standard exam answer key. Do not describe the article; summarize the CONTENT of the article directly).
 
-      ### 4. 重点词汇与句型 (Key Vocabulary & Expressions)
-      (List 5-8 advanced words/phrases relevant to this topic with Chinese translations. Do not use Pinyin).
-    `;
+          ### 2. 摘要逻辑 (Summary Logic)
+          (Briefly explain in Chinese how the summary was constructed. Which main points were selected and why?).
+
+          ### 3. 重点表达 (Key Expressions)
+          (List 3-5 useful phrases or transition words used in the summary with Chinese translations).
+        `;
+    } else {
+        // Essay Task
+        systemInstruction = `You are an expert IELTS/Doctorate English writing tutor. 
+        Your goal is to help the student write excellent essays.
+        Provide the output in structured Markdown with clear headings.
+        Constraint 1: The Model Answer MUST BE IN ENGLISH.
+        Constraint 2: Do NOT use Pinyin.`;
+        
+        prompt = `
+          Task: Provide a comprehensive guide for the following writing topic.
+          Topic/Question: "${questionText}"
+          
+          Please provide the response in the following Markdown format:
+
+          ### 1. 参考范文 (Model Essay)
+          (Provide a high-quality, Band 8.0+ level response. **Strictly in ENGLISH**. Do not use Chinese in this section).
+
+          ### 2. 写作思路 (Writing Strategy)
+          (Explain the structure, arguments, and tone used in the model answer. Bullet points. Language: Chinese).
+
+          ### 3. 亮点词汇与句型 (Key Vocabulary & Expressions)
+          (List 5-8 advanced words/phrases relevant to this topic with Chinese translations. Do not use Pinyin).
+        `;
+    }
   } else {
-    // Standard Prompt for Multiple Choice, Cloze, Reading, etc.
-    // Relaxed Language Constraint: Chinese is primary, but English is allowed for quotes/terms.
+    // Normal Questions
     systemInstruction = `You are a strict and professional English exam tutor for Chinese PhD candidates.
     Constraint 1: Explain primarily in Chinese, but use English freely for quotes, terms, or examples from the text.
-    Constraint 2: Focus ONLY on this specific question. Do NOT summarize the whole passage.
-    Constraint 3: Do NOT list general vocabulary from the whole text. 
-    Constraint 4: Keep it concise (under 200 words).
-    Constraint 5: Do NOT use Pinyin for Chinese characters.`;
+    Constraint 2: Focus ONLY on this specific question. Do NOT summarize the whole passage unnecessarily.
+    Constraint 3: Locate the specific evidence in the text.
+    Constraint 4: Keep it concise.
+    Constraint 5: Do NOT use Pinyin.`;
 
     prompt = `
       Question: "${questionText}"
       Type: ${questionType}
       Correct Answer: "${correctAnswer}"
       User Answer: "${userAnswer}"
-      Context Snippet: "${context ? context.substring(0, 1000) + "..." : "N/A"}"
+      Context Snippet (Full Passage available): "${contextSnippet}"
       
       Please provide a structured response in the following format:
 
@@ -283,27 +325,35 @@ export const explainQuestion = async (
       (Directly analyze the logic. Locate the specific sentence in the context that supports the correct answer. Explain why the correct answer is right and briefly why distractors are wrong. Language: Chinese, referencing English text where needed.)
 
       **2. 做题技巧 (Test-Taking Tips)**
-      (Provide one specific strategy for this question type, e.g., "Look for synonyms", "Elimination method", "Context clues". Language: Chinese.)
+      (Provide one specific strategy for this question type. Language: Chinese.)
     `;
   }
 
   // DeepSeek Attempt with Fallback
   if (settings?.aiProvider === 'deepseek' && settings.deepseekApiKey) {
     try {
-      return await callDeepSeek(prompt, systemInstruction, settings.deepseekApiKey);
+      return await callDeepSeek(prompt, systemInstruction, settings.deepseekApiKey, settings.deepseekBaseUrl);
     } catch (e) {
       console.warn("DeepSeek explain failed, falling back to Gemini.");
+      if (!process.env.API_KEY) {
+          return "Error: DeepSeek call failed (likely CORS or Key) and no Gemini Key provided for fallback.";
+      }
     }
   }
 
   // Fallback to Gemini
-  const ai = getClient();
-  const response = await ai.models.generateContent({ 
-    model: "gemini-2.5-flash", 
-    contents: prompt,
-    config: { systemInstruction }
-  });
-  return response.text || "暂无解析。";
+  try {
+      const ai = getClient();
+      const response = await ai.models.generateContent({ 
+        model: "gemini-2.5-flash", 
+        contents: prompt,
+        config: { systemInstruction }
+      });
+      return response.text || "暂无解析。";
+  } catch(e) {
+      console.error("Gemini failed", e);
+      return "AI Service Error: Failed to generate explanation.";
+  }
 };
 
 // NEW: Separate function for whole-passage analysis
@@ -313,17 +363,18 @@ export const analyzePassage = async (
   settings?: AppSettings
 ): Promise<string> => {
   const systemInstruction = `You are an expert English teacher. Provide a high-level analysis of the text structure and main vocabulary for a Chinese student.
+  The text provided has correct answers filled in (marked in bold). Treat it as a complete, coherent article.
   Constraint: Do NOT use Pinyin.`;
   
   const prompt = `
     Analyze this English exam passage for a Chinese student.
     Section: "${sectionTitle}"
-    Passage Content: "${passage.substring(0, 5000)}"
+    Passage Content (Complete text with answers): "${passage.substring(0, 25000)}"
 
     Please provide a structured response in Markdown (Strictly in Chinese):
 
     ### 1. 文章大意 (Main Idea)
-    (A concise summary of the passage in Chinese, approx 3-4 sentences).
+    (A concise summary of the passage in Chinese, approx 3-4 sentences. Focus on the flow of the argument now that the text is complete).
 
     ### 2. 语篇结构 (Structure Analysis)
     (Briefly explain how the passage is organized, e.g., "Para 1: Introduction... Para 2: Counter-argument...").
@@ -335,20 +386,28 @@ export const analyzePassage = async (
   // DeepSeek Attempt
   if (settings?.aiProvider === 'deepseek' && settings.deepseekApiKey) {
     try {
-      return await callDeepSeek(prompt, systemInstruction, settings.deepseekApiKey);
+      return await callDeepSeek(prompt, systemInstruction, settings.deepseekApiKey, settings.deepseekBaseUrl);
     } catch (e) {
       console.warn("DeepSeek analysis failed, falling back to Gemini.");
+      if (!process.env.API_KEY) {
+          return "Error: DeepSeek call failed (likely CORS) and no Gemini Key provided.";
+      }
     }
   }
 
   // Gemini
-  const ai = getClient();
-  const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash",
-    contents: prompt,
-    config: { systemInstruction }
-  });
-  return response.text || "暂无文章解析。";
+  try {
+      const ai = getClient();
+      const response = await ai.models.generateContent({
+        model: "gemini-2.5-flash",
+        contents: prompt,
+        config: { systemInstruction }
+      });
+      return response.text || "暂无文章解析。";
+  } catch(e) {
+      console.error("Gemini analysis failed", e);
+      return "AI Service Error: Failed to analyze passage.";
+  }
 };
 
 export const defineWord = async (word: string, context: string, source: DefinitionSource = 'llm', apiUrl?: string, settings?: AppSettings): Promise<VocabularyItem> => {
@@ -399,7 +458,7 @@ export const defineWord = async (word: string, context: string, source: Definiti
   // DeepSeek Implementation with Fallback
   if (settings?.aiProvider === 'deepseek' && settings.deepseekApiKey) {
     try {
-      const jsonStr = await callDeepSeek(prompt, systemInstruction + " Return valid JSON.", settings.deepseekApiKey, true);
+      const jsonStr = await callDeepSeek(prompt, systemInstruction + " Return valid JSON.", settings.deepseekApiKey, settings.deepseekBaseUrl, true);
       const data = JSON.parse(jsonStr || "{}");
       return {
         id: crypto.randomUUID(),

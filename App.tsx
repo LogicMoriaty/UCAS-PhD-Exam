@@ -187,7 +187,8 @@ const App: React.FC = () => {
           } catch(e) { console.error("Failed to load persisted exams", e); }
       }
 
-      const files = ['/Test/JSON1-5.json', '/Test/JSON6-9.json', '/Test/JSON10.json'];
+      //const files = ['/Test/JSON1-5.json', '/Test/JSON6-9.json', '/Test/JSON10.json'];
+      const files = ['/Test/Model Tests v1.json'];
       const loadedExams: ExamData[] = [];
       let hasError = false;
       

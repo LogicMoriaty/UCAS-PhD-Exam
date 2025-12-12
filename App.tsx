@@ -12,7 +12,7 @@ const CHANGELOG_DATA: ChangelogEntry[] = [
   {
     version: "1.3.0",
     date: "2025-12-12",
-    title: "DeepSeek Integration & Passage Analysis",
+    title: "DeepSeek Integration & Passage Analysis（已添加完形填空、缩写和作文的ai解析，加载内置模拟题即可查看，注意ai解析内容仅供参考，部分内容可能存在问题）",
     isMajor: true,
     changes: [
       "Added DeepSeek V3/R1 as an alternative AI provider for faster and more logical explanations.",
